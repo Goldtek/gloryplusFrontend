@@ -32,7 +32,7 @@ class Donate extends Component {
             <div className="col-md-6 col-lg-5">
               <div className="donate-card">
                 <h2>
-                  $45.000<span>Remaining to helps</span>
+                  #45.000<span>Remaining to helps</span>
                 </h2>
                 <div className="donate-progress-bar">
                   <div className="pb-inner">
