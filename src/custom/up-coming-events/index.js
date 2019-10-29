@@ -97,7 +97,7 @@ class UpcomingEvent extends Component {
                       culpa qui officia deserunt mollit anim id est laborum. Sed
                       ut perspiciatis unde omnis iste natus error sit voluptatem
                       accusantium doloremque laudantium, totam rem aperiam,
-                      eaque ipsa quae ab illo inventore veritatis.
+                      eaque ipsa quae ab illo inventore
                     </p>
                     <a href="/" className="site-btn sb-line">
                       Read more
