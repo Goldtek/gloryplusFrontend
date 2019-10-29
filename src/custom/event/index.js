@@ -1,7 +1,21 @@
 import React, { Component } from "react";
+import moment from 'moment';
 
 class BottomNav extends Component {
+  state = {
+    days: 0,
+    hours: 0,
+    mins: 0,
+    secs: 0,
+  };
+
+  componentWillUpdate () {
+
+  }
+
   render() {
+    const d = moment().day(7).fromNow;
+    console.log("------", d);
     return (
       <section className="event-section">
         <div className="container">
@@ -9,14 +23,13 @@ class BottomNav extends Component {
             <div className="col-md-5 col-lg-6">
               <div className="event-info">
                 <div className="event-date">
-                  <h2>20</h2>
-                  may
+                  <h2>03</h2>
+                  November
                 </div>
-                <h3>Partner with us</h3>
+                <h3>Fellowship with us</h3>
                 <p>
-                  <i className="fa fa-calendar"></i> 8:00 Am — 10:00 Am{" "}
-                  <i className="fa fa-map-marker"></i> Central District, Riga,
-                  LV-1050, Latvia
+                  <i className="fa fa-calendar"></i> 8:00 Am 
+                  <i className="fa fa-map-marker"></i> 18 kudirat Abiola way, Olusosun, Ikeja, Lagos
                 </p>
               </div>
             </div>
@@ -35,9 +48,6 @@ class BottomNav extends Component {
                   <h4>56</h4>secs
                 </div>
               </div>
-              <a href="/" className="site-btn sb-light-line">
-                Read more
-              </a>
             </div>
           </div>
         </div>
