@@ -14,7 +14,9 @@ class Blog extends Component {
               <div className="blog-item">
                 <div
                   className="bi-thumb set-bg"
-                  data-setbg="img/blog/1.jpg"
+                  style={{
+                    backgroundImage: "url(img/blog/1.jpg)"
+                  }}
                 ></div>
                 <div className="bi-content">
                   <div className="date">On Monday 13 May, 2018</div>
@@ -36,7 +38,9 @@ class Blog extends Component {
               <div className="blog-item">
                 <div
                   className="bi-thumb set-bg"
-                  data-setbg="img/blog/2.jpg"
+                  style={{
+                    backgroundImage: "url(img/blog/2.jpg)"
+                  }}
                 ></div>
                 <div className="bi-content">
                   <div className="date">On Monday 13 May, 2018</div>
@@ -58,7 +62,9 @@ class Blog extends Component {
               <div className="blog-item">
                 <div
                   className="bi-thumb set-bg"
-                  data-setbg="img/blog/3.jpg"
+                  style={{
+                    backgroundImage: "url(img/blog/3.jpg)"
+                  }}
                 ></div>
                 <div className="bi-content">
                   <div className="date">On Monday 13 May, 2018</div>

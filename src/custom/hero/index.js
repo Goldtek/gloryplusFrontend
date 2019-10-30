@@ -6,7 +6,7 @@ class Hero extends Component {
         className="hero-section set-bg"
         style={{
           backgroundImage:
-            "url(https://res.cloudinary.com/ielemson/image/upload/v1572237849/glory-plus/bg_leipmz.jpg)"
+            "url(img/bg.png)"
         }}
       >
         <div className="hero-content">

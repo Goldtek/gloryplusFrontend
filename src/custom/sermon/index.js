@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import sermon_gb from "../../img/sermon-bg.jpg";
 class Sermon extends Component {
   render() {
     return (
@@ -9,7 +8,12 @@ class Sermon extends Component {
           <h2>Sermon Today</h2>
         </div>
         <div className="sermon-warp">
-          <div className="sermon-left-bg set-bg" data-setbg={sermon_gb}></div>
+          <div
+            className="sermon-left-bg set-bg"
+            style={{
+              backgroundImage: "url(img/sermon-bg.jpg)"
+            }}
+          ></div>
           <div className="container">
             <div className="row">
               <div className="col-md-6 col-md-offset-6">

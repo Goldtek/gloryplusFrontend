@@ -12,9 +12,8 @@ class ServiceSection extends Component {
                   <i className="fa fa-fire"></i>Our Values
                 </h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non, <br /> sunt in culpa
-                  qui officia dese mollit anim id est laborum. Sed ut
-                  perspiciatis unde omnis iste.
+                  To raise leaders who will serve as model to nations, <br />{" "}
+                  Showcasing the glory of God in everything area of our lives.
                 </p>
                 <a href="/" className="s-readmore">
                   Readmore <i className="fa fa-angle-double-right"></i>
@@ -27,9 +26,8 @@ class ServiceSection extends Component {
                   <i className="fa fa-eye"></i>Our Vision
                 </h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non, <br /> sunt in culpa
-                  qui officia dese mollit anim id est laborum. Sed ut
-                  perspiciatis unde omnis iste.
+                  Establish churches for spiritual growth, <br /> plant schools
+                  for intellectual development. Raising of leaders.
                 </p>
                 <a href="/" className="s-readmore">
                   Readmore <i className="fa fa-angle-double-right"></i>
@@ -42,9 +40,8 @@ class ServiceSection extends Component {
                   <i className="fa fa-heart"></i>Our Mission
                 </h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non, <br /> sunt in culpa
-                  qui officia dese mollit anim id est laborum. Sed ut
-                  perspiciatis unde omnis iste.
+                  Demonstrate the love of God, <br /> To spread the knowledge of
+                  the Glory.
                 </p>
                 <a href="/" className="s-readmore">
                   Readmore <i className="fa fa-angle-double-right"></i>
