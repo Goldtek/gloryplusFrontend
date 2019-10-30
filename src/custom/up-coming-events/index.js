@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import EventItem from "../event-item";
 
 class UpcomingEvent extends Component {
   render() {
@@ -19,93 +20,28 @@ class UpcomingEvent extends Component {
             </div>
           </div>
           <div className="event-list">
-            <div className="el-item">
-              <div className="row">
-                <div className="col-md-4">
-                  <div
-                    className="el-thubm set-bg"
-                    data-setbg="img/event/1.jpg"
-                  ></div>
-                </div>
-                <div className="col-md-8">
-                  <div className="el-content">
-                    <div className="el-header">
-                      <div className="el-date">
-                        <h2>20</h2>
-                        may
-                      </div>
-                      <h3>Give To Help Each Child Grow Up Healthy</h3>
-                      <div className="el-metas">
-                        <div className="el-meta">
-                          <i className="fa fa-user"></i> Vincent John
-                        </div>
-                        <div className="el-meta">
-                          <i className="fa fa-calendar"></i> Monday, 08:00 Am{" "}
-                        </div>
-                        <div className="el-meta">
-                          <i className="fa fa-map-marker"></i> Central District,
-                          Riga, LV-1050, Latvia
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      Excepteur sint occaecat cupidatat non proident, sunt in
-                      culpa qui officia deserunt mollit anim id est laborum. Sed
-                      ut perspiciatis unde omnis iste natus error sit voluptatem
-                      accusantium doloremque laudantium, totam rem aperiam,
-                      eaque ipsa quae ab illo inventore veritatis.
-                    </p>
-                    <a href="/" className="site-btn sb-line">
-                      Read more
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="el-item">
-              <div className="row">
-                <div className="col-md-4">
-                  <div
-                    className="el-thubm set-bg"
-                    data-setbg="img/event/2.jpg"
-                  ></div>
-                </div>
-                <div className="col-md-8">
-                  <div className="el-content">
-                    <div className="el-header">
-                      <div className="el-date">
-                        <h2>16</h2>
-                        oct
-                      </div>
-                      <h3>Your Support Helps Kids Survive & Thrive</h3>
-                      <div className="el-metas">
-                        <div className="el-meta">
-                          <i className="fa fa-user"></i> Vincent John
-                        </div>
-                        <div className="el-meta">
-                          <i className="fa fa-calendar"></i> Monday, 08:00 Am{" "}
-                        </div>
-                        <div className="el-meta">
-                          <i className="fa fa-map-marker"></i> Central District,
-                          Riga, LV-1050, Latvia
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      Excepteur sint occaecat cupidatat non proident, sunt in
-                      culpa qui officia deserunt mollit anim id est laborum. Sed
-                      ut perspiciatis unde omnis iste natus error sit voluptatem
-                      accusantium doloremque laudantium, totam rem aperiam,
-                      eaque ipsa quae ab illo inventore veritatis.
-                    </p>
-                    <a href="/" className="site-btn sb-line">
-                      Read more
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <EventItem
+              title="Holy Ghost Morning"
+              imagePath="img/event/1.jpg"
+              description="It will be a time for encounter, at holy ghost morning on thursday, Are you believing 
+              God for a miracle in your health, business, career, marriage, finances etc. This is your appointed time!!! The lead pastor
+              Rev Dubus Achufusi of Gloryplus International Assembly will be LIVE, you can always stream the event live."
+              day="31"
+              month="oct"
+              time="Thursday, 8:00am"
+              location="De Saintago milan Hotel, festac"
+            />
+            <EventItem
+              title="Pacesetting Ladies of GloryPlus"
+              imagePath="img/event/2.jpeg"
+              description="I dare to be different, i dare to be a pace setter, want to be taught, equipped and empowered to become a
+               voice, then you have to be in this meeting, i can assure you that this meeting will be a destiny moulding meeting.
+               God is set to do great things with us, through us and for us. So please, no wooman should plan to miss this meeting. "
+              day="02"
+              month="Nov"
+              time="Saturday, 8:00am"
+              location="GloryPlus International Assembly"
+            />
           </div>
         </div>
       </section>

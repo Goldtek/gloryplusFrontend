@@ -1,17 +1,15 @@
 import React, { Component } from "react";
-import moment from 'moment';
+import moment from "moment";
 
 class BottomNav extends Component {
   state = {
     days: 0,
     hours: 0,
     mins: 0,
-    secs: 0,
+    secs: 0
   };
 
-  componentWillUpdate () {
-
-  }
+  componentWillUpdate() {}
 
   render() {
     const d = moment().day(7).fromNow;
@@ -28,8 +26,9 @@ class BottomNav extends Component {
                 </div>
                 <h3>Fellowship with us</h3>
                 <p>
-                  <i className="fa fa-calendar"></i> 8:00 Am 
-                  <i className="fa fa-map-marker"></i> 18 kudirat Abiola way, Olusosun, Ikeja, Lagos
+                  <i className="fa fa-calendar"></i> 8:00 Am
+                  <i className="fa fa-map-marker"></i> 18 kudirat Abiola way,
+                  Olusosun, Ikeja, Lagos
                 </p>
               </div>
             </div>

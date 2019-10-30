@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../../img/logo.png";
+
 import { Link } from "react-router-dom";
 class Header extends Component {
   render() {
@@ -9,13 +9,13 @@ class Header extends Component {
         <div className="container">
           <Link to="/">
             {" "}
-            <img src={logo} alt="" className="site-logo" />
+            <img src="img/logo2.png" alt="" className="site-logo" />
           </Link>
           {/* <a href="index.html" className="site-logo">
            
           </a> */}
           <a href="/" className="site-btn hidden-xs">
-            send donation
+            member login
           </a>
 
           <div className="nav-switch">
@@ -39,10 +39,10 @@ class Header extends Component {
                 <a href="event.html">Event</a>
               </li>
               <li>
-                <a href="blog.html">blog</a>
+                <a href="blog.html">Cell</a>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <a href="/contact">Contact</a>
               </li>
             </ul>
           </nav>

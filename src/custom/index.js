@@ -12,7 +12,9 @@ import Blog from "./blog";
 import Footer from "./footer";
 import PastorSection from "./pastor-section";
 import PageInfo from "./page-info";
-
+import SermonList from "./sermon-list";
+import Contactus from "./contact";
+import EventItem from "./event-item";
 export {
   Header,
   TopNav,
@@ -27,5 +29,8 @@ export {
   Blog,
   Footer,
   PastorSection,
-  PageInfo
+  PageInfo,
+  SermonList,
+  Contactus,
+  EventItem
 };

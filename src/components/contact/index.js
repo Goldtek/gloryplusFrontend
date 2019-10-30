@@ -3,32 +3,24 @@ import { Helmet } from "react-helmet";
 import {
   Header,
   TopNav,
-  BottomNav,
-  JoinUs,
-  ServiceSection,
-  NewsLetter,
   Footer,
-  PastorSection,
-  Sermon,
+  NewsLetter,
   PageInfo,
-  SermonList
+  Contactus
 } from "../../custom";
 
-class SermonComponent extends Component {
+class ContactUs extends Component {
   render() {
     return (
       <Fragment>
         <Helmet>
-          <title>Sermon</title>
+          <title>Contact Us</title>
           <meta name="description" content="Home " />
         </Helmet>
         <TopNav />
         <Header />
         <PageInfo />
-
-        <Sermon />
-        <BottomNav />
-        <SermonList />
+        <Contactus />
         <NewsLetter />
         <Footer />
       </Fragment>
@@ -36,4 +28,4 @@ class SermonComponent extends Component {
   }
 }
 
-export default SermonComponent;
+export default ContactUs;

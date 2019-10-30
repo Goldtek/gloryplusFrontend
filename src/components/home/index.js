@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Route } from "react-router-dom";
 import About from "../about";
 import SermonComponent from "../sermon";
+import ContactUs from "../contact";
 import {
   Hero,
   Header,
@@ -10,7 +11,6 @@ import {
   BottomNav,
   JoinUs,
   ServiceSection,
-  Sermon,
   UpcomingEvent,
   Donate,
   NewsLetter,
@@ -37,7 +37,6 @@ class Home extends Component {
               <BottomNav />
               <JoinUs />
               <ServiceSection />
-              <Sermon />
               <UpcomingEvent />
               <Donate />
               <Blog />
@@ -49,6 +48,7 @@ class Home extends Component {
 
         <Route path="/about" component={About} />
         <Route path="/sermon" component={SermonComponent} />
+        <Route path="/contact" component={ContactUs} />
       </Fragment>
     );
   }
