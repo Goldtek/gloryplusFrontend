@@ -49,6 +49,7 @@ class Header extends Component {
                 <NavLink activeClassName={"active"} to="/cell">
                   Cell
                 </NavLink>
+              </li>
               <li>
                 <a href="/events">Event</a>
               </li>
