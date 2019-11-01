@@ -95,6 +95,10 @@ ol {
 	text-align: center;
 }
 
+.donate-div{
+	border:2px solid #fff;
+}
+
 .site-btn:hover {
 	color: #fff;
 }
@@ -289,7 +293,27 @@ ol {
 	float: right;
 	padding-top: 10px;
 }
+.user-donate {
+	
+margin-top:5px;
+	padding: 5px 10px;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 2px;
+	background: #dd3e3e;
+	letter-spacing: 1px;
+	text-align: center;
+}
 
+.user-donate a {
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+}
 .user-input a {
 	color: #fff;
 	font-size: 14px;
@@ -347,9 +371,16 @@ ol {
 	color: #dd3e3e;
 }
 
-.main-menu ul li.active a {
+/* .active  {
 	color: #dd3e3e;
-}
+	border: 2px solid red;
+} */
+
+
+.main-menu .nav-pills .active {
+	color: #dd3e3e;
+	font-weight: bolder;
+ }
 
 /*---------------------
 	Hero Section

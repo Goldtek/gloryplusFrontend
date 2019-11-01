@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@kunukn/react-collapse": "^2.2.7",
     "bootstrap": "^3.3.7",
     "moment": "^2.24.0",
     "react": "^16.11.0",
