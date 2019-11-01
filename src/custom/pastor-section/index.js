@@ -10,7 +10,7 @@ export default class PastorSection extends Component {
             <h2>Our Pastors</h2>
           </div>
           <div className="row">
-            <div className="col-sm-6 col-md-3">
+            <div className="col-sm-6 col-md-6">
               <div className="pastor">
                 <div
                   className="pastor-img set-bg"
@@ -18,44 +18,20 @@ export default class PastorSection extends Component {
                     backgroundImage: "url(img/about.jpeg)"
                   }}
                 ></div>
-                <h3>Dubus Achufusi</h3>
-                <p>Rev</p>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-3">
-              <div className="pastor">
-                <div
-                  className="pastor-img set-bg"
-                  style={{
-                    backgroundImage: "url(img/pastors/2.jpg)"
-                  }}
-                ></div>
-                <h3>Billy Graham</h3>
+                <h3>Rev. Dubus Achufusi</h3>
                 <p>Lead Pastor</p>
               </div>
             </div>
-            <div className="col-sm-6 col-md-3">
+            <div className="col-sm-6 col-md-6">
               <div className="pastor">
                 <div
                   className="pastor-img set-bg"
                   style={{
-                    backgroundImage: "url(img/pastors/3.jpg)"
+                    backgroundImage: "url(img/pastors/roseline.jpg)"
                   }}
                 ></div>
-                <h3>Lead Pastor</h3>
-                <p>Pastor</p>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-3">
-              <div className="pastor">
-                <div
-                  className="pastor-img set-bg"
-                  style={{
-                    backgroundImage: "url(img/pastors/4.jpg)"
-                  }}
-                ></div>
-                <h3>Pat Robertson</h3>
-                <p>Protestant Clergy</p>
+                <h3>Roseline Achufusi</h3>
+                <p>Asst. Pastor</p>
               </div>
             </div>
           </div>

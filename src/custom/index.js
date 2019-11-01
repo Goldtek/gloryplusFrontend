@@ -15,6 +15,7 @@ import PageInfo from "./page-info";
 import SermonList from "./sermon-list";
 import Contactus from "./contact";
 import EventItem from "./event-item";
+import NotFound from "./NotFound/NotFound";
 export {
   Header,
   TopNav,
@@ -32,5 +33,6 @@ export {
   PageInfo,
   SermonList,
   Contactus,
-  EventItem
+  EventItem,
+  NotFound
 };

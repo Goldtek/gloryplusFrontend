@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 class Header extends Component {
   render() {
     /**** change the link to that of react based on routing */
@@ -12,8 +12,8 @@ class Header extends Component {
             <img src="img/logo2.png" alt="" className="site-logo" />
           </Link>
           {/* <a href="index.html" className="site-logo">
-           
-          </a> */}
+
+</a> */}
           <a href="/" className="site-btn hidden-xs">
             member login
           </a>
@@ -23,26 +23,43 @@ class Header extends Component {
           </div>
           <nav className="main-menu">
             <ul>
-              <li className="active">
-                <Link to="/">Home</Link>
+              <li className="nav-pills">
+                <NavLink activeClassName={"active"} exact to="/">
+                  Home
+                </NavLink>
+
                 {/* <a href="/">Home</a> */}
               </li>
-              <li>
+              <li className="nav-pills">
                 {/* <a href="/about">About Us</a> */}
-                <Link to="/about">About</Link>
+                <NavLink activeClassName={"active"} to="/about">
+                  About
+                </NavLink>
               </li>
-              <li>
+              <li className="nav-pills">
                 {/* <a href="/sermon">Sermons</a> */}
-                <Link to="/sermon">Sermon</Link>
+                <NavLink activeClassName={"active"} to="/sermon">
+                  Sermon
+                </NavLink>
               </li>
+              <li className="nav-pills">
+                <a href="event.html">Event</a>
+              </li>
+              <li className="nav-pills">
+                <NavLink activeClassName={"active"} to="/cell">
+                  Cell
+                </NavLink>
               <li>
                 <a href="/events">Event</a>
               </li>
               <li>
                 <a href="/groups">Small Groups</a>
               </li>
-              <li>
-                <a href="/contact">Contact</a>
+              <li className="nav-pills">
+                {/* <a href="/sermon">Sermons</a> */}
+                <NavLink activeClassName={"active"} to="/contact">
+                  Contact
+                </NavLink>
               </li>
             </ul>
           </nav>

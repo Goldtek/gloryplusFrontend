@@ -29,7 +29,7 @@ class TopNav extends Component {
                 </a>
               </div>
             </div>
-            <div className="col-sm-6 col-md-7 col-lg-6">
+            <div className="col-sm-6 col-md-7 col-lg-6 ">
               <div className="counter-top">
                 <h5>Upcoming Event:</h5>
                 <div className="counter">
@@ -59,6 +59,12 @@ class TopNav extends Component {
                   </a>
                 </div>
               ) : null}
+
+              <div className="user-donate">
+                <a href="#">
+                  <strong>Donate</strong>
+                </a>
+              </div>
             </div>
           </div>
         </div>

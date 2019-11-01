@@ -9,17 +9,17 @@ import {
   Contactus
 } from "../../custom";
 
-class ContactUs extends Component {
+class Cell extends Component {
   render() {
     return (
       <Fragment>
         <Helmet>
-          <title>Contact Us</title>
-          <meta name="description" content="Contact Us " />
+          <title>Cell</title>
+          <meta name="description" content="Cell" />
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Contact Us" />
+        <PageInfo />
         <Contactus />
         <NewsLetter />
         <Footer />
@@ -28,4 +28,4 @@ class ContactUs extends Component {
   }
 }
 
-export default ContactUs;
+export default Cell;
