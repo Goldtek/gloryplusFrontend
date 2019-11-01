@@ -1,7 +1,15 @@
 import React, { Component } from "react";
-
+import $ from "jquery";
 import { Link, NavLink } from "react-router-dom";
 class Header extends Component {
+  componentDidMount() {
+    $(".nav-switch").on("click", function(event) {
+      console.log("toggle");
+      $(".main-menu").slideToggle(400);
+      event.preventDefault();
+    });
+  }
+
   render() {
     /**** change the link to that of react based on routing */
     return (
@@ -42,18 +50,16 @@ class Header extends Component {
                   Sermon
                 </NavLink>
               </li>
+
               <li className="nav-pills">
-                <a href="event.html">Event</a>
-              </li>
-              <li className="nav-pills">
-                <NavLink activeClassName={"active"} to="/cell">
-                  Cell
+                <NavLink activeClassName="active" to="/events">
+                  Events
                 </NavLink>
-              <li>
-                <a href="/events">Event</a>
               </li>
-              <li>
-                <a href="/groups">Small Groups</a>
+              <li className="nav-pills">
+                <NavLink activeClassName={"active"} to="/group">
+                  Small Groups
+                </NavLink>
               </li>
               <li className="nav-pills">
                 {/* <a href="/sermon">Sermons</a> */}

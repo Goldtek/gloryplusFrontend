@@ -16,6 +16,9 @@ import SermonList from "./sermon-list";
 import Contactus from "./contact";
 import EventItem from "./event-item";
 import NotFound from "./NotFound/NotFound";
+import GroupHeaderInfo from "./group/group-header-info";
+import GroupList from "./group";
+import GroupItem from "./group-item";
 export {
   Header,
   TopNav,
@@ -34,5 +37,8 @@ export {
   SermonList,
   Contactus,
   EventItem,
-  NotFound
+  NotFound,
+  GroupHeaderInfo,
+  GroupItem,
+  GroupList
 };

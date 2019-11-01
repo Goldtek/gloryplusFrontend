@@ -4,23 +4,23 @@ import {
   Header,
   TopNav,
   Footer,
-  NewsLetter,
   PageInfo,
-  Contactus
+  NewsLetter,
+  GroupList
 } from "../../custom";
-
+import "./cell.css";
 class Cell extends Component {
   render() {
     return (
       <Fragment>
         <Helmet>
-          <title>Cell</title>
+          <title>Group</title>
           <meta name="description" content="Cell" />
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo />
-        <Contactus />
+        <PageInfo title="Cell" />
+        <GroupList />
         <NewsLetter />
         <Footer />
       </Fragment>
