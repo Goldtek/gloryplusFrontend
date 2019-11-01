@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-class Sermon extends Component {
-  render() {
-    return (
+const Sermon = ({title, preacher, content, link }) => (
       <section className="sermon-section spad">
         <div className="section-title">
           <span>Experience God's Presence</span>
@@ -18,26 +16,14 @@ class Sermon extends Component {
             <div className="row">
               <div className="col-md-6 col-md-offset-6">
                 <div className="sermon-content">
-                  <h2>Lord Is Sufficient For All Of Our Needs</h2>
+                  <h2>{title}</h2>
                   <ul className="sermon-info">
                     <li>
-                      Sermon From: <span>Vincent John</span>
-                    </li>
-                    <li>
-                      Categories: <span>God, Pray</span>
-                    </li>
-                    <li>
-                      <span>On Monday 23 DEC, 2018</span>
+                      Sermon By: <span>{preacher}</span>
                     </li>
                   </ul>
                   <p>
-                    For God did not send his Son into the world to condemn the
-                    world, but to save the world through him.
-                  </p>
-                  <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia dese mollit anim id est laborum. Sed ut
-                    perspiciatis unde omnis iste.
+                    {content}
                   </p>
                   <div className="icon-links">
                     <a href="/">
@@ -60,7 +46,5 @@ class Sermon extends Component {
         </div>
       </section>
     );
-  }
-}
 
 export default Sermon;

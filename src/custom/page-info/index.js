@@ -1,21 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class PageInfo extends Component {
-  render() {
-    return (
-      <section className="page-info-section set-bg" data-setbg="img/bg.jpg">
+const PageInfo = ({ title }) => (
+      <section className="page-info-section set-bg" style={{ backgroundImage: "url(img/bg.jpg)"  }}>
         <div className="page-info-content">
           <div className="pi-inner">
             <div className="container">
-              <h2>About Us</h2>
+              <h2>{title}</h2>
               <div className="site-breadcrumb">
                 <a href="/">Home</a> <i className="fa fa-angle-right"></i>
-                <span>About Us</span>
+                <span>{title}</span>
               </div>
             </div>
           </div>
         </div>
       </section>
     );
-  }
-}
+
+export default  PageInfo

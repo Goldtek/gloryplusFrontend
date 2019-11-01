@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 
-class SectionCard extends Component {
-  render() {
-    return (
+const SectionCard = ({ title, preacher, time, link }) => (
       <div>
         <div className="col-sm-6 col-md-4">
           <div className="sermon-item">
@@ -13,16 +11,14 @@ class SectionCard extends Component {
               }}
             ></div>
             <div className="si-content">
-              <h4>Perseverance of the Saints</h4>
+              <h4>{title}</h4>
               <ul className="sermon-info">
                 <li>
-                  Sermon From: <span>Vincent John</span>
+                  Sermon By: <span>{preacher}</span>
                 </li>
+             
                 <li>
-                  Categories: <span>God, Pray</span>
-                </li>
-                <li>
-                  <span>On Monday 23 DEC, 2018</span>
+                  <span>On {time}</span>
                 </li>
               </ul>
               <div className="icon-links">
@@ -44,7 +40,6 @@ class SectionCard extends Component {
         </div>
       </div>
     );
-  }
-}
+
 
 export default SectionCard;

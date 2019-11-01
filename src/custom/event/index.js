@@ -13,7 +13,6 @@ class BottomNav extends Component {
 
   render() {
     const d = moment().day(7).fromNow;
-    console.log("------", d);
     return (
       <section className="event-section">
         <div className="container">

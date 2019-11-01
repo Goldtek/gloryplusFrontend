@@ -10,9 +10,9 @@ class SermonList extends Component {
             <h2>Popular Sermons</h2>
           </div>
           <div className="row">
-            <SectionCard />
-            <SectionCard />
-            <SectionCard />
+            <SectionCard title="" preacher="" time="" />
+            <SectionCard title="" preacher="" time="" />
+            <SectionCard title="The Kingdom of God" preacher="Rev Dubus Achufusi" time="Monday, 25 OCT, 2019" />
           </div>
 
           <div className="pagination-area">
@@ -20,19 +20,14 @@ class SermonList extends Component {
               <li>
                 <a href="#">1</a>
               </li>
-              <li>
-                <a href="#">2</a>
-              </li>
-              <li>
-                <a href="#">3</a>
-              </li>
+             
               <li>
                 <a href="#">
                   Next <i className="fa fa-angle-double-right"></i>
                 </a>
               </li>
             </ul>
-            <p>Page 1 of 08 results</p>
+            <p>Page 1 of 1 results</p>
           </div>
         </div>
       </section>
