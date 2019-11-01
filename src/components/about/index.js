@@ -26,7 +26,7 @@ class About extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo />
+        <PageInfo title="About Us" />
         <JoinUs />
         <ServiceSection />
         <BottomNav />

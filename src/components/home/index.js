@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import About from "../about";
 import SermonComponent from "../sermon";
 import ContactUs from "../contact";
+import Events from '../event';
 import {
   Hero,
   Header,
@@ -48,6 +49,7 @@ class Home extends Component {
 
         <Route path="/about" component={About} />
         <Route path="/sermon" component={SermonComponent} />
+        <Route path="/events" component={Events} />
         <Route path="/contact" component={ContactUs} />
       </Fragment>
     );

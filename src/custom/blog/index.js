@@ -10,31 +10,7 @@ class Blog extends Component {
             <h2>LATEST NEWS</h2>
           </div>
           <div className="row">
-            <div className="col-sm-6 col-md-4">
-              <div className="blog-item">
-                <div
-                  className="bi-thumb set-bg"
-                  style={{
-                    backgroundImage: "url(img/blog/1.jpg)"
-                  }}
-                ></div>
-                <div className="bi-content">
-                  <div className="date">On Monday 13 May, 2018</div>
-                  <h4>
-                    <a href="single-blog.html">
-                      Give To End Childhood illnesses
-                    </a>
-                  </h4>
-                  <div className="bi-author">
-                    by <a href="/">Sofia Joelsson</a>
-                  </div>
-                  <a href="/" className="bi-cata">
-                    Hope & Faithful
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-4">
+           <div className="col-sm-6 col-md-4">
               <div className="blog-item">
                 <div
                   className="bi-thumb set-bg"

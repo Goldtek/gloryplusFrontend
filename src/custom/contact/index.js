@@ -13,13 +13,13 @@ class Contactus extends Component {
                 <div className="section-title title-left">
                   <h2>Contact Us</h2>
                 </div>
-                <h3>New York, USA</h3>
-                <p>207 Park Avenue New York, NY 90210</p>
+                <h3>Lagos, Nigeria</h3>
+                <p>18 kudirat Abiola way, Oregun, ikeja, Lagos, 100001 Lagos, Nigeria</p>
                 <p>
-                  <span>Email:</span> info@colorlib.com
+                  <span>Email:</span> info@gloryplusinternational.com
                 </p>
                 <h4>Phone:</h4>
-                <h5>+1 (409) 987–4567</h5>
+                <h5>+234 (812) 911–9588</h5>
               </div>
               <div className="col-md-6">
                 <div className="section-title title-left">

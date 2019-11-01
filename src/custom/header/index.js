@@ -36,10 +36,10 @@ class Header extends Component {
                 <Link to="/sermon">Sermon</Link>
               </li>
               <li>
-                <a href="event.html">Event</a>
+                <a href="/events">Event</a>
               </li>
               <li>
-                <a href="blog.html">Cell</a>
+                <a href="/groups">Small Groups</a>
               </li>
               <li>
                 <a href="/contact">Contact</a>

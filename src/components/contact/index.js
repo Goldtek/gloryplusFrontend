@@ -19,7 +19,7 @@ class ContactUs extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo />
+        <PageInfo title="Contact Us" />
         <Contactus />
         <NewsLetter />
         <Footer />
