@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Countdown from "../countdown";
 
 class TopNav extends Component {
   render() {
@@ -32,20 +33,7 @@ class TopNav extends Component {
             <div className="col-sm-6 col-md-7 col-lg-6 ">
               <div className="counter-top">
                 <h5>Upcoming Event:</h5>
-                <div className="counter">
-                  <div className="counter-item">
-                    <h4>10</h4>Days
-                  </div>
-                  <div className="counter-item">
-                    <h4>08</h4>hours
-                  </div>
-                  <div className="counter-item">
-                    <h4>40</h4>Mins
-                  </div>
-                  <div className="counter-item">
-                    <h4>56</h4>secs
-                  </div>
-                </div>
+                <Countdown timeTillDate="11 07 2019, 8:00 am" timeFormat="MM DD YYYY, h:mm a" />
                 <a href="#" className="top-readmore hidden-sm">
                   readmore
                 </a>

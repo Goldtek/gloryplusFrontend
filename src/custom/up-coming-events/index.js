@@ -23,9 +23,9 @@ class UpcomingEvent extends Component {
             <EventItem
               title="Holy Ghost Morning"
               imagePath="img/event/1.jpg"
-              description="It will be a time for encounter, at holy ghost morning on thursday, Are you believing 
+              description="It will be a time for an encounter at holy ghost morning on thursday, Are you believing 
               God for a miracle in your health, business, career, marriage, finances etc. This is your appointed time!!! The lead pastor
-              Rev Dubus Achufusi of Gloryplus International Assembly will be LIVE, you can always stream the event live."
+              of Gloryplus International Assembly Rev Dubus Achufusi will be LIVE, you can always stream the event live."
               day="31"
               month="oct"
               time="Thursday, 8:00am"
