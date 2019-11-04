@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
 import { NavLink } from "react-router-dom";
-=======
 import Countdown from "../countdown";
 
->>>>>>> implement countdown-timer
 class TopNav extends Component {
   render() {
     this.state = {
@@ -45,39 +42,10 @@ class TopNav extends Component {
             <div className="col-sm-6 col-md-7 col-lg-6 ">
               <div className="counter-top">
                 <h5>Upcoming Event:</h5>
-<<<<<<< HEAD
-                <div className="counter">
-                  <div className="counter-item">
-                    <h4>10</h4>Days
-                  </div>
-                  <div className="counter-item">
-                    <h4>08</h4>hours
-                  </div>
-                  <div className="counter-item">
-                    <h4>40</h4>Mins
-                  </div>
-                  <div className="counter-item">
-                    <h4>56</h4>secs
-                  </div>
-                </div>
-
-                <div className="user-input">
-                  {this.state.liveStream ? (
-                    <a href="#" className="top-live">
-                      Live
-                    </a>
-                  ) : (
-                    <a href="#" className="top-readmore hidden-sm">
-                      readmore
-                    </a>
-                  )}
-                </div>
-=======
                 <Countdown timeTillDate="11 07 2019, 8:00 am" timeFormat="MM DD YYYY, h:mm a" />
                 <a href="#" className="top-readmore hidden-sm">
                   readmore
                 </a>
->>>>>>> implement countdown-timer
               </div>
             </div>
             <div className="col-sm-3 col-md-2 col-lg-3">
