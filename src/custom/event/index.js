@@ -24,7 +24,7 @@ class BottomNav extends Component {
             <div className="col-md-5 col-lg-6">
               <div className="event-info">
                 <div className="event-date">
-                  <h2>03</h2>
+                  <h2>10</h2>
                   November
                 </div>
                 <h3>Fellowship with us</h3>

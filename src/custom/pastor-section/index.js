@@ -30,8 +30,8 @@ export default class PastorSection extends Component {
                     backgroundImage: "url(img/pastors/roseline.jpg)"
                   }}
                 ></div>
-                <h3>Roseline Achufusi</h3>
-                <p>Asst. Pastor</p>
+                <h3>Pastor Roseline Achufusi</h3>
+                <p>Assistant Pastor</p>
               </div>
             </div>
           </div>

@@ -8,18 +8,18 @@ import {
   NewsLetter,
   GroupList
 } from "../../custom";
-import "./cell.css";
-class Cell extends Component {
+import "./group.css";
+class HomeChurch extends Component {
   render() {
     return (
       <Fragment>
         <Helmet>
           <title>Group</title>
-          <meta name="description" content="Cell" />
+          <meta name="description" content="home church" />
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Cell" />
+        <PageInfo title="Home Church" bgPicture="url(img/homecell.jpg)" />
         <GroupList />
         <NewsLetter />
         <Footer />
@@ -28,4 +28,4 @@ class Cell extends Component {
   }
 }
 
-export default Cell;
+export default HomeChurch;

@@ -19,6 +19,12 @@ import NotFound from "./NotFound/NotFound";
 import GroupHeaderInfo from "./group/group-header-info";
 import GroupList from "./group";
 import GroupItem from "./group-item";
+import DonateItem from "./donate-item";
+import MemberLogin from "./member-login";
+import MembeRegister from "./member-register";
+import LiveStream from "./livestream";
+import Donation from "./donation-item";
+import EventDetail from "./event-detail";
 export {
   Header,
   TopNav,
@@ -40,5 +46,11 @@ export {
   NotFound,
   GroupHeaderInfo,
   GroupItem,
-  GroupList
+  GroupList,
+  DonateItem,
+  MemberLogin,
+  MembeRegister,
+  LiveStream,
+  Donation,
+  EventDetail
 };

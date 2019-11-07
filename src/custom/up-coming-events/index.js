@@ -34,9 +34,9 @@ class UpcomingEvent extends Component {
             <EventItem
               title="Pacesetting Ladies of GloryPlus"
               imagePath="img/event/2.jpeg"
-              description="I dare to be different, i dare to be a pace setter, want to be taught, equipped and empowered to become a
-               voice, then you have to be in this meeting, i can assure you that this meeting will be a destiny moulding meeting.
-               God is set to do great things with us, through us and for us. So please, no wooman should plan to miss this meeting. "
+              description="I dare to be different, i dare to be a pacesetter, equipped and empowered to become a
+              voice, then you have to be in this meeting, i can assure you that this meeting will be a destiny moulding meeting.
+              God is set to do great things with us, through us and for us. So please, all women , plan to attend."
               day="02"
               month="Nov"
               time="Saturday, 8:00am"

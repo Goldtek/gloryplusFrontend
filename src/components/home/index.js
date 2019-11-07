@@ -6,6 +6,12 @@ import SermonComponent from "../sermon";
 import ContactUs from "../contact";
 import Group from "../group";
 import Events from "../event";
+import DonateComponent from "../donate";
+import DonationComponent from "../donation";
+import Login from "../login";
+import Register from "../register";
+import LiveStreaming from "../livestream";
+import Event_Details from "../event-detail";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Hero,
@@ -56,6 +62,12 @@ class Home extends Component {
           <Route path="/contact" component={ContactUs} />
           <Route path="/group" component={Group} />
           <Route path="/events" component={Events} />
+          <Route path="/donate" component={DonateComponent} />
+          <Route path="/donation" component={DonationComponent} />
+          <Route path="/event:id" component={Event_Details} />
+          <Route path="/live" component={LiveStreaming} />
+          <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
           <Route component={NotFound} />
         </Switch>
       </Fragment>

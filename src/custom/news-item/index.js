@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-
+import React from "react";
 
 const NewsItem = ({ imagePath, time, title }) => (
-    <div className="col-sm-6 col-md-4">
+  <div className="col-sm-6 col-md-4">
     <div className="blog-item">
       <div
         className="bi-thumb set-bg"
@@ -13,9 +12,7 @@ const NewsItem = ({ imagePath, time, title }) => (
       <div className="bi-content">
         <div className="date">On Monday 13 May, 2018</div>
         <h4>
-          <a href="single-blog.html">
-            Give To End Childhood illnesses
-          </a>
+          <a href="single-blog.html">Give To End Childhood illnesses</a>
         </h4>
       </div>
     </div>

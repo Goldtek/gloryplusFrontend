@@ -26,7 +26,7 @@ class JoinUs extends Component {
                 join us
               </a>
             </div>
-            <div className="col-md-6 about-img col-sm-12">
+            <div className="col-md-6 join-img col-sm-12">
               <img src="img/about.jpeg" alt="" />
             </div>
           </div>

@@ -94,11 +94,28 @@ ol {
 	letter-spacing: 1px;
 	text-align: center;
 }
+.site-login-btn {
+	padding: 14px 23px;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 2px;
+	letter-spacing: 1px;
+	text-align: center;
+	background-color:#5cb85c;border-color:#4cae4c
+}
 
 .donate-div{
 	border:2px solid #fff;
 }
 
+
+.detail-div{
+	margin: 20px 20px;
+}
 .site-btn:hover {
 	color: #fff;
 }
@@ -126,6 +143,147 @@ ol {
 	display: block;
 }
 
+.join-img img{
+
+	transition: box-shadow 0.2s ease-in-out, transform 0.35s ease-in-out;
+	border-radius:7px;
+	border: 1px solid #ccc;
+	background: #fff;
+
+}
+
+.join-img img:hover {
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+	transform: translateY(-2px);
+  }
+
+
+.event-div {
+
+	border-radius: 5px;
+	transition: box-shadow 0.2s ease-in-out, transform 0.35s ease-in-out;
+	border: 1px solid #ccc;
+	background: #fff;
+
+}
+
+.event-div img{
+	border:2px solid red;
+}
+
+.event-div:hover {
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+	transform: translateY(-2px);
+	cursor: pointer;
+  }
+
+  .txt-pad{
+	padding: 10px 0px 10px 5px;
+  }
+
+
+
+/* VIDEO PAGE */
+div.desktop-wrapper {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    height: 0;
+}
+
+div.desktop-wrapper iframe {
+    box-sizing: border-box;
+    background: url(http://img01.deviantart.net/05b6/i/2011/030/8/5/apple_led_cinema_screen_by_fisshy94-d38e3o5.png) center center no-repeat;
+    background-size: contain;
+    padding: 3.4% 10.8% 18.6%;/* 11.9% 15.5% 14.8% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.box {
+    width:80%;
+    height:auto;
+    background:#FFF;
+ 
+}
+
+
+/*==================================================
+ * Effect 2
+ * ===============================================*/
+
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+/* 3rd example :  BACKGROUND IMAGE */
+.header-unit {
+  height: 150px;
+  border: 2px solid #000;
+  border-right:none;
+  border-left: none;
+  position: relative;
+  padding: 20px;
+}
+#video-container {
+	position: absolute;
+}
+#video-container {
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+video {
+	position:absolute;
+	z-index:0;
+}
+video.fillWidth {
+	width: 100%;
+}
+/* VIDEO PAGE */
+
+
+
+
+  /* HOME GROUP LIST CSS */
+  .groupOrder{
+	
+	  width: 85%;
+  }
+  /* HOME GROUP LIST CSS */
 /* Preloder */
 #preloder {
 	position: fixed;
@@ -223,6 +381,17 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center 0;
+
+	
+}
+.set-bg-event {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 0;
+	min-width: 100%;
+	min-height: 38vh;
+
+	
 }
 
 /*---------------------
@@ -288,6 +457,14 @@ ol {
 	top: -9px;
 	position: relative;
 }
+.counter-top .top-live {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 800;
+	color: #f7f8f8;
+	top: -9px;
+	position: relative;
+}
 
 .user-input {
 	float: right;
@@ -295,8 +472,8 @@ ol {
 }
 .user-donate {
 	
-margin-top:5px;
-	padding: 5px 10px;
+margin-top:1px;
+	padding: 2px 5px;
 	display: inline-block;
 	font-size: 14px;
 	font-weight: 700;
@@ -329,6 +506,8 @@ margin-top:5px;
 	float: right;
 	margin-left: 100px;
 }
+
+
 
 .site-logo {
 	display: inline-block;
@@ -522,10 +701,34 @@ margin-top:5px;
 /*---------------------
 	Service Section
 -----------------------*/
+.donation-div{
+	margin-top:100px;
+	margin-bottom: 50px;
+}
+.form-control {
+	border-radius: 0;
+	box-shadow: none;
+	height: 45px;
+  }
+  label {
+	font-weight: normal;
+  }
+ 
+
 .services-section {
 	background: #f6f8f9;
 }
 
+.servicebox {
+	transition: box-shadow .3s;
+	border-radius:2px;
+	padding:5px;
+
+	
+  }
+  .servicebox:hover {
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
 .service-box h4 {
 	margin-bottom: 15px;
 }
@@ -1053,7 +1256,7 @@ margin-top:5px;
 	left: 0;
 	top: 0;
 	background: #000;
-	opacity: 0.65;
+	opacity: 0.55;
 }
 
 .page-info-section .page-info-content {
@@ -1486,6 +1689,7 @@ margin-top:5px;
 
 .contact-form input[type='text'],
 .contact-form input[type='email'],
+.contact-form input[type='password'],
 .contact-form textarea {
 	width: 100%;
 	border: 1px solid #ebebeb;

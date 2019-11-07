@@ -1,15 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
 import {
-  Hero,
   Header,
   TopNav,
   BottomNav,
   JoinUs,
   ServiceSection,
-  Sermon,
-  UpcomingEvent,
-  Donate,
   NewsLetter,
   Footer,
   PastorSection,
@@ -26,7 +22,7 @@ class About extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="About Us" />
+        <PageInfo title="About Us" bgPicture="url(img/aboutus.jpg)" />
         <JoinUs />
         <ServiceSection />
         <BottomNav />

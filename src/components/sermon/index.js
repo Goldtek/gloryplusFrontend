@@ -4,11 +4,8 @@ import {
   Header,
   TopNav,
   BottomNav,
-  JoinUs,
-  ServiceSection,
   NewsLetter,
   Footer,
-  PastorSection,
   Sermon,
   PageInfo,
   SermonList
@@ -20,15 +17,19 @@ class SermonComponent extends Component {
       <Fragment>
         <Helmet>
           <title>Sermon</title>
-          <meta name="description" content="Home " />
+          <meta name="description" content="Sermon " />
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Sermon" />
+        <PageInfo title="Sermon" bgPicture="url(img/bginfo/bge.jpg)" />
 
-        <Sermon title="Doing Big things for God" preacher="Rev Dubus Achufusi" content="The God we serve is big. He created and designed us to do big things.
+        <Sermon
+          title="Doing Big things for God"
+          preacher="Rev Dubus Achufusi"
+          content="The God we serve is big. He created and designed us to do big things.
          His predetermined purpose for creating us was to accomplish great things on earth.God designed you for exploits.
-        Shake yourself off the dust of limitation and begin to do exploits." />
+        Shake yourself off the dust of limitation and begin to do exploits."
+        />
         <BottomNav />
         <SermonList />
         <NewsLetter />

@@ -9,18 +9,18 @@ const EventItem = ({
   time,
   location
 }) => (
-  <div className="el-item">
+  <div className="el-item event-div">
     <div className="row">
-      <div className="col-md-4">
+      <div className="col-md-4 ">
         <div
-          className="el-thubm set-bg"
+          className="el-thubm set-bg-event "
           style={{
             backgroundImage: `url(${imagePath})`
           }}
         ></div>
       </div>
-      <div className="col-md-8">
-        <div className="el-content">
+      <div className="col-md-8 ">
+        <div className="el-content txt-pad">
           <div className="el-header">
             <div className="el-date">
               <h2>{day}</h2>
@@ -37,7 +37,7 @@ const EventItem = ({
             </div>
           </div>
           <p>{description}</p>
-          <a href="/" className="site-btn sb-line">
+          <a href="/" className="btn btn-danger btn-sm">
             Read more
           </a>
         </div>
