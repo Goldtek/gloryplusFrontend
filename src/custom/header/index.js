@@ -23,7 +23,7 @@ class Header extends Component {
           {/* <a href="index.html" className="site-logo">
 
 </a> */}
-          <a href="/donation" className="site-btn hidden-xs">
+          <a href="/donate" className="site-btn hidden-xs">
             Donate
           </a>
 
