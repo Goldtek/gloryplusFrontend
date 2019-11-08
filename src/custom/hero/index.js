@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 class Hero extends Component {
   render() {
     return (
@@ -16,9 +17,9 @@ class Hero extends Component {
               <p>
               A Glorious people, with a Glorious mandate
               </p>
-              <a href="/" className="site-btn sb-wide sb-line">
+              <Link to="/login" className="site-btn sb-wide sb-line">
                 join with us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

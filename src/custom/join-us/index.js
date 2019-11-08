@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class JoinUs extends Component {
   render() {
@@ -22,9 +23,9 @@ class JoinUs extends Component {
                 glory of God, to enable you live the life you were designed to
                 live.
               </p>
-              <a href="/" className="site-btn sb-wide">
+              <Link to="/" className="site-btn sb-wide">
                 join us
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 join-img col-sm-12">
               <img src="img/about.jpeg" alt="" />

@@ -22,7 +22,20 @@ class SermonList extends Component {
               time="Tuesday, 25 OCT, 2019"
               sermonImg="img/sermons/worship.jpg"
             />
+            {/* <SectionCard
+              img="img/sermons/sheep.jpeg"
+              title="In The Mist of Wolves"
+              preacher="Rev Dubus Achufusi"
+              time="Sunday, 28 July, 2019"
+            /> */}
+            {/* <SectionCard
+              img="img/sermons/acc.jpg"
+              title="The Key To Experiencing Divine Accelaration"
+              preacher="Rev Dubus Achufusi"
+              time="Sunday, 18 AUG, 2019"
+            /> */}
             <SectionCard
+              img="img/sermons/kingdom.jpeg"
               title="The Kingdom of God"
               preacher="Rev Dubus Achufusi"
               time="Monday, 25 OCT, 2019"

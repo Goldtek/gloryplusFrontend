@@ -4,7 +4,7 @@ class TopNav extends Component {
   render() {
     this.state = {
       loggedIn: false,
-      liveStream: true
+      liveStream: false
     };
     /**** change the link to that of react based on routing and aplying authentication to it */
 
