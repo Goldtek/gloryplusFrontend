@@ -31,8 +31,8 @@
 }
 
 .gallery_product {
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   padding: 2px;
   object-fit: cover;
 }
