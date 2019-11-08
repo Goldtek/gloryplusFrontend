@@ -25,7 +25,7 @@ class Donate extends Component {
             </div>
             <div className="col-md-6 col-lg-5">
               <div className="donate-card">
-                <a href="/" className="site-btn sb-full">
+                <a href="/donate" className="site-btn sb-full">
                   <b className="fa fa-hand-o"></b> PARTNER WITH US
                 </a>
               </div>

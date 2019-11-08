@@ -25,6 +25,7 @@ import MembeRegister from "./member-register";
 import LiveStream from "./livestream";
 import Donation from "./donation-item";
 import EventDetail from "./event-detail";
+import Gallery from "./gallery";
 export {
   Header,
   TopNav,
@@ -52,5 +53,6 @@ export {
   MembeRegister,
   LiveStream,
   Donation,
-  EventDetail
+  EventDetail,
+  Gallery
 };

@@ -12,6 +12,7 @@ import Login from "../login";
 import Register from "../register";
 import LiveStreaming from "../livestream";
 import Event_Details from "../event-detail";
+import GallaryImg from "../gallery";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Hero,
@@ -68,6 +69,7 @@ class Home extends Component {
           <Route path="/live" component={LiveStreaming} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
+          <Route path="/gallery" component={GallaryImg} />
           <Route component={NotFound} />
         </Switch>
       </Fragment>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import $ from "jquery";
 import { Link, NavLink } from "react-router-dom";
+
 class Header extends Component {
   componentDidMount() {
     $(".nav-switch").on("click", function(event) {
@@ -39,6 +40,45 @@ class Header extends Component {
                 {/* <a href="/">Home</a> */}
               </li>
 
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Ministry <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li className="nav-pills">
+                    <NavLink activeClassName={"active"} to="/group">
+                      Home Church
+                    </NavLink>
+                  </li>
+                  <li className="nav-pills">
+                    <NavLink activeClassName={"active"} to="/group">
+                      Glory Men
+                    </NavLink>
+                  </li>
+                  <li className="nav-pills">
+                    <NavLink activeClassName={"active"} to="/group">
+                      Pacesetters
+                    </NavLink>
+                  </li>
+                  <li className="nav-pills">
+                    <NavLink activeClassName={"active"} to="/gallery">
+                      Gallery
+                    </NavLink>
+                  </li>
+
+                  <li role="separator" class="divider"></li>
+
+                  <li role="separator" class="divider"></li>
+                </ul>
+              </li>
+
               <li className="nav-pills">
                 {/* <a href="/sermon">Sermons</a> */}
                 <NavLink activeClassName={"active"} to="/sermon">
@@ -51,21 +91,12 @@ class Header extends Component {
                   Events
                 </NavLink>
               </li>
-              <li className="nav-pills">
-                <NavLink activeClassName={"active"} to="/group">
-                  Home Church
-                </NavLink>
-              </li>
+
               {/* <li className="nav-pills">
-                <NavLink activeClassName={"active"} to="/live">
-                  LiveStream
-                </NavLink>
-              </li> */}
-              {/* <li className="nav-pills">
-                <NavLink activeClassName={"active"} to="/donate">
-                  Giving
-                </NavLink>
-              </li> */}
+<NavLink activeClassName={"active"} to="/donate">
+Giving
+</NavLink>
+</li> */}
 
               <li className="nav-pills">
                 {/* <a href="/about">About Us</a> */}
@@ -78,6 +109,11 @@ class Header extends Component {
                 {/* <a href="/sermon">Sermons</a> */}
                 <NavLink activeClassName={"active"} to="/contact">
                   Contact
+                </NavLink>
+              </li>
+              <li className="nav-pills">
+                <NavLink activeClassName={"active"} to="/live">
+                  LiveStream
                 </NavLink>
               </li>
             </ul>
