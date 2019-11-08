@@ -28,7 +28,7 @@ const DonateItem = () => {
             </a>
           </div>
           <div className="col-md-6 about-img col-sm-12 join-img">
-            <img src="img/partner.png" alt="" />
+            <img src="img/partner-with-us.png" alt="" />
           </div>
         </div>
       </div>

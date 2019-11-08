@@ -40,7 +40,7 @@ class Header extends Component {
                 {/* <a href="/">Home</a> */}
               </li>
 
-              <li class="dropdown">
+              <li className="dropdown">
                 <a
                   href="#"
                   class="dropdown-toggle"
@@ -49,9 +49,9 @@ class Header extends Component {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Ministry <span class="caret"></span>
+                  Ministry <span className="caret"></span>
                 </a>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li className="nav-pills">
                     <NavLink activeClassName={"active"} to="/group">
                       Home Church
@@ -73,9 +73,9 @@ class Header extends Component {
                     </NavLink>
                   </li>
 
-                  <li role="separator" class="divider"></li>
+                  <li role="separator" className="divider"></li>
 
-                  <li role="separator" class="divider"></li>
+                  <li role="separator" className="divider"></li>
                 </ul>
               </li>
 

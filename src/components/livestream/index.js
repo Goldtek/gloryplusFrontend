@@ -18,7 +18,7 @@ class LiveStreaming extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Live Stream" bgPicture="url(img/donate.jpg)" />
+        <PageInfo title="Live Stream" bgPicture="url(img/live-streaming.jpg)" />
         <LiveStream />
         <NewsLetter />
         <Footer />

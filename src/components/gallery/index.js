@@ -20,7 +20,7 @@ class GallaryImg extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Home Church" bgPicture="url(img/homecell.jpg)" />
+        <PageInfo title="Gallery" bgPicture="url(img/bg.jpg)" />
         <Gallery />
         <NewsLetter />
         <Footer />

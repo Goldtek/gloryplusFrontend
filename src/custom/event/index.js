@@ -15,10 +15,6 @@ class BottomNav extends Component {
     const d = moment().day(7).fromNow;
     return (
       <section className="event-section">
-        <Helmet>
-          <title>Event</title>
-          <meta name="description" content="Home " />
-        </Helmet>
         <div className="container">
           <div className="row">
             <div className="col-md-5 col-lg-6">

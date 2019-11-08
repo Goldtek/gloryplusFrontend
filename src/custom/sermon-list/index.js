@@ -10,12 +10,23 @@ class SermonList extends Component {
             <h2>Popular Sermons</h2>
           </div>
           <div className="row">
-            <SectionCard title="" preacher="" time="" />
-            <SectionCard title="" preacher="" time="" />
+            <SectionCard
+              title="The Blood of Jesus"
+              preacher="Rev Dubus Achufusi"
+              time="Sunday, 20 OCT, 2019"
+              sermonImg="img/sermons/blood.jpg"
+            />
+            <SectionCard
+              title="In his Presence"
+              preacher="Rev Dubus Achufusi"
+              time="Tuesday, 25 OCT, 2019"
+              sermonImg="img/sermons/worship.jpg"
+            />
             <SectionCard
               title="The Kingdom of God"
               preacher="Rev Dubus Achufusi"
               time="Monday, 25 OCT, 2019"
+              sermonImg="img/about.jpeg"
             />
           </div>
 

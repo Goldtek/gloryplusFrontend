@@ -18,7 +18,7 @@ class DonateComponent extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Donate" bgPicture="url(img/donate.jpg)" />
+        <PageInfo title="Donate" bgPicture="url(img/harvest-time.jpg)" />
         <DonateItem />
         <NewsLetter />
         <Footer />
