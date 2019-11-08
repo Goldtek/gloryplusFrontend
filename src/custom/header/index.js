@@ -116,6 +116,11 @@ Giving
                   LiveStream
                 </NavLink>
               </li>
+              <li className="nav-pills hidden-md hidden-lg">
+                <NavLink activeClassName={"active"} to="/login">
+                  Login
+                </NavLink>
+              </li>
             </ul>
           </nav>
         </div>
