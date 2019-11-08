@@ -122,10 +122,6 @@ class BottomNav extends Component {
   render() {
     return (
       <section className="event-section">
-        <Helmet>
-          <title>Event</title>
-          <meta name="description" content="Home " />
-        </Helmet>
         <div className="container">
           <div className="row">
             <div className="col-md-5 col-lg-6">

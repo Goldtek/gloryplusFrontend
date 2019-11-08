@@ -51,7 +51,7 @@ class Header extends Component {
                 >
                   Ministry <span className="caret"></span>
                 </a>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li className="nav-pills">
                     <NavLink activeClassName={"active"} to="/group">
                       Home Church
@@ -73,9 +73,9 @@ class Header extends Component {
                     </NavLink>
                   </li>
 
-                  <li role="separator" class="divider"></li>
+                  <li role="separator" className="divider"></li>
 
-                  <li role="separator" class="divider"></li>
+                  <li role="separator" className="divider"></li>
                 </ul>
               </li>
 
@@ -114,6 +114,11 @@ Giving
               <li className="nav-pills">
                 <NavLink activeClassName={"active"} to="/live">
                   LiveStream
+                </NavLink>
+              </li>
+              <li className="nav-pills hidden-md hidden-lg">
+                <NavLink activeClassName={"active"} to="/login">
+                  Login
                 </NavLink>
               </li>
             </ul>

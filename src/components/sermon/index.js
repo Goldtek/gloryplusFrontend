@@ -21,7 +21,7 @@ class SermonComponent extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Sermon" bgPicture="url(img/bginfo/bge.jpg)" />
+        <PageInfo title="Sermon" bgPicture="url(img/sermon-info.jpg)" />
 
         <Sermon
           title="Doing Big things for God"

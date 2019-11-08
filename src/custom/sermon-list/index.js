@@ -11,18 +11,35 @@ class SermonList extends Component {
           </div>
           <div className="row">
             <SectionCard
-            img="img/sermons/sheep.jpeg" 
-            title="In The Mist of Wolves" 
-            preacher="Rev Dubus Achufusi" time="Sunday, 28 July, 2019" />
+              title="The Blood of Jesus"
+              preacher="Rev Dubus Achufusi"
+              time="Sunday, 20 OCT, 2019"
+              sermonImg="img/sermons/blood.jpg"
+            />
             <SectionCard
-             img="img/sermons/acc.jpg"  
-            title="The Key To Experiencing Divine Accelaration" 
-            preacher="Rev Dubus Achufusi" time="Sunday, 18 AUG, 2019" />
+              title="In his Presence"
+              preacher="Rev Dubus Achufusi"
+              time="Tuesday, 25 OCT, 2019"
+              sermonImg="img/sermons/worship.jpg"
+            />
+            {/* <SectionCard
+              img="img/sermons/sheep.jpeg"
+              title="In The Mist of Wolves"
+              preacher="Rev Dubus Achufusi"
+              time="Sunday, 28 July, 2019"
+            /> */}
+            {/* <SectionCard
+              img="img/sermons/acc.jpg"
+              title="The Key To Experiencing Divine Accelaration"
+              preacher="Rev Dubus Achufusi"
+              time="Sunday, 18 AUG, 2019"
+            /> */}
             <SectionCard
-             img="img/sermons/kingdom.jpeg" 
+              img="img/sermons/kingdom.jpeg"
               title="The Kingdom of God"
               preacher="Rev Dubus Achufusi"
               time="Monday, 25 OCT, 2019"
+              sermonImg="img/about.jpeg"
             />
           </div>
 

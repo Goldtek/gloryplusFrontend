@@ -18,7 +18,7 @@ class About extends Component {
       <Fragment>
         <Helmet>
           <title>About</title>
-          <meta name="description" content="Home " />
+          <meta name="description" content="About " />
         </Helmet>
         <TopNav />
         <Header />

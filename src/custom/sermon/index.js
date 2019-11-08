@@ -10,7 +10,7 @@ const Sermon = ({ title, preacher, content, link }) => (
       <div
         className="sermon-left-bg set-bg"
         style={{
-          backgroundImage: "url(img/wog5.jpg)"
+          backgroundImage: "url(img/sermon-bg.jpg)"
         }}
       ></div>
       <div className="container">

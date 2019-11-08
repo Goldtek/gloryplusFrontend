@@ -78,7 +78,7 @@ class TopNav extends Component {
                   <NavLink
                     activeClassName={"active"}
                     to="/login"
-                    className="btn btn-danger btn-xs"
+                    className="btn btn-danger btn-xs hidden-xs"
                   >
                     Login
                   </NavLink>

@@ -26,6 +26,8 @@ import LiveStream from "./livestream";
 import Donation from "./donation-item";
 import EventDetail from "./event-detail";
 import Gallery from "./gallery";
+import GalleryItem from "./gallery-item";
+import GalleryBtn from "./gallery-btn";
 export {
   Header,
   TopNav,
@@ -54,5 +56,7 @@ export {
   LiveStream,
   Donation,
   EventDetail,
-  Gallery
+  Gallery,
+  GalleryItem,
+  GalleryBtn
 };
