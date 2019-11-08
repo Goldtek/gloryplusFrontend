@@ -23,9 +23,9 @@ class Header extends Component {
           {/* <a href="index.html" className="site-logo">
 
 </a> */}
-          <a href="/donate" className="site-btn hidden-xs">
+          <Link to="/donation" className="site-btn hidden-xs">
             Donate
-          </a>
+          </Link>
 
           <div className="nav-switch">
             <i className="fa fa-bars"></i>
@@ -43,7 +43,7 @@ class Header extends Component {
               <li className="dropdown">
                 <a
                   href="#"
-                  class="dropdown-toggle"
+                  className="dropdown-toggle"
                   data-toggle="dropdown"
                   role="button"
                   aria-haspopup="true"

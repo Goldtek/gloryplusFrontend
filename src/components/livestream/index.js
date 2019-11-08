@@ -13,7 +13,7 @@ class LiveStreaming extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>Live</title>
+          <title>LiveStream</title>
           <meta name="description" content="Live Stream" />
         </Helmet>
         <TopNav />
