@@ -23,9 +23,9 @@ class Header extends Component {
           {/* <a href="index.html" className="site-logo">
 
 </a> */}
-          <a href="/donation" className="site-btn hidden-xs">
+          <Link to="/donation" className="site-btn hidden-xs">
             Donate
-          </a>
+          </Link>
 
           <div className="nav-switch">
             <i className="fa fa-bars"></i>
@@ -40,16 +40,16 @@ class Header extends Component {
                 {/* <a href="/">Home</a> */}
               </li>
 
-              <li class="dropdown">
+              <li className="dropdown">
                 <a
                   href="#"
-                  class="dropdown-toggle"
+                  className="dropdown-toggle"
                   data-toggle="dropdown"
                   role="button"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Ministry <span class="caret"></span>
+                  Ministry <span className="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
                   <li className="nav-pills">
