@@ -16,7 +16,7 @@ class Hero extends Component {
               <p>
               A Glorious people, with a Glorious mandate
               </p>
-              <a href="/" className="site-btn sb-wide sb-line">
+              <a href="/login" className="site-btn sb-wide sb-line">
                 join with us
               </a>
             </div>

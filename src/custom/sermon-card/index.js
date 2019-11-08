@@ -1,13 +1,13 @@
 import React from "react";
 
-const SectionCard = ({ title, preacher, time, link }) => (
+const SectionCard = ({ title, preacher, time, link, img }) => (
   <div>
     <div className="col-sm-6 col-md-4">
       <div className="sermon-item event-div">
         <div
           className="si-thumb set-bg"
           style={{
-            backgroundImage: "url(img/sermons/1.jpg)"
+            backgroundImage: `url(${img})`
           }}
         ></div>
         <div className="si-content">
