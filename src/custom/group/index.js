@@ -14,22 +14,20 @@ class GroupList extends Component {
           </h2>
           {/* <hr className="style-seven" /> */}
           <GroupItem
-            location="Ajah"
+            location="Ikeja"
             checkId="chck1"
             description={
               <div className="container">
                 <ul className="list-group groupOrder">
                   <li className="list-group-item">
                     <b>
-                      Badore:
-                      <br />
                     </b>
                     <address>
                       <p>
-                        <b className="fa fa-user "></b> Elemson Ifeanyi
+                        <b className="fa fa-user "></b> Godspower 
                       </p>
                       <p>
-                      <i className="fa fa-map-marker" aria-hidden="true"></i> No 2 Badore street Ajah
+                      <i className="fa fa-map-marker" aria-hidden="true"></i> No 1 Sodipo close
                       </p>
                       <p>
                         <b className="fa fa-phone"></b> 08067407355
@@ -38,8 +36,6 @@ class GroupList extends Component {
                   </li>
                   <li className="list-group-item">
                     <b>
-                      Lamgbasa:
-                      <br />
                     </b>
                     <address>
                       <p>
@@ -47,7 +43,7 @@ class GroupList extends Component {
                       </p>
                       <p>
                         <i className="fa fa-map-marker" aria-hidden="true"></i>{" "}
-                        No 2 Badore street Ajah
+                        No 2 Zion street 
                       </p>
                       <p>
                         <b className="fa fa-phone"></b> 08066379681
@@ -59,26 +55,44 @@ class GroupList extends Component {
             }
           />
           <GroupItem
-            location="Lekki"
+            location="Ogudu"
             checkId="chck2"
             description={
-              <div class="table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>#</th> <th>Location</th> <th>Address</th>
-                      <th>Contact Person</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="active">1</td>
-                      <td class="success">Lekki Phase I</td>
-                      <td class="warning">1 Admiralty Way Lekki</td>
-                      <td class="danger">Chisom: 08066378961</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="container">
+                <ul className="list-group groupOrder">
+                  <li className="list-group-item">
+                    <b>
+                    </b>
+                    <address>
+                      <p>
+                        <b className="fa fa-user "></b> Stephanie Esiokwu
+                      </p>
+                      <p>
+                      <i className="fa fa-map-marker" aria-hidden="true"></i> No 2 Badore street
+                      </p>
+                      <p>
+                        <b className="fa fa-phone"></b> 08067407355
+                      </p>
+                    </address>
+                  </li>
+                  <li className="list-group-item">
+                    <b>
+            
+                    </b>
+                    <address>
+                      <p>
+                        <b className="fa fa-user "></b>Jennifer Johnson
+                      </p>
+                      <p>
+                        <i className="fa fa-map-marker" aria-hidden="true"></i>{" "}
+                        No 5 palace street 
+                      </p>
+                      <p>
+                        <b className="fa fa-phone"></b> 08066379681
+                      </p>
+                    </address>
+                  </li>
+                </ul>
               </div>
             }
           />
