@@ -3,6 +3,7 @@ import moment from "moment";
 import { Helmet } from "react-helmet";
 
 import { calculateStateFromProps } from '../../lib/util'
+import Countdown from "../countdown";
 class BottomNav extends Component {
   state = {
     days: 0,
@@ -139,20 +140,7 @@ class BottomNav extends Component {
               </div>
             </div>
             <div className="col-md-7 col-lg-6">
-              <div className="counter">
-                <div className="counter-item">
-                  <h4>09</h4>Days
-                </div>
-                <div className="counter-item">
-                  <h4>08</h4>hours
-                </div>
-                <div className="counter-item">
-                  <h4>40</h4>Mins
-                </div>
-                <div className="counter-item">
-                  <h4>56</h4>secs
-                </div>
-              </div>
+            <Countdown timeTillDate="11 10 2019, 8:00 am" timeFormat="MM DD YYYY, h:mm a" />
             </div>
           </div>
         </div>

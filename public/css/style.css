@@ -381,13 +381,14 @@ ol {
 
 .counter-top {
 	text-align: center;
+	display: flex;
 }
 
 .counter-top h5 {
 	display: inline-block;
 	text-transform: uppercase;
 	color: #fff;
-	top: -9px;
+	/* top: -9px; */
 	position: relative;
 }
 
@@ -419,7 +420,7 @@ ol {
 	font-size: 14px;
 	font-weight: 600;
 	color: #dd3e3e;
-	top: -9px;
+	/* top: -9px; */
 	position: relative;
 }
 .counter-top .top-live {
