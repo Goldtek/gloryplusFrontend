@@ -1,3 +1,26 @@
+<<<<<<< HEAD:src/components/group/group.css
+=======
+body {
+  /* padding: 0 1em 1em; */
+}
+h1 {
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+}
+h2 {
+  margin: 0 0 0.5em;
+  font-weight: normal;
+}
+
+.row .col {
+  flex: 1;
+}
+.row .col:last-child {
+  margin-left: 1em;
+}
+/* Accordion styles */
+>>>>>>> add live stream:src/components/group/cell.css
 .tabs {
   border-radius: 8px;
   overflow: hidden;
