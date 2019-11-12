@@ -140,7 +140,7 @@ class BottomNav extends Component {
               </div>
             </div>
             <div className="col-md-7 col-lg-6">
-            <Countdown timeTillDate="11 10 2019, 8:00 am" timeFormat="MM DD YYYY, h:mm a" />
+            <Countdown timeTillDate="11 17 2019, 8:00 am" timeFormat="MM DD YYYY, h:mm a" />
             </div>
           </div>
         </div>

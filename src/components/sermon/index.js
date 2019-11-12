@@ -44,9 +44,9 @@ class SermonComponent extends Component {
                     This event is scheduled for
                   </div>
                   <div className="vp-live-start-time-body">
-                    November 17
+                    November 14
                   </div>
-                  <div className="vp-live-start-time-footer">at 9:00 AM</div>
+                  <div className="vp-live-start-time-footer">at 9:45 AM</div>
                 </div>
                 
               </div>

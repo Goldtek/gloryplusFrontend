@@ -42,7 +42,7 @@ class TopNav extends Component {
             <div className="col-sm-6 col-md-7 col-lg-6 ">
               <div className="counter-top">
                 <h5>Upcoming Event:</h5>
-                <Countdown timeTillDate="11 07 2019, 8:00 am" timeFormat="MM DD YYYY, h:mm a" />
+                <Countdown timeTillDate="11 14 2019, 8:00 am" timeFormat="MM DD YYYY, h:mm a" />
                 <a href="#" className="top-readmore hidden-sm">
                   readmore
                 </a>
