@@ -2,6 +2,32 @@ import React, { Component } from "react";
 import { GroupItem } from "../index";
 class GroupList extends Component {
   render() {
+    const rows = [ 
+      {
+        rowNumber: 1,
+        cellName: 'Kingston',
+        cellAddress: '2 abiola way',
+        contactNumber: '08170675644'
+      },
+      {
+        rowNumber: 2,
+        cellName: 'Grace',
+        cellAddress: '18, kudirat way',
+        contactNumber: '09087677887'
+      },
+      {
+        rowNumber: 3,
+        cellName: 'Admirers',
+        cellAddress: 'okata, lagos',
+        contactNumber: '08056787656'
+      },
+      {
+        rowNumber: 4,
+        cellName: 'Royalty',
+        cellAddress: 'opebi allen',
+        contactNumber: '07032262642'
+      }
+    ]
     return (
       <div
         className=""
@@ -16,85 +42,22 @@ class GroupList extends Component {
           <GroupItem
             location="Ikeja"
             checkId="chck1"
-            description={
-              <div className="container">
-                <ul className="list-group groupOrder">
-                  <li className="list-group-item">
-                    <b>
-                    </b>
-                    <address>
-                      <p>
-                        <b className="fa fa-user "></b> Godspower 
-                      </p>
-                      <p>
-                      <i className="fa fa-map-marker" aria-hidden="true"></i> No 1 Sodipo close
-                      </p>
-                      <p>
-                        <b className="fa fa-phone"></b> 08067407355
-                      </p>
-                    </address>
-                  </li>
-                  <li className="list-group-item">
-                    <b>
-                    </b>
-                    <address>
-                      <p>
-                        <b className="fa fa-user "></b> Chisom Dike
-                      </p>
-                      <p>
-                        <i className="fa fa-map-marker" aria-hidden="true"></i>{" "}
-                        No 2 Zion street 
-                      </p>
-                      <p>
-                        <b className="fa fa-phone"></b> 08066379681
-                      </p>
-                    </address>
-                  </li>
-                </ul>
-              </div>
-            }
+            details={rows}
           />
           <GroupItem
             location="Ogudu"
             checkId="chck2"
-            description={
-              <div className="container">
-                <ul className="list-group groupOrder">
-                  <li className="list-group-item">
-                    <b>
-                    </b>
-                    <address>
-                      <p>
-                        <b className="fa fa-user "></b> Stephanie Esiokwu
-                      </p>
-                      <p>
-                      <i className="fa fa-map-marker" aria-hidden="true"></i> No 2 Badore street
-                      </p>
-                      <p>
-                        <b className="fa fa-phone"></b> 08067407355
-                      </p>
-                    </address>
-                  </li>
-                  <li className="list-group-item">
-                    <b>
-            
-                    </b>
-                    <address>
-                      <p>
-                        <b className="fa fa-user "></b>Jennifer Johnson
-                      </p>
-                      <p>
-                        <i className="fa fa-map-marker" aria-hidden="true"></i>{" "}
-                        No 5 palace street 
-                      </p>
-                      <p>
-                        <b className="fa fa-phone"></b> 08066379681
-                      </p>
-                    </address>
-                  </li>
-                </ul>
-              </div>
-            }
+            details={rows}
+          />
+          <GroupItem
+            location="Ikeja"
+            checkId="chck3"
+            details={rows}
+          />
+          <GroupItem
+            location="Festac"
+            checkId="chck4"
+            details={rows}
           />
         </div>
         <div className="col-md-2"></div>

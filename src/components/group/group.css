@@ -16,6 +16,8 @@
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
+  /* border: 2px solid;
+  border-radius: 3px; */
   /* Icon */
 }
 .cell-div {
