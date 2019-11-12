@@ -2184,4 +2184,34 @@ margin-top:1px;
 	}
 }
 
+/* 
+live stream 
+ */
 
+ .vp-text-alert-wrapper {
+    background-image: linear-gradient(to bottom,rgba(20,21,22,.3),#141516);
+    cursor: default;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.vp-alert-text,.vp-text-alert-wrapper .vp-alert-time {
+    margin-top: 15%;
+    position: relative;
+    width: 100%;
+}
+
+.hidden, .player .only-in-fullscreen {
+    display: none!important;
+}
+
+.vp-text-alert-wrapper .vp-alert-time .vp-live-start-time-title {
+    margin-bottom: 9px;
+}
+
+.vp-text-alert-wrapper .vp-alert-time .vp-live-start-time-body {
+    font-weight: 400;
+    font-size: 3.2em;
+}
