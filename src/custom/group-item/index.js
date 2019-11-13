@@ -2,42 +2,45 @@ import React from "react";
 
 const GroupItem = props => {
   return (
-    <div className="tabs">
-      <div className="tab">
-        <input
-          type="checkbox"
-          id={props.grpId}
-          className="groupInput"
-          style={{ position: "absolute", opacity: "0", zIndex: "-1" }}
-        />
-        <label className="tab-label" htmlFor={props.grpId}>
-          {props.grp_Location}
-        </label>
-        <div className="tab-content">
-          <div className="container">
-            <ul className="list-group groupOrder">
+    <div className="container panelDiv">
+      <div id="accordion" className="panel-group">
+        <div className="panel">
+          <div className="panel-heading">
+            <h4 className="panel-title">
+              <a
+                href={`#${props.grpId}`}
+                className="accordion-toggle"
+                data-toggle="collapse"
+                data-parent="#accordion"
+              >
+                {props.grp_Location}
+              </a>
+            </h4>
+          </div>
+          <div id={`${props.grpId}`} className="panel-collapse collapse in">
+            <div className="panel-body">
               {props.location_Details.map(({ id, ...items }) => (
-                <li className="list-group-item" key={id}>
-                  <b></b>
-                  <address>
-                    <p>
-                      <b className="fa fa-user "></b>
-                      &nbsp;
-                      {items.leader}
-                    </p>
-                    <p>
-                      <i className="fa fa-map-marker" aria-hidden="true"></i>
-                      {items.address}
-                    </p>
-                    <p>
-                      <b className="fa fa-phone"></b>
-                      &nbsp;
-                      {items.phone}
-                    </p>
-                  </address>
-                </li>
+                <div class="row" key={id}>
+                  <div class="col-12 col-md-12 col-lg-12 ol-sm-12">
+                    <h6 class="text-muted">Cordinators Details</h6>
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <i class="fa fa-male text-info mx-2"></i>
+                        &nbsp; <b>Name:</b> {items.leader}
+                      </li>
+                      <li class="list-group-item">
+                        <i class="fa fa-map-marker text-info mx-2"></i>{" "}
+                        <b>Address:</b> &nbsp;{items.address}
+                      </li>
+                      <li class="list-group-item">
+                        <i class="fa fa-phone text-info mx-2"></i> <b>Phone:</b>{" "}
+                        &nbsp;{items.phone}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>

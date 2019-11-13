@@ -1,84 +1,51 @@
-.tabs {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-}
-.tab {
-  width: 100%;
-  overflow: hidden;
-
-  margin-top: 10px;
-}
-.tab-label {
-  display: flex;
-  justify-content: space-between;
-  padding: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  text-transform: uppercase;
-  /* Icon */
-}
-.cell-div {
-  margin: 0px 0px 20px 0;
+.panelDiv {
+  margin-top: 20px;
 }
 
-.tab-label::after {
-  content: "\276F";
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  transition: all 0.35s;
+#accordion .panel {
+  border-radius: 0;
+  border: 0;
+  margin-top: 0px;
 }
-.tab-content {
-  max-height: 0;
-  padding: 0 1em;
-  color: #2c3e50;
-  background: white;
-  transition: all 0.35s;
+#accordion a {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #b42b2b;
+  text-decoration: none;
 }
-.tab-close {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em;
-  font-size: 0.75em;
-  background: #2c3e50;
-  cursor: pointer;
+#accordion .panel-heading a.collapsed:hover,
+#accordion .panel-heading a.collapsed:focus {
+  background-color: #b42b2b;
+  color: white;
+  transition: all 0.2s ease-in;
 }
-.tab-close:hover {
-  background: #dd3e3e;
+#accordion .panel-heading a.collapsed:hover::before,
+#accordion .panel-heading a.collapsed:focus::before {
+  color: white;
 }
-input:checked + .tab-label {
-  background: #dd3e3e;
-}
-input:checked + .tab-label::after {
-  transform: rotate(90deg);
-}
-input:checked ~ .tab-content {
-  max-height: 100vh;
-  padding: 1em;
-}
-
-.cell-header-text {
-  padding: 5px;
-  margin: 10px 0px 20px 0;
-}
-
-/* HR STYLE */
-hr.style-seven {
-  overflow: visible; /* For IE */
+#accordion .panel-heading {
   padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
+  border-radius: 0px;
   text-align: center;
 }
-hr.style-seven:after {
-  content: "§";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.5em;
-  padding: 0 0.25em;
-  background: white;
+#accordion .panel-heading a:not(.collapsed) {
+  color: white;
+  background-color: #b42b2b;
+  transition: all 0.2s ease-in;
 }
-/* HR STYLE */
+
+/* Add Indicator fontawesome icon to the left */
+#accordion .panel-heading .accordion-toggle::before {
+  font-family: "FontAwesome";
+  content: "\f00d";
+  float: left;
+  color: white;
+  font-weight: lighter;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in;
+}
+#accordion .panel-heading .accordion-toggle.collapsed::before {
+  color: #444;
+  transform: rotate(-135deg);
+  transition: all 0.2s ease-in;
+}
