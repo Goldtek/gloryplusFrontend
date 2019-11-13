@@ -13,7 +13,7 @@ class Event_Details extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>Login</title>
+          <title>Event</title>
           <meta name="description" content="Live Stream" />
         </Helmet>
         <TopNav />

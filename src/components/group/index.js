@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
+import axios from "axios";
 import {
   Header,
   TopNav,
@@ -10,7 +11,22 @@ import {
 } from "../../custom";
 import "./group.css";
 class HomeChurch extends Component {
+  state = {
+    groupInfo: []
+  };
+
+  componentDidMount() {
+    axios
+      .get("./db/groupData.json")
+      .then(({ data: groupInfo }) => {
+        this.setState({ groupInfo });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
   render() {
+    const { groupInfo } = this.state;
     return (
       <Fragment>
         <Helmet>
@@ -20,7 +36,7 @@ class HomeChurch extends Component {
         <TopNav />
         <Header />
         <PageInfo title="Home Church" bgPicture="url(img/homecell.jpg)" />
-        <GroupList />
+        <GroupList homechurchInfo={groupInfo} />
         <NewsLetter />
         <Footer />
       </Fragment>

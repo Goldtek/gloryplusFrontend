@@ -25,3 +25,29 @@ code {
 .login-div {
   margin: 40px 0px 50px 0px;
 }
+
+/* play button */
+/* .video-thumbnail {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 30px;
+} */
+.video-thumbnail:before {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  content: "\f01d";
+  font-family: FontAwesome;
+  font-size: 100px;
+  color: #fff;
+  opacity: 0.8;
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+.video-thumbnail:hover:before {
+  color: #eee;
+}
+
+/* play button */

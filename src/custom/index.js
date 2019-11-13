@@ -16,7 +16,6 @@ import SermonList from "./sermon-list";
 import Contactus from "./contact";
 import EventItem from "./event-item";
 import NotFound from "./NotFound/NotFound";
-import GroupHeaderInfo from "./group/group-header-info";
 import GroupList from "./group";
 import GroupItem from "./group-item";
 import DonateItem from "./donate-item";
@@ -25,9 +24,9 @@ import MembeRegister from "./member-register";
 import LiveStream from "./livestream";
 import Donation from "./donation-item";
 import EventDetail from "./event-detail";
-import Gallery from "./gallery";
-import GalleryItem from "./gallery-item";
-import GalleryBtn from "./gallery-btn";
+import Galleries from "./galleries";
+import SingleGallery from "./gallery/index";
+
 export {
   Header,
   TopNav,
@@ -47,7 +46,6 @@ export {
   Contactus,
   EventItem,
   NotFound,
-  GroupHeaderInfo,
   GroupItem,
   GroupList,
   DonateItem,
@@ -56,7 +54,6 @@ export {
   LiveStream,
   Donation,
   EventDetail,
-  Gallery,
-  GalleryItem,
-  GalleryBtn
+  Galleries,
+  SingleGallery
 };

@@ -6,9 +6,9 @@ const Sermon = ({ title, preacher, content, link }) => (
       <span>Experience God's Presence</span>
       <h2>Sermon Today</h2>
     </div>
-    <div className="sermon-warp">
+    <div className="sermon-warp ">
       <div
-        className="sermon-left-bg set-bg"
+        className="sermon-left-bg set-bg video-thumbnail"
         style={{
           backgroundImage: "url(img/sermon-bg.jpg)"
         }}

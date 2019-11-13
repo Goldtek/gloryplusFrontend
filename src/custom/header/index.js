@@ -68,7 +68,7 @@ class Header extends Component {
                     </NavLink>
                   </li>
                   <li className="nav-pills">
-                    <NavLink activeClassName={"active"} to="/gallery">
+                    <NavLink activeClassName={"active"} to="/galleries">
                       Gallery
                     </NavLink>
                   </li>
