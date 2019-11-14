@@ -1,14 +1,13 @@
 import React from "react";
-
 const Sermon = ({ title, preacher, content, link }) => (
   <section className="sermon-section spad">
     <div className="section-title">
-      <span>Experience God's Presence</span>
-      <h2>Sermon Today</h2>
+      {/* <span>Experience God's Presence</span> */}
+      <h2>Latest Sermon</h2>
     </div>
-    <div className="sermon-warp ">
+    <div className="sermon-warp">
       <div
-        className="sermon-left-bg set-bg video-thumbnail"
+        className="sermon-left-bg set-bg"
         style={{
           backgroundImage: "url(img/sermon-bg.jpg)"
         }}
@@ -43,6 +42,8 @@ const Sermon = ({ title, preacher, content, link }) => (
         </div>
       </div>
     </div>
+    {/* </div> */}
+    {/* // </div> */}
   </section>
 );
 

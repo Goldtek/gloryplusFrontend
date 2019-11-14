@@ -57,21 +57,21 @@ class Header extends Component {
                       Home Church
                     </NavLink>
                   </li>
-                  <li className="nav-pills">
-                    <NavLink activeClassName={"active"} to="/group">
+                  {/* <li className="nav-pills">
+                    <NavLink activeClassName={"active"} to="">
                       Glory Men
                     </NavLink>
                   </li>
                   <li className="nav-pills">
-                    <NavLink activeClassName={"active"} to="/group">
+                    <NavLink activeClassName={"active"} to="">
                       Pacesetters
                     </NavLink>
-                  </li>
-                  <li className="nav-pills">
+                  </li> */}
+                  {/* <li className="nav-pills">
                     <NavLink activeClassName={"active"} to="/galleries">
                       Gallery
                     </NavLink>
-                  </li>
+                  </li> */}
 
                   <li role="separator" className="divider"></li>
 
@@ -112,8 +112,8 @@ Giving
                 </NavLink>
               </li>
               <li className="nav-pills">
-                <NavLink activeClassName={"active"} to="/live">
-                  LiveStream
+                <NavLink activeClassName={"active"} to="/galleries">
+                  Gallery
                 </NavLink>
               </li>
               <li className="nav-pills hidden-md hidden-lg">

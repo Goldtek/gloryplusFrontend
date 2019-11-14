@@ -20,6 +20,9 @@ class Hero extends Component {
               <Link to="/login" className="site-btn sb-wide sb-line">
                 join with us
               </Link>
+              <a href="/sermon" className="site-btn sb-wide sb-line">
+                Live Stream
+              </a>
             </div>
           </div>
         </div>

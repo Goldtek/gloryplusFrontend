@@ -10,7 +10,6 @@ import {
   PageInfo,
   SermonList
 } from "../../custom";
-
 class SermonComponent extends Component {
   render() {
     return (
@@ -22,15 +21,14 @@ class SermonComponent extends Component {
         <TopNav />
         <Header />
         <PageInfo title="Sermon" bgPicture="url(img/sermon-info.jpg)" />
-
         <Sermon
           title="Doing Big things for God"
           preacher="Rev Dubus Achufusi"
           content="The God we serve is big. He created and designed us to do big things.
-         His predetermined purpose for creating us was to accomplish great things on earth.God designed you for exploits.
-        Shake yourself off the dust of limitation and begin to do exploits."
+His predetermined purpose for creating us was to accomplish great things on earth.God designed you for exploits.
+Shake yourself off the dust of limitation and begin to do exploits."
         />
-        <BottomNav />
+        <hr />
         <SermonList />
         <NewsLetter />
         <Footer />
