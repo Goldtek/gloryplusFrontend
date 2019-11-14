@@ -5,9 +5,9 @@
 
 .gallery-div {
   margin-top: 20px;
-  margin-bottom: 20px;
-  /* border: 2px solid red; */
-  min-height: 50vh;
+  margin-bottom: 10px;
+  /* border: 2px solid red;
+  min-height: 10vh; */
 }
 .gallery-div h4 {
   margin-top: 5px;

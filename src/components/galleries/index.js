@@ -9,6 +9,7 @@ import {
   PageInfo,
   NewsLetter,
   Galleries
+  // Space
 } from "../../custom";
 class Gallery extends Component {
   state = { galleryData: [] };
@@ -34,7 +35,10 @@ class Gallery extends Component {
         <TopNav />
         <Header />
         <PageInfo title="Gallery" bgPicture="url(img/bg.jpg)" />
-        <Galleries galleries={galleryData} />
+        <div style={{ minHeight: "25vh" }}>
+          <Galleries galleries={galleryData} />
+        </div>
+        {/* <Space /> */}
         <NewsLetter />
         <Footer />
       </Fragment>

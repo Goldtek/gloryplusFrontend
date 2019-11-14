@@ -54,10 +54,11 @@ class Gallery extends Component {
         <TopNav />
         <Header />
         <PageInfo title="Gallery" bgPicture="url(img/bg.jpg)" />
-        {filteredGallery.map(({ galleryId, ...otherfilters }) => (
-          <SingleGallery key={galleryId} {...otherfilters} name={pathID} />
-        ))}
-
+        <div style={{ minHeight: "25vh" }}>
+          {filteredGallery.map(({ galleryId, ...otherfilters }) => (
+            <SingleGallery key={galleryId} {...otherfilters} name={pathID} />
+          ))}
+        </div>
         <NewsLetter />
         <Footer />
       </Fragment>
