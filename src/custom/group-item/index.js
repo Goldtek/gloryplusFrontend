@@ -16,28 +16,28 @@ const GroupItem = props => {
                     data-toggle="collapse"
                     data-parent="#accordion"
                   >
-                    {props.grp_Location}
+                    &nbsp; &nbsp; {props.grp_Location}
                   </a>
                 </h4>
               </div>
               <div id={`${props.grpId}`} className="panel-collapse collapse in">
                 <div className="panel-body">
-                  {props.location_Details.map(({ id, ...items }) => (
-                    <div class="row" key={id}>
-                      <div class="col-12 col-md-12 col-lg-12 ol-sm-12">
-                        <h6 class="text-muted">Cordinators Details</h6>
-                        <ul class="list-group">
-                          <li class="list-group-item">
-                            <i class="fa fa-male text-info mx-2"></i>
-                            &nbsp; <b>Name:</b> {items.leader}
+                  {props.location_Details.map(({ id, ...cell }) => (
+                    <div className="row" key={id}>
+                      <div className="col-12 col-md-12 col-lg-12 ol-sm-12">
+                        {/* <h6 className="text-muted">Cordinators Details</h6> */}
+                        <ul className="list-group">
+                          <li className="list-group-item">
+                            <i className="fa fa-male text-info mx-2"></i>
+                            &nbsp; <b>Co-ordinator:</b> {cell.leader}
                           </li>
-                          <li class="list-group-item">
-                            <i class="fa fa-map-marker text-info mx-2"></i>{" "}
-                            <b>Address:</b> &nbsp;{items.address}
+                          <li className="list-group-item">
+                            <i className="fa fa-map-marker text-info mx-2"></i>{" "}
+                            <b>Address:</b> &nbsp;{cell.address}
                           </li>
-                          <li class="list-group-item">
-                            <i class="fa fa-phone text-info mx-2"></i>{" "}
-                            <b>Phone:</b> &nbsp;{items.phone}
+                          <li className="list-group-item">
+                            <i className="fa fa-phone text-info mx-2"></i>{" "}
+                            <b>Phone:</b> &nbsp;{cell.phone}
                           </li>
                         </ul>
                       </div>
@@ -48,7 +48,7 @@ const GroupItem = props => {
             </div>
           </div>
         </div>
-        <div class="col-xs-3 col-centered"></div>
+        <div className="col-xs-3 col-centered"></div>
       </div>
     </div>
   );

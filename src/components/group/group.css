@@ -49,3 +49,16 @@
   transform: rotate(-135deg);
   transition: all 0.2s ease-in;
 }
+
+/* .accordion-toggle {
+  border: 2px solid red;
+} */
+.panel-title {
+  text-align: left;
+}
+/* .panel-collapse .text-muted {
+  color: red;
+  font-weight: 600;
+  text-align: center;
+  font-size: inherit;
+} */
