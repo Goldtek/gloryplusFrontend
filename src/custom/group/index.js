@@ -5,8 +5,7 @@ import { GroupItem } from "../index";
 const GroupList = props => {
   return (
     <div style={{ display: "flex", marginTop: "20px", marginBottom: "20px" }}>
-      <div className="col-md-2"></div>
-      <div className="col-md-8 cell-div">
+      <div className="col-md-12 cell-div">
         <h2 align="center" className="cell-header-text">
           <b>Home Church Locations</b>
         </h2>
@@ -14,7 +13,6 @@ const GroupList = props => {
           <GroupItem key={id} {...otherprops} />
         ))}
       </div>
-      <div className="col-md-2"></div>
     </div>
   );
 };
