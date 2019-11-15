@@ -19,7 +19,7 @@ class SermonComponent extends Component {
   constructor() {
     super();
     this.state = {
-      liveStream: 'false',
+      liveStream: 'true',
     }
   }
   render() {
@@ -35,7 +35,7 @@ class SermonComponent extends Component {
         <h2 className='online-church' align="center">ONLINE CHURCH</h2>
         <hr style={{ color: '#E8E8E8'}}/>
         <div className='container'>
-          {
+          {/* {
             this.state.liveStream ? (
               <div className="embed-responsive embed-responsive-16by9 vp-text-alert-wrapper">
                 <div className="vp-alert-text hidden"></div>
@@ -50,12 +50,12 @@ class SermonComponent extends Component {
                 </div>
                 
               </div>
-            ) : (
+            ) : ( */}
               <div className="embed-responsive embed-responsive-16by9">
                 <iframe poster='http://site.com/img.jpg' title='live-stream' className="embed-responsive-item loop controls" src="rtmps://live-api-s.facebook.com:443/rtmp/" ></iframe>
               </div>
-            )
-          }
+            {/* )
+           } */}
           
           
           
