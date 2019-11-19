@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import {
   Header,
   TopNav,
-  BottomNav,
+  // BottomNav,
   NewsLetter,
   Footer,
   Sermon,

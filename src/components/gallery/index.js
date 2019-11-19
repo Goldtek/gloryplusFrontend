@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import axios from "axios";
+// import axios from "axios";
 import { Helmet } from "react-helmet";
 // import "./gallery.css";
 import {

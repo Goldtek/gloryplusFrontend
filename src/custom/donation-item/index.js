@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DonateItem from "../donate-item";
+// import DonateItem from "../donate-item";
 
 class Donation extends Component {
   render() {

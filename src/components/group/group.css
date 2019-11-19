@@ -1,64 +1,89 @@
-.panelDiv {
-  margin-top: 20px;
+.cell-header-text {
+  /* border: 2px solid red; */
+  margin-bottom: 2px;
 }
 
-#accordion .panel {
-  border-radius: 0;
-  border: 0;
-  margin-top: 0px;
+.cell-header-text b {
+  text-decoration: underline;
+  /* font-size: 5vw; */
 }
-#accordion a {
-  display: block;
-  padding: 10px 15px;
-  border-bottom: 1px solid #b42b2b;
-  text-decoration: none;
+
+.tabs input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
-#accordion .panel-heading a.collapsed:hover,
-#accordion .panel-heading a.collapsed:focus {
-  background-color: #b42b2b;
-  color: white;
-  transition: all 0.2s ease-in;
+
+.tabs .row {
+  display: flex;
+  /* border: 2px solid red; */
 }
-#accordion .panel-heading a.collapsed:hover::before,
-#accordion .panel-heading a.collapsed:focus::before {
-  color: white;
+.tabs .row .col {
+  flex: 1;
 }
-#accordion .panel-heading {
-  padding: 0;
-  border-radius: 0px;
+.tabs .row .col:last-child {
+  margin-left: 1em;
+}
+
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  /* border: 2px solid red; */
+  margin-bottom: 8px;
+}
+
+.tab {
+  width: 100%;
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.tab-label:hover {
+  background: #b42b2b;
+  color: #fff;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
   text-align: center;
+  transition: all 0.35s;
 }
-#accordion .panel-heading a:not(.collapsed) {
-  color: white;
-  background-color: #b42b2b;
-  transition: all 0.2s ease-in;
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  /* color: #2c3e50; */
+  /* background: white; */
+  transition: all 0.35s;
 }
-
-/* Add Indicator fontawesome icon to the left */
-#accordion .panel-heading .accordion-toggle::before {
-  font-family: "FontAwesome";
-  content: "\f00d";
-  float: left;
-  color: white;
-  font-weight: lighter;
-  transform: rotate(0deg);
-  transition: all 0.2s ease-in;
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  /* background: #2c3e50; */
+  cursor: pointer;
 }
-#accordion .panel-heading .accordion-toggle.collapsed::before {
-  color: #444;
-  transform: rotate(-135deg);
-  transition: all 0.2s ease-in;
+.tab-close:hover {
+  /* background: #1a252f; */
 }
 
-/* .accordion-toggle {
-  border: 2px solid red;
-} */
-.panel-title {
-  text-align: left;
+input:checked + .tab-label {
+  background: #b42b2b;
 }
-/* .panel-collapse .text-muted {
-  color: red;
-  font-weight: 600;
-  text-align: center;
-  font-size: inherit;
-} */
+input:checked + .tab-label::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}

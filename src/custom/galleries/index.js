@@ -8,8 +8,8 @@ const Galleries = props => {
     <div className="container gallery-div">
       <h4 align="center">GLORY PLUS GALLERY</h4>
       <div className="row flex">
-        {galleries.map(({ id, ...otherProps }) => (
-          <GalleryCard key={id} {...otherProps} />
+        {galleries.map(({ galleryId, ...otherProps }) => (
+          <GalleryCard key={galleryId} {...otherProps} />
           // <ProductItem key={id} {...otherSEctionProps} />
         ))}
       </div>
