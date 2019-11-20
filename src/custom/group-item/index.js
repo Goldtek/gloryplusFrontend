@@ -8,28 +8,29 @@ const GroupItem = props => {
         <label className="tab-label" for={props.grp_Location}>
           {props.grp_Location.toUpperCase()}
         </label>
-        <div className="tab-content">
-          {props.location_Details.map(({ id, ...cell }) => (
-            <div className="row" key={id}>
-              <div className="col-12 col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                {/* <h6 className="text-muted">Cordinators Details</h6> */}
-                <ul className="list-group">
-                  <li className="list-group-item">
-                    <i className="fa fa-male text-info mx-2"></i>
-                    &nbsp; <b>Co-ordinator:</b> {cell.leader}
-                  </li>
-                  <li className="list-group-item">
-                    <i className="fa fa-map-marker text-info mx-2"></i>{" "}
-                    <b>Address:</b> &nbsp;{cell.address}
-                  </li>
-                  <li className="list-group-item">
-                    <i className="fa fa-phone text-info mx-2"></i> <b>Phone:</b>{" "}
-                    &nbsp;{cell.phone}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          ))}
+        <div className="tab-content table-responsive">
+          {" "}
+          <table
+            summary="This table shows how to create responsive tables using Bootstrap's default functionality"
+            class="table  table-striped"
+          >
+            <thead>
+              <tr>
+                <th>Cordinator</th>
+                <th>Phone</th>
+                <th>Address</th>
+              </tr>
+            </thead>
+            <tbody>
+              {props.location_Details.map(({ id, ...cell }) => (
+                <tr key={id}>
+                  <td>{cell.leader}</td>
+                  <td>{cell.phone}</td>
+                  <td>{cell.address}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

@@ -5,7 +5,10 @@ import { GroupItem } from "../index";
 const GroupList = props => {
   return (
     <div
-      style={{ marginTop: "20px", marginBottom: "20px" }}
+      style={{
+        marginTop: "20px",
+        marginBottom: "20px"
+      }}
       className="container"
     >
       <div className="col-md-12 cell-div">
