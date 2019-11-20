@@ -15,7 +15,7 @@ class Hero extends Component {
               <h2>Living in God’s Amazing Grace!</h2>
               <p>A Glorious people, with a Glorious mandate</p>
               <Link to="/login" className="site-btn sb-wide sb-line">
-                join with us
+                join us today
               </Link>
               &nbsp;
               <a href="/live" className="site-btn sb-wide sb-line">

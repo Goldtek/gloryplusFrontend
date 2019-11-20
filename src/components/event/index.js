@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Helmet from "react-helmet";
 import { Link } from "react-router-dom";
-
+import axios from "axios";
 import {
   TopNav,
   Header,
@@ -12,7 +12,22 @@ import {
 } from "../../custom";
 
 export default class Events extends Component {
+  state = {
+    eventItems: []
+  };
+
+  componentWillMount() {
+    axios
+      .get("./db/eventData.json")
+      .then(({ data: eventItems }) => {
+        this.setState({ eventItems });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
   render() {
+    const { eventItems } = this.state;
     return (
       <Fragment>
         <Helmet>
@@ -23,14 +38,14 @@ export default class Events extends Component {
         <Header />
         <PageInfo title="Events" bgPicture="url(img/events.jpg)" />
 
-        <section class="event-list-section spad">
-          <div class="container">
-            <div class="section-title title-left">
+        <section className="event-list-section spad">
+          <div className="container">
+            <div className="section-title title-left">
               <span>Experience God's Presence</span>
               <h2>Upcoming Events</h2>
             </div>
-            <div class="event-list">
-              <EventItem
+            <div className="event-list">
+              {/* <EventItem
                 title="Pacesetting Ladies of GloryPlus"
                 imagePath="img/event/2.jpeg"
                 description="I dare to be different, i dare to be a pacesetter, equipped and empowered to become a
@@ -40,9 +55,9 @@ export default class Events extends Component {
                 month="Nov"
                 time="Saturday, 8:00am"
                 location="GloryPlus International Assembly"
-              />
+              /> */}
 
-              <EventItem
+              {/* <EventItem
                 title="Glorymen Meeting"
                 imagePath="img/event/men.png"
                 description="This is another day The Lord has made and we rejoice and we are glad in it.
@@ -51,9 +66,9 @@ export default class Events extends Component {
                 month="Nov"
                 time="Saturday, 4:30pm"
                 location="GloryPlus International Assembly"
-              />
+              /> */}
 
-              <EventItem
+              {/* <EventItem
                 title="Tuesday Mid-week Service"
                 imagePath="img/event/midweek.png"
                 description="Remember it's still our month of supernatural harvest. Join us today for another exciting session as we
@@ -62,9 +77,9 @@ export default class Events extends Component {
                 month="Nov"
                 time="Tuesday, 6:00pm"
                 location="GloryPlus International Assembly"
-              />
+              /> */}
 
-              <EventItem
+              {/* <EventItem
                 title="Holy Ghost Morning"
                 imagePath="img/event/1.jpg"
                 description="It will be a time for encounter, at holy ghost morning on thursday, Are you believing 
@@ -74,20 +89,22 @@ export default class Events extends Component {
                 month="Nov"
                 time="Thursday, 8:00am"
                 location="De Saintago milan Hotel, festac"
-              />
+              /> */}
 
               <EventItem
-                title="Singles Movie Night"
-                imagePath="img/event/movie.jpeg"
-                description="Singles present Movies night at Gloryplus international, red carpet, free popCorn chapman and free gifts to be won."
-                day="08"
-                month="Nov"
-                time="Saturday, 5:00pm"
-                location="GloryPlus International Assembly"
+                // title="Singles Movie Night"
+                // imagePath="img/event/movie.jpeg"
+                // description="Singles present Movies night at Gloryplus international, red carpet, free popCorn chapman and free gifts to be won."
+                // day="08"
+                // month="Nov"
+                // time="Saturday, 5:00pm"
+                // location="GloryPlus International Assembly"
+
+                events={eventItems}
               />
             </div>
-            <div class="pagination-area">
-              <ul class="pageination-list">
+            <div className="pagination-area">
+              <ul className="pageination-list">
                 <li>
                   <Link to="#">1</Link>
                 </li>
@@ -99,7 +116,7 @@ export default class Events extends Component {
                 </li>
                 <li>
                   <Link to="#">
-                    Next <i class="fa fa-angle-double-right"></i>
+                    Next <i className="fa fa-angle-double-right"></i>
                   </Link>
                 </li>
               </ul>

@@ -26,7 +26,7 @@ import Donation from "./donation-item";
 import EventDetail from "./event-detail";
 import Galleries from "./galleries";
 import SingleGallery from "./gallery/index";
-import Space from "./space";
+
 export {
   Header,
   TopNav,
@@ -55,6 +55,5 @@ export {
   Donation,
   EventDetail,
   Galleries,
-  SingleGallery,
-  Space
+  SingleGallery
 };

@@ -78,6 +78,7 @@
 
 input:checked + .tab-label {
   background: #b42b2b;
+  color: #fff;
 }
 input:checked + .tab-label::after {
   -webkit-transform: rotate(90deg);

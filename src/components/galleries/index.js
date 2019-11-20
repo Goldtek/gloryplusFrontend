@@ -11,6 +11,7 @@ import {
   Galleries
   // Space
 } from "../../custom";
+
 class Gallery extends Component {
   state = { galleryData: [] };
 
