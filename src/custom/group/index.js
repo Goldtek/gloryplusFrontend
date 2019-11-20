@@ -17,8 +17,8 @@ const GroupList = props => {
         </h2>
         <div className="row">
           <div className="col">
-            {props.homechurchInfo.map(({ id, ...otherprops }) => (
-              <GroupItem key={id} {...otherprops} />
+            {props.homechurchInfo.map(({ grpId, ...otherprops }) => (
+              <GroupItem key={grpId} {...otherprops} />
             ))}
           </div>
         </div>

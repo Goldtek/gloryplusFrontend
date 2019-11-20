@@ -5,15 +5,12 @@ const GroupItem = props => {
     <div className="tabs">
       <div className="tab">
         <input type="checkbox" id={props.grp_Location} />
-        <label className="tab-label" for={props.grp_Location}>
+        <label className="tab-label" htmlFor={props.grp_Location}>
           {props.grp_Location.toUpperCase()}
         </label>
         <div className="tab-content table-responsive">
           {" "}
-          <table
-            summary="This table shows how to create responsive tables using Bootstrap's default functionality"
-            class="table  table-striped"
-          >
+          <table className="table  table-striped">
             <thead>
               <tr>
                 <th>Cordinator</th>

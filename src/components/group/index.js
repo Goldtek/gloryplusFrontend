@@ -1,9 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
 import axios from "axios";
-// import LoadingSpinner from "./loader";
 import { css } from "@emotion/core";
-// import DotLoader from "react-spinners/ClipLoader";
 import { DotLoader } from "react-spinners";
 import {
   Header,
