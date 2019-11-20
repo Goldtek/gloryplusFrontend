@@ -1,43 +1,35 @@
 import React from "react";
 
-const GroupItem = ({ location, details, checkId }) => {
+const GroupItem = props => {
   return (
     <div className="tabs">
       <div className="tab">
-        <input
-          type="checkbox"
-          id={checkId}
-          className="groupInput"
-          style={{ position: "absolute", opacity: "0", zIndex: "-1" }}
-        />
-        <label className="tab-label" for={checkId}>
-          {location}
+        <input type="checkbox" id={props.grp_Location} />
+        <label className="tab-label" for={props.grp_Location}>
+          {props.grp_Location.toUpperCase()}
         </label>
         <div className="tab-content">
-        <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Home-Church Coordinator</th>
-      <th scope="col">Home-Church Location</th>
-      <th scope="col"> Contact Number</th>
-    </tr>
-  </thead>
-  <tbody>
-    {
-      details.map(value => {
-        return (
-          <tr>
-            <th scope="row">{value.rowNumber}</th>
-            <td>{value.cellName}</td>
-            <td>{value.cellAddress}</td>
-            <td>{value.contactNumber}</td>
-          </tr>
-        )
-      })
-    }
-  </tbody>
-</table>
+          {props.location_Details.map(({ id, ...cell }) => (
+            <div className="row" key={id}>
+              <div className="col-12 col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                {/* <h6 className="text-muted">Cordinators Details</h6> */}
+                <ul className="list-group">
+                  <li className="list-group-item">
+                    <i className="fa fa-male text-info mx-2"></i>
+                    &nbsp; <b>Co-ordinator:</b> {cell.leader}
+                  </li>
+                  <li className="list-group-item">
+                    <i className="fa fa-map-marker text-info mx-2"></i>{" "}
+                    <b>Address:</b> &nbsp;{cell.address}
+                  </li>
+                  <li className="list-group-item">
+                    <i className="fa fa-phone text-info mx-2"></i> <b>Phone:</b>{" "}
+                    &nbsp;{cell.phone}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

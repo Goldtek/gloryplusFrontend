@@ -1,0 +1,56 @@
+[
+  {
+    "grpId": 1,
+    "grp_Location": "Ikeja",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "No 1 Sodipo close",
+        "leader": "Godspower",
+        "phone": "0806676891"
+      },
+      {
+        "id": 2,
+        "address": "No 2 Zion street",
+        "leader": "Chisom Dike",
+        "phone": "08066379681"
+      }
+    ]
+  },
+  {
+    "grpId": 2,
+    "grp_Location": "Ogudu",
+    "location_Details": [
+      {
+        "id": 3,
+        "address": "No 1 Sodipo close",
+        "leader": "Stephanie Esiokwu",
+        "phone": "0806676891"
+      },
+      {
+        "id": 4,
+        "address": "No 2 Zion street",
+        "leader": "Jennifer Johnson",
+        "phone": "08066379681"
+      }
+    ]
+  },
+  {
+    "grpId": 3,
+    "grp_Location": "Festac",
+    "location_Details": [
+      {
+        "id": 4,
+        "address": "No 1 Sodipo close",
+        "leader": "Godspower",
+        "phone": "0806676891"
+      },
+      {
+        "id": 5,
+        "address": "No 2 Zion street",
+        "leader": "Chisom Dike",
+        "phone": "08066379681"
+      }
+    ]
+  }
+]

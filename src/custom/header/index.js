@@ -23,7 +23,7 @@ class Header extends Component {
           {/* <a href="index.html" className="site-logo">
 
 </a> */}
-          <Link to="/donation" className="site-btn hidden-xs">
+          <Link to="/donate" className="site-btn hidden-xs">
             Donate
           </Link>
 
@@ -40,45 +40,11 @@ class Header extends Component {
                 {/* <a href="/">Home</a> */}
               </li>
 
-              <li className="dropdown">
-                <a
-                  href="#"
-                  className="dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Ministry <span className="caret"></span>
-                </a>
-                <ul className="dropdown-menu">
-                  <li className="nav-pills">
-                    <NavLink activeClassName={"active"} to="/group">
-                      Home Church
-                    </NavLink>
-                  </li>
-                  <li className="nav-pills">
-                    <NavLink activeClassName={"active"} to="/group">
-                      Glory Men
-                    </NavLink>
-                  </li>
-                  <li className="nav-pills">
-                    <NavLink activeClassName={"active"} to="/group">
-                      Pacesetters
-                    </NavLink>
-                  </li>
-                  <li className="nav-pills">
-                    <NavLink activeClassName={"active"} to="/gallery">
-                      Gallery
-                    </NavLink>
-                  </li>
-
-                  <li role="separator" className="divider"></li>
-
-                  <li role="separator" className="divider"></li>
-                </ul>
+              <li className="nav-pills">
+                <NavLink activeClassName={"active"} to="/group">
+                  Home Church
+                </NavLink>
               </li>
-
               <li className="nav-pills">
                 {/* <a href="/sermon">Sermons</a> */}
                 <NavLink activeClassName={"active"} to="/sermon">
@@ -87,33 +53,27 @@ class Header extends Component {
               </li>
 
               <li className="nav-pills">
-                <NavLink activeClassName="active" to="/events">
-                  Events
+                <NavLink activeClassName="active" to="/galleries">
+                  Gallery
                 </NavLink>
               </li>
 
-              {/* <li className="nav-pills">
-<NavLink activeClassName={"active"} to="/donate">
-Giving
-</NavLink>
-</li> */}
-
               <li className="nav-pills">
                 {/* <a href="/about">About Us</a> */}
-                <NavLink activeClassName={"active"} to="/about">
-                  About Us
+                <NavLink activeClassName={"active"} to="/events">
+                  Events
                 </NavLink>
               </li>
 
               <li className="nav-pills">
                 {/* <a href="/sermon">Sermons</a> */}
-                <NavLink activeClassName={"active"} to="/contact">
-                  Contact
+                <NavLink activeClassName={"active"} to="/about">
+                  About Us
                 </NavLink>
               </li>
               <li className="nav-pills">
-                <NavLink activeClassName={"active"} to="/live">
-                  LiveStream
+                <NavLink activeClassName={"active"} to="/contact">
+                  Contact
                 </NavLink>
               </li>
               <li className="nav-pills hidden-md hidden-lg">

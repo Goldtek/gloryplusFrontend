@@ -1,75 +1,22 @@
-import React, { Component, Fragment } from "react";
-import $ from "jquery";
-import { GalleryItem, GalleryBtn } from "../index";
-class Gallery extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  componentWillMount() {
-    $(document).ready(function() {
-      $(".filter-button").click(function() {
-        var value = $(this).attr("data-filter");
-
-        if (value == "all") {
-          //$('.filter').removeClass('hidden');
-          $(".filter").show("1000");
-        } else {
-          //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-          //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-          $(".filter")
-            .not("." + value)
-            .hide("3000");
-          $(".filter")
-            .filter("." + value)
-            .show("3000");
-        }
-      });
-
-      if ($(".filter-button").removeClass("active")) {
-        $(this).removeClass("active");
-      }
-      $(this).addClass("active");
-    });
-  }
-  render() {
-    return (
-      <Fragment>
-        <div className="container gallery-div">
-          <div align="center">
-            <GalleryBtn title="All" filter="all" />
-            <GalleryBtn title="men" filter="men" />
-            <GalleryBtn title="pacesetter" filter="pacesetter" />
+import React from "react";
+const SingleGallery = props => {
+  let classItem = "col-lg-3 col-md-4 col-sm-6 col-xs-12";
+  return (
+    <div className="container  gallery-div">
+      <h4 align="center">{props.name.toUpperCase()}</h4>
+      <div className="row flex">
+        {props.subPhotos.map(({ photoId, ...pictures }) => (
+          <div className={`thumbnail ${classItem}`} key={photoId}>
+            <div className="hovereffect ">
+              <a data-fancybox="gallery" href={pictures.photoUrl}>
+                <img src={pictures.photoUrl} alt="" />
+              </a>
+            </div>
           </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-          <GalleryItem
-            alt="img1"
-            shuffle="men"
-            caption="men"
-            img="img/event/men.png"
-          />
-          <GalleryItem
-            alt="men"
-            shuffle="men"
-            caption="men"
-            img="img/event/men2.jpg"
-          />
-          <GalleryItem
-            alt="img3"
-            shuffle="pacesetter"
-            caption="pacesetter"
-            img="img/event/2.jpeg"
-          />
-          <GalleryItem
-            alt="img4"
-            shuffle="pacesetter"
-            caption="pacesetter"
-            img="img/event/sermon.jpeg"
-          />
-        </div>
-      </Fragment>
-    );
-  }
-}
-
-export default Gallery;
+export default SingleGallery;
