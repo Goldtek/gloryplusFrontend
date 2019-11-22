@@ -1,69 +1,65 @@
 import React, { Component, Fragment } from "react";
-import { Helmet } from "react-helmet";
 import axios from "axios";
+import { Helmet } from "react-helmet";
+import "./gallery.css";
 import { css } from "@emotion/core";
-import { DotLoader } from "react-spinners";
+import { FadeLoader } from "react-spinners";
 import {
   Header,
   TopNav,
   Footer,
   PageInfo,
   NewsLetter,
-  GroupList
+  Galleries
+  // Space
 } from "../../custom";
-import "./group.css";
 const override = css`
   display: block;
   margin: 0 auto;
   border-color: red;
 `;
-class HomeChurch extends Component {
+class Gallery extends Component {
   state = {
-    groupInfo: [], // will hold the results from our ajax call
+    galleryData: [],
     loading: false // will be true when ajax request is running
   };
 
-  componentDidMount() {
+  componentWillMount() {
     // axios
-    //   .get("./db/groupData.json")
-    //   .then(({ data: groupInfo }) => {
-    //     this.setState({ groupInfo, loading: true });
+    //   .get("./db/galleryData.json")
+    //   .then(({ data: galleryData }) => {
+    //     this.setState({ galleryData });
     //   })
     //   .catch(err => {
     //     console.log(err);
     //   });
 
-    // this.setState({ loading: true }, () => {
-    //   axios.get("./db/groupData.json").then(result =>
-    //     this.setState({
-    //       loading: false,
-    //       groupInfo: [...result]
-    //     })
-    //   );
-    // });
-
     this.setState({ loading: true }, () => {
-      axios.get("./db/groupData.json").then(result =>
+      axios.get("./db/galleryData.json").then(result =>
         this.setState({
           loading: false,
-          groupInfo: [...result.data]
+          galleryData: [...result.data]
         })
       );
     });
   }
   render() {
-    const { groupInfo, loading } = this.state;
+    const { galleryData, loading } = this.state;
     return (
       <Fragment>
         <Helmet>
-          <title>Group</title>
-          <meta name="description" content="home church" />
+          <title>Gallery</title>
+          <meta name="description" content=" gallery" />
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Home Church" bgPicture="url(img/homecell.jpg)" />
+        <PageInfo title="Gallery" bgPicture="url(img/bg.jpg)" />
+        {/* <div style={{ minHeight: "25vh" }}>
+          <Galleries galleries={galleryData} />
+        </div> */}
+
         {loading ? (
-          <div style={{ minHeight: "23vh" }}>
+          <div style={{ minHeight: "25vh" }}>
             <div className="col-md-4"></div>
             <div
               className="col-md-4"
@@ -73,24 +69,25 @@ class HomeChurch extends Component {
               }}
             >
               {" "}
-              <DotLoader
+              <FadeLoader
                 css={override}
                 sizeUnit={"px"}
                 size={50}
                 color={"#b42b2b"}
+                height={25}
               />
             </div>
             <div className="col-md-4"></div>
           </div>
         ) : (
-          <GroupList homechurchInfo={groupInfo} />
+          // <GroupList homechurchInfo={groupInfo} />
+          <Galleries galleries={galleryData} />
         )}
-
+        {/* <Space /> */}
         <NewsLetter />
         <Footer />
       </Fragment>
     );
   }
 }
-
-export default HomeChurch;
+export default Gallery;

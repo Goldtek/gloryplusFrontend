@@ -1,43 +1,33 @@
 import React from "react";
 
-const GroupItem = ({ location, details, checkId }) => {
+const GroupItem = props => {
   return (
     <div className="tabs">
       <div className="tab">
-        <input
-          type="checkbox"
-          id={checkId}
-          className="groupInput"
-          style={{ position: "absolute", opacity: "0", zIndex: "-1" }}
-        />
-        <label className="tab-label" for={checkId}>
-          {location}
+        <input type="checkbox" id={props.grp_Location} />
+        <label className="tab-label" htmlFor={props.grp_Location}>
+          {props.grp_Location.toUpperCase()}
         </label>
-        <div className="tab-content">
-        <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Home-Church Coordinator</th>
-      <th scope="col">Home-Church Location</th>
-      <th scope="col"> Contact Number</th>
-    </tr>
-  </thead>
-  <tbody>
-    {
-      details.map(value => {
-        return (
-          <tr>
-            <th scope="row">{value.rowNumber}</th>
-            <td>{value.cellName}</td>
-            <td>{value.cellAddress}</td>
-            <td>{value.contactNumber}</td>
-          </tr>
-        )
-      })
-    }
-  </tbody>
-</table>
+        <div className="tab-content table-responsive">
+          {" "}
+          <table className="table  table-striped">
+            <thead>
+              <tr>
+                <th>Cordinator</th>
+                <th>Phone</th>
+                <th>Address</th>
+              </tr>
+            </thead>
+            <tbody>
+              {props.location_Details.map(({ id, ...cell }) => (
+                <tr key={id}>
+                  <td>{cell.leader}</td>
+                  <td>{cell.phone}</td>
+                  <td>{cell.address}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

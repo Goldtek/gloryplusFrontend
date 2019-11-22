@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 import Countdown from "../countdown";
 
 class TopNav extends Component {
+  state = {
+    loggedIn: false,
+    liveStream: false
+  };
   render() {
-    this.state = {
-      loggedIn: false,
-      liveStream: false
-    };
     /**** change the link to that of react based on routing and aplying authentication to it */
 
     return (
@@ -42,7 +42,10 @@ class TopNav extends Component {
             <div className="col-sm-6 col-md-7 col-lg-6 ">
               <div className="counter-top">
                 <h5>Upcoming Event:</h5>
-                <Countdown timeTillDate="11 14 2019, 8:00 am" timeFormat="MM DD YYYY, h:mm a" />
+                <Countdown
+                  timeTillDate="11 14 2019, 8:00 am"
+                  timeFormat="MM DD YYYY, h:mm a"
+                />
                 <a href="#" className="top-readmore hidden-sm">
                   readmore
                 </a>

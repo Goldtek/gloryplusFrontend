@@ -1,0 +1,43 @@
+import React from "react"; const GroupItem = props => { return (
+<div className="container panelDiv">
+  <div id="accordion" className="panel-group">
+    <div className="panel">
+      <div className="panel-heading">
+        <h4 className="panel-title">
+          <a
+            href="{`#${props.grpId}`}"
+            className="accordion-toggle"
+            data-toggle="collapse"
+            data-parent="#accordion"
+          >
+            {props.grp_Location}
+          </a>
+        </h4>
+      </div>
+      <div id="{`${props.grpId}`}" className="panel-collapse collapse in">
+        <div className="panel-body">
+          {props.location_Details.map(({ id, ...items }) => (
+          <li className="list-group-item" key="{id}">
+            <b></b>
+            <address>
+              <p>
+                <b className="fa fa-user "></b>
+                &nbsp; {items.leader}
+              </p>
+              <p>
+                <i className="fa fa-map-marker" aria-hidden="true"></i>
+                {items.address}
+              </p>
+              <p>
+                <b className="fa fa-phone"></b>
+                &nbsp; {items.phone}
+              </p>
+            </address>
+          </li>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+); }; export default GroupItem;
