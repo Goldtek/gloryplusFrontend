@@ -1,4 +1,7 @@
 import React, { Component, Fragment } from "react";
+import axios from "axios";
+import { css } from "@emotion/core";
+import { FadeLoader } from "react-spinners";
 import { Helmet } from "react-helmet";
 import {
   Header,
@@ -10,8 +13,29 @@ import {
   PageInfo,
   SermonList
 } from "../../custom";
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
 class SermonComponent extends Component {
+  state = {
+    sermons: [], // will hold the results from our ajax call
+    loading: false // will be true when ajax request is running
+  };
+
+  componentDidMount() {
+    this.setState({ loading: true }, () => {
+      axios.get("./db/sermonData.json").then(sermon =>
+        this.setState({
+          loading: false,
+          sermons: [...sermon.data]
+        })
+      );
+    });
+  }
   render() {
+    const { sermons, loading } = this.state;
     return (
       <Fragment>
         <Helmet>
@@ -29,7 +53,32 @@ His predetermined purpose for creating us was to accomplish great things on eart
 Shake yourself off the dust of limitation and begin to do exploits."
         />
         <hr />
-        <SermonList />
+
+        {loading ? (
+          <div style={{ minHeight: "25vh" }}>
+            <div className="col-md-4"></div>
+            <div
+              className="col-md-4"
+              style={{
+                marginTop: "35px",
+                marginBottom: "20px"
+              }}
+            >
+              {" "}
+              <FadeLoader
+                css={override}
+                sizeUnit={"px"}
+                size={50}
+                color={"#b42b2b"}
+                height={25}
+              />
+            </div>
+            <div className="col-md-4"></div>
+          </div>
+        ) : (
+          <SermonList sermon={sermons} />
+        )}
+
         <NewsLetter />
         <Footer />
       </Fragment>

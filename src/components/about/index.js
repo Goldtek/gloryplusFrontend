@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import {
   Header,
   TopNav,
-  BottomNav,
+  EventTimer,
   JoinUs,
   ServiceSection,
   NewsLetter,
@@ -25,7 +25,7 @@ class About extends Component {
         <PageInfo title="About Us" bgPicture="url(img/aboutus.jpg)" />
         <JoinUs />
         <ServiceSection />
-        <BottomNav />
+        <EventTimer />
         <PastorSection />
         <NewsLetter />
         <Footer />

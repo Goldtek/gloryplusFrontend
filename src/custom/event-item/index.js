@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const EventItem = props => {
   return (
     <>
@@ -31,9 +32,15 @@ const EventItem = props => {
                   </div>
                 </div>
                 <p>{eventData.description}</p>
-                <a href="/" className="btn btn-danger btn-sm">
+                {/* <a href="/event/" className="btn btn-danger btn-sm">
                   Read more
-                </a>
+                </a> */}
+                <Link
+                  to={`/event/${eventData.pathName}`}
+                  className="btn btn-danger btn-sm"
+                >
+                  Read more
+                </Link>
               </div>
             </div>
           </div>

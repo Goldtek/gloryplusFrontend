@@ -1,24 +1,24 @@
 import React from "react";
 
-const SectionCard = ({ title, preacher, time, link, sermonImg }) => (
+const SectionCard = props => (
   <div>
     <div className="col-sm-6 col-md-4">
       <div className="sermon-item event-div video-thumbnail">
         <div
           className="si-thumb set-bg"
           style={{
-            backgroundImage: `url(${sermonImg})`
+            backgroundImage: `url(${props.sermonImg})`
           }}
         ></div>
         <div className="si-content">
-          <h4>{title}</h4>
+          <h4>{props.title}</h4>
           <ul className="sermon-info">
             <li>
-              Sermon By: <span>{preacher}</span>
+              Sermon By: <span>{props.preacher}</span>
             </li>
 
             <li>
-              <span>On {time}</span>
+              <span>On {props.time}</span>
             </li>
           </ul>
           <div className="icon-links">

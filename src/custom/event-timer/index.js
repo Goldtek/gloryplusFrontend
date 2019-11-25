@@ -3,7 +3,7 @@ import moment from "moment";
 
 import { calculateStateFromProps } from "../../lib/util";
 import Countdown from "../countdown";
-class BottomNav extends Component {
+class EventTimer extends Component {
   state = {
     days: 0,
     hours: 0,
@@ -162,4 +162,4 @@ class BottomNav extends Component {
   }
 }
 
-export default BottomNav;
+export default EventTimer;
