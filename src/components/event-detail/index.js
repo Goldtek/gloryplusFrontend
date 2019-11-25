@@ -39,7 +39,7 @@ class Event_Details extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>{pathID.charAt(0).toUpperCase() + pathID.slice(1)}</title>
+          <title>Event-{pathID.charAt(0).toUpperCase() + pathID.slice(1)}</title>
           <meta name="description" content="Live Stream" />
         </Helmet>
         <TopNav />

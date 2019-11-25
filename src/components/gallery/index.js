@@ -65,7 +65,7 @@ const { gallery, loading } = this.state;
 return (
 <Fragment>
 <Helmet>
-<title>{pathID.charAt(0).toUpperCase() + pathID.slice(1)}</title>
+<title>Gallery-{pathID.charAt(0).toUpperCase() + pathID.slice(1)}</title>
 <meta name="description" content=" gallery" />
 </Helmet>
 <TopNav />
