@@ -1,161 +1,99 @@
-  import React from "react";
-
-  const EventDetail = () => {
+import React from "react";
+import "./event.css";
+import { Link } from "react-router-dom";
+const EventDetail = props => {
   return (
-  <div className="container">
-  <div className="row detail-div">
-  <div className="col-md-2 col-lg-2 col-sm-2"></div>
-  <div className="col-md-8 col-lg-8 col-sm-8">
-  <div className="col-lg-12 col-md-12 col-sm-12">
-  <h1 className="mt-4">Event Title</h1>
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-8 col-md-8">
+          <div className="page-header">
+            <h1>{props.title}</h1>
+            <p>
+              <span className="fa fa-map-marker"></span> &nbsp;
+              <a href="#">{props.location}</a>&nbsp;&nbsp;
+              <span className="fa fa-calendar"></span>&nbsp;{props.day}{" "}
+              {props.month} {props.year}
+              &nbsp;
+              {props.time}
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <p className="lead">
-  by
-  <a href="#">Start Bootstrap</a>
-  </p>
+      <div className="row">
+        <div className="col-sm-12 col-md-8">
+          <img
+            className="img-responsive"
+            src={props.imagePath}
+            alt={props.pathName}
+          />
+          <figcaption className="margin-t-h">{props.pathName}</figcaption>
+          <br />
+          <p>{props.description}</p>
+          <Link to="/events">
+            <b className="fa fa-arrow-left"></b> Back
+          </Link>
+          <hr />
+        </div>
+        <div className="col-sm-4 col-md-4">
+          <div className="well">
+            <h4 className="margin-t-0">Search</h4>
+            <form action="#">
+              <div className="input-group">
+                <label className="sr-only" for="search-form">
+                  Search the site
+                </label>
+                <input type="text" className="form-control" id="search-form" />
+                <span className="input-group-btn">
+                  <button className="btn btn-default" type="button">
+                    <span className="fa fa-search"></span>
+                    <span className="sr-only">Search</span>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
 
-  <hr />
+          <div className="list-group margin-b-3">
+            <a href="#" className="active list-group-item">
+              Category 1
+            </a>
+            <a href="#" className="list-group-item">
+              Category 2
+            </a>
+            <a href="#" className="list-group-item">
+              Category 3
+            </a>
+          </div>
 
-  <p>Posted on January 1, 2019 at 12:00 PM</p>
+          <div className="panel panel-default">
+            <div className="panel-heading">
+              <h4 className="panel-title">Sidebar panel widget</h4>
+            </div>
+            <div className="panel-body">
+              <p>
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+          </div>
 
-  <hr />
-
-  <img
-  className="img-fluid rounded"
-  src="http://placehold.it/900x300"
-  alt=""
-  />
-
-  <hr />
-
-  <p className="lead">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
-  vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit
-  excepturi nam quia corporis eligendi eos magni recusandae laborum
-  minus inventore?
-  </p>
-
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
-  tenetur natus doloremque laborum quos iste ipsum rerum obcaecati
-  impedit odit illo dolorum ab tempora nihil dicta earum fugiat.
-  Temporibus, voluptatibus.
-  </p>
-
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
-  doloribus, dolorem iusto blanditiis unde eius illum consequuntur
-  neque dicta incidunt ullam ea hic porro optio ratione repellat
-  perspiciatis. Enim, iure!
-  </p>
-
-  <blockquote className="blockquote">
-  <p className="mb-0">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-  posuere erat a ante.
-  </p>
-  <footer className="blockquote-footer">
-  Someone famous in
-  <cite title="Source Title">Source Title</cite>
-  </footer>
-  </blockquote>
-
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error,
-  nostrum, aliquid, animi, ut quas placeat totam sunt tempora
-  commodi nihil ullam alias modi dicta saepe minima ab quo
-  voluptatem obcaecati?
-  </p>
-
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
-  dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore
-  quidem voluptates cupiditate voluptas illo saepe quaerat numquam
-  recusandae? Qui, necessitatibus, est!
-  </p>
-
-  <hr />
-
-  <div className="card my-4">
-  <h5 className="card-header">Leave a Comment:</h5>
-  <div className="card-body">
-  <form>
-  <div className="form-group">
-  <textarea className="form-control" rows="3"></textarea>
-  </div>
-  <button type="submit" className="btn btn-primary">
-  Submit
-  </button>
-  </form>
-  </div>
-  </div>
-
-  <div className="media mb-4">
-  <img
-  className="d-flex mr-3 rounded-circle"
-  src="http://placehold.it/50x50"
-  alt=""
-  />
-  <div className="media-body">
-  <h5 className="mt-0">Commenter Name</h5>
-  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-  scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-  vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-  nisi vulputate fringilla. Donec lacinia congue felis in
-  faucibus.
-  </div>
-  </div>
-
-  <div className="media mb-4">
-  <img
-  className="d-flex mr-3 rounded-circle"
-  src="http://placehold.it/50x50"
-  alt=""
-  />
-  <div className="media-body">
-  <h5 className="mt-0">Commenter Name</h5>
-  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-  scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-  vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-  nisi vulputate fringilla. Donec lacinia congue felis in
-  faucibus.
-  <div className="media mt-4">
-  <img
-  className="d-flex mr-3 rounded-circle"
-  src="http://placehold.it/50x50"
-  alt=""
-  />
-  <div className="media-body">
-  <h5 className="mt-0">Commenter Name</h5>
-  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-  scelerisque ante sollicitudin. Cras purus odio, vestibulum
-  in vulputate at, tempus viverra turpis. Fusce condimentum
-  nunc ac nisi vulputate fringilla. Donec lacinia congue felis
-  in faucibus.
-  </div>
-  </div>
-  <div className="media mt-4">
-  <img
-  className="d-flex mr-3 rounded-circle"
-  src="http://placehold.it/50x50"
-  alt=""
-  />
-  <div className="media-body">
-  <h5 className="mt-0">Commenter Name</h5>
-  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-  scelerisque ante sollicitudin. Cras purus odio, vestibulum
-  in vulputate at, tempus viverra turpis. Fusce condimentum
-  nunc ac nisi vulputate fringilla. Donec lacinia congue felis
-  in faucibus.
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  <div className="col-md-2 col-lg-2 col-sm-2"></div>
-  </div>
-  </div>
+          <div className="panel panel-default">
+            <div className="panel-heading">
+              <h4 className="panel-title">Sidebar panel widget</h4>
+            </div>
+            <div className="panel-body">
+              <p>
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
-  };
-  export default EventDetail;
+};
+export default EventDetail;
