@@ -1,11 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const EventItem = props => {
+import { css } from "@emotion/core";
+import { FadeLoader } from "react-spinners";
+
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
+const EventItem = ({ events, loading }) => {
+  if (loading) {
+    return (
+      <div style={{ minHeight: "25vh" }}>
+        <div className="col-md-4"></div>
+        <div
+          className="col-md-4"
+          style={{
+            marginTop: "35px",
+            marginBottom: "20px"
+          }}
+        >
+          {" "}
+          <FadeLoader
+            css={override}
+            sizeUnit={"px"}
+            size={50}
+            color={"#b42b2b"}
+            height={25}
+          />
+        </div>
+        <div className="col-md-4"></div>
+      </div>
+    );
+  }
+
   return (
-    <>
-      {props.events.map(({ id, ...eventData }) => (
-        <div className="el-item event-div">
-          <div className="row" key={id}>
+    <div>
+      {events.map(({ id, ...eventData }) => (
+        <div className="el-item event-div" key={id}>
+          <div className="row">
             <div className="col-md-4 ">
               <div
                 className="el-thubm set-bg-event "
@@ -33,8 +66,8 @@ const EventItem = props => {
                 </div>
                 <p>{eventData.description}</p>
                 {/* <a href="/event/" className="btn btn-danger btn-sm">
-                  Read more
-                </a> */}
+Read more
+</a> */}
                 <Link
                   to={`/event/${eventData.pathName}`}
                   className="btn btn-danger btn-sm"
@@ -46,7 +79,7 @@ const EventItem = props => {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

@@ -39,12 +39,20 @@ class Event_Details extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>Event-{pathID.charAt(0).toUpperCase() + pathID.slice(1)}</title>
-          <meta name="description" content="Live Stream" />
+          <title>
+            Event-{pathID.charAt(0).toUpperCase() + pathID.slice(1)}
+          </title>
+          <meta
+            name="description"
+            content={pathID.charAt(0).toUpperCase() + pathID.slice(1)}
+          />
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Live Stream" bgPicture="url(img/donate.jpg)" />
+        <PageInfo
+          title={pathID.charAt(0).toUpperCase() + pathID.slice(1)}
+          bgPicture="url(img/church-event1.png)"
+        />
 
         {loading ? (
           <div style={{ minHeight: "25vh" }}>

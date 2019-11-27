@@ -2,7 +2,7 @@ import React from "react";
 import { GroupItem } from "../index";
 // import groupData from "./group-data";
 
-const GroupList = props => {
+const GroupList = ({ homechurchInfo }) => {
   return (
     <div
       style={{
@@ -17,7 +17,7 @@ const GroupList = props => {
         </h2>
         <div className="row">
           <div className="col">
-            {props.homechurchInfo.map(({ grpId, ...otherprops }) => (
+            {homechurchInfo.map(({ grpId, ...otherprops }) => (
               <GroupItem key={grpId} {...otherprops} />
             ))}
           </div>
