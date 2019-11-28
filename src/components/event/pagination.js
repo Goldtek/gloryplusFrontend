@@ -7,14 +7,15 @@ const Pagination = ({ eventPerPage, totalEvents, paginate }) => {
     pageNumbers.push(i);
   }
   return (
-    <div className="pagination-area">
-      <ul className="pageination-list">
+    <div>
+      <ul className="pagination pagination-lg">
         {pageNumbers.map(number => (
-          <li key={number} className="page-item">
+          <li key={number} className="page-item" aria-current="page">
             <a
               href="javascript:void(0)"
-              className="page-link"
+              className="page-link active"
               onClick={() => paginate(number)}
+              aria-disabled="true"
             >
               {number}
             </a>
