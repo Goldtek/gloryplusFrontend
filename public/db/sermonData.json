@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "sermonImg": "img/sermons/kingdom.jpeg",
+    "title": "The Kingdom of God",
+    "preacher": "glorymen",
+    "time": "Sunday, 25 OCT, 2019"
+  },
+  {
+    "Id": 2,
+    "sermonImg": "img/about.jpeg",
+    "title": "The Kingdom of God",
+    "preacher": "Rev Dubus Achufusi",
+    "time": "Tuesday, 25 OCT, 2019"
+  },
+  {
+    "Id": 3,
+    "sermonImg": "img/sermons/blood.jpg",
+    "title": "The Kingdom of God",
+    "preacher": "Rev Dubus Achufusi",
+    "time": "Thursday, 25 OCT, 2019"
+  }
+]

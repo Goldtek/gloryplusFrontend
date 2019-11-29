@@ -1,7 +1,7 @@
 import React from "react";
-// import EventItem from "../event-item";
+import EventItem from "../event-item";
 
-const UpcomingEvent = () => {
+const UpcomingEvent = props => {
   return (
     <section className="event-list-section spad">
       <div className="container">
@@ -18,7 +18,7 @@ const UpcomingEvent = () => {
             </a>
           </div>
         </div>
-        <div className="event-list"></div>
+        <div className="event-list">{/* <EventItem /> */}</div>
       </div>
     </section>
   );

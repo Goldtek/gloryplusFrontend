@@ -19,13 +19,13 @@ import {
   Hero,
   Header,
   TopNav,
-  BottomNav,
+  EventTimer,
   JoinUs,
   ServiceSection,
   UpcomingEvent,
   Donate,
   NewsLetter,
-  Blog,
+  PopularSermon,
   Footer,
   NotFound
 } from "../../custom";
@@ -48,12 +48,12 @@ class Home extends Component {
                   <TopNav />
                   <Header />
                   <Hero />
-                  <BottomNav />
+                  <EventTimer />
                   <JoinUs />
                   <ServiceSection />
-                  <UpcomingEvent />
+                  {/* <UpcomingEvent /> */}
                   <Donate />
-                  <Blog />
+                  <PopularSermon />
                   <NewsLetter />
                   <Footer />
                 </Fragment>

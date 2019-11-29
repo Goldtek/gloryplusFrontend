@@ -1,14 +1,14 @@
 import Header from "./header";
 import TopNav from "./top-nav";
 import Hero from "./hero";
-import BottomNav from "./event";
+import EventTimer from "./event-timer";
 import JoinUs from "./join-us";
 import ServiceSection from "./service-section";
 import Sermon from "./sermon";
 import UpcomingEvent from "./up-coming-events";
 import Donate from "./donate";
 import NewsLetter from "./news-letter";
-import Blog from "./blog";
+import PopularSermon from "./popular-sermon";
 import Footer from "./footer";
 import PastorSection from "./pastor-section";
 import PageInfo from "./page-info";
@@ -31,14 +31,14 @@ export {
   Header,
   TopNav,
   Hero,
-  BottomNav,
+  EventTimer,
   JoinUs,
   ServiceSection,
   Sermon,
   UpcomingEvent,
   Donate,
   NewsLetter,
-  Blog,
+  PopularSermon,
   Footer,
   PastorSection,
   PageInfo,
