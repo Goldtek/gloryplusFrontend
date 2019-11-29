@@ -2,7 +2,7 @@ import React from "react";
 import SectionCard from "../sermon-card";
 // import UpcomingEvent from "../up-coming-events";
 
-const SermonList = props => {
+const SermonList = ({ sermon }) => {
   return (
     <section className="sermons-list-section spad ">
       <div className="container">
@@ -11,11 +11,8 @@ const SermonList = props => {
           <h2>Popular Sermons</h2>
         </div>
         <div className="row">
-          {props.sermon.map(({ Id, ...otherprops }) => (
-            <>
-              <SectionCard key={Id} {...otherprops} />
-              {/* <UpcomingEvent key={Id} {...otherprops} /> */}
-            </>
+          {sermon.map(({ Id, ...otherprops }) => (
+            <SectionCard key={Id} {...otherprops} />
           ))}
         </div>
 
