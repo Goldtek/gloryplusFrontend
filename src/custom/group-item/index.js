@@ -1,12 +1,12 @@
 import React from "react";
 
-const GroupItem = props => {
+const GroupItem = ({ grp_Location, location_Details }) => {
   return (
     <div className="tabs">
       <div className="tab">
-        <input type="checkbox" id={props.grp_Location} />
-        <label className="tab-label" htmlFor={props.grp_Location}>
-          {props.grp_Location.toUpperCase()}
+        <input type="checkbox" id={grp_Location} />
+        <label className="tab-label" htmlFor={grp_Location}>
+          {grp_Location.toUpperCase()}
         </label>
         <div className="tab-content table-responsive">
           {" "}
@@ -19,7 +19,7 @@ const GroupItem = props => {
               </tr>
             </thead>
             <tbody>
-              {props.location_Details.map(({ id, ...cell }) => (
+              {location_Details.map(({ id, ...cell }) => (
                 <tr key={id}>
                   <td>{cell.leader}</td>
                   <td>{cell.phone}</td>
