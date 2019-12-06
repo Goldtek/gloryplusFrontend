@@ -43,7 +43,7 @@ class HomeChurch extends Component {
     // });
 
     this.setState({ loading: true }, () => {
-      axios.get("./db/groupData.json").then(result =>
+      axios.get("./utils/groupData.json").then(result =>
         this.setState({
           loading: false,
           groupInfo: [...result.data]

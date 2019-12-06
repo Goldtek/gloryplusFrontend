@@ -11,14 +11,14 @@ const Pagination = ({ eventPerPage, totalEvents, paginate }) => {
       <ul className="pagination pagination-lg">
         {pageNumbers.map(number => (
           <li key={number} className="page-item" aria-current="page">
-            <a
-              href="javascript:void(0)"
+            <span
+              style={{ cursor: "pointer" }}
               className="page-link active"
               onClick={() => paginate(number)}
               aria-disabled="true"
             >
               {number}
-            </a>
+            </span>
           </li>
         ))}
         {/*        

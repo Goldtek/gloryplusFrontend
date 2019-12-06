@@ -19,11 +19,11 @@ const SermonList = ({ sermon }) => {
         <div className="pagination-area">
           <ul className="pageination-list">
             <li>
-              <a href="#">1</a>
+              <a href="!#">1</a>
             </li>
 
             <li>
-              <a href="#">
+              <a href="!#">
                 Next <i className="fa fa-angle-double-right"></i>
               </a>
             </li>

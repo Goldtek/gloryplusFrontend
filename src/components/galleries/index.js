@@ -35,7 +35,7 @@ class Gallery extends Component {
     //   });
 
     this.setState({ loading: true }, () => {
-      axios.get("./db/galleryData.json").then(result =>
+      axios.get("./utils/galleryData.json").then(result =>
         this.setState({
           loading: false,
           galleryData: [...result.data]
@@ -58,32 +58,31 @@ class Gallery extends Component {
           <Galleries galleries={galleryData} />
         </div> */}
 
-        {loading ? (
-          <div style={{ minHeight: "25vh" }}>
-            <div className="col-md-4"></div>
-            <div
-              className="col-md-4"
-              style={{
-                marginTop: "35px",
-                marginBottom: "20px"
-              }}
-            >
-              {" "}
-              <FadeLoader
-                css={override}
-                sizeUnit={"px"}
-                size={50}
-                color={"#b42b2b"}
-                height={25}
-              />
+        <section className="spad-gallery" style={{ minHeight: "24vh" }}>
+          {loading ? (
+            <div style={{ minHeight: "25vh" }}>
+              <div className="col-md-4"></div>
+              <div className="col-md-4">
+                {" "}
+                <FadeLoader
+                  css={override}
+                  sizeUnit={"px"}
+                  size={50}
+                  color={"#b42b2b"}
+                  height={25}
+                />
+              </div>
+              <div className="col-md-4"></div>
             </div>
-            <div className="col-md-4"></div>
-          </div>
-        ) : (
-          // <GroupList homechurchInfo={groupInfo} />
-          <Galleries galleries={galleryData} />
-        )}
-        {/* <Space /> */}
+          ) : (
+            // <GroupList homechurchInfo={groupInfo} />
+            <>
+              {console.log(galleryData.length)}
+              <Galleries galleries={galleryData} />
+            </>
+          )}
+        </section>
+
         <NewsLetter />
         <Footer />
       </Fragment>

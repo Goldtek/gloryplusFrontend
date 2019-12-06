@@ -7,9 +7,9 @@ const Galleries = ({ galleries }) => {
   return (
     <div className="container gallery-div">
       <h4 align="center">GLORY PLUS GALLERY</h4>
-      <div className="row flex">
-        {galleries.map(({ galleryId, ...otherProps }) => (
-          <GalleryCard key={galleryId} {...otherProps} />
+      <div className="row flex ">
+        {galleries.map(({ galleryId, ...galleryProps }) => (
+          <GalleryCard key={galleryId} {...galleryProps} check={galleries} />
           // <ProductItem key={id} {...otherSEctionProps} />
         ))}
       </div>

@@ -3,6 +3,7 @@ import axios from "axios";
 import { css } from "@emotion/core";
 import { FadeLoader } from "react-spinners";
 import { Helmet } from "react-helmet";
+
 import {
   Header,
   TopNav,
@@ -21,12 +22,15 @@ const override = css`
 class SermonComponent extends Component {
   state = {
     sermons: [], // will hold the results from our ajax call
-    loading: false // will be true when ajax request is running
+    loading: false, // will be true when ajax request is running
+    total: null,
+    per_page: null,
+    current_page: null
   };
 
   componentDidMount() {
     this.setState({ loading: true }, () => {
-      axios.get("./db/sermonData.json").then(sermon =>
+      axios.get("./utils/sermonData.json").then(sermon =>
         this.setState({
           loading: false,
           sermons: [...sermon.data]
@@ -34,6 +38,7 @@ class SermonComponent extends Component {
       );
     });
   }
+
   render() {
     const { sermons, loading } = this.state;
     return (
@@ -44,7 +49,7 @@ class SermonComponent extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Sermon" bgPicture="url(img/sermon-info.jpg)" />
+        <PageInfo title="Sermon" bgPicture="url(img/bible-phone.png)" />
         <Sermon
           title="Doing Big things for God"
           preacher="Rev Dubus Achufusi"

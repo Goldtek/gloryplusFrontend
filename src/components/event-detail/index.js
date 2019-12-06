@@ -11,7 +11,7 @@ import {
   NewsLetter,
   EventDetail
 } from "../../custom";
-const API = "./db/eventData.json";
+const API = "./utils/eventData.json";
 const override = css`
   display: block;
   margin: 0 auto;
@@ -51,7 +51,7 @@ class Event_Details extends Component {
         <Header />
         <PageInfo
           title={pathID.charAt(0).toUpperCase() + pathID.slice(1)}
-          bgPicture="url(img/church-event1.png)"
+          bgPicture="url(img/church-events.png)"
         />
 
         {loading ? (

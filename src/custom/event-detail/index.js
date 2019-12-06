@@ -13,9 +13,9 @@ const EventDetail = ({
   month
 }) => {
   return (
-    <div className="container">
+    <div className="container spad-custom">
       <div className="row">
-        <div className="col-sm-8 col-md- el-header">
+        <div className="col-sm-8 col-md-8 el-header">
           <div className="page-header el-date">
             <h1>{title.toUpperCase()}</h1>
             <p>
@@ -41,7 +41,7 @@ const EventDetail = ({
           <hr />
         </div>
         <div className="col-sm-4 col-md-4">
-          <div className="well">
+          {/* <div className="well">
             <h4 className="margin-t-0">Search</h4>
             <form action="#">
               <div className="input-group">
@@ -57,11 +57,11 @@ const EventDetail = ({
                 </span>
               </div>
             </form>
-          </div>
+          </div> */}
 
           <div className="list-group margin-b-3">
-            <a href="#" className="active list-group-item">
-              Category 1
+            <a href="#" className="event-active list-group-item">
+              Recent Events
             </a>
             <a href="#" className="list-group-item">
               Category 2
