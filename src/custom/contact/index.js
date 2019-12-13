@@ -24,7 +24,7 @@ class Contactus extends Component {
             <div className="row">
               <div className="col-md-6 footer-top-content">
                 <div className="section-title title-left">
-                  <h2>Contact Us</h2>
+          
                 </div>
                 <h3>Lagos, Nigeria</h3>
                 <p>18 kudirat Abiola way, Oregun, ikeja, Lagos, 100001 Lagos, Nigeria</p>
@@ -36,7 +36,7 @@ class Contactus extends Component {
               </div>
               <div className="col-md-6">
                 <div className="section-title title-left">
-                  <h2>CONTACT FORM</h2>
+                 
                 </div>
                 <form className="contact-form">
                   <div className="row">

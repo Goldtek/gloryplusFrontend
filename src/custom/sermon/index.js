@@ -24,12 +24,7 @@ const Sermon = ({ title, preacher, content, link }) => (
               </ul>
               <p>{content}</p>
               <div className="icon-links">
-                <a href="/">
-                  <i className="ti-link"></i>
-                </a>
-                <a href="/">
-                  <i className="ti-zip"></i>
-                </a>
+               
                 <a href="/">
                   <i className="ti-headphone"></i>
                 </a>
