@@ -1,5 +1,6 @@
 import React from "react";
 import GalleryCard from "../gallery/gallery-card";
+import propTypes from "prop-types";
 // import GalleryData from "./picture-data";
 // const loadData = () => JSON.parse(JSON.stringify(Gallery_API));
 const Galleries = ({ galleries }) => {
@@ -7,9 +8,9 @@ const Galleries = ({ galleries }) => {
   return (
     <div className="container gallery-div">
       <h4 align="center">GLORY PLUS GALLERY</h4>
-      <div className="row flex">
-        {galleries.map(({ galleryId, ...otherProps }) => (
-          <GalleryCard key={galleryId} {...otherProps} />
+      <div className="row flex ">
+        {galleries.map(({ galleryId, ...galleryProps }) => (
+          <GalleryCard key={galleryId} {...galleryProps} check={galleries} />
           // <ProductItem key={id} {...otherSEctionProps} />
         ))}
       </div>
@@ -17,4 +18,7 @@ const Galleries = ({ galleries }) => {
   );
 };
 
+Galleries.propTypes = {
+  galleries: propTypes.any.isRequired
+};
 export default Galleries;

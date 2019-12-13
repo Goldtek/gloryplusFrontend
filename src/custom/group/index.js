@@ -4,14 +4,8 @@ import { GroupItem } from "../index";
 
 const GroupList = ({ homechurchInfo }) => {
   return (
-    <div
-      style={{
-        marginTop: "20px",
-        marginBottom: "20px"
-      }}
-      className="container"
-    >
-      <div className="col-md-12 cell-div">
+    <div className="container">
+      <div className="col-md-12 spad-custom">
         <h2 align="center" className="cell-header-text">
           <b>Home Church Locations</b>
         </h2>

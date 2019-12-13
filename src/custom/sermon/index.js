@@ -1,8 +1,10 @@
 import React from "react";
-const Sermon = ({ title, preacher, content, link }) => (
+import sortBy from "sort-by";
+const Sermon = ({ popular }) => (
   <section className="sermon-section spad">
     <div className="section-title">
       {/* <span>Experience God's Presence</span> */}
+      {console.log(popular.reverse())}
       <h2>Latest Sermon</h2>
     </div>
     <div className="sermon-warp">
@@ -16,13 +18,13 @@ const Sermon = ({ title, preacher, content, link }) => (
         <div className="row">
           <div className="col-md-6 col-md-offset-6">
             <div className="sermon-content">
-              <h2>{title}</h2>
+              <h2></h2>
               <ul className="sermon-info">
                 <li>
-                  Sermon By: <span>{preacher}</span>
+                  Sermon By: <span></span>
                 </li>
               </ul>
-              <p>{content}</p>
+              <p></p>
               <div className="icon-links">
                
                 <a href="/">

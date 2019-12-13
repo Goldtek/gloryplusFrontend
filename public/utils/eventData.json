@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Pacesetting Ladies of GloryPlus",
+    "pathName": "pacesetters",
+    "imagePath": "img/event/2.jpeg",
+    "description": "I dare to be different, i dare to be a pacesetter, equipped and empowered to become a voice, then you have to be in this meeting, i can assure you that this meeting will be a destiny moulding meeting.God is set to do great things with us, through us and for us. So please, all women , plan to attend",
+    "location": "GloryPlus International Assembly",
+    "time": "8:00am",
+    "day": "01",
+    "month": "Nov",
+    "year": "2019"
+  },
+  {
+    "id": 2,
+    "title": "Glory Men",
+    "pathName": "glorymen",
+    "imagePath": "img/event/men2.jpg",
+    "description": "I dare to be different, i dare to be a pacesetter, equipped and empowered to become a voice, then you have to be in this meeting, i can assure you that this meeting will be a destiny moulding meeting.God is set to do great things with us, through us and for us. So please, all women , plan to attend",
+    "location": "GloryPlus International Assembly",
+    "time": "8:00am",
+    "day": "12",
+    "month": "Dec",
+    "year": "2019"
+  },
+  {
+    "id": 3,
+    "title": "Singles Movie Night",
+    "pathName": "singles",
+    "imagePath": "img/event/movie.jpeg",
+    "description": "Singles present Movies night at Gloryplus international, red carpet, free popCorn chapman and free gifts to be won.",
+    "location": "GloryPlus International Assembly",
+    "time": "5:00pm",
+    "day": "08",
+    "month": "Nov",
+    "year": "2019"
+  },
+  {
+    "id": 4,
+    "title": "HolyGhost Morning",
+    "pathName": "holygost",
+    "imagePath": "img/event/1.jpg",
+    "description": "It will be a time for encounter, at holy ghost morning on thursday, Are you believing God for a miracle in your health, business, career, marriage, finances etc. This is your appointed time!!! The lead pastor Rev Dubus Achufusi of Gloryplus International Assembly will be LIVE, you can always stream the event live.",
+    "location": "De Saintago milan Hotel, festac",
+    "time": "8:00am",
+    "day": "28",
+    "month": "Nov",
+    "year": "2019"
+  },
+  {
+    "id": 5,
+    "title": "Tuesday Mid-week Service",
+    "pathName": "midweek",
+    "imagePath": "img/event/midweek.png",
+    "description": "Remember it's still our month of supernatural harvest. Join us today for another exciting session as we explore bible secrets on how to access supernatural harvest. See you there!!",
+    "location": "GloryPlus International Assembly",
+    "time": "6:00pm",
+    "day": "03",
+    "month": "Dec",
+    "year": "2019"
+  },
+  {
+    "id": 6,
+    "title": "Tuesday Mid-week Service",
+    "pathName": "midweek",
+    "imagePath": "img/event/midweek.png",
+    "description": "Remember it's still our month of supernatural harvest. Join us today for another exciting session as we explore bible secrets on how to access supernatural harvest. See you there!!",
+    "location": "GloryPlus International Assembly",
+    "time": "6:00pm",
+    "day": "03",
+    "month": "Dec",
+    "year": "2019"
+  },
+  {
+    "id": 7,
+    "title": "Tuesday Mid-week Service",
+    "pathName": "midweek",
+    "imagePath": "img/event/midweek.png",
+    "description": "Remember it's still our month of supernatural harvest. Join us today for another exciting session as we explore bible secrets on how to access supernatural harvest. See you there!!",
+    "location": "GloryPlus International Assembly",
+    "time": "6:00pm",
+    "day": "03",
+    "month": "Dec",
+    "year": "2019"
+  },
+  {
+    "id": 8,
+    "title": "Tuesday Mid-week Service",
+    "pathName": "midweek",
+    "imagePath": "img/event/midweek.png",
+    "description": "Remember it's still our month of supernatural harvest. Join us today for another exciting session as we explore bible secrets on how to access supernatural harvest. See you there!!",
+    "location": "GloryPlus International Assembly",
+    "time": "6:00pm",
+    "day": "03",
+    "month": "Dec",
+    "year": "2019"
+  },
+  {
+    "id": 9,
+    "title": "Tuesday Mid-week Service",
+    "pathName": "midweek",
+    "imagePath": "img/event/midweek.png",
+    "description": "Remember it's still our month of supernatural harvest. Join us today for another exciting session as we explore bible secrets on how to access supernatural harvest. See you there!!",
+    "location": "GloryPlus International Assembly",
+    "time": "6:00pm",
+    "day": "03",
+    "month": "Dec",
+    "year": "2019"
+  },
+  {
+    "id": 10,
+    "title": "Tuesday Mid-week Service",
+    "pathName": "midweek",
+    "imagePath": "img/event/midweek.png",
+    "description": "Remember it's still our month of supernatural harvest. Join us today for another exciting session as we explore bible secrets on how to access supernatural harvest. See you there!!",
+    "location": "GloryPlus International Assembly",
+    "time": "6:00pm",
+    "day": "03",
+    "month": "Dec",
+    "year": "2019"
+  }
+]

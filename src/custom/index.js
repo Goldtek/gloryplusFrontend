@@ -26,6 +26,7 @@ import Donation from "./donation-item";
 import EventDetail from "./event-detail";
 import Galleries from "./galleries";
 import SingleGallery from "./gallery/index";
+import SectionCard from "./sermon-card";
 
 export {
   Header,
@@ -43,6 +44,7 @@ export {
   PastorSection,
   PageInfo,
   SermonList,
+  SectionCard,
   Contactus,
   EventItem,
   NotFound,
