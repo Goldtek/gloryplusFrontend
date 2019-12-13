@@ -23,17 +23,20 @@ class SermonComponent extends Component {
   state = {
     sermons: [], // will hold the results from our ajax call
     loading: false, // will be true when ajax request is running
-    total: null,
-    per_page: null,
-    current_page: null
+    per: 2,
+    page: 1,
+    totalPages: null
   };
 
   componentDidMount() {
+    //deconstructing the state
+    const { per, page, totalPages, sermons } = this.state;
+    const url = `./utils/sermonData.json?per=${per}&page=${page}`;
     this.setState({ loading: true }, () => {
-      axios.get("./utils/sermonData.json").then(sermon =>
+      axios.get(url).then(response =>
         this.setState({
           loading: false,
-          sermons: [...sermon.data]
+          sermons: [...sermons, ...response.data.sermonJson]
         })
       );
     });
@@ -41,6 +44,7 @@ class SermonComponent extends Component {
 
   render() {
     const { sermons, loading } = this.state;
+    console.log(this.state.sermons);
     return (
       <Fragment>
         <Helmet>
@@ -50,13 +54,7 @@ class SermonComponent extends Component {
         <TopNav />
         <Header />
         <PageInfo title="Sermon" bgPicture="url(img/bible-phone.png)" />
-        <Sermon
-          title="Doing Big things for God"
-          preacher="Rev Dubus Achufusi"
-          content="The God we serve is big. He created and designed us to do big things.
-His predetermined purpose for creating us was to accomplish great things on earth.God designed you for exploits.
-Shake yourself off the dust of limitation and begin to do exploits."
-        />
+
         <hr />
 
         {loading ? (

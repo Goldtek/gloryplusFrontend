@@ -1,5 +1,5 @@
 import React from "react";
-import { SermonList } from "../index";
+// import { SermonList } from "../index";
 
 const PopularSermon = props => {
   return (

@@ -1,5 +1,6 @@
 import React from "react";
 import GalleryCard from "../gallery/gallery-card";
+import propTypes from "prop-types";
 // import GalleryData from "./picture-data";
 // const loadData = () => JSON.parse(JSON.stringify(Gallery_API));
 const Galleries = ({ galleries }) => {
@@ -17,4 +18,7 @@ const Galleries = ({ galleries }) => {
   );
 };
 
+Galleries.propTypes = {
+  galleries: propTypes.any.isRequired
+};
 export default Galleries;

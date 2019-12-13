@@ -11,18 +11,19 @@ const LiveStream = ({ liveStream }) => {
   // let url = "https://www.facebook.com/gloryplusintl/videos/1154911528047687/";
 
   return (
-    <div className="container">
+    <div className="container spad gallery-div">
+      <h4 align="center">Live Service</h4>
       <div className="row row-centered">
         <div className="col-xs-3 col-centered"></div>
-        {liveStream.map(({ id, ...otherfilters }) => (
+        {liveStream.map(({ id, ...livestreamProps }) => (
           <div key={id}>
-            {otherfilters.live ? (
+            {livestreamProps.live ? (
               <div className="col-xs-12 col-centered">
                 <div className="card">
                   <div className="card-content">
                     <div className="embed-responsive embed-responsive-16by9">
                       <iframe
-                        src={otherfilters.streamURL}
+                        src={livestreamProps.streamURL}
                         width="100%"
                         height="100%"
                         className="embed-responsive-item"
@@ -30,14 +31,14 @@ const LiveStream = ({ liveStream }) => {
                         allowTransparency="true"
                         allow="encrypted-media"
                         allowFullScreen="true"
-                        title={otherfilters.programTitle}
+                        title={livestreamProps.programTitle}
                       ></iframe>
                     </div>
                   </div>
                   <div className="card-read-more">
                     <a href="/live" className="btn btn-link btn-block">
                       We are <b className="text-danger"> Live </b>
-                      {otherfilters.programTitle}
+                      {livestreamProps.programTitle}
                     </a>
                   </div>
                 </div>
@@ -53,11 +54,11 @@ const LiveStream = ({ liveStream }) => {
                           This event is scheduled for
                         </div>
                         <div className="vp-live-start-time-body">
-                          {otherfilters.scheduleMonth}{" "}
-                          {otherfilters.scheduleDate}
+                          {livestreamProps.scheduleMonth}{" "}
+                          {livestreamProps.scheduleDate}
                         </div>
                         <div className="vp-live-start-time-footer">
-                          at {otherfilters.scheduleTime}
+                          at {livestreamProps.scheduleTime}
                         </div>
                       </div>
                     </div>

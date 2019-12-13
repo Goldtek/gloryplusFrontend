@@ -32,7 +32,7 @@ class LiveStreaming extends Component {
     //   });
 
     this.setState({ loading: true }, () => {
-      axios.get("./utilss/liveStreamData.json").then(result =>
+      axios.get("./utils/liveStreamData.json").then(result =>
         this.setState({
           loading: false,
           liveStream: [...result.data]

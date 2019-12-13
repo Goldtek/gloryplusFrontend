@@ -1,7 +1,9 @@
 import React from "react";
+// import PropTypes from "prop-types";
+
 // import { Link } from "react-router-dom";
 
-const GalleryCard = ({ galleryId, pathName, coverPix, coverTitle, check }) => {
+function GalleryCard({ galleryId, pathName, coverPix, coverTitle, check }) {
   let classItem;
 
   if (check.length === 1) {
@@ -18,8 +20,8 @@ const GalleryCard = ({ galleryId, pathName, coverPix, coverTitle, check }) => {
       <div className="content thumbnail">
         <a
           href={`/gallery/${pathName}`}
-          target="_blank"
-          rel="noopener noreferrer"
+          // target="_blank"
+          // rel="noopener noreferrer"
         >
           <div className="content-overlay"></div>
           <img className="content-image" src={coverPix} alt={coverTitle} />
@@ -31,6 +33,6 @@ const GalleryCard = ({ galleryId, pathName, coverPix, coverTitle, check }) => {
       </div>
     </div>
   );
-};
+}
 
 export default GalleryCard;

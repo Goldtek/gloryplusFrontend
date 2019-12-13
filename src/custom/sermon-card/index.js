@@ -17,7 +17,7 @@ const SectionCard = ({ sermonImg, artist, time, title, src }) => {
   return (
     <div>
       <div className="col-sm-6 col-md-4">
-        <div className="sermon-item event-div video-thumbnail">
+        <div className="sermon-item event-div ">
           {/* <b className={"fa-fa-play video-thumbnail"}></b> */}
 
           <div
@@ -34,9 +34,9 @@ const SectionCard = ({ sermonImg, artist, time, title, src }) => {
                 Sermon By: <span>{artist}</span>
               </li>
 
-              <li>
+              {/* <li>
                 <span>On {time}</span>
-              </li>
+              </li> */}
               <AudioPlayer
                 src={src}
                 // onPlay={playToggle}
@@ -45,7 +45,7 @@ const SectionCard = ({ sermonImg, artist, time, title, src }) => {
                 // other props here
               />
             </ul>
-            <div className="icon-links">
+            {/* <div className="icon-links">
               <a href="">
                 <i className="ti-link"></i>
               </a>
@@ -58,7 +58,7 @@ const SectionCard = ({ sermonImg, artist, time, title, src }) => {
               <a href="">
                 <i className="ti-import"></i>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

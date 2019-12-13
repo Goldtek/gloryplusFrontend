@@ -1,4 +1,5 @@
 import React from "react";
+import propTypes from "prop-types";
 const SingleGallery = ({ name, subPhotos }) => {
   return (
     <div className="container  gallery-div spad-gallery">
@@ -29,5 +30,9 @@ const SingleGallery = ({ name, subPhotos }) => {
     </div>
   );
 };
-
+SingleGallery.propTypes = {
+  subPhotos: propTypes.object.isRequired,
+  name: propTypes.string.isRequired,
+  photoUrl: propTypes.string.isRequired
+};
 export default SingleGallery;

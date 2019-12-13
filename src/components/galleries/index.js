@@ -45,6 +45,7 @@ class Gallery extends Component {
   }
   render() {
     const { galleryData, loading } = this.state;
+    console.log(this.state);
     return (
       <Fragment>
         <Helmet>
@@ -77,7 +78,6 @@ class Gallery extends Component {
           ) : (
             // <GroupList homechurchInfo={groupInfo} />
             <>
-              {console.log(galleryData.length)}
               <Galleries galleries={galleryData} />
             </>
           )}
