@@ -19,12 +19,12 @@ const Events = () => {
   const [eventItems, setEvents] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currPage, setCurrPage] = useState(1);
-  const [eventPerPage, setEventPerPage] = useState(3);
+  const [eventPerPage] = useState(2);
 
   useEffect(() => {
     const fetchItems = async () => {
       setLoading(true);
-      const res = await axios.get("./db/eventData.json");
+      const res = await axios.get("./utils/eventData.json");
       setEvents(res.data);
       setLoading(false);
     };
@@ -52,6 +52,7 @@ const Events = () => {
 
   //CHANGE PAGE
   const paginate = pageNumber => setCurrPage(pageNumber);
+
   //CHANGE PAGE
 
   return (
@@ -62,7 +63,7 @@ const Events = () => {
       </Helmet>
       <TopNav />
       <Header />
-      <PageInfo title="Events" bgPicture="url(img/church-event1.png)" />
+      <PageInfo title="Events" bgPicture="url(img/church-events.png)" />
 
       <section className="event-list-section spad">
         <div className="container">

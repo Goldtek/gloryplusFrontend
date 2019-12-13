@@ -22,7 +22,7 @@ import {
   EventTimer,
   JoinUs,
   ServiceSection,
-  UpcomingEvent,
+  // UpcomingEvent,
   Donate,
   NewsLetter,
   PopularSermon,

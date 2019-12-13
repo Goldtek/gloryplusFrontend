@@ -3,6 +3,7 @@ import axios from "axios";
 import { css } from "@emotion/core";
 import { FadeLoader } from "react-spinners";
 import { Helmet } from "react-helmet";
+
 import {
   Header,
   TopNav,
@@ -21,21 +22,29 @@ const override = css`
 class SermonComponent extends Component {
   state = {
     sermons: [], // will hold the results from our ajax call
-    loading: false // will be true when ajax request is running
+    loading: false, // will be true when ajax request is running
+    per: 2,
+    page: 1,
+    totalPages: null
   };
 
   componentDidMount() {
+    //deconstructing the state
+    const { per, page, totalPages, sermons } = this.state;
+    const url = `./utils/sermonData.json?per=${per}&page=${page}`;
     this.setState({ loading: true }, () => {
-      axios.get("./db/sermonData.json").then(sermon =>
+      axios.get(url).then(response =>
         this.setState({
           loading: false,
-          sermons: [...sermon.data]
+          sermons: [...sermons, ...response.data.sermonJson]
         })
       );
     });
   }
+
   render() {
     const { sermons, loading } = this.state;
+    console.log(this.state.sermons);
     return (
       <Fragment>
         <Helmet>
@@ -44,14 +53,8 @@ class SermonComponent extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Sermon" bgPicture="url(img/sermon-info.jpg)" />
-        <Sermon
-          title="Doing Big things for God"
-          preacher="Rev Dubus Achufusi"
-          content="The God we serve is big. He created and designed us to do big things.
-His predetermined purpose for creating us was to accomplish great things on earth.God designed you for exploits.
-Shake yourself off the dust of limitation and begin to do exploits."
-        />
+        <PageInfo title="Sermon" bgPicture="url(img/bible-phone.png)" />
+
         <hr />
 
         {loading ? (

@@ -22,11 +22,13 @@ class About extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="About Us" bgPicture="url(img/aboutus.jpg)" />
-        <JoinUs />
-        <ServiceSection />
-        <EventTimer />
-        <PastorSection />
+        <PageInfo title="About Us" bgPicture="url(img/aboutus-now.png)" />
+        <div style={{ minHeight: "25vh" }}>
+          <JoinUs />
+          <ServiceSection />
+          <EventTimer />
+          <PastorSection />
+        </div>
         <NewsLetter />
         <Footer />
       </Fragment>

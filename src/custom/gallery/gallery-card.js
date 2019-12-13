@@ -1,25 +1,38 @@
-import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+// import PropTypes from "prop-types";
 
-const GalleryCard = ({ pathName, galleryId, coverPix, coverTitle }) => {
-  let classItem = "col-lg-3 col-md-4 col-sm-6 col-xs-12";
+// import { Link } from "react-router-dom";
+
+function GalleryCard({ galleryId, pathName, coverPix, coverTitle, check }) {
+  let classItem;
+
+  if (check.length === 1) {
+    classItem = "col-lg-12 col-md-12 col-sm-12 col-xs-12";
+  } else if (check.length === 2) {
+    classItem = "col-lg-6 col-md-6 col-sm-12 col-xs-12";
+  } else if (check.length === 3) {
+    classItem = "col-lg-4 col-md-4 col-sm-12 col-xs-12";
+  } else {
+    classItem = "col-lg-3 col-md-3 col-sm-12 col-xs-12";
+  }
   return (
-    <Fragment>
-      <div className={`thumbnail ${classItem}`} key={galleryId}>
-        <div className="hovereffect ">
-          <Link to={`/gallery/${pathName}`}>
-            <img className="img-responsive" src={coverPix} alt="" />
-          </Link>
-          <div className="overlay">
-            <h2>{coverTitle}</h2>
-            <p className="lead">
-              <Link to={`/gallery/${pathName}`}>View More</Link>
-            </p>
+    <div className={`${classItem}`} key={galleryId}>
+      <div className="content thumbnail">
+        <a
+          href={`/gallery/${pathName}`}
+          // target="_blank"
+          // rel="noopener noreferrer"
+        >
+          <div className="content-overlay"></div>
+          <img className="content-image" src={coverPix} alt={coverTitle} />
+          <div className="content-details fadeIn-bottom">
+            <h3 className="content-title">{coverTitle}</h3>
+            <p className="content-text">view gallery</p>
           </div>
-        </div>
+        </a>
       </div>
-    </Fragment>
+    </div>
   );
-};
+}
 
 export default GalleryCard;
