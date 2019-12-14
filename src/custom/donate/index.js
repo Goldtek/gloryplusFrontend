@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 class Donate extends Component {
   render() {
     return (
@@ -25,9 +25,9 @@ class Donate extends Component {
             </div>
             <div className="col-md-6 col-lg-5">
               <div className="donate-card">
-                <a href="/donate" className="site-btn sb-full">
+                <Link to="/donate" className="site-btn sb-full">
                   <b className="fa fa-hand-o"></b> PARTNER WITH US
-                </a>
+                </Link>
               </div>
             </div>
           </div>

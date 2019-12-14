@@ -13,6 +13,7 @@ class EventTimer extends Component {
   };
 
   componentDidMount() {
+    this.getDate();
     this.setState(
       calculateStateFromProps({ dateTo: this.state.dateTo }),
       () => {
@@ -130,6 +131,20 @@ class EventTimer extends Component {
     }
   };
 
+  getDate = () => {
+    const dayINeed = 7; 
+    const today = moment().isoWeekday();
+    if (today <= dayINeed) { 
+    const dateObj = moment().isoWeekday(dayINeed).format('MM DD YYYY, HH:mm ');
+    return (
+      <Countdown
+                timeTillDate={`${dateObj} am`}
+                timeFormat="MM DD YYYY, h:mm a"
+              />
+    )
+}
+
+  }
   render() {
     return (
       <section className="event-section">
@@ -138,7 +153,7 @@ class EventTimer extends Component {
             <div className="col-md-5 col-lg-6">
               <div className="event-info">
                 <div className="event-date">
-                  <h2>10</h2>
+                  <h2>15</h2>
                   November
                 </div>
                 <h3>Fellowship with us</h3>
@@ -151,7 +166,7 @@ class EventTimer extends Component {
             </div>
             <div className="col-md-7 col-lg-6">
               <Countdown
-                timeTillDate="11 17 2019, 8:00 am"
+                timeTillDate="12 15 2019, 8:00 am"
                 timeFormat="MM DD YYYY, h:mm a"
               />
             </div>

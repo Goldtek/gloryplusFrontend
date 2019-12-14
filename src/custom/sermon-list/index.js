@@ -8,7 +8,8 @@ const SermonList = ({ sermon }) => {
       <div className="container">
         <div className="section-title">
           <span>Experience God's Presence</span>
-          <h2>Popular Sermons</h2>
+          {/* <h2>Popular Sermons</h2> */}
+          <h2> Sermons Loading....</h2>
         </div>
         <div className="row">
           {sermon.map(({ Id, ...sermonProps }) => (

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import moment from 'moment';
 import Countdown from "../countdown";
 
 class TopNav extends Component {
@@ -9,6 +10,12 @@ class TopNav extends Component {
   };
   render() {
     /**** change the link to that of react based on routing and aplying authentication to it */
+    const dayINeed = 7; 
+  const today = moment().isoWeekday();
+  console.log('today', today);
+  // if (today <= dayINeed) { 
+  //   return moment().isoWeekday(dayINeed);
+  // }
 
     return (
       <div className="top-nav-section">
@@ -43,7 +50,7 @@ class TopNav extends Component {
               <div className="counter-top">
                 <h5>Upcoming Event:</h5>
                 <Countdown
-                  timeTillDate="11 14 2019, 8:00 am"
+                  timeTillDate="12 31 2019, 9:00 pm"
                   timeFormat="MM DD YYYY, h:mm a"
                 />
                 <a href="#" className="top-readmore hidden-sm">

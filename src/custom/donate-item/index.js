@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DonateItem = () => {
   return (
@@ -23,9 +24,9 @@ const DonateItem = () => {
               glory of God, to enable you live the life you were designed to
               live.
             </p>
-            <a href="/donation" className="site-btn sb-wide">
+            <Link onTouchMove="/donation" className="site-btn sb-wide">
               Donate Now
-            </a>
+            </Link>
           </div>
           <div className="col-md-6 about-img col-sm-12 join-img">
             <img src="img/partner-with-us.png" alt="" />
