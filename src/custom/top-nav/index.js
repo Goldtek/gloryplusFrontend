@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import moment from 'moment';
 import Countdown from "../countdown";
 
 class TopNav extends Component {
@@ -9,6 +10,12 @@ class TopNav extends Component {
   };
   render() {
     /**** change the link to that of react based on routing and aplying authentication to it */
+    const dayINeed = 7; 
+  const today = moment().isoWeekday();
+  console.log('today', today);
+  // if (today <= dayINeed) { 
+  //   return moment().isoWeekday(dayINeed);
+  // }
 
     return (
       <div className="top-nav-section">

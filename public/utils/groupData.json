@@ -5,15 +5,90 @@
     "location_Details": [
       {
         "id": 1,
-        "address": "No 1 Sodipo close No 1 Sodipo closeNo 1 Sodipo closeNo 1 Sodipo closeNo 1 Sodipo closeNo 1 Sodipo close",
-        "leader": "Godspower",
+        "address": "No 1 Sodipo close, olusoseun, ikeja",
+        "leader": "ONWUEGBUZIE CHISOM DIKE ",
         "phone": "0806676891"
       },
       {
         "id": 2,
-        "address": "No 2 Zion street",
-        "leader": "Chisom Dike",
-        "phone": "08066379681"
+        "address": "",
+        "leader": "MARSHAL ANUFORO",
+        "phone": "08068548482"
+      },
+      {
+        "id": 3,
+        "address": "Sodipo close, olusoseun, ikeja",
+        "leader": "MOYIANA MERCY",
+        "phone": "08059346382"
+      },
+      {
+        "id": 4,
+        "address": "Ojota",
+        "leader": "UCHE CHUKWUEMEKA",
+        "phone": "7038844626"
+      },
+      {
+        "id": 5,
+        "address": "Ojota",
+        "leader": "IKECHUKWU NWIZU",
+        "phone": "08036764476"
+      },
+      {
+        "id": 6,
+        "address": "Maryland",
+        "leader": "OBINNA EZIURA ",
+        "phone": "7039117833"
+      },
+      {
+        "id": 7,
+        "address": "Maryland",
+        "leader": "EMEKA EJIMOFOR",
+        "phone": "8137216752"
+      },
+      {
+        "id": 8,
+        "address": "Maryland",
+        "leader": "JONATHAN UGBE",
+        "phone": "8038888903"
+      },
+      {
+        "id": 9,
+        "address": "Ogba",
+        "leader": "UZODINMA FRANK",
+        "phone": "8030575162"
+      },
+      {
+        "id": 10,
+        "address": "Ogba",
+        "leader": "ROBERT JUDE PATRICK",
+        "phone": "9050018828"
+      },
+      {
+        "id": 11,
+        "address": "Ikeja",
+        "leader": "NNAMDI CHUKWUKERE",
+        "phone": "8060974126"
+      },
+      
+      {
+        "id": 12,
+        "address": "Ikeja",
+        "leader": "ISARO-IGBARA GIFT",
+        "phone": "8063423514"
+      }
+      ,
+      {
+        "id": 13,
+        "address": "Ikeja",
+        "leader": "GODFREY IYKE NWOSU",
+        "phone": "07038404502"
+      }
+      ,
+      {
+        "id": 14,
+        "address": "Ikeja",
+        "leader": "UCHENDU JOVITA",
+        "phone": "7088317170"
       }
     ]
   },
@@ -22,35 +97,344 @@
     "grp_Location": "Ogudu",
     "location_Details": [
       {
-        "id": 3,
-        "address": "No 1 Sodipo close",
-        "leader": "Stephanie Esiokwu",
-        "phone": "0806676891"
+        "id": 1,
+        "address": "Ogudu",
+        "leader": "STEPHANIE MALU",
+        "phone": "08180634905"
       },
       {
-        "id": 4,
-        "address": "No 2 Zion street",
-        "leader": "Jennifer Johnson",
-        "phone": "08066379681"
+        "id": 2,
+        "address": "Ogudu",
+        "leader": "VIDA UGWUEGBU",
+        "phone": "7069715686"
+      }
+      ,
+      {
+        "id": 3,
+        "address": "Ogudu",
+        "leader": "MBAH CHARLES",
+        "phone": "08181930323"
       }
     ]
   },
   {
     "grpId": 3,
-    "grp_Location": "Festac",
+    "grp_Location": "Ketu",
     "location_Details": [
       {
+        "id": 1,
+        "address": "Ketu",
+        "leader": "NELSON OGAR",
+        "phone": "7032039119"
+      },
+      {
+        "id": 2,
+        "address": "Ketu",
+        "leader": "ENANG SAVIOUR",
+        "phone": "8023800800"
+      }
+      ,
+      {
+        "id": 3,
+        "address": "Ketu",
+        "leader": "DURUNWA OBED",
+        "phone": "8064681028"
+      }
+      ,
+      {
         "id": 4,
-        "address": "No 1 Sodipo close",
-        "leader": "Godspower",
-        "phone": "0806676891"
+        "address": "Ketu",
+        "leader": "DAVID DURU",
+        "phone": "7067638194"
+      }
+    ]
+  },
+  {
+    "grpId": 4,
+    "grp_Location": "Berger",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Olowora-Berger",
+        "leader": "DAVE SYLVANUS",
+        "phone": "9058864341"
+      },
+      {
+        "id": 2,
+        "address": "Olowora",
+        "leader": "ATUMA CELESTINE OKECHUKWU",
+        "phone": "8038858368"
+      }
+      ,
+      {
+        "id": 3,
+        "address": "Ojodu/Berger",
+        "leader": "JOEL OBIAZUKWO ",
+        "phone": "8183570838"
+      }
+      ,
+      {
+        "id": 4,
+        "address": "Ojodu/Berger",
+        "leader": "EDIDIANG AKPAN",
+        "phone": "07034477311"
       },
       {
         "id": 5,
-        "address": "No 2 Zion street",
-        "leader": "Chisom Dike",
-        "phone": "08066379681"
+        "address": "Ojodu/Berger",
+        "leader": "GABRIEL ANTHONY ",
+        "phone": "07035552100"
+      }
+    ]
+  },
+  {
+    "grpId": 5,
+    "grp_Location": "Surulere",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Surulere",
+        "leader": "ROSELINE IGWE",
+        "phone": "09092172925"
+      },
+      {
+        "id": 2,
+        "address": "Surulere",
+        "leader": "JOHN AIGBETOH",
+        "phone": "08172007318"
+      }
+      ,
+      {
+        "id": 3,
+        "address": "Surulere",
+        "leader": "OGUNKOLA MOYOSOLUWA",
+        "phone": "09090140152"
+      }
+    ]
+  },
+  {
+    "grpId": 6,
+    "grp_Location": "Oshodi/Isolo",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Oshodi",
+        "leader": "NATH.I. CHIMBO",
+        "phone": "08027392210"
+      },
+      {
+        "id": 2,
+        "address": "Oshodi",
+        "leader": "ISA JEREMIAH",
+        "phone": "08035174486"
+      }
+      ,
+      {
+        "id": 3,
+        "address": "Mushin",
+        "leader": "IHEKE O  SAMUEL",
+        "phone": "08032741621"
+      }
+    ]
+  }
+  ,
+  {
+    "grpId": 7,
+    "grp_Location": "Ikorodu",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Ikorodu",
+        "leader": "MATTHEW IDARA",
+        "phone": "07034560570"
+      },
+      {
+        "id": 2,
+        "address": "Ikorodu",
+        "leader": "UZOMA NWANA",
+        "phone": "08033188033"
+      }
+      ,
+      {
+        "id": 3,
+        "address": "Ikorodu",
+        "leader": "JEREMIAH UMOH",
+        "phone": "7010731559"
+      },
+      {
+        "id": 4,
+        "address": "Ikorodu",
+        "leader": "ESHIOBOR SAMUEL",
+        "phone": "08073018793"
+      }
+    ]
+  }
+  ,
+  {
+    "grpId": 8,
+    "grp_Location": "Oworonshoki",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Oworo",
+        "leader": "FRANCIS OGAR",
+        "phone": "08182284953"
+      },
+      {
+        "id": 2,
+        "address": "Oworo",
+        "leader": "MICHAEL HENRY OBI",
+        "phone": "07032310550"
+      }
+      ,
+      {
+        "id": 3,
+        "address": "Gbagada",
+        "leader": "PATRICK AKANIYENE ",
+        "phone": "08039193090"
+      },
+      {
+        "id": 4,
+        "address": "Ilupeju",
+        "leader": "UDEME ANDREW GIBSON",
+        "phone": "08186776211"
+      }
+    ]
+  }
+  ,
+  {
+    "grpId": 9,
+    "grp_Location": "Agege",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Agege",
+        "leader": "OGECHI AGU-UZOCHUKWU",
+        "phone": "08178024283"
+      },
+      {
+        "id": 2,
+        "address": "Agege",
+        "leader": "BRIGHT ELOCHUKWU",
+        "phone": "08184268770"
+      }
+    ]
+  }
+  ,
+  {
+    "grpId": 10,
+    "grp_Location": "Somolu",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Bariga",
+        "leader": "PETER OWOFERIA",
+        "phone": "8023266439"
+      },
+      {
+        "id": 2,
+        "address": "Palmgrove",
+        "leader": "ACHEBE IJEOMA",
+        "phone": "08036680458"
+      }
+      ,
+      {
+        "id": 3,
+        "address": "Jibowu",
+        "leader": "CHAMBERLINE EBUBECHI",
+        "phone": "08097150434"
+      }
+    ]
+  }
+  ,
+  {
+    "grpId": 11,
+    "grp_Location": "Iyana-ipaja",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Iyana-ipaja",
+        "leader": "JEFFREY IFEWULU",
+        "phone": "07039088840"
+      }
+    ]
+  }
+  ,
+  {
+    "grpId": 12,
+    "grp_Location": "Cement",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Cement",
+        "leader": "IZUAKOR ANTHONY",
+        "phone": "08025667122"
+      }
+    ]
+  }
+  ,
+  {
+    "grpId": 13,
+    "grp_Location": "Egbeda",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Egbeda",
+        "leader": "IWUOHA STEPHEN C",
+        "phone": "08034855493"
+      }
+    ]
+  }
+  ,
+  {
+    "grpId": 14,
+    "grp_Location": "Mowe",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Mowe",
+        "leader": "CHARLES AFEYI",
+        "phone": "08032834192"
+      }
+    ]
+  }
+  ,
+  {
+    "grpId": 15,
+    "grp_Location": "Magboro",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Magboro",
+        "leader": "JOYCE OBIAKOR",
+        "phone": "09036227720"
+      }
+    ]
+  },
+  {
+    "grpId": 16,
+    "grp_Location": "Okota",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Okota",
+        "leader": "OPARA BLESSING",
+        "phone": "08038187975"
+      }
+    ]
+  },
+  {
+    "grpId": 17,
+    "grp_Location": "Magodo",
+    "location_Details": [
+      {
+        "id": 1,
+        "address": "Magodo",
+        "leader": "FRANK UHUMUAMBI",
+        "phone": "08068408480"
       }
     ]
   }
 ]
+
+ 	 	

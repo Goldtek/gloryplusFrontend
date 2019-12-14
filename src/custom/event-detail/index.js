@@ -32,7 +32,7 @@ const EventDetail = ({
       <div className="row">
         <div className="col-sm-12 col-md-8">
           <img className="img-responsive" src={imagePath} alt={pathName} />
-          <figcaption className="margin-t-h">{pathName}</figcaption>
+          {/* <figcaption className="margin-t-h">{pathName}</figcaption> */}
           <br />
           <p>{description}</p>
           <Link to="/events">
@@ -59,43 +59,7 @@ const EventDetail = ({
             </form>
           </div> */}
 
-          <div className="list-group margin-b-3">
-            <a href="#" className="event-active list-group-item">
-              Recent Events
-            </a>
-            <a href="#" className="list-group-item">
-              Category 2
-            </a>
-            <a href="#" className="list-group-item">
-              Category 3
-            </a>
-          </div>
-
-          <div className="panel panel-default">
-            <div className="panel-heading">
-              <h4 className="panel-title">Sidebar panel widget</h4>
-            </div>
-            <div className="panel-body">
-              <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                consequat.
-              </p>
-            </div>
-          </div>
-
-          <div className="panel panel-default">
-            <div className="panel-heading">
-              <h4 className="panel-title">Sidebar panel widget</h4>
-            </div>
-            <div className="panel-body">
-              <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                consequat.
-              </p>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>
