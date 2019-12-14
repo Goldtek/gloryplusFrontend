@@ -1,10 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-// import Img1 from 'img/gpa.jpg';
-// import Img2 from 'img/mainChurch.jpg'
-// import Img3 from 'img/rev&mumSmile.jpg'
-// import Img4 from 'img/rev&mumDance.jpg'
-// 
 
 const imgUrls = [
   'img/gpa.jpg',
@@ -13,7 +8,7 @@ const imgUrls = [
   'img/rev&mumDance.jpg'
 ];
 const texts = [
-  'WELCOME TO GLORYPLUS',
+  'WELCOME TO GLORYPLUS INTERNATIONAL',
   'A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE',
   `LIVING IN GOD'S GLORY`,
   'HIS GLORY IS MADE MANIFEST IN HIS PEOPLE'
@@ -72,7 +67,7 @@ class Hero extends Component {
           <div className="hc-inner">
             <div className="container">
               <h2 style={{
-                fontSize: '65px', 
+                fontSize: '55px', 
                 fontFamily: `'Inconsolata', 'monospace'`,
                 // whiteSpace: 'nowrap',
                 lineHeight: '78px'
