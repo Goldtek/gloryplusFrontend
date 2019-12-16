@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Player } from 'video-react';
 
 class JoinUs extends Component {
   render() {
@@ -15,7 +16,7 @@ class JoinUs extends Component {
                 <br /> in these last days, God expects us to work in his glory.
               </p>
               <p>
-                When we talk about the glory of God, we ar talking about his
+                When we talk about the glory of God, we are talking about his
                 charcter,
                 <br /> the substance that makes God whom he is, his manifest
                 prescence, his power and his reputation.
@@ -28,7 +29,12 @@ class JoinUs extends Component {
               </Link>
             </div>
             <div className="col-md-6 join-img col-sm-12">
-              <img src="img/about.jpeg" alt="" />
+              {/* <img src="img/about.jpeg" alt="" /> */}
+              {/* <Player>
+                <source src="https://files.fm/pa/dike4mii4real/home.mp4/home.mp4" />
+              </Player> */}
+              
+              <iframe src="https://drive.google.com/file/d/1lAauoQcnUA-1kWdrzdcqPgVFxgrFUVws/preview" width="500" height="360" frameborder="0" allow="fullscreen" allowfullscreen X-Frame-Options="sameorigin"></iframe>
             </div>
           </div>
         </div>

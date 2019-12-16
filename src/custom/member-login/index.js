@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MemberLogin = () => {
   return (
@@ -21,9 +22,9 @@ const MemberLogin = () => {
                   Login
                 </button>
                 &nbsp;&nbsp;
-                <a href="/register" className="site-btn">
+                <Link to="/register" className="site-btn">
                   Register
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-2"></div>

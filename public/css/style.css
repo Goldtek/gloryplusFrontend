@@ -773,6 +773,28 @@ ol {
 .hero-section {
   height: 800px;
   position: relative;
+  opacity: 1.8;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+/* .fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+} */
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .hero-section:after {
@@ -2192,4 +2214,9 @@ live stream
 .vp-text-alert-wrapper .vp-alert-time .vp-live-start-time-body {
   font-weight: 400;
   font-size: 3.2em;
+}
+
+
+.hero-text {
+  font-size: 15px
 }

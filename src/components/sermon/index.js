@@ -32,14 +32,14 @@ class SermonComponent extends Component {
     //deconstructing the state
     const { per, page, totalPages, sermons } = this.state;
     const url = `./utils/sermonData.json?per=${per}&page=${page}`;
-    this.setState({ loading: true }, () => {
-      axios.get(url).then(response =>
-        this.setState({
-          loading: false,
-          sermons: [...sermons, ...response.data.sermonJson]
-        })
-      );
-    });
+    // this.setState({ loading: true }, () => {
+    //   axios.get(url).then(response =>
+    //     this.setState({
+    //       loading: false,
+    //       sermons: [...sermons, ...response.data.sermonJson]
+    //     })
+    //   );
+    // });
   }
 
   render() {

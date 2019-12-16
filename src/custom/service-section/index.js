@@ -12,8 +12,7 @@ class ServiceSection extends Component {
                   <i className="fa fa-fire"></i>Our Values
                 </h4>
                 <p>
-                  To raise leaders who will serve as model to nations,
-                  Showcasing the glory of God in everything area of our lives.
+                  Passion for the glory of God, passion for soul wining and righteous living.
                 </p>
                 <a href="/" className="s-readmore">
                   Readmore <i className="fa fa-angle-double-right"></i>
@@ -26,12 +25,11 @@ class ServiceSection extends Component {
                   <i className="fa fa-eye"></i>Our Vision
                 </h4>
                 <p>
-                  Establish churches for spiritual growth, <br /> plant schools
-                  for intellectual development. Raising of leaders.
+                Raising a generation whose faith is in the power of God and not in the wisdom of men. <br/> 1 corinthians 2:4
                 </p>
                 <a href="/" className="s-readmore">
                   Readmore <i className="fa fa-angle-double-right"></i>
-                </a>
+                </a> 
               </div>
             </div>
             <div className="col-sm-4 ">
@@ -40,8 +38,10 @@ class ServiceSection extends Component {
                   <i className="fa fa-heart"></i>Our Mission
                 </h4>
                 <p>
-                  Demonstrate the love of God, <br /> To spread the knowledge of
-                  the Glory to the ends of the earth
+                  Revealing the knowledge of the glory of God to nations 
+                  that he might recieve glory from people through worship, 
+                  this can be accoplished through teaching, preaching, discipleship, planting of churches and demonstrating the power of the holy spirit.
+{/* truncate it and on */}
                 </p>
                 <a href="/" className="s-readmore">
                   Readmore <i className="fa fa-angle-double-right"></i>

@@ -96,4 +96,4 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery;
+    export default Gallery;

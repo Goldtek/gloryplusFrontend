@@ -1,6 +1,39 @@
 import React, { Component } from "react";
 
 class Contactus extends Component {
+
+    state= {
+      message: '',
+      name: '',
+      email: '',
+    };
+
+    handleEmail = (event) => {
+      this.setState({ email: event.target.value })
+    }
+
+    handleName = (event) => {
+      this.setState({ name: event.target.value })
+    }
+
+    handleMessage = (event) => {
+      this.setState({ message: event.target.value })
+    }
+
+    handleSubmit = (e)=> {
+      
+      const { name, message, email } = this.state;
+      if( name === '' || email === '' || message === '') {
+        alert('all fields are required');
+        return;
+      }
+      const data = {
+        message, name, email
+      };
+      alert('Your message has been recieved, you will be contacted soon.');
+      e.preventDefault();
+    }
+  
   render() {
     const stlyes = {
       border: 0,
@@ -24,7 +57,7 @@ class Contactus extends Component {
             <div className="row">
               <div className="col-md-6 footer-top-content">
                 <div className="section-title title-left">
-                  <h2>Contact Us</h2>
+          
                 </div>
                 <h3>Lagos, Nigeria</h3>
                 <p>18 kudirat Abiola way, Oregun, ikeja, Lagos, 100001 Lagos, Nigeria</p>
@@ -36,18 +69,18 @@ class Contactus extends Component {
               </div>
               <div className="col-md-6">
                 <div className="section-title title-left">
-                  <h2>CONTACT FORM</h2>
+                 
                 </div>
-                <form className="contact-form">
+                <form className="contact-form" onSubmit={this.handleSubmit}>
                   <div className="row">
                     <div className="col-sm-6">
-                      <input type="text" placeholder="Your Name" />
+                      <input type="text" placeholder="Your Name" value={this.state.name}  onChange={this.handleName} />
                     </div>
                     <div className="col-sm-6">
-                      <input type="email" placeholder="Email address" />
+                      <input type="email" placeholder="Email address" value={this.state.email}  onChange={this.handleEmail} />
                     </div>
                     <div className="col-sm-12">
-                      <textarea placeholder="Your Messege"></textarea>
+                      <textarea placeholder="Your Messege" value={this.state.message}  onChange={this.handleMessage}></textarea>
                       <button type="submit" className="site-btn">
                         Send message
                       </button>

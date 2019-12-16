@@ -26,12 +26,7 @@ const Sermon = ({ popular }) => (
               </ul>
               <p></p>
               <div className="icon-links">
-                <a href="/">
-                  <i className="ti-link"></i>
-                </a>
-                <a href="/">
-                  <i className="ti-zip"></i>
-                </a>
+               
                 <a href="/">
                   <i className="ti-headphone"></i>
                 </a>
