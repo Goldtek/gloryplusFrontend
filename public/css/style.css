@@ -757,7 +757,7 @@ ol {
 	Hero Section
 -----------------------*/
 .hero-section {
-  height: auto;
+  height: 600px;
   position: relative;
   opacity: 1.8;
   animation-name: fadeInOpacity;
