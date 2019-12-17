@@ -3,17 +3,6 @@ import AudioPlayer from "react-h5-audio-player";
 import "./audioplayer.css";
 
 const SectionCard = ({ sermonImg, artist, time, title, src }) => {
-  // const [play, setPlay] = useState(false);
-
-  // const playToggle = () => {
-  //   setPlay(!play);
-  //   console.log("play");
-  // };
-  // const pauseToggle = () => {
-  //   setPlay(play);
-  //   console.log("pause");
-  // };
-
   return (
     <div>
       <div className="col-sm-6 col-md-4">

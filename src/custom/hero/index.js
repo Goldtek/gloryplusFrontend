@@ -1,87 +1,79 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import Slider from "react-animated-slider";
+import "react-animated-slider/build/horizontal.css";
+import "./slider-animations.css";
+import "./hero.css";
 
-const imgUrls = [
-  'img/gpa.jpg',
-  'img/mainChurch.jpg',
-  'img/rev&mumSmile.jpg',
-  'img/rev&mumDance.jpg'
+// import { Link } from "react-router-dom";
+// import "./hero.css";
+// const imgUrls = [
+//   "img/gpa.jpg",
+//   "img/mainChurch.jpg",
+//   "img/rev&mumSmile.jpg",
+//   "img/rev&mumDance.jpg"
+// ];
+// const texts = [
+//   "WELCOME TO GLORYPLUS INTERNATIONAL",
+//   "A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE",
+//   `LIVING IN GOD'S GLORY`,
+//   "HIS GLORY IS MADE MANIFEST IN HIS PEOPLE"
+// ];
+
+const content = [
+  {
+    title: "WELCOME TO GLORYPLUS INTERNATIONAL",
+    description: "A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE",
+    button1: "JOIN US",
+    button2: "LIVESTREAM",
+    image: "img/gpa.jpg"
+  },
+  {
+    title: "LIVING IN GOD'S GLORY",
+    description: "HIS GLORY IS MADE MANIFEST IN HIS PEOPLE",
+    button1: "JOIN US",
+    button2: "LIVESTREAM",
+    image: "img/rev&mumSmile.jpg"
+  },
+  {
+    title: "A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE",
+    description: "HIS GLORY IS MADE MANIFEST IN HIS PEOPLE",
+    button1: "JOIN US",
+    button2: "LIVESTREAM",
+    image: "img/mainChurch.jpg"
+  },
+  {
+    title: "HIS GLORY IS MADE MANIFEST IN HIS PEOPLE",
+    description: "A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE",
+    button1: "JOIN US",
+    button2: "LIVESTREAM",
+    image: "img/rev&mumDance.jpg"
+  }
 ];
-const texts = [
-  'WELCOME TO GLORYPLUS INTERNATIONAL',
-  'A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE',
-  `LIVING IN GOD'S GLORY`,
-  'HIS GLORY IS MADE MANIFEST IN HIS PEOPLE'
-];
+
 class Hero extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: '',
-      image: ''
-    }
-  }
-
-  componentDidMount = () => {
-    this.displayImages(0);
-    this.displayWords(0);
-  }
-
-  displayImages = (index) => {
-		setTimeout(() => {
-			this.setState({image: imgUrls[index]});
-
-			if (index < imgUrls.length - 1) {
-				index += 1;
-			} else {
-				index = 0;
-			}
-
-			this.displayImages(index);
-		}, 7000)
-  }
-  
-  displayWords = (index) => {
-		setTimeout(() => {
-			this.setState({text: texts[index]});
-
-			if (index < texts.length - 1) {
-				index += 1;
-			} else {
-				index = 0;
-			}
-
-			this.displayWords(index);
-		}, 7000)
-  }
-  
   render() {
     return (
-      <section
-        className="hero-section set-bg"
-        style={{
-          backgroundImage: `url(${this.state.image})`
-        }}
-      >
+      <section className="hero-section">
         <div className="hero-content">
           <div className="hc-inner">
-            <div className="container">
-              <h2 style={{
-                fontSize: '55px', 
-                fontFamily: `'Inconsolata', 'monospace'`,
-                // whiteSpace: 'nowrap',
-                lineHeight: '78px'
-              }}
-                 className='hero-text'>{this.state.text}</h2>
-              <p>A Glorious people, with a Glorious mandate</p>
-              <Link to="/login" className="site-btn sb-wide sb-line">
-                join us today
-              </Link>
-              &nbsp;
-              <Link to="/live" className="site-btn sb-wide sb-line">
-                Live Stream
-              </Link>
-            </div>
+            <Slider autoplay={3000} className="slider-wrapper">
+              {content.map((item, index) => (
+                <div
+                  key={index}
+                  className="slider-content"
+                  style={{
+                    background: `url('${item.image}') no-repeat center center`
+                  }}
+                >
+                  <div className="inner">
+                    <h1>{item.title}</h1>
+                    <p>{item.description}</p>
+                    <button>{item.button1}</button>&nbsp;
+                    <button>{item.button2}</button>
+                  </div>
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </section>
