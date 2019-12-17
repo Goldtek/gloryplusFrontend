@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Player } from 'video-react';
+import { Player } from "video-react";
 
 class JoinUs extends Component {
   render() {
@@ -33,8 +33,17 @@ class JoinUs extends Component {
               {/* <Player>
                 <source src="https://files.fm/pa/dike4mii4real/home.mp4/home.mp4" />
               </Player> */}
-              
-              <iframe src="https://drive.google.com/file/d/1lAauoQcnUA-1kWdrzdcqPgVFxgrFUVws/preview" width="500" height="360" frameborder="0" allow="fullscreen" allowfullscreen X-Frame-Options="sameorigin"></iframe>
+
+              <iframe
+                src="https://drive.google.com/file/d/1lAauoQcnUA-1kWdrzdcqPgVFxgrFUVws/preview"
+                width="100%"
+                height="320"
+                frameborder="0"
+                allow="fullscreen"
+                allowfullscreen
+                X-Frame-Options="sameorigin"
+                title="join us"
+              ></iframe>
             </div>
           </div>
         </div>
