@@ -771,13 +771,13 @@ ol {
 	Hero Section
 -----------------------*/
 .hero-section {
-  height:700px;
+  height: 700px;
   position: relative;
   opacity: 1.8;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
 }
 
 /* .fade-in {
@@ -789,12 +789,12 @@ ol {
 } */
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero-section:after {
@@ -1093,6 +1093,7 @@ label {
   font-weight: 700;
   margin-bottom: 5px;
   border-radius: 4px 4px 0 0;
+  font-size: 25px;
 }
 
 .event-list h3 {
@@ -2216,7 +2217,6 @@ live stream
   font-size: 3.2em;
 }
 
-
 .hero-text {
-  font-size: 15px
+  font-size: 15px;
 }

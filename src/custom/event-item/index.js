@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { css } from "@emotion/core";
 import { FadeLoader } from "react-spinners";
-
+import TextTruncate from "react-text-truncate";
 const override = css`
   display: block;
   margin: 0 auto;
@@ -64,7 +64,15 @@ const EventItem = ({ events, loading }) => {
                     </div>
                   </div>
                 </div>
-                <p>{eventData.description}</p>
+                <p>
+                  <TextTruncate
+                    line={3}
+                    element="span"
+                    truncateText="…"
+                    text={eventData.description}
+                    // textTruncateChild={`/event/${eventData.pat
+                  />
+                </p>
                 {/* <a href="/event/" className="btn btn-danger btn-sm">
 Read more
 </a> */}
