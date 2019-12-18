@@ -78,7 +78,7 @@ Read more
 </a> */}
                 <Link
                   to={`/event/${eventData.pathName}`}
-                  className="btn btn-danger btn-sm"
+                  className="btn btn-danger btn-md"
                 >
                   Read more
                 </Link>
