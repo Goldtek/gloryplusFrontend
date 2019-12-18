@@ -20,25 +20,29 @@ const EventDetail = ({
             <h1>{title.toUpperCase()}</h1>
             <p>
               <span className="fa fa-map-marker"></span> &nbsp;
-              <a href="#">{location}</a>&nbsp;&nbsp;
-              <span className="fa fa-calendar"></span>&nbsp;{day} {month} {year}
-              &nbsp;
-              {time}
+              <Link to="#">{location}</Link>
+              <br />
+              <span className="fa fa-calendar"></span>&nbsp;{" "}
+              <Link to="#">
+                {day} {month} {year}
+                &nbsp;
+                {time}
+              </Link>
             </p>
           </div>
         </div>
       </div>
 
       <div className="row">
-        <div className="col-sm-12 col-md-8">
+        <div className="col-sm-12 col-md-12">
           <img className="img-responsive" src={imagePath} alt={pathName} />
           {/* <figcaption className="margin-t-h">{pathName}</figcaption> */}
           <br />
           <p>{description}</p>
-          <Link to="/events">
-            <b className="fa fa-arrow-left"></b> Go Back
-          </Link>
           <hr />
+          <Link to="/events" className="btn btn-danger btn-sm">
+            Prev Page
+          </Link>
         </div>
         <div className="col-sm-4 col-md-4">
           {/* <div className="well">
@@ -58,8 +62,6 @@ const EventDetail = ({
               </div>
             </form>
           </div> */}
-
-         
         </div>
       </div>
     </div>
