@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Player } from "video-react";
+// import { Player } from "video-react";
 
 class JoinUs extends Component {
   render() {
@@ -38,10 +38,10 @@ class JoinUs extends Component {
                 src="https://drive.google.com/file/d/1lAauoQcnUA-1kWdrzdcqPgVFxgrFUVws/preview"
                 width="100%"
                 height="320"
-                frameborder="0"
+                frameBorder="0"
                 allow="fullscreen"
-                allowfullscreen
-                X-Frame-Options="sameorigin"
+                allowFullScreen
+                x-frame-options="sameorigin"
                 title="join us"
               ></iframe>
             </div>

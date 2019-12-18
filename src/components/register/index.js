@@ -14,11 +14,11 @@ class Login extends Component {
       <Fragment>
         <Helmet>
           <title>Register</title>
-          <meta name="description" content="login" />
+          <meta name="description" content="register" />
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Login" bgPicture="url(img/donate.jpg)" />
+        <PageInfo title="Register" bgPicture="url(img/login.png)" />
         <MembeRegister />
         <NewsLetter />
         <Footer />
