@@ -1,5 +1,6 @@
 import React from "react";
-import moment from "moment";
+import * as moment from "moment";
+import "moment/locale/pt-br";
 
 class Countdown extends React.Component {
   state = {
@@ -19,7 +20,7 @@ class Countdown extends React.Component {
       const hours = countdown.format("HH");
       const minutes = countdown.format("mm");
       const seconds = countdown.format("ss");
-
+      //   console.log(moment.locale("en")); // en
       this.setState({ days, hours, minutes, seconds });
     }, 1000);
   }
