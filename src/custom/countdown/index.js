@@ -1,57 +1,57 @@
-import React from 'react';
-import moment from 'moment';
+import React from "react";
+import moment from "moment";
 
 class Countdown extends React.Component {
-	state = {
-		days: undefined,
-		hours: undefined,
-		minutes: undefined,
-		seconds: undefined
-	};
+  state = {
+    days: undefined,
+    hours: undefined,
+    minutes: undefined,
+    seconds: undefined
+  };
 
-	componentDidMount() {
-		this.interval = setInterval(() => {
-			const { timeTillDate, timeFormat } = this.props;
-			const then = moment(timeTillDate, timeFormat);
-			const now = moment();
-			const countdown = moment(then - now);
-			const days = countdown.format('D');
-			const hours = countdown.format('HH');
-			const minutes = countdown.format('mm');
-			const seconds = countdown.format('ss');
+  componentDidMount() {
+    this.interval = setInterval(() => {
+      const { timeTillDate, timeFormat } = this.props;
+      const then = moment(timeTillDate, timeFormat);
+      const now = moment();
+      const countdown = moment(then - now);
+      const days = countdown.format("D");
+      const hours = countdown.format("HH");
+      const minutes = countdown.format("mm");
+      const seconds = countdown.format("ss");
 
-			this.setState({ days, hours, minutes, seconds });
-		}, 1000);
-	}
+      this.setState({ days, hours, minutes, seconds });
+    }, 1000);
+  }
 
-	componentWillUnmount() {
-		if (this.interval) {
-			clearInterval(this.interval);
-		}
-	}
+  componentWillUnmount() {
+    if (this.interval) {
+      clearInterval(this.interval);
+    }
+  }
 
-	render() {
-		const { days, hours, minutes, seconds } = this.state;
+  render() {
+    const { days, hours, minutes, seconds } = this.state;
 
-		return (
-			<div>
-				<div className="counter">
-					<div className="counter-item">
-						<h4>{days}</h4>Days
+    return (
+      <div>
+        <div className="counter">
+          <div className="counter-item">
+            <h4>{days}</h4>Days
           </div>
-					<div className="counter-item">
-						<h4>{hours}</h4>hours
+          <div className="counter-item">
+            <h4>{hours}</h4>hours
           </div>
-					<div className="counter-item">
-						<h4>{minutes}</h4>Mins
+          <div className="counter-item">
+            <h4>{minutes}</h4>Mins
           </div>
-					<div className="counter-item">
-						<h4>{seconds}</h4>secs
+          <div className="counter-item">
+            <h4>{seconds}</h4>secs
           </div>
-				</div>
-			</div>
-		);
-	}
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Countdown;
