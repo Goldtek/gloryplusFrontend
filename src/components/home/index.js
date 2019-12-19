@@ -72,19 +72,14 @@ class Home extends Component {
             <Route path="/events" component={Events} />
             <Route path="/donate" component={DonateComponent} />
             <Route path="/donation" component={DonationComponent} />
-            <Route
-              exact
-              strict
-              path="/event/:eventID"
-              component={Event_Details}
-            />
+            <Route exact path="/event/:eventID" component={Event_Details} />
             <Route path="/galleries" component={Galleries} />
             <Route exact path="/gallery/:id" component={Gallery} />
             <Route path="/live" component={LiveStreaming} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
 
-            <Route component={NotFound} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </Router>
       </Fragment>

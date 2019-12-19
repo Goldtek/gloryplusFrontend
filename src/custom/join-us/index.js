@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 // import { Player } from "video-react";
+// import "./player.css";
 
 class JoinUs extends Component {
   render() {
@@ -44,6 +45,12 @@ class JoinUs extends Component {
                 x-frame-options="sameorigin"
                 title="join us"
               ></iframe>
+              {/* 
+              <Player
+                playsInline
+                poster="img/about.jpeg"
+                src="https://drive.google.com/file/d/1lAauoQcnUA-1kWdrzdcqPgVFxgrFUVws/preview/home.mp4"
+              /> */}
             </div>
           </div>
         </div>
