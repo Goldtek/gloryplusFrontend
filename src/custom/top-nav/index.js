@@ -53,7 +53,10 @@ class TopNav extends Component {
                   timeTillDate="12 31 2019, 9:00 pm"
                   timeFormat="MM DD YYYY, h:mm a"
                 />
-                <Link to="#" className="top-readmore hidden-sm">
+                <Link
+                  to="/event/cross-over-night"
+                  className="top-readmore hidden-sm"
+                >
                   readmore
                 </Link>
               </div>

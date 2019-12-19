@@ -1,6 +1,6 @@
 import React from "react";
 import "./event.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const EventDetail = ({
   title,
   location,
@@ -12,6 +12,7 @@ const EventDetail = ({
   time,
   month
 }) => {
+  let me = useLocation();
   return (
     <div className="container spad-custom">
       <div className="row">
@@ -40,6 +41,7 @@ const EventDetail = ({
           {/* <figcaption className="margin-t-h">{pathName}</figcaption> */}
           <br />
           <p>{description}</p>
+          Location <code>{location.pathname}</code>
           <hr />
           <Link to="/events" className="btn btn-danger btn-sm">
             Prev Page
