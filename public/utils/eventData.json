@@ -1,6 +1,18 @@
 [
   {
     "id": 1,
+    "title": "December 2019 Cross over With Power",
+    "pathName": "cross-over-night",
+    "imagePath": "img/cross-over-night.jpg",
+    "description": " 2019 was an awesome year in our lives as a church. God faithfully increased us in every dimension by the power of His Spirit. 2020 is just around the corner and the excitement about our expectations for the coming year, has got us going WOW!!! How You Exit A Year Determines How You Enter A New Year. Let's Enter 2020 With Power In The Name Of Jesus Christ! JOIN US ON THE 31ST OF DECEMBER 2019 FOR CROSSOVER WITH POWER. @Gloryplus International Church @18 Kudirat Abiola Way, by Olusosun Bus Stop, Oregun, Lagos By 9PM God bless you as you come!",
+    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
+    "time": "8:00am",
+    "day": "31",
+    "month": "Dec",
+    "year": "2020"
+  },
+  {
+    "id": 2,
     "title": "Church Launch(GLORYPLUS ABA)",
     "pathName": "church launch",
     "imagePath": "img/church.jpg",
@@ -12,7 +24,7 @@
     "year": "2020"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Leadership Summit",
     "pathName": "Leaders",
     "imagePath": "img/workers.jpg",
@@ -84,7 +96,7 @@
     "year": "2020"
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Camp Meeting",
     "pathName": "camp",
     "imagePath": "img/mainChurch.jpg",

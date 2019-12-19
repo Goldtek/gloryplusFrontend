@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import axios from "axios";
+// import axios from "axios";
 import { css } from "@emotion/core";
 import { FadeLoader } from "react-spinners";
 import { Helmet } from "react-helmet";
@@ -10,7 +10,7 @@ import {
   // BottomNav,
   NewsLetter,
   Footer,
-  Sermon,
+  // Sermon,
   PageInfo,
   SermonList
 } from "../../custom";
@@ -30,8 +30,8 @@ class SermonComponent extends Component {
 
   componentDidMount() {
     //deconstructing the state
-    const { per, page, totalPages, sermons } = this.state;
-    const url = `./utils/sermonData.json?per=${per}&page=${page}`;
+    // const { per, page, totalPages, sermons } = this.state;
+    // const url = `./utils/sermonData.json?per=${per}&page=${page}`;
     // this.setState({ loading: true }, () => {
     //   axios.get(url).then(response =>
     //     this.setState({

@@ -1,5 +1,6 @@
 import React from "react";
-import sortBy from "sort-by";
+import { Link } from "react-router-dom";
+// import sortBy from "sort-by";
 const Sermon = ({ popular }) => (
   <section className="sermon-section spad">
     <div className="section-title">
@@ -18,7 +19,6 @@ const Sermon = ({ popular }) => (
         <div className="row">
           <div className="col-md-6 col-md-offset-6">
             <div className="sermon-content">
-              <h2></h2>
               <ul className="sermon-info">
                 <li>
                   Sermon By: <span></span>
@@ -26,13 +26,12 @@ const Sermon = ({ popular }) => (
               </ul>
               <p></p>
               <div className="icon-links">
-               
-                <a href="/">
+                <Link to="/">
                   <i className="ti-headphone"></i>
-                </a>
-                <a href="/">
+                </Link>
+                <Link to="/">
                   <i className="ti-import"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

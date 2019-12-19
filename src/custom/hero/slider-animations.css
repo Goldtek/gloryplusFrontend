@@ -234,6 +234,8 @@
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  position: relative !important;
+  z-index: 1000;
 }
 
 /*------------------------------------------------------*/
