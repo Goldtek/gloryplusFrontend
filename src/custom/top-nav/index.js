@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-import moment from 'moment';
+import { NavLink, Link } from "react-router-dom";
+// import moment from "moment";
 import Countdown from "../countdown";
 
 class TopNav extends Component {
@@ -10,12 +10,12 @@ class TopNav extends Component {
   };
   render() {
     /**** change the link to that of react based on routing and aplying authentication to it */
-    const dayINeed = 7; 
-  const today = moment().isoWeekday();
-  console.log('today', today);
-  // if (today <= dayINeed) { 
-  //   return moment().isoWeekday(dayINeed);
-  // }
+    // const dayINeed = 7;
+    // const today = moment().isoWeekday();
+    // console.log('today', today);
+    // if (today <= dayINeed) {
+    //   return moment().isoWeekday(dayINeed);
+    // }
 
     return (
       <div className="top-nav-section">
@@ -23,27 +23,27 @@ class TopNav extends Component {
           <div className="row">
             <div className="col-sm-3 col-md-3 col-lg-3 hidden-md hidden-sm hidden-xs">
               <div className="social">
-                <a
-                  href="https://www.facebook.com/gloryplusintl/"
+                <Link
+                  to="https://www.facebook.com/gloryplusintl/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="ti-facebook"></i>
-                </a>
-                <a
-                  href="https://twitter.com/GloryplusI"
+                </Link>
+                <Link
+                  to="https://twitter.com/GloryplusI"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="ti-twitter-alt"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/gloryplusintl/"
+                </Link>
+                <Link
+                  to="https://www.instagram.com/gloryplusintl/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="ti-instagram"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-sm-6 col-md-7 col-lg-6 ">
@@ -53,17 +53,17 @@ class TopNav extends Component {
                   timeTillDate="12 31 2019, 9:00 pm"
                   timeFormat="MM DD YYYY, h:mm a"
                 />
-                <a href="#" className="top-readmore hidden-sm">
+                <Link to="#" className="top-readmore hidden-sm">
                   readmore
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-sm-3 col-md-2 col-lg-3">
               <div className="user-input">
                 {this.state.loggedIn ? (
-                  <a href="#">
+                  <Link to="#">
                     My account <i className="fa fa-user"></i>
-                  </a>
+                  </Link>
                 ) : (
                   <NavLink
                     activeClassName={"active"}

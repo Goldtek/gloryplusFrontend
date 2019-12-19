@@ -1,6 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
 import About from "../about";
 import SermonComponent from "../sermon";
 import ContactUs from "../contact";
@@ -67,7 +72,12 @@ class Home extends Component {
             <Route path="/events" component={Events} />
             <Route path="/donate" component={DonateComponent} />
             <Route path="/donation" component={DonationComponent} />
-            <Route exact path="/event/:eventID" component={Event_Details} />
+            <Route
+              exact
+              strict
+              path="/event/:eventID"
+              component={Event_Details}
+            />
             <Route path="/galleries" component={Galleries} />
             <Route exact path="/gallery/:id" component={Gallery} />
             <Route path="/live" component={LiveStreaming} />

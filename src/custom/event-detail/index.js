@@ -25,16 +25,17 @@ const EventDetail = ({
               <span className="fa fa-calendar"></span>&nbsp;{" "}
               <Link to="#">
                 {day} {month} {year}
-                &nbsp;
-                {time}
+                &nbsp; &nbsp;
               </Link>
+              <i className="fa fa-clock-o" aria-hidden="true"></i>
+              <Link to="#"> {time}</Link>
             </p>
           </div>
         </div>
       </div>
 
       <div className="row">
-        <div className="col-sm-12 col-md-12">
+        <div className="col-sm-12 col-md-9">
           <img className="img-responsive" src={imagePath} alt={pathName} />
           {/* <figcaption className="margin-t-h">{pathName}</figcaption> */}
           <br />

@@ -76,6 +76,11 @@ class Header extends Component {
                   Contact
                 </NavLink>
               </li>
+              <li className="nav-pills hidden-lg">
+                <NavLink activeClassName={"active"} to="/donate">
+                  Donate
+                </NavLink>
+              </li>
               <li className="nav-pills hidden-md hidden-lg">
                 <NavLink activeClassName={"active"} to="/login">
                   Login
