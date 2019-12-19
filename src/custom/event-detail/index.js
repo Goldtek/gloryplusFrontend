@@ -35,7 +35,7 @@ const EventDetail = ({
       </div>
 
       <div className="row">
-        <div className="col-sm-12 col-md-12">
+        <div className="col-sm-12 col-md-9">
           <img className="img-responsive" src={imagePath} alt={pathName} />
           {/* <figcaption className="margin-t-h">{pathName}</figcaption> */}
           <br />
