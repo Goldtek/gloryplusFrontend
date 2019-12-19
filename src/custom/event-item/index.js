@@ -64,15 +64,14 @@ const EventItem = ({ events, loading }) => {
                     </div>
                   </div>
                 </div>
-                <p>
-                  <TextTruncate
-                    line={3}
-                    element="span"
-                    truncateText="…"
-                    text={eventData.description}
-                    // textTruncateChild={`/event/${eventData.pat
-                  />
-                </p>
+
+                <TextTruncate
+                  line={3}
+                  element="p"
+                  truncateText="…"
+                  text={eventData.description}
+                  // textTruncateChild={`/event/${eventData.pat
+                />
                 {/* <a href="/event/" className="btn btn-danger btn-sm">
 Read more
 </a> */}

@@ -25,9 +25,10 @@ const EventDetail = ({
               <span className="fa fa-calendar"></span>&nbsp;{" "}
               <Link to="#">
                 {day} {month} {year}
-                &nbsp;
-                {time}
+                &nbsp; &nbsp;
               </Link>
+              <i className="fa fa-clock-o" aria-hidden="true"></i>
+              <Link to="#"> {time}</Link>
             </p>
           </div>
         </div>
