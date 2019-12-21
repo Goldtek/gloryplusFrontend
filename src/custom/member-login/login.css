@@ -1,0 +1,84 @@
+.login-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 {
+  padding: 5%;
+  /* box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19); */
+  /* background-image: url("/img/glory.png");
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+.login-form-1 h3 {
+  text-align: center;
+  color: #333;
+}
+.login-form-2 {
+  padding: 5%;
+  background: #dd3e3e;
+  /* box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19); */
+}
+.login-form-2 h3 {
+  text-align: center;
+  color: #fff;
+}
+.login-container form {
+  padding: 10%;
+}
+.btnSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+.login-form-1 .btnSubmit {
+  font-weight: 600;
+  color: #fff;
+  background-color: #dd3e3e;
+}
+.login-form-2 .btnSubmit {
+  font-weight: 600;
+  color: #dd3e3e;
+  background-color: #fff;
+}
+.login-form-2 .ForgetPwd {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-form-1 .ForgetPwd {
+  color: #dd3e3e;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* CUSTOM STYLES */
+.img-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #dd3e3e;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-form-1 h4 {
+  font-weight: bold;
+  font-size: 1.7rem;
+  font-family: "Lora", serif;
+  font-style: italic;
+  /* font-size: 15px; */
+  /* color: #dd3e3e; */
+  line-height: inherit;
+  /* border: 2px solid red; */
+  margin-top: 5px;
+  /* margin-top: 35px; */
+
+  /* min-width: 76vh; */
+}
+/* CUSTOM STYLES */
