@@ -32,7 +32,8 @@ import {
   NewsLetter,
   PopularSermon,
   Footer,
-  NotFound
+  NotFound,
+  Testimonial
 } from "../../custom";
 
 class Home extends Component {
@@ -56,6 +57,8 @@ class Home extends Component {
                   <EventTimer />
                   <JoinUs />
                   <ServiceSection />
+                  {/* <Testimonial /> */}
+
                   {/* <UpcomingEvent /> */}
                   <Donate />
                   <PopularSermon />

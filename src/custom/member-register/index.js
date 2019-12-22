@@ -28,7 +28,7 @@ class MembeRegister extends React.Component {
                   <div className="form-group"></div>
                   <div className="form-group">
                     <Link to="/login" className="ForgetPwd">
-                      Already a member ? Click here to login
+                      Already a partner ? Click here to login
                     </Link>
                     <h4>
                       We are glad to have you here, please register and proceed
@@ -39,7 +39,7 @@ class MembeRegister extends React.Component {
               </div>
 
               <div className="col-md-6 login-form-2">
-                <h3>Member Registration</h3>
+                <h3>Partner Registration</h3>
                 <form onSubmit={this.handleRegister}>
                   <div className="form-group">
                     <input

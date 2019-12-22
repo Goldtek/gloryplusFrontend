@@ -27,6 +27,7 @@ import EventDetail from "./event-detail";
 import Galleries from "./galleries";
 import SingleGallery from "./gallery/index";
 import SectionCard from "./sermon-card";
+import Testimonial from "./testimonial";
 
 export {
   Header,
@@ -57,5 +58,6 @@ export {
   Donation,
   EventDetail,
   Galleries,
-  SingleGallery
+  SingleGallery,
+  Testimonial
 };
