@@ -35,20 +35,18 @@ class Countdown extends React.Component {
     const { days, hours, minutes, seconds } = this.state;
 
     return (
-      <div>
-        <div className="counter">
-          <div className="counter-item">
-            <h4>{days}</h4>Days
-          </div>
-          <div className="counter-item">
-            <h4>{hours}</h4>hours
-          </div>
-          <div className="counter-item">
-            <h4>{minutes}</h4>Mins
-          </div>
-          <div className="counter-item">
-            <h4>{seconds}</h4>secs
-          </div>
+      <div className="counter">
+        <div className="counter-item">
+          <h4>{days}</h4>Days
+        </div>
+        <div className="counter-item">
+          <h4>{hours}</h4>hours
+        </div>
+        <div className="counter-item">
+          <h4>{minutes}</h4>Mins
+        </div>
+        <div className="counter-item">
+          <h4>{seconds}</h4>secs
         </div>
       </div>
     );

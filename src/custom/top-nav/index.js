@@ -8,45 +8,30 @@ class TopNav extends Component {
     loggedIn: false,
     liveStream: false
   };
-  render() {
-    /**** change the link to that of react based on routing and aplying authentication to it */
-    // const dayINeed = 7;
-    // const today = moment().isoWeekday();
-    // console.log('today', today);
-    // if (today <= dayINeed) {
-    //   return moment().isoWeekday(dayINeed);
-    // }
 
+  render() {
     return (
-      <div className="top-nav-section">
+      // <!-- header top section -->
+      <div className="top-nav-section hidden-xs">
         <div className="container">
           <div className="row">
-            <div className="col-sm-3 col-md-3 col-lg-3 hidden-md hidden-sm hidden-xs">
+            <div className="col-sm-3 col-md-3 col-lg-3">
               <div className="social">
-                <Link
-                  to="https://www.facebook.com/gloryplusintl/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link to="#">
                   <i className="ti-facebook"></i>
                 </Link>
-                <Link
-                  to="https://twitter.com/GloryplusI"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link to="#">
                   <i className="ti-twitter-alt"></i>
                 </Link>
-                <Link
-                  to="https://www.instagram.com/gloryplusintl/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link to="#">
+                  <i className="ti-google"></i>
+                </Link>
+                <Link to="#">
                   <i className="ti-instagram"></i>
                 </Link>
               </div>
             </div>
-            <div className="col-sm-6 col-md-7 col-lg-6 ">
+            <div className="col-sm-6 col-md-7 col-lg-6">
               <div className="counter-top">
                 <h5>Upcoming Event:</h5>
                 <Countdown
@@ -64,16 +49,12 @@ class TopNav extends Component {
             <div className="col-sm-3 col-md-2 col-lg-3">
               <div className="user-input">
                 {this.state.loggedIn ? (
-                  <Link to="#">
-                    My account <i className="fa fa-user"></i>
-                  </Link>
+                  <NavLink to="#!">
+                    User <i className="fa fa-angle-down"></i>
+                  </NavLink>
                 ) : (
-                  <NavLink
-                    activeClassName={"active"}
-                    to="/login"
-                    className="btn btn-danger btn-xs hidden-xs"
-                  >
-                    Login
+                  <NavLink to="/login">
+                    Login <i className="fa fa-user"></i>
                   </NavLink>
                 )}
               </div>
@@ -81,6 +62,7 @@ class TopNav extends Component {
           </div>
         </div>
       </div>
+      // <!-- header top section end-->
     );
   }
 }

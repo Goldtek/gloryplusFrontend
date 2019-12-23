@@ -12,19 +12,17 @@ class Header extends Component {
   }
 
   render() {
-    /**** change the link to that of react based on routing */
     return (
+      // <!-- Header section  -->
       <header className="header-section">
         <div className="container">
           <Link to="/">
             {" "}
             <img src="img/logo2.png" alt="" className="site-logo" />
           </Link>
-          {/* <a href="index.html" className="site-logo">
 
-</a> */}
           <Link to="/donate" className="site-btn hidden-xs">
-            Donate
+            donate
           </Link>
 
           <div className="nav-switch">
@@ -74,16 +72,6 @@ class Header extends Component {
               <li className="nav-pills">
                 <NavLink activeClassName={"active"} to="/contact">
                   Contact
-                </NavLink>
-              </li>
-              <li className="nav-pills hidden-lg">
-                <NavLink activeClassName={"active"} to="/donate">
-                  Donate
-                </NavLink>
-              </li>
-              <li className="nav-pills hidden-md hidden-lg">
-                <NavLink activeClassName={"active"} to="/login">
-                  Login
                 </NavLink>
               </li>
             </ul>

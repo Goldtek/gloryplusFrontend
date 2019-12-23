@@ -1,7 +1,7 @@
 import React from "react";
 // import PropTypes from "prop-types";
 
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function GalleryCard({ galleryId, pathName, coverPix, coverTitle, check }) {
   let classItem;
@@ -18,18 +18,14 @@ function GalleryCard({ galleryId, pathName, coverPix, coverTitle, check }) {
   return (
     <div className={`${classItem}`} key={galleryId}>
       <div className="content thumbnail">
-        <a
-          href={`/gallery/${pathName}`}
-          // target="_blank"
-          // rel="noopener noreferrer"
-        >
+        <Link href={`/gallery/${pathName}`}>
           <div className="content-overlay"></div>
           <img className="content-image" src={coverPix} alt={coverTitle} />
           <div className="content-details fadeIn-bottom">
             <h3 className="content-title">{coverTitle}</h3>
             <p className="content-text">view gallery</p>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

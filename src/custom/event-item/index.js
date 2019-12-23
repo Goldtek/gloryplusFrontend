@@ -41,7 +41,7 @@ const EventItem = ({ events, loading }) => {
           <div className="row">
             <div className="col-md-4 ">
               <div
-                className="el-thubm set-bg-event "
+                className="el-thubm set-bg-event"
                 style={{
                   backgroundImage: `url(${eventData.imagePath})`
                 }}

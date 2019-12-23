@@ -43,6 +43,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
     />
 
+    <!-- TESTIMONIAL SLIDERS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css"
+    />
+    <!-- TESTIMONIAL SLIDERS -->
     <link rel="stylesheet" href="css/themify-icons.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -66,14 +76,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
     />
     <!-- SLIDER STYLES -->
+
     <title></title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script>
@@ -141,6 +153,33 @@
           });
         };
       })(jQuery);
+
+      jQuery(document).ready(function($) {
+        "use strict";
+        //  TESTIMONIALS CAROUSEL HOOK
+        $("#customers-testimonials").owlCarousel({
+          loop: true,
+          center: true,
+          items: 3,
+          margin: 0,
+          autoplay: true,
+
+          dots: true,
+          autoplayTimeout: 6000,
+          smartSpeed: 450,
+          responsive: {
+            0: {
+              items: 1
+            },
+            768: {
+              items: 2
+            },
+            1170: {
+              items: 3
+            }
+          }
+        });
+      });
     </script>
     <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
