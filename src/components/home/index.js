@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet";
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
-  Redirect
+  Switch
+  // Redirect
 } from "react-router-dom";
 import About from "../about";
 import SermonComponent from "../sermon";
@@ -32,8 +32,8 @@ import {
   NewsLetter,
   PopularSermon,
   Footer,
-  NotFound,
-  Testimonial
+  NotFound
+  // Testimonial
 } from "../../custom";
 
 /*----------------

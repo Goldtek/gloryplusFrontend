@@ -57,9 +57,13 @@ class MemberLogin extends React.Component {
                     />
                   </div>
                   <div className="form-group">
-                    <div class="checkbox checkbox-info">
-                      <input id="checkbox4" class="styled" type="checkbox" />
-                      <label for="checkbox4">Remember Me</label>
+                    <div className="checkbox checkbox-info">
+                      <input
+                        id="checkbox4"
+                        className="styled"
+                        type="checkbox"
+                      />
+                      <label htmlFor="checkbox4">Remember Me</label>
                     </div>
                   </div>
                   <div className="form-group">

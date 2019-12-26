@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import { Sidebar, Main } from "./index";
+import { Main } from "./index";
 import ImageInput from "./ImageInput";
 class Dashboard extends React.Component {
   state = {
@@ -40,25 +40,25 @@ class Dashboard extends React.Component {
                         </p>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <Link
+                          to="#"
                           className="btn btn-success text-center btn-block btn-gpi"
                         >
                           {/* PRO Account */}
                           {avatar ? <> Change Picture</> : <>Upload Picture</>}
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <br />
                       </li>
                       <li>
                         <div className="btn-group-vertical btn-block">
-                          <a href="" className="btn btn-default">
+                          <Link to="#" className="btn btn-default">
                             <i className="fa fa-cog pull-right"></i>Edit Account
-                          </a>
-                          <a href="" className="btn btn-default">
+                          </Link>
+                          <Link to="#" className="btn btn-default">
                             <i className="fa fa-sign-out pull-right"></i>Logout
-                          </a>
+                          </Link>
                         </div>
                       </li>
                     </ul>

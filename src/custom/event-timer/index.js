@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import moment from "moment";
 
 import Countdown from "../countdown";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 class EventTimer extends Component {
   render() {

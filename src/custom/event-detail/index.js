@@ -1,6 +1,6 @@
 import React from "react";
 import "./event.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 const EventDetail = ({
   title,
   location,
@@ -12,7 +12,7 @@ const EventDetail = ({
   time,
   month
 }) => {
-  let me = useLocation();
+  // let me = useLocation();
   return (
     <div className="container spad-custom">
       <div className="row">

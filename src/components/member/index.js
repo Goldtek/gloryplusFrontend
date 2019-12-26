@@ -3,12 +3,12 @@ import { Helmet } from "react-helmet";
 import {
   Header,
   TopNav,
-  EventTimer,
-  JoinUs,
-  ServiceSection,
+  // EventTimer,
+  // JoinUs,
+  // ServiceSection,
   NewsLetter,
   Footer,
-  PastorSection,
+  // PastorSection,
   PageInfo
 } from "../../custom";
 
