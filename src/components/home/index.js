@@ -36,6 +36,14 @@ import {
   Testimonial
 } from "../../custom";
 
+/*----------------
+MEMBERS IMPORT
+----------------- */
+import Member from "../member";
+
+/*----------------
+MEMBERS IMPORT
+----------------- */
 class Home extends Component {
   render() {
     return (
@@ -81,7 +89,7 @@ class Home extends Component {
             <Route path="/live" component={LiveStreaming} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
-
+            <Route path="/partner" component={Member} />
             <Route path="*" component={NotFound} />
           </Switch>
         </Router>

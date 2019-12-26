@@ -28,7 +28,7 @@ class MembeRegister extends React.Component {
                   <div className="form-group"></div>
                   <div className="form-group">
                     <Link to="/login" className="ForgetPwd">
-                      Already a partner ? Click here to login
+                      Already a partner ? <u>Click here to login</u>
                     </Link>
                     <h4>
                       We are glad to have you here, please register and proceed
