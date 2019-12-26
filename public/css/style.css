@@ -1727,7 +1727,8 @@ ol {
 HERO SECTION
 -----------------------*/
 .hero-section {
-  height: 800px;
+  height: 100vh;
+  width: 100% !important;
   position: relative;
 }
 
@@ -1738,8 +1739,8 @@ HERO SECTION
   height: 100%;
   left: 0;
   top: 0;
-  background: #000;
-  opacity: 0.65;
+  /* background: #000;
+  opacity: 0.65; */
 }
 
 .hero-section .hero-content {
