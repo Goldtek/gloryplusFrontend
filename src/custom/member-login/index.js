@@ -29,7 +29,7 @@ class MemberLogin extends React.Component {
                   <div className="form-group"></div>
                   <div className="form-group">
                     <Link to="/register" className="ForgetPwd">
-                      Not yet a partner ? click here to create account
+                      Not yet a partner ? <u>click here to join</u>
                     </Link>
                   </div>
                 </form>
@@ -55,14 +55,16 @@ class MemberLogin extends React.Component {
                       required
                       name="password"
                     />
-                    <label className="rem">Remember Me</label>
-                    &nbsp;
-                    <input
-                      type="checkbox"
-                      placeholder="Your Password *"
-                      required
-                      name="password"
-                    />
+                  </div>
+                  <div className="form-group">
+                    <div className="checkbox checkbox-info">
+                      <input
+                        id="checkbox4"
+                        className="styled"
+                        type="checkbox"
+                      />
+                      <label htmlFor="checkbox4">Remember Me</label>
+                    </div>
                   </div>
                   <div className="form-group">
                     <input type="submit" className="btnSubmit" value="Login" />
