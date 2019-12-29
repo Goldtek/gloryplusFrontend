@@ -40,8 +40,7 @@ const EventDetail = ({
           <img className="img-responsive" src={imagePath} alt={pathName} />
           {/* <figcaption className="margin-t-h">{pathName}</figcaption> */}
           <br />
-          <p>{description}</p>
-          Location <code>{location.pathname}</code>
+          <p>{description}.</p>
           <hr />
           <Link to="/events" className="btn btn-danger btn-sm">
             Prev Page

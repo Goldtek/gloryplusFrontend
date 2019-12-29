@@ -1,14 +1,3 @@
-/** TIPS: 
-1. The carousel shouldn't be in any other div, like for example div with class container. 
-2. You can align image position in classes bg1, bg2, bg3 using css background-position.
-*/
-/* Carousel 100% Fullscreen */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 .carousel,
 .item,
 .active {
@@ -17,11 +6,10 @@ body {
 .carousel-inner {
   height: 110vmin;
 }
-.carousel {
-  /* margin-bottom: 60px; */
-}
 .carousel-caption {
   z-index: 10;
+  /* border: 2px solid red; */
+  margin-bottom: 10px;
 }
 .carousel .item {
   background-color: #777;
@@ -54,6 +42,7 @@ body {
   font-size: 2.5rem;
   text-align: center;
   color: white;
+  letter-spacing: 2px;
   /* padding-top: 50px; */
   /* position: relative; */
   z-index: 1;

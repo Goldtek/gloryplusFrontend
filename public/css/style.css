@@ -259,7 +259,7 @@ ol {
 }
 
 .counter-top .counter .counter-item {
-  padding: 0 20px;
+  padding: 0 5px;
   font-size: 11px;
   text-transform: uppercase;
   color: #fff;
@@ -588,10 +588,12 @@ ol {
   font-weight: 700;
   margin-bottom: 5px;
   border-radius: 4px 4px 0 0;
+  font-size: 2.5rem;
 }
 
 .event-list h3 {
   padding-top: 5px;
+  font-size: 2.5rem;
 }
 
 .event-list .el-metas {
@@ -1843,5 +1845,11 @@ HERO SECTION
   background-position: center 0;
   min-width: 100%;
   min-height: 22vh;
+}
+
+.event-details {
+  font-size: 16px;
+  color: #636363;
+  line-height: 1.8;
 }
 /* CUSTOM STYLES */

@@ -16,11 +16,9 @@ class MembeRegister extends React.Component {
             <div className="row">
               <div className="col-md-6 login-form-1 reg">
                 <h3>
-                  <img
-                    src="/img/glory.png"
-                    className="img-logo"
-                    alt="gloryplus-logo"
-                  />
+                  <div className="img-logo">
+                    <img src="/img/round-logo.png" alt="gloryplus-logo" />
+                  </div>
                 </h3>
                 <form>
                   <div className="form-group"></div>

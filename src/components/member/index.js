@@ -31,7 +31,7 @@ class Member extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Partner" bgPicture="url(img/aboutus-now.png)" />
+        <PageInfo title="Partner" bgPicture="url(img/partner/ourpartner.png)" />
         <div style={{ minHeight: "25vh" }}>
           <Dashboard />
         </div>
