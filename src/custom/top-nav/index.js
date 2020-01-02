@@ -38,7 +38,7 @@ class TopNav extends Component {
               >
                 <h5>Upcoming Event:</h5>
                 <Countdown
-                  timeTillDate="06 04 2020, 9:00 pm"
+                  timeTillDate="01 06 2020, 8:00 am"
                   timeFormat="MM DD YYYY, h:mm a"
                 />
                 <Link
