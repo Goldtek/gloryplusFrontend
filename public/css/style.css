@@ -281,13 +281,14 @@ ol {
   font-size: 14px;
   font-weight: 600;
   color: #dd3e3e;
-  top: -9px;
+  top: 0px;
   position: relative;
 }
 
 .user-input {
   float: right;
   padding-top: 10px;
+  margin-top: 7px;
 }
 
 .user-input a {
