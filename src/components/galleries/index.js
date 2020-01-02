@@ -45,7 +45,7 @@ class Gallery extends Component {
   }
   render() {
     const { galleryData, loading } = this.state;
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <Fragment>
         <Helmet>

@@ -12,10 +12,10 @@ class TopNav extends Component {
   render() {
     return (
       // <!-- header top section -->
-      <div className="top-nav-section hidden-xs">
+      <div className="top-nav-section">
         <div className="container">
           <div className="row">
-            <div className="col-sm-3 col-md-3 col-lg-3">
+            <div className="col-sm-3 col-md-3 col-lg-3  hidden-xs">
               <div className="social">
                 <Link to="#">
                   <i className="ti-facebook"></i>
@@ -31,22 +31,25 @@ class TopNav extends Component {
                 </Link>
               </div>
             </div>
-            <div className="col-sm-6 col-md-7 col-lg-6">
-              <div className="counter-top">
+            <div className="col-sm-12 col-md-7 col-lg-6 col-xs-12">
+              <div
+                className="counter-top"
+                // style={{ border: "2px solid green" }}
+              >
                 <h5>Upcoming Event:</h5>
                 <Countdown
                   timeTillDate="12 31 2019, 9:00 pm"
                   timeFormat="MM DD YYYY, h:mm a"
                 />
                 <Link
-                  to="/event/cross-over-night"
+                  to="/event/21-days-fasting"
                   className="top-readmore hidden-sm"
                 >
                   readmore
                 </Link>
               </div>
             </div>
-            <div className="col-sm-3 col-md-2 col-lg-3">
+            <div className="col-sm-3 col-md-2 col-lg-3 hidden-xs">
               <div className="user-input">
                 {this.state.loggedIn ? (
                   <NavLink to="#!">

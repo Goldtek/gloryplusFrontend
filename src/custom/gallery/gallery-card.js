@@ -18,7 +18,7 @@ function GalleryCard({ galleryId, pathName, coverPix, coverTitle, check }) {
   return (
     <div className={`${classItem}`} key={galleryId}>
       <div className="content thumbnail">
-        <Link href={`/gallery/${pathName}`}>
+        <Link to={`/gallery/${pathName}`}>
           <div className="content-overlay"></div>
           <img className="content-image" src={coverPix} alt={coverTitle} />
           <div className="content-details fadeIn-bottom">

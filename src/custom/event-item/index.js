@@ -48,7 +48,7 @@ const EventItem = ({ events, loading }) => {
               ></div>
             </div>
             <div className="col-md-8 ">
-              <div className="el-content txt-pad">
+              <div className="el-content txt-pad" style={{ padding: "5px" }}>
                 <div className="el-header">
                   <div className="el-date">
                     <h2>{eventData.day}</h2>
@@ -67,9 +67,10 @@ const EventItem = ({ events, loading }) => {
 
                 <TextTruncate
                   line={3}
-                  element="p"
+                  element="span"
                   truncateText="…"
                   text={eventData.description}
+                  className="event-details"
                   // textTruncateChild={`/event/${eventData.pat
                 />
                 {/* <a href="/event/" className="btn btn-danger btn-sm">

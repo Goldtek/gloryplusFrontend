@@ -10,7 +10,10 @@ class Header extends Component {
       event.preventDefault();
     });
   }
-
+  state = {
+    loggedIn: false,
+    liveStream: false
+  };
   render() {
     return (
       // <!-- Header section  -->
@@ -74,6 +77,22 @@ class Header extends Component {
                   Contact
                 </NavLink>
               </li>
+
+              <span className="hidden-lg hidden-md">
+                {this.state.loggedIn ? (
+                  <li className="nav-pills">
+                    <NavLink activeClassName={"active"} to="#!">
+                      User <i className="fa fa-angle-down"></i>
+                    </NavLink>
+                  </li>
+                ) : (
+                  <li className="nav-pills">
+                    <NavLink to="/login">
+                      Login <i className="fa fa-user"></i>
+                    </NavLink>
+                  </li>
+                )}
+              </span>
             </ul>
           </nav>
         </div>

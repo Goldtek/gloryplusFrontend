@@ -25,7 +25,7 @@ class JoinUs extends Component {
                 glory of God, to enable you live the life you were designed to
                 live.
               </p>
-              <Link to="/" className="site-btn sb-wide">
+              <Link to="/register" className="site-btn sb-wide">
                 join us
               </Link>
             </div>
