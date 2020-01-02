@@ -1,6 +1,18 @@
 [
   {
     "id": 1,
+    "title": "Communion Service",
+    "pathName": "communion-service",
+    "imagePath": "img/communion.jpg",
+    "description": "Holy Communion is not a ritual to be observed, but a blessing to be received.When we do this in remembrance of Jesus, we celebrate and partake of the inheritance of the righteous, which is preservation, healing, wholeness and provision. It is another great opportunity to break bread and drink of the wine with us at the communion service. Come share of the blessing that is constantly poured out on His saints at the communion.",
+    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
+    "time": "8:00am",
+    "day": "06",
+    "month": "Jan",
+    "year": "2020"
+  },
+  {
+    "id": 2,
     "title": "21 Days Fasting and Prayer",
     "pathName": "21-days-fasting",
     "imagePath": "img/prayer.jpg",
@@ -12,7 +24,19 @@
     "year": "2020"
   },
   {
-    "id": 2,
+    "id": 3,
+    "title": "HolyGhost Morning",
+    "pathName": "holyghost-morning",
+    "imagePath": "img/holygost.jpg",
+    "description": "Join us again on the 16th of January for yet another power filled session for the first Holy Ghost morning of the year 2020. This  year is your your of uncommon manifestation through the Holy Ghost,Our Glorious God will be releasing His Glorious Power in a Glorious atmosphere for Glorious Experiences. Don't miss this program for anything. Come expectant and Jesus will surely meet you at the very point of your need.",
+    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
+    "time": "8:00am daily",
+    "day": "16",
+    "month": "Jan",
+    "year": "2020"
+  },
+  {
+    "id": 4,
     "title": "1st Workers Meeting",
     "pathName": "workers Meeting",
     "imagePath": "img/workers.jpg",
@@ -24,7 +48,7 @@
     "year": "2020"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "Church Launch(GLORYPLUS ABA)",
     "pathName": "church launch",
     "imagePath": "img/church.jpg",
@@ -36,7 +60,7 @@
     "year": "2020"
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "Leadership Summit",
     "pathName": "Leaders",
     "imagePath": "img/workers.jpg",
@@ -48,7 +72,7 @@
     "year": "2020"
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "Love in the Air",
     "pathName": "love",
     "imagePath": "img/relationship.jpg",
@@ -60,7 +84,7 @@
     "year": "2020"
   },
   {
-    "id": 6,
+    "id": 8,
     "title": "40 days Prayer and fasting( The Revelation of Jesus)",
     "pathName": "40-days-fasting",
     "imagePath": "img/rev.jpg",
@@ -72,7 +96,7 @@
     "year": "2020"
   },
   {
-    "id": 7,
+    "id": 9,
     "title": "HolyGhost Morning ABA",
     "pathName": "holygost",
     "imagePath": "img/hgm.jpg",
@@ -84,7 +108,7 @@
     "year": "2020"
   },
   {
-    "id": 8,
+    "id": 10,
     "title": "Camp Meeting",
     "pathName": "camp",
     "imagePath": "img/mainChurch.jpg",
