@@ -7,6 +7,10 @@ class Dashboard extends React.Component {
   state = {
     avatar: false
   };
+
+  accessChild = event => {
+    this.refs.child.fileOpen();
+  };
   render() {
     const { avatar } = this.state;
     return (
@@ -24,6 +28,7 @@ class Dashboard extends React.Component {
                             maxHeight={64}
                             name="avatarURL"
                             className="create-contact-avatar-input"
+                            ref="child"
                           />
                         </form>{" "}
                       </li>
@@ -37,7 +42,7 @@ class Dashboard extends React.Component {
                         <Link
                           to="#"
                           className="btn btn-success text-center btn-block btn-gpi"
-                          onClick={this.triggerUPload}
+                          onClick={this.accessChild}
                         >
                           {/* PRO Account */}
                           {avatar ? (

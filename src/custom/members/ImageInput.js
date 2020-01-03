@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import $ from "jquery";
 const readFileAsDataURL = file =>
   new Promise(resolve => {
     const reader = new FileReader();
@@ -67,6 +67,9 @@ class ImageInput extends React.Component {
     }
   };
 
+  fileOpen = () => {
+    alert("clicked");
+  };
   handleFormReset = () => {
     this.setState({ value: "" });
   };
@@ -97,11 +100,12 @@ class ImageInput extends React.Component {
 
     return (
       <div className={className} style={style}>
-        <input type="hidden" name={name} value={value} />
+        <input type="hidden" name={name} value={value} id="fileLoader" />
         <input
           ref={node => (this.fileInput = node)}
           type="file"
           onChange={this.handleFileChange}
+          onClick={this.fileOpen}
           style={{
             position: "absolute",
             top: 0,
