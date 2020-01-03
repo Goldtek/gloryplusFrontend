@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import { Main } from "./index";
 import ImageInput from "./ImageInput";
+import "./card.css";
 class Dashboard extends React.Component {
   state = {
     avatar: false
@@ -17,7 +18,7 @@ class Dashboard extends React.Component {
       <section className="page-section spad partner">
         <div className="container-fluid">
           <div className="row ">
-            <div className="col-lg-3 col-md-3 col-sm-4 partner-card">
+            <div className="col-lg-3 col-md-6 col-sm-4 ">
               <div className="panel rounded shadow">
                 <div className="panel-body">
                   <div className="inner-all">
@@ -45,11 +46,7 @@ class Dashboard extends React.Component {
                           onClick={this.accessChild}
                         >
                           {/* PRO Account */}
-                          {avatar ? (
-                            <> Click image above to change picture</>
-                          ) : (
-                            <>Click image above to upload picture</>
-                          )}
+                          {avatar ? <> change image</> : <>upoad image</>}
                         </Link>
                       </li>
                       <li>
