@@ -16,7 +16,7 @@ const EventDetail = ({
   return (
     <div className="container spad-custom">
       <div className="row">
-        <div className="col-sm-8 col-md-8 el-header">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 el-header">
           <div className="page-header el-date">
             <h1>{title.toUpperCase()}</h1>
             <p>
@@ -36,8 +36,10 @@ const EventDetail = ({
       </div>
 
       <div className="row">
-        <div className="col-sm-12 col-md-9">
-          <img className="img-responsive" src={imagePath} alt={pathName} />
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+          <div className="event-div-details">
+            <img className="img-responsive" src={imagePath} alt={pathName} />
+          </div>
           {/* <figcaption className="margin-t-h">{pathName}</figcaption> */}
           <br />
           <p>{description}.</p>
