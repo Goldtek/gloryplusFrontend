@@ -104,9 +104,9 @@ class Dashboard extends React.Component {
             </header>
             <Main title="TITHE" img="/img/partner/tithe.png" />
             <Main title="PARTNERSHIP" img="/img/partner/partner.jpeg" />
-            <Main title="SEED OF FAITH" img="img/partner/seed.png" />
-            <Main title="GPA " img="/img/partner/glory.png" />
-            <Main title="DEPARTMENT" img="/img/partner/gpa.jpg" />
+            {/* <Main title="SEED OF FAITH" img="img/partner/seed.png" /> */}
+            {/* <Main title="GPA " img="/img/partner/glory.png" /> */}
+            {/* <Main title="DEPARTMENT" img="/img/partner/gpa.jpg" /> */}
           </div>
         </div>
       </section>
