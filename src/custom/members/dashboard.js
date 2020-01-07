@@ -76,25 +76,37 @@ class Dashboard extends React.Component {
                 <div className="panel-body no-padding rounded">
                   <ul className="list-group no-margin">
                     <li className="list-group-item">
-                      <i className="fa fa-envelope mr-5"></i>{" "}
+                      <i className="fa fa-envelope mr-5 rad-txt-primary"></i>{" "}
                       example@example.com
                     </li>
                     <li className="list-group-item">
-                      <i className="fa fa-globe mr-5"></i> www.example.com
+                      <i className="fa fa-map-marker rad-txt-danger"></i>{" "}
+                      Hampton Road Lekki
                     </li>
                     <li className="list-group-item">
-                      <i className="fa fa-phone mr-5"></i> +55 xx xxx xxx
+                      <i className="fa fa-phone mr-5 rad-txt-success"></i> +55
+                      xx xxx xxx
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-
+            <header className="rad-page-title">
+              <span>Welcome to our partnership page</span>
+              <small className="md-txt">
+                {/* <a
+                  href="https://www.google.com/maps/place/3720+Emerald+St,+Torrance,+CA+90503/@33.8403836,-118.3543828,17z/data=!4m18!1m15!4m14!1m6!1m2!1s0x80c2b4d407f58b11:0xdedca55964c89054!2s3720+Emerald+St,+Torrance,+CA+90503!2m2!1d-118.3520761!2d33.8403792!1m6!1m2!1s0x80c2b4d407f58b11:0xdedca55964c89054!2s3720+Emerald+St,+Torrance,+CA+90503!2m2!1d-118.3520761!2d33.8403792!3m1!1s0x80c2b4d407f58b11:0xdedca55964c89054"
+                  target="_blank"
+                >
+                  <i class="fa fa-map-marker rad-txt-danger"></i> California
+                </a> */}
+              </small>{" "}
+            </header>
             <Main title="TITHE" img="/img/partner/tithe.png" />
             <Main title="PARTNERSHIP" img="/img/partner/partner.jpeg" />
-            <Main title="SEED OF FAITH" img="img/partner/seed.png" />
-            <Main title="GPA " img="/img/partner/glory.png" />
-            <Main title="DEPARTMENT" img="/img/partner/gpa.jpg" />
+            {/* <Main title="SEED OF FAITH" img="img/partner/seed.png" /> */}
+            {/* <Main title="GPA " img="/img/partner/glory.png" /> */}
+            {/* <Main title="DEPARTMENT" img="/img/partner/gpa.jpg" /> */}
           </div>
         </div>
       </section>
