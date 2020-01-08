@@ -82,7 +82,7 @@ ol {
 
 /* Buttons */
 .site-btn {
-  padding: 14px 23px;
+  padding: 8px 12px;
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
@@ -281,13 +281,14 @@ ol {
   font-size: 14px;
   font-weight: 600;
   color: #dd3e3e;
-  top: -9px;
+  top: 0px;
   position: relative;
 }
 
 .user-input {
   float: right;
   padding-top: 10px;
+  margin-top: 7px;
 }
 
 .user-input a {
@@ -355,7 +356,22 @@ ol {
 	Event Section
 -----------------------*/
 .event-section {
-  background: #dd3e3e;
+  /* background: #dd3e3e; */
+  background-image: linear-gradient(
+    to left top,
+    #dd3e3e,
+    #e03a3d,
+    #e3363c,
+    #e6313c,
+    #e92b3b,
+    #e92738,
+    #e92335,
+    #e91e32,
+    #e61c2c,
+    #e31a26,
+    #e0191f,
+    #dd1818
+  );
   padding: 20px 0;
 }
 
@@ -831,7 +847,71 @@ ol {
 -----------------------*/
 .newsletter-section {
   padding: 55px 0;
-  background: #dd3e3e;
+  /* background: #dd3e3e; */
+  /* background-image: linear-gradient(
+    to right top,
+    #dd3e3e,
+    #e13a38,
+    #e63631,
+    #e93129,
+    #ed2d20,
+    #f03124,
+    #f33528,
+    #f6392c,
+    #f9453c,
+    #fb514b,
+    #fc5c59,
+    #fc6767
+  );
+*/
+
+  background-image: linear-gradient(
+    to left top,
+    #dd3e3e,
+    #e03a3d,
+    #e3363c,
+    #e6313c,
+    #e92b3b,
+    #e92738,
+    #e92335,
+    #e91e32,
+    #e61c2c,
+    #e31a26,
+    #e0191f,
+    #dd1818
+  );
+
+  /* background-image: linear-gradient(
+    to right bottom,
+    #dd3e3e,
+    #d83739,
+    #d33034,
+    #ce272f,
+    #c91e2a,
+    #c82625,
+    #c72e20,
+    #c6341b,
+    #c84615,
+    #c9560f,
+    #c9650a,
+    #c97309
+  ); */
+
+  /* background-image: linear-gradient(
+    to right bottom,
+    #dd3e3e,
+    #db3b3f,
+    #d83941,
+    #d63642,
+    #d33443,
+    #d63441,
+    #d93440,
+    #dc343e,
+    #e53838,
+    #ed3d30,
+    #f54327,
+    #fc4a1a
+  ); */
 }
 
 .newsletter-section h4 {

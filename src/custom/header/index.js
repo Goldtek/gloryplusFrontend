@@ -21,7 +21,7 @@ class Header extends Component {
         <div className="container">
           <Link to="/">
             {" "}
-            <img src="img/logo2.png" alt="" className="site-logo" />
+            <img src="img/newlogo.png" alt="" className="site-logo" />
           </Link>
 
           <Link to="/donate" className="site-btn hidden-xs">

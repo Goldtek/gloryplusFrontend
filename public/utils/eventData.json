@@ -1,19 +1,44 @@
 [
   {
     "id": 1,
-    "title": "December 2019 Cross over With Power",
-    "pathName": "cross-over-night",
-    "imagePath": "img/cross-over-night.jpg",
-    "description": " 2019 was an awesome year in our lives as a church. God faithfully increased us in every dimension by the power of His Spirit. 2020 is just around the corner and the excitement about our expectations for the coming year, has got us going WOW!!! How You Exit A Year Determines How You Enter A New Year. Let's Enter 2020 With Power In The Name Of Jesus Christ!. God bless you as you come!",
+    "title": "21 Days Fasting and Prayer",
+    "pathName": "21-days-fasting",
+    "imagePath": "img/event-slider/fasting.jpg",
+    "description": "Its the the begining of the year and a time to download God's plan and take charge of the year 2020. The year 2020 is our year of uncommon manifestation hence the need to deploy phophetic tools to harness the opportunities and the blessings which God has designed for us in the year. We need to also deploy prohetic tools to enable us overule every satanic agenda and plans against God's people for the year. Its a time to access and experience the phophetic dimensions of the Kingdom of God for lasting victory over all the days of the year.",
     "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
-    "time": "9:00pm",
-    "day": "31",
-    "month": "Dec",
-    "year": "2019"
+    "time": "6:00pm daily",
+    "day": "06-26",
+    "month": "Jan",
+    "year": "2020"
   },
+
   {
     "id": 2,
-    "title": "Church Launch(GLORYPLUS ABA)",
+    "title": "Holy Ghost Morning",
+    "pathName": "holyghost-morning",
+    "imagePath": "img/holygost.jpg",
+    "description": "Join us again on the 16th of January for yet another power filled session for the first Holy Ghost morning of the year 2020. This  year is your your of uncommon manifestation through the Holy Ghost,Our Glorious God will be releasing His Glorious Power in a Glorious atmosphere for Glorious Experiences. Don't miss this program for anything. Come expectant and Jesus will surely meet you at the very point of your need.",
+    "location": "DE Santiago Milan Hotels & Suites Festac Access Amuwo Odofin Lagos.",
+    "time": "8:00am",
+    "day": "16",
+    "month": "Jan",
+    "year": "2020"
+  },
+  {
+    "id": 3,
+    "title": "Workers Meeting",
+    "pathName": "workers-meeting",
+    "imagePath": "img/workers.jpg",
+    "description": "Its a new Year and the church needs to function with the highest level of expertise and efficiency, hence the need to train the workers for the year. This workers conference will be a time to equip the saints with leadership tools. Tools like understanding and capturing vision for ministry in 2020. The art of leadership (becoming an exceptional leader). The power of focus for maximum impact. Discipleship - God's strategy for subduing the earth. Team dynamics. Strategic formation of Home cell churches. Understanding the principles of church administration.",
+    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
+    "time": "6:00pm & 9:00am",
+    "day": "09-11",
+    "month": "Jan",
+    "year": "2020"
+  },
+  {
+    "id": 4,
+    "title": "Church Launch (GLORYPLUS ABA)",
     "pathName": "church launch",
     "imagePath": "img/church.jpg",
     "description": "Gloryplus International is a church called to reveal the knowledge of the Glory of God to the nations. Gloryplus International would be launched officially on the 2nd of February 2020. On that Sunday the Glory of God would surely manifest as a divine endorsement of The Mandate. God will crown the service with infallible proofs through miracles, signs and wonders. Souls will be won, and the captives shall be set free.",
@@ -24,7 +49,7 @@
     "year": "2020"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "Leadership Summit",
     "pathName": "Leaders",
     "imagePath": "img/workers.jpg",
@@ -36,43 +61,7 @@
     "year": "2020"
   },
   {
-    "id": 4,
-    "title": "HolyGhost Morning ABA",
-    "pathName": "holygost",
-    "imagePath": "img/hgm.jpg",
-    "description": "It will be a time for supernatural encounters. Holy Ghost Morning is a healing, deliverance, breakthrough and miracle service. In such services the people experience the Glory of God and the word of God is preached with power. It's usually an amazing moment as people witness the power of God healing people miraculously. The program is saturated with an atmosphere of worship and Glory. Worshippers cry out their hearts in worship to the risen Lord and soon coming King, Jesus Christ. Testimonies of saved and changed Lives are prevalent in such servies.",
-    "location": "ora-ifite town hall, 54 azikiwe road, Aba, abia state",
-    "time": "8:00am",
-    "day": "01",
-    "month": "Mar",
-    "year": "2020"
-  },
-  {
-    "id": 5,
-    "title": "1st Workers Meeting",
-    "pathName": "workers Meeting",
-    "imagePath": "img/workers.jpg",
-    "description": "Its a new Year and the church needs to function with the highest level of expertise and efficiency, hence the need to train the workers for the year. This workers conference will be a time to equip the saints with leadership tools. Tools like understanding and capturing vision for ministry in 2020. The art of leadership (becoming an exceptional leader). The power of focus for maximum impact. Discipleship - God's strategy for subduing the earth. Team dynamics. Strategic formation of Home cell churches. Understanding the principles of church administration.",
-    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
-    "time": "6:00pm & 9:00am",
-    "day": "09-11",
-    "month": "Jan",
-    "year": "2020"
-  },
-  {
     "id": 6,
-    "title": "21 Days Fasting and Prayer",
-    "pathName": "21-days-fasting",
-    "imagePath": "img/prayer.jpg",
-    "description": "Its the the begining of the year and a time to download God's plan and take charge of the year 2020. The year 2020 is our year of uncommon manifestation hence the need to deploy phophetic tools to harness the opportunities and the blessings which God has designed for us in the year. We need to also deploy prohetic tools to enable us overule every satanic agenda and plans against God's people for the year. Its a time to access and experience the phophetic dimensions of the Kingdom of God for lasting victory over all the days of the year.",
-    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
-    "time": "6:00pm daily",
-    "day": "06-26",
-    "month": "Jan",
-    "year": "2020"
-  },
-  {
-    "id": 7,
     "title": "Love in the Air",
     "pathName": "love",
     "imagePath": "img/relationship.jpg",
@@ -84,7 +73,7 @@
     "year": "2020"
   },
   {
-    "id": 8,
+    "id": 7,
     "title": "40 days Prayer and fasting( The Revelation of Jesus)",
     "pathName": "40-days-fasting",
     "imagePath": "img/rev.jpg",
@@ -93,6 +82,18 @@
     "time": "6:00pm",
     "day": "26",
     "month": "Feb",
+    "year": "2020"
+  },
+  {
+    "id": 8,
+    "title": "HolyGhost Morning ABA",
+    "pathName": "holygost",
+    "imagePath": "img/hgm.jpg",
+    "description": "It will be a time for supernatural encounters. Holy Ghost Morning is a healing, deliverance, breakthrough and miracle service. In such services the people experience the Glory of God and the word of God is preached with power. It's usually an amazing moment as people witness the power of God healing people miraculously. The program is saturated with an atmosphere of worship and Glory. Worshippers cry out their hearts in worship to the risen Lord and soon coming King, Jesus Christ. Testimonies of saved and changed Lives are prevalent in such servies.",
+    "location": "ora-ifite town hall, 54 azikiwe road, Aba, abia state",
+    "time": "8:00am",
+    "day": "01",
+    "month": "Mar",
     "year": "2020"
   },
   {

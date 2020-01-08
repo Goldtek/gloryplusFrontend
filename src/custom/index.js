@@ -15,12 +15,12 @@ import PageInfo from "./page-info";
 import SermonList from "./sermon-list";
 import Contactus from "./contact";
 import EventItem from "./event-item";
-import NotFound from "./NotFound/NotFound";
+import NotFound from "./notfound/notfound";
 import GroupList from "./group";
 import GroupItem from "./group-item";
 import DonateItem from "./donate-item";
-import MemberLogin from "./member-login";
-import MembeRegister from "./member-register";
+import MemberLogin from "./partner-login";
+import MembeRegister from "./partner-register";
 import LiveStream from "./livestream";
 import Donation from "./donation-item";
 import EventDetail from "./event-detail";
@@ -28,6 +28,7 @@ import Galleries from "./galleries";
 import SingleGallery from "./gallery/index";
 import SectionCard from "./sermon-card";
 import Testimonial from "./testimonial";
+import EventSlider from "./event-slider/index";
 
 export {
   Header,
@@ -59,5 +60,6 @@ export {
   EventDetail,
   Galleries,
   SingleGallery,
-  Testimonial
+  Testimonial,
+  EventSlider
 };
