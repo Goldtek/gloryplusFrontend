@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import { Main } from "./index";
 import ImageInput from "./ImageInput";
+import "./card.css";
 class Dashboard extends React.Component {
   state = {
     avatar: false
+  };
+
+  accessChild = event => {
+    this.refs.child.fileOpen();
   };
   render() {
     const { avatar } = this.state;
@@ -13,23 +18,18 @@ class Dashboard extends React.Component {
       <section className="page-section spad partner">
         <div className="container-fluid">
           <div className="row ">
-            <div className="col-lg-3 col-md-3 col-sm-4 partner-card">
+            <div className="col-lg-3 col-md-6 col-sm-4 ">
               <div className="panel rounded shadow">
                 <div className="panel-body">
                   <div className="inner-all">
                     <ul className="list-unstyled">
                       <li className="text-center">
-                        {/* <img
-                          data-no-retina=""
-                          className="img-circle img-responsive img-bordered-primary"
-                          src="https://image.flaticon.com/icons/svg/1177/1177568.svg"
-                          alt="John Doe"
-                        /> */}
                         <form>
                           <ImageInput
                             maxHeight={64}
                             name="avatarURL"
                             className="create-contact-avatar-input"
+                            ref="child"
                           />
                         </form>{" "}
                       </li>
@@ -43,13 +43,10 @@ class Dashboard extends React.Component {
                         <Link
                           to="#"
                           className="btn btn-success text-center btn-block btn-gpi"
+                          onClick={this.accessChild}
                         >
                           {/* PRO Account */}
-                          {avatar ? (
-                            <> Click image above to change picture</>
-                          ) : (
-                            <>Click image above to upload picture</>
-                          )}
+                          {avatar ? <> change image</> : <>upoad image</>}
                         </Link>
                       </li>
                       <li>
@@ -79,25 +76,37 @@ class Dashboard extends React.Component {
                 <div className="panel-body no-padding rounded">
                   <ul className="list-group no-margin">
                     <li className="list-group-item">
-                      <i className="fa fa-envelope mr-5"></i>{" "}
+                      <i className="fa fa-envelope mr-5 rad-txt-primary"></i>{" "}
                       example@example.com
                     </li>
                     <li className="list-group-item">
-                      <i className="fa fa-globe mr-5"></i> www.example.com
+                      <i className="fa fa-map-marker rad-txt-danger"></i>{" "}
+                      Hampton Road Lekki
                     </li>
                     <li className="list-group-item">
-                      <i className="fa fa-phone mr-5"></i> +55 xx xxx xxx
+                      <i className="fa fa-phone mr-5 rad-txt-success"></i> +55
+                      xx xxx xxx
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-
+            <header className="rad-page-title">
+              <span>Welcome to our partnership page</span>
+              <small className="md-txt">
+                {/* <a
+                  href="https://www.google.com/maps/place/3720+Emerald+St,+Torrance,+CA+90503/@33.8403836,-118.3543828,17z/data=!4m18!1m15!4m14!1m6!1m2!1s0x80c2b4d407f58b11:0xdedca55964c89054!2s3720+Emerald+St,+Torrance,+CA+90503!2m2!1d-118.3520761!2d33.8403792!1m6!1m2!1s0x80c2b4d407f58b11:0xdedca55964c89054!2s3720+Emerald+St,+Torrance,+CA+90503!2m2!1d-118.3520761!2d33.8403792!3m1!1s0x80c2b4d407f58b11:0xdedca55964c89054"
+                  target="_blank"
+                >
+                  <i class="fa fa-map-marker rad-txt-danger"></i> California
+                </a> */}
+              </small>{" "}
+            </header>
             <Main title="TITHE" img="/img/partner/tithe.png" />
             <Main title="PARTNERSHIP" img="/img/partner/partner.jpeg" />
-            <Main title="SEED OF FAITH" img="img/partner/seed.png" />
-            <Main title="GPA " img="/img/partner/glory.png" />
-            <Main title="DEPARTMENT" img="/img/partner/gpa.jpg" />
+            {/* <Main title="SEED OF FAITH" img="img/partner/seed.png" /> */}
+            {/* <Main title="GPA " img="/img/partner/glory.png" /> */}
+            {/* <Main title="DEPARTMENT" img="/img/partner/gpa.jpg" /> */}
           </div>
         </div>
       </section>

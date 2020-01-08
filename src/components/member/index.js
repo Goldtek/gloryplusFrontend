@@ -26,7 +26,7 @@ class Member extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>About</title>
+          <title>Partner</title>
           <meta name="description" content="Partner " />
         </Helmet>
         <TopNav />

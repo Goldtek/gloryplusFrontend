@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Main = ({ title, img }) => {
   return (
-    <div className="col-xs-12 col-sm-4 col-md-3">
+    <div className="col-xs-12 col-sm-4 col-md-4">
       <div className="card">
         <Link className="img-card" to="#">
           <img src={img} alt={img} />
