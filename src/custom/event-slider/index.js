@@ -33,7 +33,7 @@ class EventSlider extends Component {
       <section
         className="about-section"
         style={{ marginBottom: "25px" }}
-        data-aos="fade-left"
+        data-aos="fade-up"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
         data-aos-duration="1000"
