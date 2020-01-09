@@ -6,7 +6,12 @@ import { Link } from "react-router-dom";
 class JoinUs extends Component {
   render() {
     return (
-      <section className="about-section spad">
+      <section
+        className="about-section spad"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-6 about-content">

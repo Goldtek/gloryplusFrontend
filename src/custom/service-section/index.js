@@ -3,8 +3,14 @@ import React, { Component } from "react";
 class ServiceSection extends Component {
   render() {
     return (
-      <section className="services-section spad ">
-        <div className="container">
+      <section className="services-section spad">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-sine"
+        >
           <div className="row">
             <div className="col-sm-4 ">
               <div className="service-box ">
