@@ -15,7 +15,7 @@ import PageInfo from "./page-info";
 import SermonList from "./sermon-list";
 import Contactus from "./contact";
 import EventItem from "./event-item";
-import NotFound from "./notfound/notfound";
+import NotFound from "./notfound";
 import GroupList from "./group";
 import GroupItem from "./group-item";
 import DonateItem from "./donate-item";
