@@ -30,7 +30,14 @@ class EventSlider extends Component {
 
   render() {
     return (
-      <section className="about-section" style={{ marginBottom: "25px" }}>
+      <section
+        className="about-section"
+        style={{ marginBottom: "25px" }}
+        data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1000"
+      >
         <div className="container">
           <div className="row">
             <div className="about-content">
