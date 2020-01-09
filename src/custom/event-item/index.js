@@ -37,7 +37,12 @@ const EventItem = ({ events, loading }) => {
   return (
     <div>
       {events.map(({ id, ...eventData }) => (
-        <div className="el-item event-div" key={id}>
+        <div
+          className="el-item event-div"
+          key={id}
+          data-aos="fade-right"
+          data-aos-easing="ease-in-sine"
+        >
           <div className="row">
             <div className="col-md-4 ">
               <div
