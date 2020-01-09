@@ -33,7 +33,7 @@ import {
   PopularSermon,
   Footer,
   NotFound,
-  Testimonial,
+  // Testimonial,
   EventSlider
 } from "../../custom";
 
