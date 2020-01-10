@@ -1,8 +1,8 @@
 import React from "react";
-import "./notfound.css";
+import "./errorpage.css";
 import { Link } from "react-router-dom";
 
-const NotFound = () => {
+const ErrorPage = () => {
   return (
     <div id="notfound">
       <div className="notfound">
@@ -16,4 +16,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default ErrorPage;
