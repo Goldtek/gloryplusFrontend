@@ -6,7 +6,13 @@ import { Link } from "react-router-dom";
 class JoinUs extends Component {
   render() {
     return (
-      <section className="about-section spad">
+      <section
+        className="about-section spad"
+        data-aos={this.props.fade}
+        // data-aos-offset="300"
+        data-aos-easing={this.props.ease}
+        data-aos-duration={this.props.duration}
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-6 about-content">

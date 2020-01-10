@@ -17,18 +17,28 @@ class TopNav extends Component {
           <div className="row">
             <div className="col-sm-3 col-md-3 col-lg-3  hidden-xs">
               <div className="social">
-                <Link to="#">
+                <a
+                  href="https://www.facebook.com/gloryplusintl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="ti-facebook"></i>
-                </Link>
-                <Link to="#">
+                </a>
+                <a
+                  href="https://twitter.com/GloryplusI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="ti-twitter-alt"></i>
-                </Link>
-                <Link to="#">
-                  <i className="ti-google"></i>
-                </Link>
-                <Link to="#">
+                </a>
+
+                <a
+                  href="https://www.instagram.com/gloryplusintl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="ti-instagram"></i>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="col-sm-12 col-md-7 col-lg-6 col-xs-12">

@@ -64,9 +64,13 @@ class Home extends Component {
                   <Header />
                   <Hero />
                   <EventTimer />
-                  <JoinUs />
+                  <JoinUs fade="zoom-in" duration="1300" ease="ease-in-sine" />
                   <EventSlider />
-                  <ServiceSection />
+                  <ServiceSection
+                    fade="fade-down"
+                    duration="1500"
+                    ease="linear"
+                  />
                   {/* <Testimonial /> */}
 
                   {/* <UpcomingEvent /> */}

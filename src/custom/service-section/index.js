@@ -5,7 +5,12 @@ class ServiceSection extends Component {
     return (
       <section className="services-section spad">
         <div className="container">
-          <div className="row">
+          <div
+            className="row"
+            data-aos={this.props.fade}
+            data-aos-easing={this.props.ease}
+            data-aos-duration={this.props.duration}
+          >
             <div className="col-sm-4 ">
               <div className="service-box ">
                 <h4>
