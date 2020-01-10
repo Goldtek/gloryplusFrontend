@@ -68,7 +68,7 @@ class Home extends Component {
                   <EventSlider />
                   <ServiceSection
                     fade="fade-down"
-                    duration="1500"
+                    durations="1500"
                     ease="linear"
                   />
                   {/* <Testimonial /> */}
