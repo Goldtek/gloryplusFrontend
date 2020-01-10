@@ -9,7 +9,7 @@ class ServiceSection extends Component {
             className="row"
             data-aos={this.props.fade}
             data-aos-easing={this.props.ease}
-            data-aos-duration={this.props.duration}
+            data-aos-duration={this.props.durations}
           >
             <div className="col-sm-4 ">
               <div className="service-box ">

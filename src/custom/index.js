@@ -15,7 +15,7 @@ import PageInfo from "./page-info";
 import SermonList from "./sermon-list";
 import Contactus from "./contact";
 import EventItem from "./event-item";
-import NotFound from "./notfound";
+import ErrorPage from "./errorpage";
 import GroupList from "./group";
 import GroupItem from "./group-item";
 import DonateItem from "./donate-item";
@@ -49,7 +49,7 @@ export {
   SectionCard,
   Contactus,
   EventItem,
-  NotFound,
+  ErrorPage,
   GroupItem,
   GroupList,
   DonateItem,

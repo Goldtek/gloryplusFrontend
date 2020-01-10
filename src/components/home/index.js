@@ -32,7 +32,7 @@ import {
   NewsLetter,
   PopularSermon,
   Footer,
-  NotFound,
+  ErrorPage,
   // Testimonial,
   EventSlider
 } from "../../custom";
@@ -68,7 +68,7 @@ class Home extends Component {
                   <EventSlider />
                   <ServiceSection
                     fade="fade-down"
-                    duration="1500"
+                    durations="1500"
                     ease="linear"
                   />
                   {/* <Testimonial /> */}
@@ -96,7 +96,7 @@ class Home extends Component {
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/partner" component={Member} />
-            <Route path="*" component={NotFound} />
+            <Route path="*" component={ErrorPage} />
           </Switch>
         </Router>
       </Fragment>
