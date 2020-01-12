@@ -21,7 +21,7 @@ class JoinUs extends Component {
                 The Scripture makes us understand that we are living in the last
                 days, in these last days, God expects us to work in his glory.
                 When we talk about the glory of God, we are talking about his
-                character, the substance that makes God whom he is, his manifest
+                character, the substance that makes God who he is, his manifest
                 presence, his power, and his reputation. In GloryPlus
                 International we teach you to work in the glory of God, to
                 enable you to live the life you were designed to live.

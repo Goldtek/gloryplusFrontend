@@ -21,10 +21,10 @@ class Header extends Component {
         <div className="container">
           <Link to="/">
             {" "}
-            <img src="img/newlogo.png" alt="" className="site-logo" />
+            <img src="img/logo2.png" alt="" className="site-logo" />
           </Link>
 
-          <Link to="/donate" className="site-btn hidden-xs">
+          <Link to="/donate" className="site-btn hidden-xs hidden-sm hidden-md">
             donate
           </Link>
 
@@ -43,7 +43,7 @@ class Header extends Component {
 
               <li className="nav-pills">
                 <NavLink activeClassName={"active"} to="/group">
-                  Home Church
+                  HOME CHURCH
                 </NavLink>
               </li>
               <li className="nav-pills">

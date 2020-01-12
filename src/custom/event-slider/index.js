@@ -41,7 +41,7 @@ class EventSlider extends Component {
         <div className="container">
           <div className="row">
             <div className="about-content">
-              <h2>Ongoing Event</h2>
+              <h2>Latest Events</h2>
               <ItemsCarousel
                 gutter={12}
                 numberOfCards={noOfCards}
