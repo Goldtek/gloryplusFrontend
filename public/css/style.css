@@ -2010,5 +2010,17 @@ HERO SECTION
   top: 5px;
 }
 
+
+.btn-slide-red {
+  background-color: #dd3e3e;
+  background-image: linear-gradient(147deg, #ff833b 0%, #fd3838 74%);
+  font-weight: bolder;
+}
+
+.btn-slide {
+  background-image: linear-gradient(to right, #ffffff, #f5f4f6, #ede9ec, #e6dfe0, #ded4d4);
+  font-weight: bolder;
+}
+
 /* SCROLL TO TOP CSS */
 /* CUSTOM STYLES */

@@ -52,90 +52,78 @@ class Hero extends Component {
         </ol>
         <div className="carousel-inner">
           <div className="item bg bg1 active animated slideInDown darken-pseudo">
-            <div className="container">
-              <div className="carousel-caption">
-                <h1 className="animated zoomInRight slow">
-                  {content[0].title}
-                </h1>
-                <p className="animated fadeInLeft slow">
-                  {content[0].description}
-                </p>
-                <p>
-                  <Link
-                    className="btn btn-md btn-default animated fadeInLeft slower"
-                    to="/register"
-                    role="button"
-                  >
-                    JOIN US
-                  </Link>
-                  &nbsp;
-                  <Link
-                    className="btn btn-md btn-danger animated fadeInRight slower"
-                    to="/live"
-                    role="button"
-                  >
-                    LIVESTREAM
-                  </Link>
-                </p>
-              </div>
+            <div className="carousel-caption" style={{ marginBottom: "300px" }}>
+              <h1 className="animated zoomInRight slow">{content[0].title}</h1>
+              <p className="animated fadeInLeft slow">
+                {content[0].description}
+              </p>
+              <p>
+                <Link
+                  className="btn btn-md btn-default animated fadeInLeft slower btn-slide"
+                  to="/register"
+                  role="button"
+                >
+                  JOIN US
+                </Link>
+                &nbsp;
+                <Link
+                  className="btn btn-md btn-danger animated fadeInRight slower btn-slide-red"
+                  to="/live"
+                  role="button"
+                >
+                  LIVESTREAM
+                </Link>
+              </p>
             </div>
           </div>
           <div className="item bg bg2 animated slideInUp">
-            <div className="container">
-              <div className="carousel-caption">
-                <h1 className="animated zoomInRight slow">
-                  {content[1].title}
-                </h1>
-                <p className="animated fadeInLeft slow">
-                  {content[1].description}
-                </p>
-                <p>
-                  <Link
-                    className="btn btn-md btn-default animated fadeInLeft slower"
-                    to="/register"
-                    role="button"
-                  >
-                    JOIN US
-                  </Link>
-                  &nbsp;
-                  <Link
-                    className="btn btn-md btn-danger animated fadeInRight slower"
-                    to="/live"
-                    role="button"
-                  >
-                    LIVESTREAM
-                  </Link>
-                </p>
-              </div>
+            <div className="carousel-caption" style={{ marginBottom: "300px" }}>
+              <h1 className="animated zoomInRight slow">{content[1].title}</h1>
+              <p className="animated fadeInLeft slow">
+                {content[1].description}
+              </p>
+              <p>
+                <Link
+                  className="btn btn-md btn-default animated fadeInLeft slower btn-slide"
+                  to="/register"
+                  role="button"
+                >
+                  JOIN US
+                </Link>
+                &nbsp;
+                <Link
+                  className="btn btn-md btn-danger animated fadeInRight slower btn-slide-red"
+                  to="/live"
+                  role="button"
+                >
+                  LIVESTREAM
+                </Link>
+              </p>
             </div>
           </div>
           <div className="item bg bg3">
-            <div className="container">
-              <div className="carousel-caption">
-                <h1 className="animated zoomInRight slow">
-                  {content[2].title}
-                </h1>
-                <p className="animated fadeInLeft slow">
-                  {content[2].description}
-                </p>
-                <p>
-                  <Link
-                    className="btn btn-md btn-default animated fadeInLeft slower"
-                    to="/register"
-                    role="button"
-                  >
-                    JOIN US
-                  </Link>
-                  &nbsp;
-                  <Link
-                    className="btn btn-md btn-danger animated fadeInRight slower"
-                    to="/live"
-                    role="button"
-                  >
-                    LIVESTREAM
-                  </Link>
-                </p>
-              </div>
+            <div className="carousel-caption" style={{ marginBottom: "300px" }}>
+              <h1 className="animated zoomInRight slow">{content[2].title}</h1>
+              <p className="animated fadeInLeft slow">
+                {content[2].description}
+              </p>
+              <p>
+                <Link
+                  className="btn btn-md btn-default animated fadeInLeft slower btn-slide "
+                  to="/register"
+                  role="button"
+                >
+                  JOIN US
+                </Link>
+                &nbsp;
+                <Link
+                  className="btn btn-md btn-danger animated fadeInRight slower btn-slide-red"
+                  to="/live"
+                  role="button"
+                >
+                  LIVESTREAM
+                </Link>
+              </p>
             </div>
           </div>
         </div>
