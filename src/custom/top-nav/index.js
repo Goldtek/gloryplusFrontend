@@ -48,11 +48,11 @@ class TopNav extends Component {
               >
                 <h5>Upcoming Event:</h5>
                 <Countdown
-                  timeTillDate="1 31 2020, 8:00 am"
+                  timeTillDate="1 16 2020, 8:00 am"
                   timeFormat="MM DD YYYY, h:mm a"
                 />
                 <Link
-                  to="/event/21-days-fasting"
+                  to="/event/holyghost-morning"
                   className="top-readmore hidden-sm"
                 >
                   readmore
@@ -67,7 +67,7 @@ class TopNav extends Component {
                   </NavLink>
                 ) : (
                   <NavLink exact to="/login">
-                    Login <i class="fas fa-sign-in-altgit "></i>
+                    Login <i class="fas fa-sign-in-alt "></i>
                   </NavLink>
                 )}
               </div>
