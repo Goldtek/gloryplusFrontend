@@ -16,77 +16,92 @@ class Header extends Component {
   };
   render() {
     return (
-      <div className="navik-header header-shadow">
+      <header className="header-section">
         <div className="container">
-          <div className="navik-header-container">
-            <div
-              className="logo"
-              data-mobile-logo="img/logo2.png"
-              data-sticky-logo="img/logo2.png"
-            >
-              <a href="#!">
-                <img src="img/logo2.png" alt="logo" />
-              </a>
-            </div>
+          <Link to="/">
+            {" "}
+            <img src="img/logo2.png" alt="" className="site-logo" />
+          </Link>
 
-            <div className="burger-menu">
-              <div className="line-menu line-half first-line"></div>
-              <div className="line-menu"></div>
-              <div className="line-menu line-half last-line"></div>
-            </div>
+          <Link to="/donate" className="site-btn hidden-xs hidden-sm hidden-md">
+            donate <i className="fas fa-hand-holding-heart"></i>
+          </Link>
 
-            <nav className="navik-menu menu-caret submenu-top-border submenu-scale">
-              <ul>
-                <li>
-                  <NavLink exact to="/">
-                    Home
-                  </NavLink>
-
-                  {/* <a href="/">Home</a> */}
-                </li>
-
-                <li>
-                  <NavLink exact to="/group">
-                    HOME CHURCH
-                  </NavLink>
-                </li>
-
-                <li>
-                  {/* <a href="/sermon">Sermons</a> */}
-                  <NavLink exact to="/sermon">
-                    Sermon
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink exact to="/galleries">
-                    Gallery
-                  </NavLink>
-                </li>
-
-                <li>
-                  {/* <a href="/about">About Us</a> */}
-                  <NavLink exact to="/events">
-                    Events
-                  </NavLink>
-                </li>
-
-                <li>
-                  {/* <a href="/sermon">Sermons</a> */}
-                  <NavLink exact to="/about">
-                    About Us
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink exact to="/contact">
-                    Contact
-                  </NavLink>
-                </li>
-              </ul>
-            </nav>
+          <div className="nav-switch">
+            <i className="fa fa-bars"></i>
           </div>
+          <nav className="main-menu">
+            <ul>
+              <li>
+                <NavLink exact to="/">
+                  Home
+                </NavLink>
+
+                {/* <a href="/">Home</a> */}
+              </li>
+
+              <li>
+                <NavLink exact to="/group">
+                  HOME CHURCH
+                </NavLink>
+              </li>
+
+              <li>
+                {/* <a href="/sermon">Sermons</a> */}
+                <NavLink exact to="/sermon">
+                  Sermon
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink exact to="/galleries">
+                  Gallery
+                </NavLink>
+              </li>
+
+              <li>
+                {/* <a href="/about">About Us</a> */}
+                <NavLink exact to="/events">
+                  Events
+                </NavLink>
+              </li>
+
+              <li>
+                {/* <a href="/sermon">Sermons</a> */}
+                <NavLink exact to="/about">
+                  About Us
+                </NavLink>
+              </li>
+              <li>
+                <NavLink exact to="/contact">
+                  Contact
+                </NavLink>
+              </li>
+              <li className="donate hidden-lg hidden-md raise">
+                <NavLink exact to="/contact">
+                  Donate <i className="fas fa-hand-holding-heart"></i>
+                </NavLink>
+              </li>
+
+              <span className="hidden-lg hidden-md">
+                {this.state.loggedIn ? (
+                  <li>
+                    <NavLink exact to="#!">
+                      User <i className="fa fa-angle-down"></i>
+                    </NavLink>
+                  </li>
+                ) : (
+                  <li>
+                    <NavLink exact to="/login">
+                      Login <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    </NavLink>
+                  </li>
+                )}
+              </span>
+            </ul>
+          </nav>
         </div>
-      </div>
+      </header>
     );
   }
 }
