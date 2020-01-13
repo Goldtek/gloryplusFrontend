@@ -52,7 +52,7 @@ class Hero extends Component {
         </ol>
         <div className="carousel-inner">
           <div className="item bg bg1 active animated slideInDown darken-pseudo">
-            <div className="carousel-caption" style={{ marginBottom: "300px" }}>
+            <div className="carousel-caption">
               <h1 className="animated zoomInRight slow">{content[0].title}</h1>
               <p className="animated fadeInLeft slow">
                 {content[0].description}
@@ -77,7 +77,7 @@ class Hero extends Component {
             </div>
           </div>
           <div className="item bg bg2 animated slideInUp">
-            <div className="carousel-caption" style={{ marginBottom: "300px" }}>
+            <div className="carousel-caption">
               <h1 className="animated zoomInRight slow">{content[1].title}</h1>
               <p className="animated fadeInLeft slow">
                 {content[1].description}
@@ -102,7 +102,7 @@ class Hero extends Component {
             </div>
           </div>
           <div className="item bg bg3">
-            <div className="carousel-caption" style={{ marginBottom: "300px" }}>
+            <div className="carousel-caption">
               <h1 className="animated zoomInRight slow">{content[2].title}</h1>
               <p className="animated fadeInLeft slow">
                 {content[2].description}

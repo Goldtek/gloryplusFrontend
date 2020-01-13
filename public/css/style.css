@@ -350,12 +350,13 @@ ol {
   transition: all 0.4s;
 }
 
-.main-menu ul li a:hover {
+.nav-pills:hover {
   color: #dd3e3e;
 }
 
-.main-menu ul li.active a {
+.main-menu ul li .active {
   color: #dd3e3e;
+
 }
 
 /*---------------------
@@ -2021,6 +2022,33 @@ HERO SECTION
   background-image: linear-gradient(to right, #ffffff, #f5f4f6, #ede9ec, #e6dfe0, #ded4d4);
   font-weight: bolder;
 }
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .carousel-caption {
+    margin-bottom: 350px !important;
+
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .carousel-caption {
+    margin-bottom: 350px !important;
+
+
+  }
+}
+
 
 /* SCROLL TO TOP CSS */
 /* CUSTOM STYLES */
