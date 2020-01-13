@@ -62,11 +62,11 @@ class TopNav extends Component {
             <div className="col-sm-3 col-md-2 col-lg-3 hidden-xs">
               <div className="user-input">
                 {this.state.loggedIn ? (
-                  <NavLink to="#!">
+                  <NavLink exact to="#!">
                     User <i className="fa fa-angle-down"></i>
                   </NavLink>
                 ) : (
-                  <NavLink to="/login">
+                  <NavLink exact to="/login">
                     Login <i className="fa fa-user"></i>
                   </NavLink>
                 )}
