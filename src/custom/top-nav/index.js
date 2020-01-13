@@ -67,7 +67,7 @@ class TopNav extends Component {
                   </NavLink>
                 ) : (
                   <NavLink exact to="/login">
-                    Login <i className="fa fa-user"></i>
+                    Login <i class="fas fa-sign-in-altgit "></i>
                   </NavLink>
                 )}
               </div>

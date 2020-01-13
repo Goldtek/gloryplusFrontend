@@ -93,7 +93,7 @@ class Header extends Component {
                 ) : (
                   <li>
                     <NavLink exact to="/login">
-                      Login <i className="fa fa-user"></i>
+                      Login <i class="fa fa-sign-in" aria-hidden="true"></i>
                     </NavLink>
                   </li>
                 )}
