@@ -11,18 +11,13 @@ const DonateItem = () => {
               <strong>Partner With Us</strong>
             </h2>
             <p>
-              The Scripture made us to understand that we are living in the last
-              days,
-              <br /> in these last days, God expects us to work in his glory.
-            </p>
-            <p>
-              When we talk about the glory of God, we ar talking about his
-              charcter,
-              <br /> the substance that makes God whom he is, his manifest
-              prescence, his power and his reputation.
-              <br /> In GloryPlus International we teach you to work in the
-              glory of God, to enable you live the life you were designed to
-              live.
+            The Scripture made us understand that we are living in the last
+                days, in these last days, God expects us to work in his glory.<br/>
+                When we talk about the glory of God, we are talking about his
+                character, the substance that makes God who he is, his manifest
+                presence, his power, and his reputation.<br/> In GloryPlus
+                International we teach you to work in the glory of God, to
+                enable you to live the life you were designed to live.
             </p>
             <Link onTouchMove="/donation" className="site-btn sb-wide">
               Donate Now
