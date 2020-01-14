@@ -18,7 +18,7 @@ class JoinUs extends Component {
             <div className="col-md-6 about-content">
               <h2>The Pastors' Desk</h2>
               <p>
-                The Scripture makes us understand that we are living in the last
+                The Scripture made us understand that we are living in the last
                 days, in these last days, God expects us to work in his glory.
                 When we talk about the glory of God, we are talking about his
                 character, the substance that makes God who he is, his manifest
