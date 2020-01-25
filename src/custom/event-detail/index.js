@@ -63,7 +63,7 @@ const EventDetail = ({
                     <p>Share</p>
 
                     <div
-                      class="fb-share-button"
+                      className="fb-share-button"
                       data-href="https://www.facebook.com/gloryplusintl/"
                       data-layout="button_count"
                     ></div>
