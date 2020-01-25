@@ -200,7 +200,7 @@ ol {
 -----------------------*/
 .section-title {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 10px;
 }
 
 .section-title.title-left {
@@ -1188,6 +1188,10 @@ ol {
   margin-bottom: 35px;
 }
 
+.single-post .post-content p {
+  font-size: medium;
+}
+
 .single-post .post-thumb {
   margin-bottom: 40px;
 }
@@ -1227,6 +1231,26 @@ ol {
 }
 
 .single-post blockquote {
+  margin: 30px 0;
+  border-left: 2px solid #dd3e3e;
+  padding: 8px 28px;
+  font-size: 18px;
+  font-family: "Lora", serif;
+  font-style: italic;
+  color: #636363;
+}
+
+.event-list blockquote span {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  color: #dd3e3e;
+  font-style: normal;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.event-list blockquote {
   margin: 30px 0;
   border-left: 2px solid #dd3e3e;
   padding: 8px 28px;
@@ -1417,11 +1441,11 @@ ol {
   font-style: italic;
   color: #dd3e3e;
   line-height: normal;
-  margin-bottom: 18px;
+  margin-bottom: 5px;
 }
 
 .widget .recent-post-widget .rp-content h5 {
-  font-size: 18px;
+  font-size: 1.5rem;
   line-height: 1.4;
 }
 
@@ -2038,12 +2062,25 @@ HERO SECTION
 }
 
 
+.quoted a {
 
+  display: none !important;
+}
+
+.quoted p {
+  color: #000;
+  /* margin-bottom: 10px; */
+}
 
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
+
+.event-list {
+  /* border: 2px solid red; */
+  margin-bottom: 10px;
+}
 
 @media (min-width: 1281px) {
   .carousel-caption {
