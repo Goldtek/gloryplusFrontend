@@ -78,13 +78,17 @@ class Event_Details extends Component {
         ) : (
           <div style={{ minHeight: "25vh" }}>
             {eventDetails
-              .filter(filtGallery =>
-                filtGallery.pathName
+              .filter(filterEvent =>
+                filterEvent.pathName
                   .toLowerCase()
                   .includes(pathID.toLowerCase())
               )
               .map(({ id, ...filteredEvent }) => (
-                <EventDetail key={id} {...filteredEvent} />
+                <EventDetail
+                  key={id}
+                  {...filteredEvent}
+                  eventArr={eventDetails}
+                />
               ))}
           </div>
         )}

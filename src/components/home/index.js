@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import axios from "axios";
 import { Helmet } from "react-helmet";
 import {
   BrowserRouter as Router,
@@ -19,6 +20,7 @@ import LiveStreaming from "../livestream";
 import Event_Details from "../event-detail";
 import Galleries from "../galleries/index";
 import Gallery from "../gallery";
+
 // import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Hero,
@@ -27,7 +29,7 @@ import {
   EventTimer,
   JoinUs,
   ServiceSection,
-  // UpcomingEvent,
+  UpcomingEvent,
   Donate,
   NewsLetter,
   PopularSermon,
@@ -36,17 +38,67 @@ import {
   // Testimonial,
   EventSlider
 } from "../../custom";
-
 /*----------------
 MEMBERS IMPORT
 ----------------- */
 import Member from "../member";
+// declare constant for event api
+const API = "./utils/eventData.json";
 
 /*----------------
 MEMBERS IMPORT
 ----------------- */
 class Home extends Component {
+  // SET STATE FOR EVENT
+  state = {
+    eventItemSlide: [],
+    loading: false,
+    bibleVerse: [],
+    error: null
+  };
+  //EVENT NEWS SLIDER
+  componentDidMount() {
+    //fetch event item and store it in the state
+    this.setState({ loading: true }, () => {
+      axios.get(API).then(result =>
+        this.setState({
+          loading: false,
+          eventItemSlide: [...result.data]
+        })
+      );
+    });
+
+    this.setState({ loading: true }, () => {
+      axios.get("https://jsonplaceholder.typicode.com/users").then(result =>
+        this.setState({
+          loading: false,
+          bibleVerse: [...result.data]
+        })
+      );
+    });
+
+    // this.setState({ loading: true }, () => {
+    //   axios
+    //     .get("http://labs.bible.org/api/?passage=random&type=json")
+    //     .then(verse =>
+    //       this.setState({
+    //         loading: false,
+    //         bibleVerse: [...verse.data]
+    //       })
+    //     )
+    //     .catch(error => {
+    //       console.log(error);
+    //     });
+    // });
+  }
+
+  // componentWillUnmount() {
+  //   clearInterval(this.intervalId);
+  // }
+
+  //EVENT NEWS SLIDER
   render() {
+    const { eventItemSlide, loading, bibleVerse } = this.state;
     return (
       <Fragment>
         <Router>
@@ -65,11 +117,15 @@ class Home extends Component {
                   <Hero />
                   <EventTimer />
                   <JoinUs fade="zoom-in" duration="1300" ease="ease-in-sine" />
-                  <EventSlider />
+                  {/* Check the api call has finished for eventslider.. else show loader  */}
+
+                  <EventSlider newslides={eventItemSlide} loading={loading} />
+                  <UpcomingEvent verse={bibleVerse} loading={loading} />
+                  {/* Check the api call has finished for eventslider.. else show loader  */}
+
                   <ServiceSection />
                   {/* <Testimonial /> */}
 
-                  {/* <UpcomingEvent /> */}
                   <Donate />
                   <PopularSermon />
                   <NewsLetter />

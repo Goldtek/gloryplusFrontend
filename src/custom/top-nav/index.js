@@ -67,7 +67,8 @@ class TopNav extends Component {
                   </NavLink>
                 ) : (
                   <NavLink exact to="/login">
-                    Login <i class="fas fa-sign-in-alt "></i>
+                    Login{" "}
+                    <i className="fas fa-sign-in-alt" aria-hidden="true"></i>
                   </NavLink>
                 )}
               </div>

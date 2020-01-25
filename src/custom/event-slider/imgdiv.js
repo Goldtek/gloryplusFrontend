@@ -1,10 +1,11 @@
 import React from "react";
-const ImgDiv = ({ img, caption }) => {
+import { Link } from "react-router-dom";
+const ImgDiv = ({ img, caption, url }) => {
   return (
-    <div className="card event-slide-img">
-      <a href={img} data-fancybox="gallery" data-caption={caption}>
-        <img className="img-responsive thumbnail" src={img} alt="" />
-      </a>
+    <div className="card event-slide-img col-md-4 col-lg-4 col-sm-4">
+      <Link to={url}>
+        <img className="img-responsive" src={img} alt="" />
+      </Link>
     </div>
   );
 };
