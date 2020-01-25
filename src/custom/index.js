@@ -5,7 +5,7 @@ import EventTimer from "./event-timer";
 import JoinUs from "./join-us";
 import ServiceSection from "./service-section";
 import Sermon from "./sermon";
-import UpcomingEvent from "./up-coming-events";
+import BibleQuote from "./bible-quote";
 import Donate from "./donate";
 import NewsLetter from "./news-letter";
 import PopularSermon from "./popular-sermon";
@@ -38,7 +38,7 @@ export {
   JoinUs,
   ServiceSection,
   Sermon,
-  UpcomingEvent,
+  BibleQuote,
   Donate,
   NewsLetter,
   PopularSermon,
