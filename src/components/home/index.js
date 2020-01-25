@@ -120,7 +120,7 @@ class Home extends Component {
                   {/* Check the api call has finished for eventslider.. else show loader  */}
 
                   <EventSlider newslides={eventItemSlide} loading={loading} />
-                  <UpcomingEvent verse={bibleVerse} loading={loading} />
+                 {/* <UpcomingEvent verse={bibleVerse} loading={loading} /> */}
                   {/* Check the api call has finished for eventslider.. else show loader  */}
 
                   <ServiceSection />
