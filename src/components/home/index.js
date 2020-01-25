@@ -68,14 +68,14 @@ class Home extends Component {
       );
     });
 
-    this.setState({ loading: true }, () => {
-      axios.get("https://jsonplaceholder.typicode.com/users").then(result =>
-        this.setState({
-          loading: false,
-          bibleVerse: [...result.data]
-        })
-      );
-    });
+    // this.setState({ loading: true }, () => {
+    //   axios.get("https://jsonplaceholder.typicode.com/users").then(result =>
+    //     this.setState({
+    //       loading: false,
+    //       bibleVerse: [...result.data]
+    //     })
+    //   );
+    // });
 
     // this.setState({ loading: true }, () => {
     //   axios
@@ -98,7 +98,7 @@ class Home extends Component {
 
   //EVENT NEWS SLIDER
   render() {
-    const { eventItemSlide, loading, bibleVerse } = this.state;
+    const { eventItemSlide, loading } = this.state;
     return (
       <Fragment>
         <Router>
@@ -120,7 +120,7 @@ class Home extends Component {
                   {/* Check the api call has finished for eventslider.. else show loader  */}
 
                   <EventSlider newslides={eventItemSlide} loading={loading} />
-                  <UpcomingEvent verse={bibleVerse} loading={loading} />
+                  <UpcomingEvent />
                   {/* Check the api call has finished for eventslider.. else show loader  */}
 
                   <ServiceSection />
