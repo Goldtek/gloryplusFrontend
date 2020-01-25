@@ -1,7 +1,7 @@
 import React from "react";
 // import EventItem from "../event-item";
 import $ from "jquery";
-class UpcomingEvent extends React.Component {
+class BibleQuote extends React.Component {
   componentWillMount() {
     (function() {
       $(document).ready(function() {
@@ -44,18 +44,11 @@ class UpcomingEvent extends React.Component {
                 <h2>Daily Quote</h2>
               </div>
             </div>
-            {/* <div className="col-md-6 text-right event-more">
-              <a href="/" className="site-btn">
-                view all events
-              </a>
-            </div> */}
           </div>
           <div className="event-list">
             {" "}
             <blockquote className="quoted">
-              <p className="text-info" id="newQuote">
-                {/* {console.log({ verse })} */}
-              </p>
+              <p className="text-info" id="newQuote"></p>
             </blockquote>{" "}
           </div>
         </div>
@@ -64,4 +57,4 @@ class UpcomingEvent extends React.Component {
   }
 }
 
-export default UpcomingEvent;
+export default BibleQuote;
