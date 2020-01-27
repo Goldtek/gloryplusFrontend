@@ -48,11 +48,11 @@ class TopNav extends Component {
               >
                 <h5>Upcoming Event:</h5>
                 <Countdown
-                  timeTillDate="1 26 2020, 8:00 am"
+                  timeTillDate="1 31 2020, 8:00 am"
                   timeFormat="MM DD YYYY, h:mm a"
                 />
                 <Link
-                  to="/event/holyghost-morning"
+                  to="/event/worship-n-wonder"
                   className="top-readmore hidden-sm"
                 >
                   readmore

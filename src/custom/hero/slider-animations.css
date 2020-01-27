@@ -3,33 +3,40 @@
 .active {
   height: 100%;
 }
+
 .carousel-inner {
   height: 110vmin;
 }
+
 .carousel-caption {
   z-index: 10;
   /* border: 2px solid red; */
   margin-bottom: 10px;
 }
+
 .carousel .item {
   background-color: #777;
 }
+
 .carousel .carousel-inner .bg {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .carousel .carousel-inner .bg1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/img/gpa.jpg");
+    url("/img/rev&mumSmile.jpg");
   /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/spiderweb.jpg"); */
   background-position: center center;
 }
+
 .carousel .carousel-inner .bg2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/img/rev&mumSmile.jpg");
+    url("/img/gpa.jpg");
   /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/hearthand.jpg"); */
   background-position: center center;
 }
+
 .carousel .carousel-inner .bg3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("/img/rev&mumDance.jpg");
@@ -48,6 +55,7 @@
   z-index: 1;
   /* background: rgba(0, 0, 0, 0.5); */
 }
+
 .carousel-caption p {
   margin: 0;
   font-size: 2rem;
