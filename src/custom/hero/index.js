@@ -4,13 +4,6 @@ import "./slider-animations.css";
 
 const content = [
   {
-    title: "WELCOME TO GLORYPLUS INTERNATIONAL",
-    description: "A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE",
-    button1: "JOIN US",
-    button2: "LIVESTREAM",
-    image: "img/gpa.jpg"
-  },
-  {
     title: "LIVING IN GOD'S GLORY",
     description: "HIS GLORY IS MADE MANIFEST IN HIS PEOPLE",
     button1: "JOIN US",
@@ -18,11 +11,18 @@ const content = [
     image: "img/rev&mumSmile.jpg"
   },
   {
+    title: "WELCOME TO GLORYPLUS INTERNATIONAL",
+    description: "A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE",
+    button1: "JOIN US",
+    button2: "LIVESTREAM",
+    image: "img/.jpg"
+  },
+  {
     title: "A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE",
     description: "HIS GLORY IS MADE MANIFEST IN HIS PEOPLE",
     button1: "JOIN US",
     button2: "LIVESTREAM",
-    image: "img/mainChurch.jpg"
+    image: "img/.jpg"
   },
   {
     title: "HIS GLORY IS MADE MANIFEST IN HIS PEOPLE",

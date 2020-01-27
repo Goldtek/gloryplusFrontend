@@ -135,21 +135,24 @@ const EventDetail = ({
               <div className="widget">
                 <h4 className="widget-title">Recent Events</h4>
                 <div className="recent-post-widget">
-                  {eventArr.map(({ id, ...recentEvent }) => (
+                  {eventArr.slice(0, 5).map(({ id, ...recentEvent }) => (
                     <div className="rp-item" key={id}>
-                      <div
-                        className="rp-thumb set-bg"
-                        style={{
-                          backgroundImage: `url(` + recentEvent.imagePath + `)`
-                        }}
-                      ></div>
-                      <div className="rp-content">
-                        <p>
-                          {recentEvent.day} {recentEvent.month}{" "}
-                          {recentEvent.year}
-                        </p>
-                        <h5>{recentEvent.title}</h5>
-                      </div>
+                      <Link to={`/event/${recentEvent.pathName}`}>
+                        <div
+                          className="rp-thumb set-bg"
+                          style={{
+                            backgroundImage:
+                              `url(` + recentEvent.imagePath + `)`
+                          }}
+                        ></div>
+                        <div className="rp-content">
+                          <p>
+                            {recentEvent.day} {recentEvent.month}{" "}
+                            {recentEvent.year}
+                          </p>
+                          <h5>{recentEvent.title}</h5>
+                        </div>
+                      </Link>
                     </div>
                   ))}
                 </div>
