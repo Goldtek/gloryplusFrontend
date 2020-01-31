@@ -29,6 +29,7 @@ import SingleGallery from "./gallery/index";
 import SectionCard from "./sermon-card";
 import Testimonial from "./testimonial";
 import EventSlider from "./event-slider/index";
+import GifComponent from "./gifcomponent/index";
 
 export {
   Header,
@@ -61,5 +62,6 @@ export {
   Galleries,
   SingleGallery,
   Testimonial,
-  EventSlider
+  EventSlider,
+  GifComponent
 };

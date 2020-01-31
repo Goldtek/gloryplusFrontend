@@ -73,13 +73,13 @@ class EventSlider extends Component {
                   requestToChangeActive={this.onChange}
                   leftChevron={
                     <i
-                      className="fa fa-chevron-circle-left icon-slide"
+                      className="fa fa-chevron-left icon-slide"
                       aria-hidden="true"
                     ></i>
                   }
                   rightChevron={
                     <i
-                      className="fa fa-chevron-circle-right icon-slide"
+                      className="fa fa-chevron-right icon-slide"
                       aria-hidden="true"
                     ></i>
                   }
@@ -92,6 +92,9 @@ class EventSlider extends Component {
                       img={newslidesdata.imagePath}
                       caption={newslidesdata.title}
                       url={`/event/${newslidesdata.pathName}`}
+                      yr={newslidesdata.year}
+                      mnth={newslidesdata.month}
+                      time={newslidesdata.time}
                     />
                   ))}
                 </ItemsCarousel>

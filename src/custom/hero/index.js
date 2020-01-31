@@ -1,146 +1,96 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import "./slider-animations.css";
-
+import SlideImg from "./slides";
+import "./style.css";
 const content = [
   {
+    title: " WELCOME TO CHURCH",
+    description: "HIS GLORY IS MADE MANIFEST IN HIS PEOPLE",
+    button1: "JOIN US",
+    button2: "LIVESTREAM",
+    image: "img/slider/rev&mumSmile.jpg",
+    direction: "slide-text slide_style_center",
+    status: "active"
+  },
+  {
     title: "LIVING IN GOD'S GLORY",
-    description: "HIS GLORY IS MADE MANIFEST IN HIS PEOPLE",
-    button1: "JOIN US",
-    button2: "LIVESTREAM",
-    image: "img/rev&mumSmile.jpg"
-  },
-  {
-    title: "WELCOME TO GLORYPLUS INTERNATIONAL",
     description: "A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE",
     button1: "JOIN US",
     button2: "LIVESTREAM",
-    image: "img/.jpg"
+    image: "img/slider/gpa.jpg",
+    direction: "slide-text slide_style_left"
   },
   {
-    title: "A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE",
+    title: "GLORIOUS CHOIR",
+    description: "IN HIS PRESENCE THERE IS FULLNESS OF JOY",
+    button1: "JOIN US",
+    button2: "LIVESTREAM",
+    image: "img/slider/choir1.jpeg",
+    direction: "slide-text slide_style_right"
+  },
+  {
+    title: "IN HIS PRESENCE",
     description: "HIS GLORY IS MADE MANIFEST IN HIS PEOPLE",
     button1: "JOIN US",
     button2: "LIVESTREAM",
-    image: "img/.jpg"
-  },
-  {
-    title: "HIS GLORY IS MADE MANIFEST IN HIS PEOPLE",
-    description: "A GLORIOUS PEOPLE WITH A GLORIOUS MANDATE",
-    button1: "JOIN US",
-    button2: "LIVESTREAM",
-    image: "img/rev&mumDance.jpg"
+    image: "img/slider/mainChurch.jpg",
+    direction: "slide-text slide_style_left"
   }
 ];
-
 class Hero extends Component {
   render() {
     return (
       <div
-        id="myCarousel"
-        className="carousel slide myCarouselSlider"
+        id="bootstrap-touch-slider"
+        className="carousel bs-slider slide  control-round indicators-line"
         data-ride="carousel"
+        data-pause="hover"
+        data-interval="5000"
       >
         <ol className="carousel-indicators">
           <li
-            data-target="#myCarousel"
+            data-target="#bootstrap-touch-slider"
             data-slide-to="0"
             className="active"
           ></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+          <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+          <li data-target="#bootstrap-touch-slider" data-slide-to="3"></li>
         </ol>
-        <div className="carousel-inner">
-          <div className="item bg bg1 active animated slideInDown darken-pseudo">
-            <div className="carousel-caption">
-              <h1 className="animated zoomInRight slow">{content[0].title}</h1>
-              <p className="animated fadeInLeft slow">
-                {content[0].description}
-              </p>
-              <p>
-                <Link
-                  className="btn btn-md btn-default animated fadeInLeft slower btn-slide"
-                  to="/register"
-                  role="button"
-                >
-                  JOIN US
-                </Link>
-                &nbsp;
-                <Link
-                  className="btn btn-md btn-danger animated fadeInRight slower btn-slide-red"
-                  to="/live"
-                  role="button"
-                >
-                  LIVESTREAM
-                </Link>
-              </p>
-            </div>
-          </div>
-          <div className="item bg bg2 animated slideInUp">
-            <div className="carousel-caption">
-              <h1 className="animated zoomInRight slow">{content[1].title}</h1>
-              <p className="animated fadeInLeft slow">
-                {content[1].description}
-              </p>
-              <p>
-                <Link
-                  className="btn btn-md btn-default animated fadeInLeft slower btn-slide"
-                  to="/register"
-                  role="button"
-                >
-                  JOIN US
-                </Link>
-                &nbsp;
-                <Link
-                  className="btn btn-md btn-danger animated fadeInRight slower btn-slide-red"
-                  to="/live"
-                  role="button"
-                >
-                  LIVESTREAM
-                </Link>
-              </p>
-            </div>
-          </div>
-          <div className="item bg bg3">
-            <div className="carousel-caption">
-              <h1 className="animated zoomInRight slow">{content[2].title}</h1>
-              <p className="animated fadeInLeft slow">
-                {content[2].description}
-              </p>
-              <p>
-                <Link
-                  className="btn btn-md btn-default animated fadeInLeft slower btn-slide "
-                  to="/register"
-                  role="button"
-                >
-                  JOIN US
-                </Link>
-                &nbsp;
-                <Link
-                  className="btn btn-md btn-danger animated fadeInRight slower btn-slide-red"
-                  to="/live"
-                  role="button"
-                >
-                  LIVESTREAM
-                </Link>
-              </p>
-            </div>
-          </div>
+
+        <div className="carousel-inner" role="listbox">
+          {content.map((item, index) => (
+            <SlideImg
+              img={item.image}
+              key={index}
+              status={item.status}
+              btn1={item.button1}
+              btn2={item.button2}
+              title={item.title}
+              des={item.description}
+              dir={item.direction}
+            />
+          ))}
         </div>
-        <Link
+
+        <a
           className="left carousel-control"
-          to="#myCarousel"
+          href="#bootstrap-touch-slider"
+          role="button"
           data-slide="prev"
         >
-          <span className="glyphicon glyphicon-chevron-left"></span>
-        </Link>
-        <Link
+          <span className="fa fa-angle-left" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+
+        <a
           className="right carousel-control"
-          to="#myCarousel"
+          href="#bootstrap-touch-slider"
+          role="button"
           data-slide="next"
         >
-          <span className="glyphicon glyphicon-chevron-right"></span>
-        </Link>
+          <span className="fa fa-angle-right" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
       </div>
     );
   }

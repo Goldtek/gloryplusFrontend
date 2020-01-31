@@ -35,6 +35,7 @@ import {
   PopularSermon,
   Footer,
   ErrorPage,
+  // GifComponent,
   // Testimonial,
   EventSlider
 } from "../../custom";
@@ -90,6 +91,7 @@ class Home extends Component {
                   <Hero />
                   <EventTimer />
                   <JoinUs fade="zoom-in" duration="1300" ease="ease-in-sine" />
+                  {/* <GifComponent /> */}
                   {/* Check the api call has finished for eventslider.. else show loader  */}
 
                   <EventSlider newslides={eventItemSlide} loading={loading} />

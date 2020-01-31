@@ -1,0 +1,77 @@
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand > img {
+  height: 100%;
+  padding: 5px;
+  width: auto;
+}
+
+/*************************
+  EXAMPLES 2-7 BELOW 
+  **************************/
+
+/* EXAMPLE 2 (larger logo) - simply adjust top bottom padding to make logo larger */
+
+.example2 .navbar-brand > img {
+  padding: 7px 15px;
+}
+
+/* EXAMPLE 3
+  
+  line height is 20px by default so add 30px top and bottom to equal the new .navbar-brand 80px height  */
+
+.navbar-brand {
+  height: 80px;
+}
+
+.nav > li > a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #000000 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* background-color: #dd3e3e; */
+  /* border: 2px solid red; */
+}
+
+.navbar {
+  background-color: #ffffff !important;
+}
+
+.navbar-toggle {
+  background-color: #fafafa !important;
+  /* color: #ffffff !important; */
+}
+
+.navbar-collapse ul li .active {
+  color: #dd3e3e !important;
+  background-color: inherit;
+}
+
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+.navbar {
+  margin-bottom: 0px !important;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  z-index: 9999;
+}
+
+.bibleVerse a {
+  color: red !important;
+  text-decoration: none;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.dropdown > .dropdown-menu a {
+  text-transform: uppercase;
+  text-align: justify;
+  font-weight: bold;
+}

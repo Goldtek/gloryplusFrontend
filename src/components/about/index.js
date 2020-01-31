@@ -22,7 +22,10 @@ class About extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="About Us" bgPicture="url(img/aboutus-now.png)" />
+        <PageInfo
+          title="About Us"
+          bgPicture="url(img/bg-info/aboutus-now.png)"
+        />
         <div style={{ minHeight: "25vh" }}>
           <JoinUs />
           <ServiceSection />

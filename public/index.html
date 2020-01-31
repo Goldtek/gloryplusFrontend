@@ -14,10 +14,6 @@
   <link href="gloryplus.png" rel="shortcut icon" />
   <!-- Google Fonts -->
 
-  <!-- <link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css"
-/> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet" />
   <link rel="stylesheet" href="https://video-react.github.io/assets/video-react.css" />
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet" />
@@ -60,11 +56,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/
   <!-- ANIMATE SCROLL -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- ANIMATE SCROLL -->
+
+  <!-- REACT VIDEO PLAYER -->
+  <link rel="stylesheet" href="https://video-react.github.io/assets/video-react.css" />
+  <!-- REACT VIDEO PLAYER -->
   <script src="http://www.ourmanna.com/verses/api/js/" type="text/javascript"></script>
-  <!-- NAVBAR CSS -->
-  <!-- <link rel="stylesheet" href="css/navbar/navik-horizontal-default-menu.min.css" />
-  <link rel="stylesheet" href="css/navbar/reset.css" /> -->
-  <!-- NAVBAR CSS -->
+
   <title></title>
   <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 </head>
@@ -79,107 +76,74 @@ href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+  <!-- main slider -->
+  <script src="js/script.js"></script>
+  <!-- main slider -->
   <!-- <script src="css/navbar//navik.menu.js"></script> -->
 
   <!-- ANIMATE SCROLL -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- ANIMATE SCROLL -->
+
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0">
+  </script>
+
+  <!-- Load Facebook SDK for JavaScript -->
   <script>
-    // $(window).load(function() {
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src =
+        "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
 
-    // });
-    // The basic check
-    $(document).ready(function () {
-      $("#bootstrap-touch-slider").bsTouchSlider();
-
-      setInterval(function () {
-        $("#bootstrap-touch-slider")
-          .bsTouchSlider()
-          .carousel("next");
-      }, 10000);
-    });
-    (function ($) {
-      $.fn.bsTouchSlider = function (options) {
-        var carousel = $(".carousel");
-        return this.each(function () {
-          function doAnimations(elems) {
-            //Cache the animationend event in a variable
-            var animEndEv =
-              "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
-            elems.each(function () {
-              var $this = $(this),
-                $animationType = $this.data("animation");
-              $this.addClass($animationType).one(animEndEv, function () {
-                $this.removeClass($animationType);
-              });
-            });
-          }
-
-          //Variables on page load
-          var $firstAnimatingElems = carousel
-            .find(".item:first")
-            .find("[data-animation ^= 'animated']");
-          //Initialize carousel
-          carousel.carousel();
-          //Animate captions in first slide on page load
-          doAnimations($firstAnimatingElems);
-          //Other slides to be animated on carousel slide event
-          carousel.on("slide.bs.carousel", function (e) {
-            var $animatingElems = $(e.relatedTarget).find(
-              "[data-animation ^= 'animated']"
-            );
-            doAnimations($animatingElems);
-          });
-          //swipe initial
-          $(".carousel .carousel-inner").swipe({
-            swipeLeft: function (
-              event,
-              direction,
-              distance,
-              duration,
-              fingerCount
-            ) {
-              this.parent().carousel("next");
-            },
-            swipeRight: function () {
-              this.parent().carousel("prev");
-            },
-            threshold: 0
-          });
-        });
-      };
-    })(jQuery);
-
-    jQuery(document).ready(function ($) {
-      "use strict";
-      //  TESTIMONIALS CAROUSEL HOOK
-      $("#customers-testimonials").owlCarousel({
-        loop: true,
-        center: true,
-        items: 3,
-        margin: 0,
-        autoplay: true,
-
-        dots: true,
-        autoplayTimeout: 6000,
-        smartSpeed: 450,
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
-          },
-          1170: {
-            items: 3
-          }
-        }
-      });
-    });
-
+  <script>
     // ANIMATE SCROLL
     AOS.init();
     // ANIMATE SCROLL
+    // The basic check
+    $(document).ready(function () {
+      $("#bootstrap-touch-slider").bsTouchSlider();
+    });
+
+
+    // jQuery(document).ready(function ($) {
+    //   "use strict";
+    //   //  TESTIMONIALS CAROUSEL HOOK
+    //   $("#customers-testimonials").owlCarousel({
+    //     loop: true,
+    //     center: true,
+    //     items: 3,
+    //     margin: 0,
+    //     autoplay: true,
+
+    //     dots: true,
+    //     autoplayTimeout: 6000,
+    //     smartSpeed: 450,
+    //     responsive: {
+    //       0: {
+    //         items: 1
+    //       },
+    //       768: {
+    //         items: 2
+    //       },
+    //       1170: {
+    //         items: 3
+    //       }
+    //     }
+    //   });
+    // });
+
+
 
     // SCROLL TO TOP
     // ===== Scroll to Top ====
@@ -202,26 +166,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/
     // SCROLL TO TOP
   </script>
 
-  <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
-  <!-- <script src="js/bootstrap.min.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0">
-  </script>
-
-  <!-- Load Facebook SDK for JavaScript -->
-  <script>
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
 </body>
 
 </html>

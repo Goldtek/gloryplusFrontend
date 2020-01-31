@@ -12,12 +12,13 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  /* margin-top: -15px !important; */
+  margin: 0 auto !important;
   z-index: 9;
   /* border: none; */
   color: #fff;
+
   /* background-color: #ffd13b; */
-  background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
+  /* background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%); */
   font-size: 3rem;
   border-radius: 50%;
   text-align: center;
@@ -44,4 +45,17 @@
   /* background-size: cover; */
   /* border: 2px solid green; */
   object-fit: cover
+}
+
+
+.content-details h3 {
+  font-size: 1.5em !important;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+.content-details p {
+  font-size: 1em !important;
+  font-family: "Lora", serif;
+  font-style: italic;
 }

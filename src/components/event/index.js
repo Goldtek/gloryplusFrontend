@@ -63,7 +63,7 @@ const Events = () => {
       </Helmet>
       <TopNav />
       <Header />
-      <PageInfo title="Events" bgPicture="url(img/church-events.png)" />
+      <PageInfo title="Events" bgPicture="url(img/bg-info/church-events.png)" />
 
       <section className="event-list-section spad">
         <div className="container">

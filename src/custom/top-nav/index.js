@@ -59,7 +59,7 @@ class TopNav extends Component {
                 </Link>
               </div>
             </div>
-            <div className="col-sm-3 col-md-2 col-lg-3 hidden-xs">
+            {/* <div className="col-sm-3 col-md-2 col-lg-3 hidden-xs">
               <div className="user-input">
                 {this.state.loggedIn ? (
                   <NavLink exact to="#!">
@@ -72,7 +72,7 @@ class TopNav extends Component {
                   </NavLink>
                 )}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

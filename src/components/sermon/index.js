@@ -53,7 +53,7 @@ class SermonComponent extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Sermon" bgPicture="url(img/bible-phone.png)" />
+        <PageInfo title="Sermon" bgPicture="url(img/bg-info/bible-phone.png)" />
 
         <hr />
 
