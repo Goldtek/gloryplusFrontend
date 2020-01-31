@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Player } from "video-react";
 // import { Player } from "video-react";
-// import "./player.css";
+import "./player.css";
 
 class JoinUs extends Component {
   render() {
@@ -31,27 +32,28 @@ class JoinUs extends Component {
               </Link>
             </div>
             <div className="col-md-6 join-img col-sm-12">
-              {/* <img src="img/about.jpeg" alt="" /> */}
-              {/* <Player>
-                <source src="https://files.fm/pa/dike4mii4real/home.mp4/home.mp4" />
-              </Player> */}
-
-              <iframe
-                src="https://drive.google.com/file/d/1lAauoQcnUA-1kWdrzdcqPgVFxgrFUVws/preview"
-                width="100%"
-                height="320"
-                frameBorder="0"
-                allow="fullscreen"
-                allowFullScreen
-                x-frame-options="sameorigin"
-                title="join us"
-              ></iframe>
-              {/* 
-              <Player
+              {/* <Player
                 playsInline
-                poster="img/about.jpeg"
-                src="https://drive.google.com/file/d/1lAauoQcnUA-1kWdrzdcqPgVFxgrFUVws/preview/home.mp4"
+                poster="img/pastors/rev.jpeg"
+                src="https://res.cloudinary.com/ielemson/video/upload/v1580163853/glory-plus/home.mp4_2_ros4xe.mp4"
               /> */}
+
+              <div className="embed-responsive embed-responsive-16by9 card">
+                <video
+                  controls
+                  poster="img/pastors/rev-dubus1.jpeg"
+                  className="embed-responsive-item "
+                >
+                  <source src="video/home.mp4" type="video/mp4" />
+                  {/* <source
+                    src="https://res.cloudinary.com/ielemson/video/upload/v1580163853/glory-plus/home.mp4_2_ros4xe.mp4"
+                    type="video/mp4"
+                  /> */}
+                  <source src="video/home.mp4" type="video/ogg" />
+                  Your browser does not support the video tag.
+                </video>
+                {/* <iframe allowfullscreen></iframe> */}
+              </div>
             </div>
           </div>
         </div>

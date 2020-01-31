@@ -51,7 +51,7 @@ class Event_Details extends Component {
         <Header />
         <PageInfo
           title={pathID.charAt(0).toUpperCase() + pathID.slice(1)}
-          bgPicture="url(img/church-events.png)"
+          bgPicture="url(img/bg-info/church-events.png)"
         />
 
         {loading ? (

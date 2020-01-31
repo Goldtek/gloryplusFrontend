@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import $ from "jquery";
 import { Link, NavLink } from "react-router-dom";
-
+// import TextTruncate from "react-text-truncate";
+import "./nav.css";
 class Header extends Component {
   componentDidMount() {
     $(".nav-switch").on("click", function(event) {
@@ -16,91 +17,107 @@ class Header extends Component {
   };
   render() {
     return (
-      <header className="header-section">
-        <div className="container">
-          <Link to="/">
-            {" "}
-            <img src="img/logo2.png" alt="" className="site-logo" />
-          </Link>
-
-          <Link to="/donate" className="site-btn hidden-xs hidden-sm hidden-md">
-            donate <i className="fas fa-hand-holding-heart"></i>
-          </Link>
-
-          <div className="nav-switch">
-            <i className="fa fa-bars"></i>
-          </div>
-          <nav className="main-menu">
-            <ul>
-              <li>
-                <NavLink exact to="/">
-                  Home
-                </NavLink>
-
-                {/* <a href="/">Home</a> */}
-              </li>
-
-              <li>
-                <NavLink exact to="/group">
-                  HOME CHURCH
-                </NavLink>
-              </li>
-
-              <li>
-                {/* <a href="/sermon">Sermons</a> */}
-                <NavLink exact to="/sermon">
-                  Sermon
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink exact to="/galleries">
-                  Gallery
-                </NavLink>
-              </li>
-
-              <li>
-                {/* <a href="/about">About Us</a> */}
-                <NavLink exact to="/events">
-                  Events
-                </NavLink>
-              </li>
-
-              <li>
-                {/* <a href="/sermon">Sermons</a> */}
-                <NavLink exact to="/about">
-                  About Us
-                </NavLink>
-              </li>
-              <li>
-                <NavLink exact to="/contact">
-                  Contact
-                </NavLink>
-              </li>
-              <li className="donate hidden-lg hidden-md raise">
-                <NavLink exact to="/contact">
-                  Donate <i className="fas fa-hand-holding-heart"></i>
-                </NavLink>
-              </li>
-
-              <span className="hidden-lg hidden-md">
-                {this.state.loggedIn ? (
+      <header className="naveader">
+        <div>
+          <nav className="navbar navbar-default navbar-static-top">
+            <div className="container-fluid">
+              <div className="navbar-header">
+                <button
+                  type="button"
+                  className="navbar-toggle collapsed"
+                  data-toggle="collapse"
+                  data-target="#navbar3"
+                >
+                  <span className="sr-only">Toggle navigation</span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                </button>
+                <Link className="navbar-brand" to="/">
+                  <img src="img/logo/logo-full.png" alt="Dispute Bills" />
+                </Link>
+              </div>
+              <div id="navbar3" className="navbar-collapse collapse">
+                <ul className="nav navbar-nav navbar-right">
                   <li>
-                    <NavLink exact to="#!">
-                      User <i className="fa fa-angle-down"></i>
+                    <NavLink to="/" exact={true}>
+                      Home
                     </NavLink>
                   </li>
-                ) : (
+
                   <li>
-                    <NavLink exact to="/login">
-                      Login{" "}
-                      <i className="fa fa-sign-in-alt" aria-hidden="true"></i>
+                    <NavLink to="/group" exact={true}>
+                      Home Church
                     </NavLink>
                   </li>
-                )}
-              </span>
-            </ul>
+                  <li>
+                    <NavLink to="/sermon" exact={true}>
+                      Sermon
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/galleries" exact={true}>
+                      Gallary
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/events" exact={true}>
+                      Events
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/about" exact={true}>
+                      About us
+                    </NavLink>
+                  </li>
+
+                  <li className="dropdown">
+                    <a
+                      href="#!"
+                      className="dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-expanded="false"
+                    >
+                      Partners <span className="caret"></span>
+                    </a>
+                    <ul className="dropdown-menu" role="menu">
+                      <li>
+                        <a href="/login">Login</a>
+                      </li>
+                      <li>
+                        <a href="/login">Register</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <NavLink to="/contact" exact={true}>
+                      Contact
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/donate" exact={true}>
+                      {" "}
+                      Donate <i className="fas fa-hand-holding-heart"></i>
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </nav>
+        </div>
+        <div>
+          {/* <div className="event-list">
+            <blockquote className="quoted">
+              <TextTruncate
+                id="newQuote"
+                line={2}
+                element="p"
+                truncateText="…"
+                className="text-info"
+              />
+            </blockquote>
+          </div> */}
         </div>
       </header>
     );

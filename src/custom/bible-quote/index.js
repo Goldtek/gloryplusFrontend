@@ -46,10 +46,9 @@ class BibleQuote extends React.Component {
             </div>
           </div>
           <div className="event-list">
-            {" "}
             <blockquote className="quoted">
               <p className="text-info" id="newQuote"></p>
-            </blockquote>{" "}
+            </blockquote>
           </div>
         </div>
       </section>

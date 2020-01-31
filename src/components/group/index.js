@@ -61,7 +61,10 @@ class HomeChurch extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Home Church" bgPicture="url(img/homecell.jpg)" />
+        <PageInfo
+          title="Home Church"
+          bgPicture="url(img/bg-info/homecell.jpg)"
+        />
         {loading ? (
           <div style={{ minHeight: "25vh" }}>
             <div className="col-md-4"></div>

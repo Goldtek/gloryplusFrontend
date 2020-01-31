@@ -51,7 +51,7 @@ class LiveStreaming extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Live Stream" bgPicture="url(img/live-streaming.jpg)" />
+        <PageInfo title="Live Stream" bgPicture="url(img/bg-info/live-streaming.jpg)" />
         {loading ? (
           <div style={{ minHeight: "25vh" }}>
             <div className="col-md-4"></div>

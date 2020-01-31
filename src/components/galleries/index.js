@@ -54,7 +54,7 @@ class Gallery extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Gallery" bgPicture="url(img/bg.jpg)" />
+        <PageInfo title="Gallery" bgPicture="url(img/bg-info/bg.jpg)" />
         {/* <div style={{ minHeight: "25vh" }}>
           <Galleries galleries={galleryData} />
         </div> */}

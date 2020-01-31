@@ -18,7 +18,7 @@ class Login extends Component {
         </Helmet>
         <TopNav />
         <Header />
-        <PageInfo title="Login" bgPicture="url(img/login.png)" />
+        <PageInfo title="Login" bgPicture="url(img/bg-info/login.png)" />
         <MemberLogin />
         <NewsLetter />
         <Footer />
