@@ -1,41 +1,35 @@
 import React from "react";
-// import EventItem from "../event-item";
-import $ from "jquery";
-class BibleQuote extends React.Component {
-  componentWillMount() {
-    (function() {
-      $(document).ready(function() {
-        getVerse();
-      });
+// import { css } from "@emotion/core";
+// import { FadeLoader } from "react-spinners";
+import axios from "axios";
 
-      var getVerse = function() {
-        $("#spinner").show();
-        $.ajax({
-          url: "https://labs.bible.org/api/?passage=random&type=json",
-          crossDomain: true,
-          dataType: "jsonp",
-          success: function(result) {
-            $("#newQuote").html(
-              "<strong>" +
-                result[0].bookname +
-                " " +
-                result[0].chapter +
-                ":" +
-                result[0].verse +
-                "</strong> " +
-                result[0].text
-            );
-            $("#spinner").hide();
-          }
-        });
-      };
-    })();
+const quoteAPI = "https://beta.ourmanna.com/api/v1/get/?format=text";
+// const override = css`
+//   display: block;
+//   margin: 0 auto;
+//   border-color: red;
+// `;
+class BibleQuote extends React.Component {
+  state = {
+    bibleQuote: [],
+    loading: false
+  };
+  UNSAFE_componentWillMount() {
+    this.setState({ loading: true }, () => {
+      axios.get(quoteAPI).then(res =>
+        this.setState({
+          loading: false,
+          bibleQuote: res
+        })
+      );
+    });
   }
 
   render() {
     // const { verse } = this.props;
+    const { bibleQuote, loading } = this.state;
     return (
-      <section className="event-list-section">
+      <section className="event-list-section ">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -45,11 +39,31 @@ class BibleQuote extends React.Component {
               </div>
             </div>
           </div>
-          <div className="event-list">
-            <blockquote className="quoted">
-              <p className="text-info" id="newQuote"></p>
-            </blockquote>
-          </div>
+
+          {loading ? (
+            <div style={{ minHeight: "25vh" }}>
+              <div className="col-md-4"></div>
+              <div
+                className="col-md-4"
+                style={{
+                  marginTop: "35px",
+                  marginBottom: "20px"
+                }}
+              >
+                {" "}
+                <i className="fas fa-spinner fa-pulse"></i>
+              </div>
+              <div className="col-md-4"></div>
+            </div>
+          ) : (
+            <div className="event-list ">
+              <blockquote className="quoted">
+                <p className="text-info" id="newQuote">
+                  {bibleQuote.data}
+                </p>
+              </blockquote>
+            </div>
+          )}
         </div>
       </section>
     );
