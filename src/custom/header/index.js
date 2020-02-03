@@ -57,7 +57,7 @@ class Header extends Component {
                   </li>
                   <li>
                     <NavLink to="/galleries" exact={true}>
-                      Gallary
+                      Gallery
                     </NavLink>
                   </li>
                   <li>
@@ -71,7 +71,7 @@ class Header extends Component {
                     </NavLink>
                   </li>
 
-                  <li className="dropdown">
+                  {/* <li className="dropdown">
                     <a
                       href="#!"
                       className="dropdown-toggle"
@@ -89,7 +89,7 @@ class Header extends Component {
                         <a href="/login">Register</a>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li>
                     <NavLink to="/contact" exact={true}>
                       Contact

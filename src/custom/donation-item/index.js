@@ -17,11 +17,7 @@ class Donation extends Component {
             <form id="paypal_donate_form-recurring" action="" method="post">
               <div className="row">
                 <input type="hidden" name="cmd" value="_xclick-subscriptions" />
-                <input
-                  type="hidden"
-                  name="business"
-                  value="accounts@thememascot.com"
-                />
+                <input type="hidden" name="business" />
                 <input type="hidden" name="currency_code" value="USD" />
                 <div className="col-sm-12">
                   <div className="form-group mb-20">

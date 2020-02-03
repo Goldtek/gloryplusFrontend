@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Player } from "video-react";
+// import { Player } from "video-react";
 // import { Player } from "video-react";
 import "./player.css";
 
@@ -44,12 +44,20 @@ class JoinUs extends Component {
                   poster="img/pastors/rev-dubus1.jpeg"
                   className="embed-responsive-item "
                 >
-                  <source src="video/home.mp4" type="video/mp4" />
+                  <source
+                    // src="video/home.mp4"
+                    src="https://res.cloudinary.com/ielemson/video/upload/v1580163853/glory-plus/home.mp4_2_ros4xe.mp4"
+                    type="video/mp4"
+                  />
                   {/* <source
                     src="https://res.cloudinary.com/ielemson/video/upload/v1580163853/glory-plus/home.mp4_2_ros4xe.mp4"
                     type="video/mp4"
                   /> */}
-                  <source src="video/home.mp4" type="video/ogg" />
+                  <source
+                    // src="video/home.mp4"
+                    src="https://res.cloudinary.com/ielemson/video/upload/v1580163853/glory-plus/home.mp4_2_ros4xe.mp4"
+                    type="video/ogg"
+                  />
                   Your browser does not support the video tag.
                 </video>
                 {/* <iframe allowfullscreen></iframe> */}
