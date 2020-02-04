@@ -3,7 +3,7 @@ import React from "react";
 const SingleGallery = ({ name, subPhotos }) => {
   return (
     <div className="container  gallery-div spad-gallery">
-      <h4 align="center">{name.toUpperCase()}</h4>
+      {/* <h4 align="center">{name.toUpperCase()}</h4> */}
       <div className="row flex">
         {subPhotos.map(({ photoId, ...pictures }) => (
           <div

@@ -96,17 +96,7 @@
   font-size: 1em !important;
 }
 
-/* MODAL CSS */
-/*******************************
-* MD DIALOG - MATERIAL DESIGN
-* Add "modal-sm" after "modal-dialog" class for smaller dialog.
-*******************************/
-/* ----- IMPORT ROBOTO FONT FOR MD ----- */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,
- 300,
-500,
-700,
-100);
+
 
 /* ----- DIALOG/MODAL ----- */
 /* FADE/SCALE EFFECT */

@@ -1,54 +1,20 @@
 [{
+
+
     "id": 1,
-    "title": "Worship and Wonder Night",
-    "pathName": "worship-n-wonder",
-    "imagePath": "img/event/vigil.jpeg",
-    "description": "Get ready to experience the awesome presence of the lord jesus christ on the 31th of january 2020 at GloryPlus International Assembly as we worship the lord, its definitely going to be amazing, see you there.           ",
-    "location": "No 18 kudirat Abiola way, olusosun bustop, Ikeja",
-    "time": "9:00pm",
-    "day": "31",
-    "month": "Jan",
-    "year": "2020"
-  }, {
-
-
-    "id": 2,
     "title": "Holy Ghost Morning",
     "pathName": "holyghost-morning",
     "imagePath": "img/event/holygost.jpg",
     "description": "Join us again on the 16th of January for yet another power filled session for the first Holy Ghost morning of the year 2020. This  year is your your of uncommon manifestation through the Holy Ghost,Our Glorious God will be releasing His Glorious Power in a Glorious atmosphere for Glorious Experiences. Don't miss this program for anything. Come expectant and Jesus will surely meet you at the very point of your need.",
     "location": "DE Santiago Milan Hotels & Suites Festac Access Amuwo Odofin Lagos.",
     "time": "8:00am",
-    "day": "30",
-    "month": "Jan",
+    "day": "6",
+    "month": "Feb",
     "year": "2020"
   },
 
   {
-    "id": 3,
-    "title": "Church Launch (GLORYPLUS ABA)",
-    "pathName": "church launch",
-    "imagePath": "img/event/church.jpg",
-    "description": "Gloryplus International is a church called to reveal the knowledge of the Glory of God to the nations. Gloryplus International would be launched officially on the 2nd of February 2020. On that Sunday the Glory of God would surely manifest as a divine endorsement of The Mandate. God will crown the service with infallible proofs through miracles, signs and wonders. Souls will be won, and the captives shall be set free.",
-    "location": "ora-ifite town hall, 54 azikiwe road, Aba, abia state",
-    "time": "8:00am",
-    "day": "02",
-    "month": "Feb",
-    "year": "2020"
-  }, {
-    "id": 4,
-    "title": "South African Missions",
-    "pathName": "south-african-missions",
-    "imagePath": "img/event/worship.jpg",
-    "description": "Beloved hope you are getting ready for the next round of the south african missions with Reverend Dubus Achufusi, who will be show casing the knowledge of the glory of God. Its definitely going to be an amazing program, please ensure you stay connected.     ",
-    "location": "South Africa",
-    "time": "daily",
-    "day": "22-25",
-    "month": "Feb",
-    "year": "2020"
-
-  }, {
-    "id": 5,
+    "id": 2,
     "title": "Leadership Summit",
     "pathName": "Leaders",
     "imagePath": "img/event/workers.jpg",
@@ -58,8 +24,9 @@
     "day": "03-06",
     "month": "Feb",
     "year": "2020"
+
   }, {
-    "id": 6,
+    "id": 3,
     "title": "Love in the Air",
     "pathName": "love",
     "imagePath": "img/event/relationship.jpg",
@@ -69,8 +36,33 @@
     "day": "13-16",
     "month": "Feb",
     "year": "2020"
-  }, {
-    "id": 7,
+  },
+  {
+    "id": 4,
+    "title": "Love Revolution",
+    "pathName": "love-revolution",
+    "imagePath": "img/event/Love-revolution.jpeg",
+    "description": "We are not ignorant of Satan's strategy to lure a lot of young people into brothels, clubs, hotels, etc to commit fornication, and every other kind of sin during this coming Valentine season.LOVE REVOLUTION is a program God laid in our hearts years ago that will not only revolutionize the minds of our young people about love but also to redirect as many young people as possible into the house of God during the Valentine season so that the devil's plan against their destinies will be aborted.",
+    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
+    "time": "3pm",
+    "day": "14-15",
+    "month": "Feb",
+    "year": "2020"
+  },
+  {
+    "id": 5,
+    "title": "South African Missions",
+    "pathName": "south-african-missions",
+    "imagePath": "img/event/worship.jpg",
+    "description": "Beloved hope you are getting ready for the next round of the south african missions with Reverend Dubus Achufusi, who will be show casing the knowledge of the glory of God. Its definitely going to be an amazing program, please ensure you stay connected.     ",
+    "location": "South Africa",
+    "time": "daily",
+    "day": "22-25",
+    "month": "Feb",
+    "year": "2020"
+  },
+  {
+    "id": 6,
     "title": "40 days Prayer and fasting( The Revelation of Jesus)",
     "pathName": "40-days-fasting",
     "imagePath": "img/event/rev.jpg",
@@ -81,7 +73,7 @@
     "month": "Feb",
     "year": "2020"
   }, {
-    "id": 8,
+    "id": 7,
     "title": "HolyGhost Morning ABA",
     "pathName": "holygost",
     "imagePath": "img/event/hgm.jpg",
@@ -92,7 +84,7 @@
     "month": "Mar",
     "year": "2020"
   }, {
-    "id": 9,
+    "id": 8,
     "title": "Camp Meeting",
     "pathName": "camp",
     "imagePath": "img/event/mainChurch.jpg",
