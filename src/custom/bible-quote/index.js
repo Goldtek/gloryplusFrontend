@@ -1,8 +1,10 @@
 import React from "react";
 // import { css } from "@emotion/core";
 // import { FadeLoader } from "react-spinners";
+import TextTruncate from "react-text-truncate";
 import axios from "axios";
-
+import Modal from "./modal";
+import { Link } from "react-router-dom";
 const quoteAPI = "https://beta.ourmanna.com/api/v1/get/?format=text";
 // const override = css`
 //   display: block;
@@ -14,15 +16,25 @@ class BibleQuote extends React.Component {
     bibleQuote: [],
     loading: false
   };
-  UNSAFE_componentWillMount() {
+  componentDidMount() {
     this.setState({ loading: true }, () => {
-      axios.get(quoteAPI).then(res =>
-        this.setState({
-          loading: false,
-          bibleQuote: res
-        })
-      );
+      axios
+        .get(quoteAPI)
+        .then(res =>
+          this.setState({
+            loading: false,
+            bibleQuote: res
+          })
+        )
+        .catch(err => console.log(err));
     });
+
+    function truncateString(str, num) {
+      if (str.length <= num) {
+        return str;
+      }
+      return str.slice(0, num) + "...";
+    }
   }
 
   render() {
@@ -58,10 +70,19 @@ class BibleQuote extends React.Component {
           ) : (
             <div className="event-list ">
               <blockquote className="quoted">
-                <p className="text-info" id="newQuote">
-                  {bibleQuote.data}
-                </p>
+                <TextTruncate
+                  line={1}
+                  element="span"
+                  truncateText="…"
+                  text={bibleQuote.data}
+                  textTruncateChild={
+                    <a href="!#" data-toggle="modal" data-target="#myModal-2">
+                      read more
+                    </a>
+                  }
+                />
               </blockquote>
+              <Modal quote={bibleQuote.data} />
             </div>
           )}
         </div>
