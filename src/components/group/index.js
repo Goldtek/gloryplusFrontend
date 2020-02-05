@@ -17,6 +17,7 @@ const override = css`
   margin: 0 auto;
   border-color: red;
 `;
+
 class HomeChurch extends Component {
   state = {
     groupInfo: [], // will hold the results from our ajax call

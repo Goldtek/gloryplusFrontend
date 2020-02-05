@@ -52,7 +52,7 @@ class TopNav extends Component {
                   timeFormat="MM DD YYYY, h:mm a"
                 />
                 <Link
-                  to="/event/worship-n-wonder"
+                  to="/event/holyghost-morning"
                   className="top-readmore hidden-sm"
                 >
                   readmore
