@@ -43,9 +43,9 @@ class Contactus extends Component {
         <div className="full-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15853.792167427753!2d3.3744406!3d6.5911003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d1341f4ec9e7c66!2sGloryPlus%20International%20ministries!5e0!3m2!1sen!2sng!4v1572478450602!5m2!1sen!2sng"
-            frameborder="0"
+            frameBorder={0}
             style={stlyes}
-            allowfullscreen="true"
+            allowFullScreen={true}
             title="glory-plus-map"
           ></iframe>
         </div>

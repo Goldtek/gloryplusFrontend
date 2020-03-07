@@ -1,87 +1,66 @@
 [{
-
-
     "id": 1,
-    "title": "Holy Ghost Morning",
-    "pathName": "holyghost-morning",
-    "imagePath": "img/event/holygost.jpg",
-    "description": "Join us again on the 16th of January for yet another power filled session for the first Holy Ghost morning of the year 2020. This  year is your your of uncommon manifestation through the Holy Ghost,Our Glorious God will be releasing His Glorious Power in a Glorious atmosphere for Glorious Experiences. Don't miss this program for anything. Come expectant and Jesus will surely meet you at the very point of your need.",
-    "location": "DE Santiago Milan Hotels & Suites Festac Access Amuwo Odofin Lagos.",
-    "time": "8:00am",
-    "day": "6",
-    "month": "Feb",
-    "year": "2020"
-  },
-
-  {
-    "id": 2,
     "title": "Leadership Summit",
     "pathName": "Leaders",
     "imagePath": "img/event/workers.jpg",
     "description": "The leadership summit is a time designed to equip every leader in Gloryplus with the right tools; focusing on discipleship. Workers will be trained, appointed and annointed for service. Leaders of other ministries/churches will equally be equipped and annointed for effectiveness in training. Rev. Dubus will spend sometime with those that seek his mentorship in ministry. Its going to be four days of unusual impact that will shift the spiritual climate of the city of Aba.  ",
     "location": "ora-ifite town hall, 54 azikiwe road, Aba, abia state",
     "time": "8:00am daily",
-    "day": "03-06",
-    "month": "Feb",
+    "day": "08-09",
+    "month": "March",
+    "year": "2020"
+  },
+
+  {
+    "id": 2,
+    "title": "Holy Ghost Morning",
+    "pathName": "holyghost-morning",
+    "imagePath": "img/event/hgm3.jpg",
+    "description": "Join us again on the 26th of March for yet another power filled session for the first Holy Ghost morning of the year 2020. This  year is your your of uncommon manifestation through the Holy Ghost,Our Glorious God will be releasing His Glorious Power in a Glorious atmosphere for Glorious Experiences. Don't miss this program for anything. Come expectant and Jesus will surely meet you at the very point of your need.",
+    "location": "Hillcrest Events Center Ago Palace Way,Lagos.",
+    "time": "8:00am",
+    "day": "26",
+    "month": "March",
+    "year": "2020",
+    "status": "active"
+
+  },
+
+  {
+    "id": 3,
+    "title": "Inauguration And Church Leadership ",
+    "pathName": "inauguration",
+    "imagePath": "img/event/inagauration.jpg",
+    "description": "The leadership summit is a time designed to equip every leader in Gloryplus with the right tools; focusing on discipleship. Workers will be trained, appointed and annointed for service. Leaders of other ministries/churches will equally be equipped and annointed for effectiveness in training. Rev. Dubus will spend sometime with those that seek his mentorship in ministry. Its going to be four days of unusual impact that will shift the spiritual climate of the city of Aba.  ",
+    "location": "ora-ifite town hall, 54 azikiwe road, Aba, abia state",
+    "time": "8:00am",
+    "day": "11",
+    "month": "March",
     "year": "2020"
 
-  }, {
-    "id": 3,
-    "title": "Love in the Air",
-    "pathName": "love",
-    "imagePath": "img/event/relationship.jpg",
-    "description": "Its a season of love and it is important that great relationships are built. It's going a three day of impactful teaching of Love, marriage and keys to finding the love of your life. Romance is more than a feeling reserved for valentines day. Romance is an everyday conerstone of a good marriage. It keeps the relationship skill of a good marriage and it also closes the door on outside temptations. Come and discover why men and women both needs romance. In marriage your passion for your partner does not have to fade overtime. Your love life can be vibrant and exciting for your entire married life",
-    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
-    "time": "6:00pm",
-    "day": "13-16",
-    "month": "Feb",
-    "year": "2020"
   },
-  {
-    "id": 4,
-    "title": "Love Revolution",
-    "pathName": "love-revolution",
-    "imagePath": "img/event/Love-revolution.jpeg",
-    "description": "We are not ignorant of Satan's strategy to lure a lot of young people into brothels, clubs, hotels, etc to commit fornication, and every other kind of sin during this coming Valentine season.LOVE REVOLUTION is a program God laid in our hearts years ago that will not only revolutionize the minds of our young people about love but also to redirect as many young people as possible into the house of God during the Valentine season so that the devil's plan against their destinies will be aborted.",
-    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
-    "time": "3pm",
-    "day": "14-15",
-    "month": "Feb",
-    "year": "2020"
-  },
-  {
-    "id": 5,
-    "title": "South African Missions",
-    "pathName": "south-african-missions",
-    "imagePath": "img/event/worship.jpg",
-    "description": "Beloved hope you are getting ready for the next round of the south african missions with Reverend Dubus Achufusi, who will be show casing the knowledge of the glory of God. Its definitely going to be an amazing program, please ensure you stay connected.     ",
-    "location": "South Africa",
-    "time": "daily",
-    "day": "22-25",
-    "month": "Feb",
-    "year": "2020"
-  },
+
   {
     "id": 6,
-    "title": "40 days Prayer and fasting( The Revelation of Jesus)",
+    "title": "40 days prayer and fasting(The Revelation of Jesus)",
     "pathName": "40-days-fasting",
     "imagePath": "img/event/rev.jpg",
     "description": "Understanding the mysteries of the crucifixtion and resurrection of our Lord Jesus Christ (from the cross to the throne). Its going to be 40 nights of prayers, teachings and impartations. The people will leave the meetings with a fresh revelation of Jesus Christ, what He did for us on the cross and His present day ministry for the saints on the throne. These revelations are the secrets for living a victorious christian life as beliver",
     "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
     "time": "6:00pm",
     "day": "26",
-    "month": "Feb",
+    "month": "March",
     "year": "2020"
   }, {
     "id": 7,
-    "title": "HolyGhost Morning ABA",
+    "title": "Holy Ghost Invasion (Fruit Of Christ Church)-Owerri",
     "pathName": "holygost",
     "imagePath": "img/event/hgm.jpg",
     "description": "It will be a time for supernatural encounters. Holy Ghost Morning is a healing, deliverance, breakthrough and miracle service. In such services the people experience the Glory of God and the word of God is preached with power. It's usually an amazing moment as people witness the power of God healing people miraculously. The program is saturated with an atmosphere of worship and Glory. Worshippers cry out their hearts in worship to the risen Lord and soon coming King, Jesus Christ. Testimonies of saved and changed Lives are prevalent in such servies.",
-    "location": "ora-ifite town hall, 54 azikiwe road, Aba, abia state",
+    "location": "Riverside bustop Nekede, Owerri, Imo State",
     "time": "8:00am",
-    "day": "01",
-    "month": "Mar",
+    "day": "10-11",
+    "month": "March",
     "year": "2020"
   }, {
     "id": 8,
