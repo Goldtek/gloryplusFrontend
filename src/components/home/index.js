@@ -30,7 +30,7 @@ import {
   EventTimer,
   JoinUs,
   ServiceSection,
-  BibleQuote,
+  // BibleQuote,
   Donate,
   NewsLetter,
   PopularSermon,
@@ -96,7 +96,7 @@ class Home extends Component {
                   {/* Check the api call has finished for eventslider.. else show loader  */}
 
                   <EventSlider newslides={eventItemSlide} loading={loading} />
-                  <BibleQuote />
+                  {/* <BibleQuote /> */}
                   {/* Check the api call has finished for eventslider.. else show loader  */}
 
                   <ServiceSection />

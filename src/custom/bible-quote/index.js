@@ -4,7 +4,7 @@ import React from "react";
 import TextTruncate from "react-text-truncate";
 import axios from "axios";
 import Modal from "./modal";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const quoteAPI = "https://beta.ourmanna.com/api/v1/get/?format=text";
 // const override = css`
 //   display: block;
@@ -29,12 +29,12 @@ class BibleQuote extends React.Component {
         .catch(err => console.log(err));
     });
 
-    function truncateString(str, num) {
-      if (str.length <= num) {
-        return str;
-      }
-      return str.slice(0, num) + "...";
-    }
+    // function truncateString(str, num) {
+    //   if (str.length <= num) {
+    //     return str;
+    //   }
+    //   return str.slice(0, num) + "...";
+    // }
   }
 
   render() {
