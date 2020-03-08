@@ -50,7 +50,7 @@ class Contactus extends Component {
           ></iframe>
         </div>
 
-        <section className="footer-top-contact-section spad">
+        <section className="footer-top-contact-section spad contactus">
           <div className="container">
             <div className="row">
               <div className="col-md-6 footer-top-content">
