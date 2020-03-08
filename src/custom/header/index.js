@@ -10,12 +10,14 @@ class Header extends Component {
       $(".main-menu").slideToggle(400);
       event.preventDefault();
     });
+    
   }
   state = {
     loggedIn: false,
     liveStream: false
   };
   render() {
+   
     return (
       <header className="naveader">
         <div>
@@ -39,8 +41,8 @@ class Header extends Component {
               </div>
               <div id="navbar3" className="navbar-collapse collapse">
                 <ul className="nav navbar-nav navbar-right">
-                  <li>
-                    <NavLink to="/" exact={true}>
+                  <li onClick={()=>window.location.reload(true)}>
+                    <NavLink to="/" exact={true} >
                       Home
                     </NavLink>
                   </li>
