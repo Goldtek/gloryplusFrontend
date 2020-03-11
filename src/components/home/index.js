@@ -37,7 +37,7 @@ import {
   Footer,
   ErrorPage,
   // GifComponent,
-  // Testimonial,
+  Testimonial,
   EventSlider
 } from "../../custom";
 /*----------------
@@ -100,7 +100,7 @@ class Home extends Component {
                   {/* Check the api call has finished for eventslider.. else show loader  */}
 
                   <ServiceSection />
-                  {/* <Testimonial /> */}
+                  <Testimonial />
 
                   <Donate />
                   <PopularSermon />
