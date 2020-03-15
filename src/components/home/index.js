@@ -103,7 +103,7 @@ class Home extends Component {
                   <Testimonial />
 
                   <Donate />
-                  <PopularSermon />
+                  {/* <PopularSermon /> */}
                   <NewsLetter />
                   <Footer />
                 </Fragment>
