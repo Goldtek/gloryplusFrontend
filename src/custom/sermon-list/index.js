@@ -2,17 +2,17 @@ import React from "react";
 import SectionCard from "../sermon-card";
 // import UpcomingEvent from "../up-coming-events";
 // import InfiniteScroll from "react-infinite-scroll-component";
-const SermonList = ({ sermon }) => {
+const SermonList = ({ sermons }) => {
   return (
-    <section className="sermons-list-section spad ">
+    <section className="sermons-list-section spad">
       <div className="container">
         <div className="section-title">
           <span>Experience God's Presence</span>
-          {/* <h2>Popular Sermons</h2> */}
-          <h2> Sermons Loading....</h2>
+          <h2>Popular Sermons</h2>
+          
         </div>
         <div className="row">
-          {sermon.map(({ Id, ...sermonProps }) => (
+          {sermons.map(({ Id, ...sermonProps }) => (
             <SectionCard key={Id} {...sermonProps} />
           ))}
         </div>
