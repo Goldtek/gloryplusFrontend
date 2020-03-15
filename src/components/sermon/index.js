@@ -22,26 +22,24 @@ const override = css`
 class SermonComponent extends Component {
   state = {
     sermons: [], // will hold the results from our ajax call
-    loading: true, // will be true when ajax request is running
-    per: 2,
-    page: 1,
-    totalPages: null
+    loading: true // will be true when ajax request is running
   };
 
   componentDidMount() {
-   // const url = `./utils/sermonData.json?per=${per}&page=${page}`;
-   const url = "./utils/sermonData.json";
-   
-      axios.get(url).then(response =>
-        this.setState({
-          loading: false,
-          sermons: [response.data]
-        })
-      );
+    // const url = `./utils/sermonData.json?per=${per}&page=${page}`;
+    const url = "./utils/sermonData.json";
+
+    axios.get(url).then(response =>
+      this.setState({
+        loading: false,
+        sermons: [...response.data]
+      })
+    );
   }
 
   render() {
-    const { sermons, loading } = this.state;
+    const { sermons, loading } = this.state; //destructuring
+    console.log(sermons);
     return (
       <Fragment>
         <Helmet>

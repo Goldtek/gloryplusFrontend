@@ -1,23 +1,23 @@
- [
-    {
-      "Id": 1,
-      "src": "sermon/partner.mp4",
-      "sermonImg": "img/sermons/kingdom.jpeg",
-      "title": "Choosing your Partner",
-      "artist": "Rev Dubus Achufusi"
-    },
-    {
-      "Id": 2,
-      "src": "sermon/relationship.mp4",
-      "sermonImg": "img/about.jpeg",
-      "title": "Love Languages",
-      "artist": "Rev Dubus Achufusi" 
-    },
-    {
-      "Id": 3,
-      "src": "sermon/grace.mp4",
-      "sermonImg": "img/sermons/blood.jpg",
-      "title": "Grace",
-      "artist": "Rev Dubus Achufusi"
-    }]
-
+[
+  {
+    "Id": 1,
+    "src": "sermon/partner.mp4",
+    "sermonImg": "img/sermons/choosing-your-partner.jpg",
+    "title": "Choosing your Partner",
+    "artist": "Rev Dubus Achufusi"
+  },
+  {
+    "Id": 2,
+    "src": "sermon/relationship.mp4",
+    "sermonImg": "img/sermons/love-language.jpg",
+    "title": "Love Languages",
+    "artist": "Rev Dubus Achufusi"
+  },
+  {
+    "Id": 3,
+    "src": "sermon/grace.mp4",
+    "sermonImg": "img/sermons/grace.jpg",
+    "title": "Grace",
+    "artist": "Rev Dubus Achufusi"
+  }
+]
