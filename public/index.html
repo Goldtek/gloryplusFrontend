@@ -104,6 +104,7 @@
       rel="stylesheet"
       href="https://video-react.github.io/assets/video-react.css"
     />
+    <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
     <!-- REACT VIDEO PLAYER -->
     <!-- <script src="http://www.ourmanna.com/verses/api/js/" type="text/javascript"></script> -->
 
@@ -465,6 +466,47 @@
       fjs.parentNode.insertBefore(js, fjs);
     })(document, "script", "facebook-jssdk");
   </script> -->
+
+  <script>
+    function pop(){
+      alert();
+    }
+  </script>
+
+
+  <script>
+    const API_publicKey = "FLWPUBK-bdd4c05bad01371b9f045896e513e5f6-X";
+
+    function payWithRave(phone, amount,email) {
+        var x = getpaidSetup({
+            PBFPubKey: API_publicKey,
+            customer_email: email,
+            amount,
+            customer_phone: phone,
+            currency: "NGN",
+            txref: "rave-123456", //unique transaction reference
+            meta: [{
+                metaname: "flightID", // name of item
+                metavalue: "AP1234" // id of item paid for
+            }],
+            onclose: function() {},
+            callback: function(response) {
+                var txref = response.tx.txRef; // collect txRef returned and pass to a 					server page to complete status check.
+                console.log("This is the response returned after a charge", response);
+                if (
+                    response.tx.chargeResponseCode == "00" ||
+                    response.tx.chargeResponseCode == "0"
+                ) {
+                    // redirect to a success page
+                } else {
+                    // redirect to a failure page.
+                }
+
+                x.close(); // use this to close the modal immediately after payment.
+            }
+        });
+    }
+</script>
 
     <script>
       // ANIMATE SCROLL

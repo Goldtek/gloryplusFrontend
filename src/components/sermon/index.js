@@ -25,7 +25,7 @@ class SermonComponent extends Component {
     loading: false, // will be true when ajax request is running
     per: 2,
     page: 1,
-    totalPages: null
+    totalPages: null,
   };
 
   componentDidMount() {
@@ -56,7 +56,6 @@ class SermonComponent extends Component {
         <PageInfo title="Sermon" bgPicture="url(img/bg-info/bible-phone.png)" />
 
         <hr />
-
         {loading ? (
           <div style={{ minHeight: "25vh" }}>
             <div className="col-md-4"></div>
