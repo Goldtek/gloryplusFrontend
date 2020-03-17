@@ -3,8 +3,12 @@ import React from "react";
 
 import "./audioplayer.css";
 
-const SectionCard = ({ artist, sermonImg, title, src }) => {
-  console.log("src", src);
+class  SectionCard extends React.Component {
+  download = () => {
+    alert();
+  }
+  render() {
+    const { artist, sermonImg, title, src } = this.props;
   return (
     <div>
       <div className="col-sm-6 col-md-4">
@@ -60,7 +64,7 @@ const SectionCard = ({ artist, sermonImg, title, src }) => {
               {/* <a href="">
                 <i className="ti-zip"></i>
               </a> */}
-              <a href="#" data-tooltip="download" data-tooltip-location="top">
+              <a onClick={this.download} data-tooltip="download" data-tooltip-location="top">
                 <i className="fas fa-download fa-md"></i>
               </a>
               {/* <a href="">
@@ -72,6 +76,7 @@ const SectionCard = ({ artist, sermonImg, title, src }) => {
       </div>
     </div>
   );
+  };
 };
 
 export default SectionCard;

@@ -19,5 +19,26 @@
     "sermonImg": "img/sermons/grace.jpg",
     "title": "Grace",
     "artist": "Rev Dubus Achufusi"
+  },
+  {
+    "Id": 4,
+    "src": "sermon/selfdenial.mp4",
+    "sermonImg": "img/sermons/denial.jpeg",
+    "title": "Self Denial",
+    "artist": "Rev Dubus Achufusi"
+  },
+  {
+    "Id": 5,
+    "src": "sermon/cross.mp4",
+    "sermonImg": "img/sermons/cross.jpeg",
+    "title": "The Cross",
+    "artist": "Rev Dubus Achufusi"
+  },
+  {
+    "Id": 6,
+    "src": "sermon/laws.mp4",
+    "sermonImg": "img/sermons/laws.jpg",
+    "title": "The Laws",
+    "artist": "Rev Dubus Achufusi"
   }
 ]

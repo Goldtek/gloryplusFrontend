@@ -3,11 +3,6 @@
   margin-bottom: 2px;
 }
 
-.cell-header-text b {
-  text-decoration: underline;
-  /* font-size: 5vw; */
-}
-
 .tabs input {
   position: absolute;
   opacity: 0;
