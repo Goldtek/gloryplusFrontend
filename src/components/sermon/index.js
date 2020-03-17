@@ -22,7 +22,14 @@ const override = css`
 class SermonComponent extends Component {
   state = {
     sermons: [], // will hold the results from our ajax call
+<<<<<<< Updated upstream
     loading: true // will be true when ajax request is running
+=======
+    loading: false // will be true when ajax request is running
+    // per: 2,
+    // page: 1,
+    // totalPages: null
+>>>>>>> Stashed changes
   };
 
   componentDidMount() {
