@@ -39,7 +39,7 @@ class SermonComponent extends Component {
 
   render() {
     const { sermons, loading } = this.state; //destructuring
-    console.log(sermons);
+
     return (
       <Fragment>
         <Helmet>

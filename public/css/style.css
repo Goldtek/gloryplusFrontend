@@ -2386,14 +2386,6 @@ margin-right: 60px;
   transition-duration: 0.2s;
   transform: translateX(-50%) scaleY(1);
 }
-/*
-  That's it.
-*/
-
-/*
-  If you want some adjustability
-  here are some orientation settings you can use:
-*/
 
 /* LEFT */
 /* Tooltip + arrow */
@@ -2468,16 +2460,6 @@ margin-right: 60px;
 }
 
 /* Settings that make the pen look nicer */
-html {
-  width: 100%;
-  height: 100%;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  font-size: 1.2em;
-  background: linear-gradient(45deg, #243949, #2cacd1, #35eb93);
-  background-size: 120% 120%;
-  animation: moveFocus 5s ease infinite alternate;
-}
 @keyframes moveFocus {
   0% {
     background-position: 0% 100%;
@@ -2487,13 +2469,13 @@ html {
   }
 }
 
-body {
+/* body {
   background: none;
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 0;
-}
+} */
 
 main {
   padding: 0 4%;
