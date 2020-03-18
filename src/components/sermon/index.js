@@ -22,14 +22,7 @@ const override = css`
 class SermonComponent extends Component {
   state = {
     sermons: [], // will hold the results from our ajax call
-<<<<<<< Updated upstream
     loading: true // will be true when ajax request is running
-=======
-    loading: false // will be true when ajax request is running
-    // per: 2,
-    // page: 1,
-    // totalPages: null
->>>>>>> Stashed changes
   };
 
   componentDidMount() {
@@ -46,7 +39,7 @@ class SermonComponent extends Component {
 
   render() {
     const { sermons, loading } = this.state; //destructuring
-
+    console.log(sermons);
     return (
       <Fragment>
         <Helmet>
@@ -56,9 +49,6 @@ class SermonComponent extends Component {
         <TopNav />
         <Header />
         <PageInfo title="Sermon" bgPicture="url(img/bg-info/bible-phone.png)" />
-
-        <hr />
-
         {loading ? (
           <div style={{ minHeight: "25vh" }}>
             <div className="col-md-4"></div>

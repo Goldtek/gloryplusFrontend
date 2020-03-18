@@ -2642,4 +2642,20 @@ button::-moz-focus-inner {
     border-width: 7px 7px 0px 7px;
   }
 }
+
+.icon-links .fa,
+.far {
+  color: #dd3e3e;
+}
+
+.icon-links :hover .fa {
+  color: #000000;
+}
+.icon-links :hover .far {
+  color: #000000;
+}
+
+.sermon-links {
+  border-top: 1px solid rgb(232, 232, 232);
+}
 /* CUSTOM STYLES */

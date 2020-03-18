@@ -9,11 +9,6 @@ const SermonList = ({ sermons }) => {
         <div className="section-title">
           <span>Experience God's Presence</span>
           <h2>Popular Sermons</h2>
-<<<<<<< Updated upstream
-          
-=======
-          {/* <h2> Sermons Loading....</h2> */}
->>>>>>> Stashed changes
         </div>
         <div className="row">
           {sermons.map(({ Id, ...sermonProps }) => (
