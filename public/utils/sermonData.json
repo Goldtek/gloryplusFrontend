@@ -1,42 +1,42 @@
 [
   {
     "Id": 1,
-    "src": "sermon/partner.mp4",
+    "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526731/sermons/partner_bcfqfd.mp4",
     "sermonImg": "img/sermons/choosing-your-partner.jpg",
     "title": "Choosing your Partner",
     "artist": "Rev Dubus Achufusi"
   },
   {
     "Id": 2,
-    "src": "sermon/relationship.mp4",
+    "src": "https://res.cloudinary.com/dvxptc5uy/image/upload/v1584526721/sermons/love-language_fk3yuw.jpg",
     "sermonImg": "img/sermons/love-language.jpg",
     "title": "Love Languages",
     "artist": "Rev Dubus Achufusi"
   },
   {
     "Id": 3,
-    "src": "sermon/grace.mp4",
+    "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526725/sermons/grace_rmbvt7.mp4",
     "sermonImg": "img/sermons/grace.jpg",
     "title": "Grace",
     "artist": "Rev Dubus Achufusi"
   },
   {
     "Id": 4,
-    "src": "sermon/selfdenial.mp4",
+    "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526743/sermons/selfdenial_kz5cu7.mp4",
     "sermonImg": "img/sermons/denial.jpeg",
     "title": "Self Denial",
     "artist": "Rev Dubus Achufusi"
   },
   {
     "Id": 5,
-    "src": "sermon/cross.mp4",
+    "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526742/sermons/cross_d8f1ok.mp4",
     "sermonImg": "img/sermons/cross.jpeg",
     "title": "The Cross",
     "artist": "Rev Dubus Achufusi"
   },
   {
     "Id": 6,
-    "src": "sermon/laws.mp4",
+    "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526741/sermons/laws_zsoh3z.mp4",
     "sermonImg": "img/sermons/laws.jpg",
     "title": "The Laws",
     "artist": "Rev Dubus Achufusi"
