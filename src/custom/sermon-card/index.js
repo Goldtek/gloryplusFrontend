@@ -42,21 +42,15 @@ class  SectionCard extends React.Component {
             </ul>
             <div className="icon-links">
               <a
-                href="#"
-                data-tooltip="add to cart"
+                data-tooltip="Download Audio Message"
                 data-tooltip-location="top"
               >
-                <i className="fas fa-shopping-cart fa-md d-inline-block"></i>
+                <i className="fas fa-file-audio fa-md d-inline-block"></i>
               </a>
-              {/* <a href="">
-                <i className="ti-zip"></i>
-              </a> */}
-              <a onClick={this.download} data-tooltip="download" data-tooltip-location="top">
-                <i className="fas fa-download fa-md"></i>
+      
+              <a onClick={this.download} data-tooltip="Download Video Message" data-tooltip-location="top">
+                <i className="fas fa-video fa-md"></i>
               </a>
-              {/* <a href="">
-                <i className="fas fa-shopping-cart fa-md"></i>
-              </a> */}
             </div>
           </div>
         </div>
