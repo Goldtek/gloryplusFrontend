@@ -1,5 +1,4 @@
 import React from "react";
-// import ReactPlayer from "react-player";
 
 import "./audioplayer.css";
 
@@ -13,14 +12,7 @@ class  SectionCard extends React.Component {
     <div>
       <div className="col-sm-6 col-md-4">
         <div className="sermon-item event-div ">
-          {/* <b className={"fa-fa-play video-thumbnail"}></b> */}
-          {/* 
-          <div
-            className="si-thumb set-bg"
-            style={{
-              backgroundImage: `url(${sermonImg})`
-            }}
-          ></div> */}
+        
           <div className="embed-responsive embed-responsive-4by3 card">
             <video
               controls
@@ -28,16 +20,11 @@ class  SectionCard extends React.Component {
               className="embed-responsive-item "
             >
               <source
-                // src="video/home.mp4"
                 src={src}
                 type="video/mp4"
               />
-              {/* <source
-                    src="https://res.cloudinary.com/ielemson/video/upload/v1580163853/glory-plus/home.mp4_2_ros4xe.mp4"
-                    type="video/mp4"
-                  /> */}
+              
               <source
-                // src="video/home.mp4"
                 src={src}
                 type="video/ogg"
               />

@@ -8,10 +8,12 @@ const SermonList = ({ sermons }) => {
   const [currPage, setCurrPage] = useState(1);
   const [sermonPerPage] = useState(6);
   const paginate = pageNumber => setCurrPage(pageNumber);
-  // get the
+
+  // get current paginated content for that page
   const indexOfLastEvent = currPage * sermonPerPage;
   const indexOfFirstEvent = indexOfLastEvent - sermonPerPage;
   const currSermons = sermons.slice(indexOfFirstEvent, indexOfLastEvent);
+  
   return (
     <section className="sermons-list-section spad">
       <div className="container">
