@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SectionCard from "../sermon-card";
+import Pagination from "../pagination";
 // import UpcomingEvent from "../up-coming-events";
 // import InfiniteScroll from "react-infinite-scroll-component";
 const SermonList = ({ sermons }) => {
+  const [loading, setLoading] = useState(false);
+  const [currPage, setCurrPage] = useState(1);
+  const [sermonPerPage] = useState(6);
+  const paginate = pageNumber => setCurrPage(pageNumber);
+  // get the
+  const indexOfLastEvent = currPage * sermonPerPage;
+  const indexOfFirstEvent = indexOfLastEvent - sermonPerPage;
+  const currSermons = sermons.slice(indexOfFirstEvent, indexOfLastEvent);
   return (
     <section className="sermons-list-section spad">
       <div className="container">
@@ -12,25 +21,16 @@ const SermonList = ({ sermons }) => {
           
         </div>
         <div className="row">
-          {sermons.map(({ Id, ...sermonProps }) => (
+          {currSermons.map(({ Id, ...sermonProps }) => (
             <SectionCard key={Id} {...sermonProps} />
           ))}
         </div>
 
-        {/* <div className="pagination-area">
-          <ul className="pageination-list">
-            <li>
-              <a href="!#">1</a>
-            </li>
-
-            <li>
-              <a href="!#">
-                Next <i className="fa fa-angle-double-right"></i>
-              </a>
-            </li>
-          </ul>
-          <p>Page 1 of 1 results</p>
-        </div> */}
+        <Pagination
+            PerPage={sermonPerPage}
+            total={sermons.length}
+            paginate={paginate}
+          />
       </div>
     </section>
   );
