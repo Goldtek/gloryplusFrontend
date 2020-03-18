@@ -29,16 +29,44 @@
   },
   {
     "Id": 5,
+    "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526741/sermons/laws_zsoh3z.mp4",
+    "sermonImg": "img/sermons/laws.jpg",
+    "title": "The Laws",
+    "artist": "Rev Dubus Achufusi"
+  },
+  {
+    "Id": 6,
+    "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526935/sermons/suffering_of_christ_ssbjmx.mp4",
+    "sermonImg": "img/sermons/suffering.jpg",
+    "title": "The Suffering of Christ",
+    "artist": "Rev Dubus Achufusi"
+  },
+  {
+    "Id": 7,
     "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526742/sermons/cross_d8f1ok.mp4",
     "sermonImg": "img/sermons/cross.jpeg",
     "title": "The Cross",
     "artist": "Rev Dubus Achufusi"
   },
   {
-    "Id": 6,
-    "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526741/sermons/laws_zsoh3z.mp4",
-    "sermonImg": "img/sermons/laws.jpg",
-    "title": "The Laws",
+    "Id": 8,
+    "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526927/sermons/Still_on_the_cross1_jmbws6.mp4",
+    "sermonImg": "img/sermons/cross.jpeg",
+    "title": "Still on The Cross",
+    "artist": "Rev Dubus Achufusi"
+  },
+  {
+    "Id": 9,
+    "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526930/sermons/Still_on_the_cross2_zwisft.mp4",
+    "sermonImg": "img/sermons/cross.jpeg",
+    "title": "Still on The Cross Part 2",
+    "artist": "Rev Dubus Achufusi"
+  },
+  {
+    "Id": 10,
+    "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526926/sermons/still_on_the_cross3_jho9qn.mp4",
+    "sermonImg": "img/sermons/cross.jpeg",
+    "title": "Still on The Cross Part 3",
     "artist": "Rev Dubus Achufusi"
   }
 ]
