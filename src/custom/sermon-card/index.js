@@ -1,58 +1,63 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import AudioPlayer from "react-h5-audio-player";
-import "./audioplayer.css";
+import { download } from "../../lib/util";
 
-const SectionCard = ({ sermonImg, artist, time, title, src }) => {
-  return (
-    <div>
-      <div className="col-sm-6 col-md-4">
-        <div className="sermon-item event-div ">
-          {/* <b className={"fa-fa-play video-thumbnail"}></b> */}
+// import "./audioplayer.css";
 
-          <div
-            className="si-thumb set-bg"
-            style={{
-              backgroundImage: `url(${sermonImg})`
-            }}
-          ></div>
-          <div className="si-content">
-            <h4>{title}</h4>
+class SectionCard extends React.Component {
+  render() {
+    const { artist, sermonImg, title, src, vdAmt, adAmt } = this.props;
+    return (
+      <div>
+        <div className="col-sm-6 col-md-4">
+          <div className="sermon-item event-div ">
+            <div className="embed-responsive embed-responsive-4by3 card">
+              <video
+                controls
+                poster={sermonImg}
+                className="embed-responsive-item "
+              >
+                <source src={src} type="video/mp4" />
+                <source src={src} type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+              {/* <iframe allowfullscreen></iframe> */}
+            </div>
+            <div className="si-content sermon-header">
+              <h4>{title.toUpperCase()}</h4>
 
-            <ul className="sermon-info">
-              <li>
-                Sermon By: <span>{artist}</span>
-              </li>
+              <ul className="sermon-info">
+                <li>
+                  Sermon By: <span>{artist}</span>
+                </li>
+              </ul>
+              <div className="icon-links">
+                <a
+                  data-tooltip="Download Audio Message"
+                  data-tooltip-location="top"
+                  onClick={() => download(adAmt)}
+                >
+                  <i className="fa fa-headphones" aria-hidden="true"></i>
+                </a>
 
-              {/* <li>
-                <span>On {time}</span>
-              </li> */}
-              <AudioPlayer
-                src={src}
-                // onPlay={playToggle}
-                // onPause={pauseToggle}
+                <a
+                  onClick={() => download(vdAmt)}
+                  data-tooltip="Download Video Message"
+                  data-tooltip-location="top"
+                >
+                  <i className="fa fa-video" aria-hidden="true"></i>
+                </a>
 
-                // other props here
-              />
-            </ul>
-            {/* <div className="icon-links">
-              <a href="">
-                <i className="ti-link"></i>
-              </a>
-              <a href="">
-                <i className="ti-zip"></i>
-              </a>
-              <a href="">
-                <i className="ti-headphone"></i>
-              </a>
-              <a href="">
-                <i className="ti-import"></i>
-              </a>
-            </div> */}
+                {/* <a data-tooltip="share link" data-tooltip-location="top">
+                  <i className="fa fa-share-alt" aria-hidden="true"></i>
+                </a> */}
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default SectionCard;

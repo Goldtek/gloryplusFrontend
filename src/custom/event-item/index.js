@@ -70,17 +70,9 @@ const EventItem = ({ events, loading }) => {
                   </div>
                 </div>
 
-                <TextTruncate
-                  line={3}
-                  element="span"
-                  truncateText="…"
-                  text={eventData.description}
-                  className="event-details"
-                  // textTruncateChild={`/event/${eventData.pat
-                />
-                {/* <a href="/event/" className="btn btn-danger btn-sm">
-Read more
-</a> */}
+                <p className="event-details">
+                  {eventData.description.slice(0, 200) + `...`}
+                </p>
                 <Link
                   to={`/event/${eventData.pathName}`}
                   className="btn btn-danger btn-md"

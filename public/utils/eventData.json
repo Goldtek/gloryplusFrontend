@@ -1,33 +1,7 @@
-[{
+[
+
+{
   "id": 1,
-  "title": "Leadership Summit",
-  "pathName": "Leaders",
-  "imagePath": "img/event/workers.jpg",
-  "description": "The leadership summit is a time designed to equip every leader in Gloryplus with the right tools; focusing on discipleship. Workers will be trained, appointed and annointed for service. Leaders of other ministries/churches will equally be equipped and annointed for effectiveness in training. Rev. Dubus will spend sometime with those that seek his mentorship in ministry. Its going to be four days of unusual impact that will shift the spiritual climate of the city of Aba.  ",
-  "location": "ora-ifite town hall, 54 azikiwe road, Aba, abia state",
-  "time": "8:00am daily",
-  "day": "08-09",
-  "month": "March",
-  "year": "2020",
-  "status": "active"
-},
-
-{
-  "id": 2,
-  "title": "Inaugration Of GPI Nekede",
-  "pathName":"gpi-aba",
-  "imagePath":"img/event/workers.jpg",
-  "description":"To God our father be the glory,from whom comes every good and perfect gift; To the honour of our Lord Jesus Christ, Our Lord and Savior, Redeemer and king, To the praise of the HOly Spirit Our source of light and strenght",
-  "location": "ora-ifite town hall, 54 azikiwe road, Aba, abia state",
-  "time": "8:00am",
-  "day": "11",
-  "month": "March",
-  "year": "2020"
-  
-},
-
-{
-  "id": 3,
   "title": "Holy Ghost Morning",
   "pathName": "holyghost-morning",
   "imagePath": "img/event/hgm3.jpg",
@@ -40,7 +14,7 @@
 },
 
 {
-  "id": 4,
+  "id": 2,
   "title": "Inauguration And Church Leadership ",
   "pathName": "inauguration",
   "imagePath": "img/event/inagauration.jpg",
@@ -54,7 +28,7 @@
 },
 
 {
-  "id": 5,
+  "id": 3,
   "title": "40 days prayer and fasting(The Revelation of Jesus)",
   "pathName": "40-days-fasting",
   "imagePath": "img/event/rev.jpg",
@@ -66,7 +40,7 @@
   "year": "2020"
 }, 
 {
-  "id": 6,
+  "id": 4,
   "title": "Holy Ghost Invasion (Fruit Of Christ Church)-Owerri",
   "pathName": "holygost",
   "imagePath": "img/event/hgm.jpg",
@@ -78,7 +52,7 @@
   "year": "2020"
 }, 
 {
-  "id": 7,
+  "id": 5,
   "title": "Camp Meeting",
   "pathName": "camp",
   "imagePath": "img/event/mainChurch.jpg",

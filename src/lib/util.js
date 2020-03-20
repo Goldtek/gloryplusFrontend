@@ -1,4 +1,5 @@
 
+import { ws, RAVE_PUBLIC_KEY } from './constant';
 
 export const calculateStateFromProps = ({ dateTo, numberOfFigures = 0, mostSignificantFigure = 0 }) => {
     const currentDate = new Date();
@@ -69,3 +70,20 @@ export const calculateStateFromProps = ({ dateTo, numberOfFigures = 0, mostSigni
         sec: sec
     };
 }
+
+export const storeTrackInfo =  (user) => {
+    const strUser =  JSON.stringify(user);
+    ws.setItem('user', strUser);
+}
+
+export const download = (amt) => {
+    const user = ws.getItem('user');
+    const extUser = JSON.parse(user);
+    const { name, email, phone } = extUser;
+    if(user === undefined || user === null) {
+      window.$('#modalBox').modal('show');
+      return window.payWithRave(phone, amt, email, RAVE_PUBLIC_KEY);
+    } 
+    window.payWithRave(phone, amt, email, RAVE_PUBLIC_KEY);
+    
+  };

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-// import axios from "axios";
+import axios from "axios";
 import { css } from "@emotion/core";
 import { FadeLoader } from "react-spinners";
 import { Helmet } from "react-helmet";
@@ -12,7 +12,8 @@ import {
   Footer,
   // Sermon,
   PageInfo,
-  SermonList
+  SermonList,
+  Modal
 } from "../../custom";
 const override = css`
   display: block;
@@ -22,29 +23,23 @@ const override = css`
 class SermonComponent extends Component {
   state = {
     sermons: [], // will hold the results from our ajax call
-    loading: false, // will be true when ajax request is running
-    per: 2,
-    page: 1,
-    totalPages: null
+    loading: true // will be true when ajax request is running
   };
 
   componentDidMount() {
-    //deconstructing the state
-    // const { per, page, totalPages, sermons } = this.state;
     // const url = `./utils/sermonData.json?per=${per}&page=${page}`;
-    // this.setState({ loading: true }, () => {
-    //   axios.get(url).then(response =>
-    //     this.setState({
-    //       loading: false,
-    //       sermons: [...sermons, ...response.data.sermonJson]
-    //     })
-    //   );
-    // });
+    const url = "./utils/sermonData.json";
+
+    axios.get(url).then(response =>
+      this.setState({
+        loading: false,
+        sermons: [...response.data]
+      })
+    );
   }
 
   render() {
-    const { sermons, loading } = this.state;
-    console.log(this.state.sermons);
+    const { sermons, loading } = this.state; //destructuring
     return (
       <Fragment>
         <Helmet>
@@ -54,9 +49,6 @@ class SermonComponent extends Component {
         <TopNav />
         <Header />
         <PageInfo title="Sermon" bgPicture="url(img/bg-info/bible-phone.png)" />
-
-        <hr />
-
         {loading ? (
           <div style={{ minHeight: "25vh" }}>
             <div className="col-md-4"></div>
@@ -79,7 +71,7 @@ class SermonComponent extends Component {
             <div className="col-md-4"></div>
           </div>
         ) : (
-          <SermonList sermon={sermons} />
+          <SermonList sermons={sermons} />
         )}
 
         <NewsLetter />

@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Helmet from "react-helmet";
 // import { Link } from "react-router-dom";
-import Pagination from "./pagination";
+import Pagination from "../../custom/pagination";
 import axios from "axios";
 import {
   TopNav,
@@ -31,18 +31,6 @@ const Events = () => {
 
     fetchItems();
   }, []);
-  // componentWillMount() {
-  //   axios
-  //     .get("./db/eventData.json")
-  //     .then(({ data: eventItems }) => {
-  //       this.setState({ eventItems });
-  //     })
-  //     .catch(err => {
-  //       console.log(err);
-  //     });
-  // }
-
-  // const { eventItems } = this.state;
 
   //GET CURRENT POST
   const indexOfLastEvent = currPage * eventPerPage;
@@ -52,7 +40,6 @@ const Events = () => {
 
   //CHANGE PAGE
   const paginate = pageNumber => setCurrPage(pageNumber);
-
   //CHANGE PAGE
 
   return (
@@ -76,8 +63,8 @@ const Events = () => {
           </div>
           {/* pagination */}
           <Pagination
-            eventPerPage={eventPerPage}
-            totalEvents={eventItems.length}
+            PerPage={eventPerPage}
+            total={eventItems.length}
             paginate={paginate}
           />
         </div>
