@@ -1,13 +1,7 @@
 import React, { Component, Fragment } from "react";
 import axios from "axios";
 import { Helmet } from "react-helmet";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch
-
-  // Redirect
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "../about";
 import SermonComponent from "../sermon";
 import ContactUs from "../contact";
@@ -30,13 +24,10 @@ import {
   EventTimer,
   JoinUs,
   ServiceSection,
-  // BibleQuote,
   Donate,
   NewsLetter,
-  PopularSermon,
   Footer,
   ErrorPage,
-  // GifComponent,
   Testimonial,
   EventSlider
 } from "../../custom";
@@ -45,7 +36,8 @@ MEMBERS IMPORT
 ----------------- */
 import Member from "../member";
 // declare constant for event api
-const API = "./utils/eventData.json";
+const eventAPI = "./utils/eventData.json";
+const TestimonialAPI = "./utils/testimonyData.json";
 
 /*----------------
 MEMBERS IMPORT
@@ -54,6 +46,7 @@ class Home extends Component {
   // SET STATE FOR EVENT
   state = {
     eventItemSlide: [],
+    testimonyItem: [],
     loading: false,
     bibleVerse: [],
     error: null
@@ -62,10 +55,19 @@ class Home extends Component {
   componentDidMount() {
     //fetch event item and store it in the state
     this.setState({ loading: true }, () => {
-      axios.get(API).then(result =>
+      axios.get(eventAPI).then(result =>
         this.setState({
           loading: false,
           eventItemSlide: [...result.data]
+        })
+      );
+    });
+
+    this.setState({ loading: true }, () => {
+      axios.get(TestimonialAPI).then(testimony =>
+        this.setState({
+          loading: false,
+          testimonyItem: [...testimony.data]
         })
       );
     });
@@ -73,7 +75,7 @@ class Home extends Component {
 
   //EVENT NEWS SLIDER
   render() {
-    const { eventItemSlide, loading } = this.state;
+    const { eventItemSlide, loading, testimonyItem } = this.state;
     return (
       <Fragment>
         <Router>
@@ -92,18 +94,10 @@ class Home extends Component {
                   <Hero />
                   <EventTimer />
                   <JoinUs fade="zoom-in" duration="1300" ease="ease-in-sine" />
-                  {/* <GifComponent /> */}
-                  {/* Check the api call has finished for eventslider.. else show loader  */}
-
                   <EventSlider newslides={eventItemSlide} loading={loading} />
-                  {/* <BibleQuote /> */}
-                  {/* Check the api call has finished for eventslider.. else show loader  */}
-
                   <ServiceSection />
-                  <Testimonial />
-
+                  <Testimonial tesmonies={testimonyItem} />
                   <Donate />
-                  {/* <PopularSermon /> */}
                   <NewsLetter />
                   <Footer />
                 </Fragment>

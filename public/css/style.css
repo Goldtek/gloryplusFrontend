@@ -2487,13 +2487,7 @@ html {
   }
 }
 
-body {
-  background: none;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin: 0;
-}
+
 
 main {
   padding: 0 4%;
@@ -2617,12 +2611,7 @@ button::-moz-focus-inner {
     animation-duration: 0.6s;
     font-size: 1em;
   }
-  body {
-    display: flex;
-    background: none;
-    height: 100%;
-    margin: 0px;
-  }
+  
   main {
     font-size: 1.1em;
     padding: 6%;
