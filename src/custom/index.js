@@ -30,6 +30,7 @@ import SectionCard from "./sermon-card";
 import Testimonial from "./testimonial";
 import EventSlider from "./event-slider/index";
 import GifComponent from "./gifcomponent/index";
+import Modal from './modal';
 
 export {
   Header,
@@ -63,5 +64,6 @@ export {
   SingleGallery,
   Testimonial,
   EventSlider,
-  GifComponent
+  GifComponent,
+  Modal
 };

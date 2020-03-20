@@ -32,9 +32,9 @@ function Modal({ quote }) {
               >
                 Close
               </button> */}
-              {/* <button type="button" className="btn btn-dialog">
+              <button type="button" className="btn btn-dialog">
                   Ok
-                </button> */}
+                </button>
             </div>
           </div>
         </div>
