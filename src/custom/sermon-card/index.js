@@ -1,20 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-// import * as $ from "jquery";
+
+import { ws , RAVE_PUBLIC_KEY } from '../../lib/constant';
+import { download } from '../../lib/util';
 
 import "./audioplayer.css";
 
 class SectionCard extends React.Component {
-  download = () => {
-    const { user } = window.sessionStorage.getItem('user');
-    if(user === undefined) {
-      console.log('user is', user);
-    //  return window.$('#modalBox').modal('show');
-    } 
-  //  console.log('user object', user);
-  };
+  
   render() {
-    const { artist, sermonImg, title, src } = this.props;
+    const { artist, sermonImg, title, src, vdAmt, adAmt } = this.props;
     return (
       <div>
         <div className="col-sm-6 col-md-4">
@@ -43,14 +38,13 @@ class SectionCard extends React.Component {
                 <a
                   data-tooltip="Download Audio Message"
                   data-tooltip-location="top"
-                  data-toggle="modal" 
-                  data-target="#modalBox"
+                  onClick={()=> download(adAmt)}
                 >
                   <i className="fa fa-headphones" aria-hidden="true" ></i>
                 </a>
 
                 <a
-                  onClick={this.download}
+                  onClick={()=> download(vdAmt)}
                   data-tooltip="Download Video Message"
                   data-tooltip-location="top"
                 >
@@ -58,7 +52,6 @@ class SectionCard extends React.Component {
                 </a>
 
                 <a
-                  onClick={this.download}
                   data-tooltip="share link"
                   data-tooltip-location="top"
                 >
