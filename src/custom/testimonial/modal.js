@@ -1,41 +1,48 @@
 import React, { Component } from "react";
-
+import "./testimonial.css";
 class Modal extends Component {
   render() {
     return (
       <div
-        className="modal fade"
-        id="demo4"
-        tabindex="-1"
+        className="modal fade fade-flip bs-example-modal-new"
+        tabIndex="-1"
         role="dialog"
-        aria-labelledby="myModalLabel"
+        aria-labelledby="myLargeModalLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog opacity-animate4">
+        <div className="modal-dialog">
           <div className="modal-content">
+            <div className="modal-header">
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {/* <h4 className="modal-title" id="gridSystemModalLabel">
+                {this.props.title}
+              </h4> */}
+            </div>
+
             <div className="modal-body">
-              <div className="modal-header">
-                <h5
-                  className="modal-title"
-                  align="center"
-                  style={{
-                    textTransform: "uppercase",
-                    fontWeight: "600",
-                    fontSize: "1rem"
-                  }}
-                >
+              <div className="body-message">
+                <h4 align="center" style={{ textTransform: "uppercase" }}>
                   {this.props.title}
-                </h5>
-                <button
-                  type="button"
-                  className="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                </h4>
+                <br />
+                <p>{this.props.description}</p>
               </div>
-              <p> {this.props.description}</p>
+            </div>
+            <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>

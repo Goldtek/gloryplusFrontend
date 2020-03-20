@@ -51,7 +51,10 @@ class Testimonial extends Component {
                 <div className="carousel-inner">
                   <Fragment>
                     {testimony.map(testimony => (
-                      <div className={`item carousel-item ${testimony.status}`}>
+                      <div
+                        className={`item carousel-item ${testimony.status}`}
+                        key={testimony.id}
+                      >
                         <div className="img-box">
                           <img src={testimony.img} alt="" />
                         </div>
@@ -62,8 +65,7 @@ class Testimonial extends Component {
                             className="btn btn-link"
                             role="link"
                             data-toggle="modal"
-                            data-target="#demo4"
-                            id="modal4"
+                            data-target=".bs-example-modal-new"
                             onClick={() => this.onOpenModal(testimony)}
                           >
                             read more

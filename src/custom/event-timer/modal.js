@@ -32,9 +32,14 @@ function Modal({ quote }) {
               >
                 Close
               </button> */}
-              <button type="button" className="btn btn-dialog">
-                  Ok
-                </button>
+              <button
+                type="button"
+                type="button"
+                className="btn btn-dialog btn-xs"
+                data-dismiss="modal"
+              >
+                close
+              </button>
             </div>
           </div>
         </div>

@@ -2,16 +2,16 @@
 import React from "react";
 // import * as $ from "jquery";
 
-import "./audioplayer.css";
+// import "./audioplayer.css";
 
 class SectionCard extends React.Component {
   download = () => {
-    const { user } = window.sessionStorage.getItem('user');
-    if(user === undefined) {
-      console.log('user is', user);
-    //  return window.$('#modalBox').modal('show');
-    } 
-  //  console.log('user object', user);
+    const { user } = window.sessionStorage.getItem("user");
+    if (user === undefined) {
+      console.log("user is", user);
+      //  return window.$('#modalBox').modal('show');
+    }
+    //  console.log('user object', user);
   };
   render() {
     const { artist, sermonImg, title, src } = this.props;
@@ -43,10 +43,10 @@ class SectionCard extends React.Component {
                 <a
                   data-tooltip="Download Audio Message"
                   data-tooltip-location="top"
-                  data-toggle="modal" 
+                  data-toggle="modal"
                   data-target="#modalBox"
                 >
-                  <i className="fa fa-headphones" aria-hidden="true" ></i>
+                  <i className="fa fa-headphones" aria-hidden="true"></i>
                 </a>
 
                 <a
@@ -58,7 +58,7 @@ class SectionCard extends React.Component {
                 </a>
 
                 <a
-                  onClick={this.download}
+                  // onClick={this.download}
                   data-tooltip="share link"
                   data-tooltip-location="top"
                 >
