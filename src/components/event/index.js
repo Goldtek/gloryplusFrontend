@@ -40,7 +40,6 @@ const Events = () => {
 
   //CHANGE PAGE
   const paginate = pageNumber => setCurrPage(pageNumber);
-
   //CHANGE PAGE
 
   return (

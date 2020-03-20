@@ -467,46 +467,50 @@
     })(document, "script", "facebook-jssdk");
   </script> -->
 
-  <script>
-    function pop(){
-      alert();
-    }
-  </script>
+    <script>
+      function pop() {
+        alert();
+      }
+    </script>
 
+    <script>
+      const API_publicKey = "FLWPUBK-1015c516ef299161a68606c4fbe3db36-X";
 
-  <script>
-    const API_publicKey = "FLWPUBK-1015c516ef299161a68606c4fbe3db36-X";
-
-    function payWithRave(phone, amount,email, RAVE_PUBLIC_KEY) {
+      function payWithRave(phone, amount, email, RAVE_PUBLIC_KEY) {
         var x = getpaidSetup({
-            PBFPubKey: API_publicKey,
-            customer_email: email,
-            amount,
-            customer_phone: phone,
-            currency: "NGN",
-            txref: "rave-123456", //unique transaction reference
-            meta: [{
-                metaname: "flightID", // name of item
-                metavalue: "AP1234" // id of item paid for
-            }],
-            onclose: function() {},
-            callback: function(response) {
-                var txref = response.tx.txRef; // collect txRef returned and pass to a 					server page to complete status check.
-                console.log("This is the response returned after a charge", response);
-                if (
-                    response.tx.chargeResponseCode == "00" ||
-                    response.tx.chargeResponseCode == "0"
-                ) {
-                    // redirect to a success page
-                } else {
-                    // redirect to a failure page.
-                }
-
-                x.close(); // use this to close the modal immediately after payment.
+          PBFPubKey: API_publicKey,
+          customer_email: email,
+          amount,
+          customer_phone: phone,
+          currency: "NGN",
+          txref: "rave-123456", //unique transaction reference
+          meta: [
+            {
+              metaname: "flightID", // name of item
+              metavalue: "AP1234" // id of item paid for
             }
+          ],
+          onclose: function() {},
+          callback: function(response) {
+            var txref = response.tx.txRef; // collect txRef returned and pass to a 					server page to complete status check.
+            console.log(
+              "This is the response returned after a charge",
+              response
+            );
+            if (
+              response.tx.chargeResponseCode == "00" ||
+              response.tx.chargeResponseCode == "0"
+            ) {
+              // redirect to a success page
+            } else {
+              // redirect to a failure page.
+            }
+
+            x.close(); // use this to close the modal immediately after payment.
+          }
         });
-    }
-</script>
+      }
+    </script>
 
     <script>
       // ANIMATE SCROLL
@@ -517,31 +521,8 @@
         $("#bootstrap-touch-slider").bsTouchSlider();
       });
 
-      jQuery(document).ready(function($) {
-        "use strict";
-        //  TESTIMONIALS CAROUSEL HOOK
-        $("#customers-testimonials").owlCarousel({
-          loop: true,
-          center: true,
-          items: 3,
-          margin: 0,
-          autoplay: true,
-
-          dots: true,
-          autoplayTimeout: 3000,
-          smartSpeed: 450,
-          responsive: {
-            0: {
-              items: 1
-            },
-            768: {
-              items: 2
-            },
-            1170: {
-              items: 3
-            }
-          }
-        });
+      $(document).ready(function() {
+        $("#testimonial-slider").owlCarousel();
       });
 
       // SCROLL TO TOP

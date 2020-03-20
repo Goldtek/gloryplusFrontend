@@ -1,72 +1,98 @@
-import React, { Component } from "react";
-// import { Link } from "react-router-dom";
-// import { Player } from "video-react";
-// import "./player.css";
+import React, { Component, Fragment } from "react";
+import $ from "jquery";
+import Modal from "./modal";
 import "./testimonial.css";
+const styles = {
+  fontFamily: "sans-serif",
+  textAlign: "center"
+};
+
 class Testimonial extends Component {
+  state = {
+    open: false,
+    activeItem: []
+  };
+
+  onOpenModal = testimony => {
+    this.setState({ activeItem: testimony }, () =>
+      this.setState({ open: true })
+    );
+  };
+
+  onCloseModal = () => {
+    this.setState({ open: false });
+  };
   render() {
+    const { tesmonies: testimony } = this.props;
+    const { open } = this.state;
     return (
       <section className="testimonials">
         <div className="container">
           <div className="row">
-            <div className="col-sm-12">
-              <div id="customers-testimonials" className="owl-carousel">
-                {/* <!--TESTIMONIAL 1 --> */}
+            <div className="col-md-12 col-center m-auto">
+              {/* <h2>Testimony</h2> */}
+              <div
+                id="myCarousel"
+                className="carousel slide"
+                data-ride="carousel"
+              >
+                {/* <!-- Carousel indicators --> */}
+                <ol className="carousel-indicators">
+                  <li
+                    data-target="#myCarousel"
+                    data-slide-to="0"
+                    className="active"
+                  ></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                {/* <!-- Wrapper for carousel items --> */}
 
-                <div className="item">
-                  <div className="shadow-effect">
-                    <img
-                      className="img-circle"
-                      src="https://res.cloudinary.com/ielemson/image/upload/v1583945144/testimonial-1_bw9ydw.jpg"
-                      alt=""
+                <div className="carousel-inner">
+                  <Fragment>
+                    {testimony.map(testimony => (
+                      <div className={`item carousel-item ${testimony.status}`}>
+                        <div className="img-box">
+                          <img src={testimony.img} alt="" />
+                        </div>
+                        <p>
+                          {testimony.description.slice(0, 400) + `...`}
+
+                          <button
+                            className="btn btn-link"
+                            role="link"
+                            data-toggle="modal"
+                            data-target="#demo4"
+                            id="modal4"
+                            onClick={() => this.onOpenModal(testimony)}
+                          >
+                            read more
+                          </button>
+                        </p>
+                      </div>
+                    ))}
+                    <Modal
+                      title={this.state.activeItem.title}
+                      description={this.state.activeItem.description}
                     />
-                    <p>
-                      This word became flesh for Mama yesterday as she
-                      experienced complete and total restoration. Mama had been
-                      diagnosed with diabetes, and as years went by her
-                      condition got worse, this got her bedridden. Last week,
-                      the resident pastor of Gloryplus international Aba...
-                      <a href="!#">readmore</a>
-                    </p>
-                  </div>
-                  <div className="testimonial-name">Diabetes Healed!</div>
+                  </Fragment>
                 </div>
 
-                <div className="item">
-                  <div className="shadow-effect">
-                    <img
-                      className="img-circle"
-                      src="https://res.cloudinary.com/ielemson/image/upload/v1583946761/testimonial-2_2_1000x1080_vm2gjm.jpg"
-                      alt=""
-                    />
-                    <p>
-                      My mum had a seizure which in the past, frequently plagued
-                      her and leaves her totally worn-out after each crisis,
-                      with the attendant funds that I and my siblings have to
-                      part with at the hospital so as she could be treated...
-                      <a href="!#">readmore</a>
-                    </p>
-                  </div>
-                  <div className="testimonial-name">Seizure Healed!</div>
-                </div>
-                <div className="item">
-                  <div className="shadow-effect">
-                    <img
-                      className="img-circle"
-                      src="https://res.cloudinary.com/ielemson/image/upload/v1583945117/glory-plus/testimonials/testimonial-3_zd7fgs.jpg"
-                      alt=""
-                    />
-                    <p>
-                      "A friend of mine asked me to pray for her. She and the
-                      husband had believed God for a Property of their own in a
-                      choice area. After we had prayed that the Will of God be
-                      done, she called to break the good news of a fat better...
-                      <a href="!#">readmore</a>
-                    </p>
-                  </div>
-                  <div className="testimonial-name">Miracle Property</div>
-                </div>
-                {/* <!--END OF TESTIMONIAL 5 --> */}
+                {/* <!-- Carousel controls --> */}
+                <a
+                  className="carousel-control left carousel-control-prev"
+                  href="#myCarousel"
+                  data-slide="prev"
+                >
+                  <i className="fa fa-angle-left"></i>
+                </a>
+                <a
+                  className="carousel-control right carousel-control-next"
+                  href="#myCarousel"
+                  data-slide="next"
+                >
+                  <i className="fa fa-angle-right"></i>
+                </a>
               </div>
             </div>
           </div>
