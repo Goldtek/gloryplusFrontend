@@ -4,69 +4,89 @@
     "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526731/sermons/partner_bcfqfd.mp4",
     "sermonImg": "img/sermons/choosing-your-partner.jpg",
     "title": "Choosing your Partner",
-    "artist": "Rev Dubus Achufusi"
+    "artist": "Rev Dubus Achufusi",
+    "adAmt": 300,
+    "vdAmt": 400
   },
   {
     "Id": 2,
     "src": "https://res.cloudinary.com/dvxptc5uy/image/upload/v1584526721/sermons/love-language_fk3yuw.jpg",
     "sermonImg": "img/sermons/love-language.jpg",
     "title": "Love Languages",
-    "artist": "Rev Dubus Achufusi"
+    "artist": "Rev Dubus Achufusi",
+    "adAmt": 300,
+    "vdAmt": 400
   },
   {
     "Id": 3,
     "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526725/sermons/grace_rmbvt7.mp4",
     "sermonImg": "img/sermons/grace.jpg",
     "title": "Grace",
-    "artist": "Rev Dubus Achufusi"
+    "artist": "Rev Dubus Achufusi",
+    "adAmt": 300,
+    "vdAmt": 400
   },
   {
     "Id": 4,
     "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526743/sermons/selfdenial_kz5cu7.mp4",
     "sermonImg": "img/sermons/denial.jpeg",
     "title": "Self Denial",
-    "artist": "Rev Dubus Achufusi"
+    "artist": "Rev Dubus Achufusi",
+    "adAmt": 300,
+    "vdAmt": 400
   },
   {
     "Id": 5,
     "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526741/sermons/laws_zsoh3z.mp4",
     "sermonImg": "img/sermons/laws.jpg",
     "title": "The Laws",
-    "artist": "Rev Dubus Achufusi"
+    "artist": "Rev Dubus Achufusi",
+    "adAmt": 300,
+    "vdAmt": 400
   },
   {
     "Id": 6,
     "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526935/sermons/suffering_of_christ_ssbjmx.mp4",
     "sermonImg": "img/sermons/suffering.jpg",
     "title": "The Suffering of Christ",
-    "artist": "Rev Dubus Achufusi"
+    "artist": "Rev Dubus Achufusi",
+    "adAmt": 300,
+    "vdAmt": 400
   },
   {
     "Id": 7,
     "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526742/sermons/cross_d8f1ok.mp4",
     "sermonImg": "img/sermons/cross.jpeg",
     "title": "The Cross",
-    "artist": "Rev Dubus Achufusi"
+    "artist": "Rev Dubus Achufusi",
+    "adAmt": 300,
+    "vdAmt": 400
   },
   {
     "Id": 8,
     "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526927/sermons/Still_on_the_cross1_jmbws6.mp4",
     "sermonImg": "img/sermons/cross.jpeg",
     "title": "Still on The Cross",
-    "artist": "Rev Dubus Achufusi"
+    "artist": "Rev Dubus Achufusi",
+    "adAmt": 300,
+    "vdAmt": 400
   },
   {
     "Id": 9,
     "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526930/sermons/Still_on_the_cross2_zwisft.mp4",
     "sermonImg": "img/sermons/cross.jpeg",
     "title": "Still on The Cross Part 2",
-    "artist": "Rev Dubus Achufusi"
+    "artist": "Rev Dubus Achufusi",
+    "adAmt": 300,
+    "vdAmt": 400
   },
   {
     "Id": 10,
     "src": "https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526926/sermons/still_on_the_cross3_jho9qn.mp4",
     "sermonImg": "img/sermons/cross.jpeg",
     "title": "Still on The Cross Part 3",
-    "artist": "Rev Dubus Achufusi"
+    "artist": "Rev Dubus Achufusi",
+    "adAmt": 300,
+    "vdAmt": 400
   }
 ]

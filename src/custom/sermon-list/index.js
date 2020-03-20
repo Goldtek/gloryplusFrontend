@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import SectionCard from "../sermon-card";
 import Pagination from "../pagination";
 
+import Modal from '../modal';
+
 // import UpcomingEvent from "../up-coming-events";
 // import InfiniteScroll from "react-infinite-scroll-component";
 const SermonList = ({ sermons }) => {
@@ -24,11 +26,12 @@ const SermonList = ({ sermons }) => {
           
         </div>
         <div className="row">
+          <Modal />
           {currSermons.map(({ Id, ...sermonProps }) => (
             <SectionCard key={Id} {...sermonProps} />
           ))}
         </div>
-
+         
         <Pagination
             PerPage={sermonPerPage}
             total={sermons.length}
