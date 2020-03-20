@@ -21,8 +21,12 @@ const Modal = ({ quote }) => {
             </div>
 
             <div className="modal-footer">
-              <button type="button" className="btn btn-dialog">
-                Ok
+              <button
+                type="button"
+                className="btn btn-dialog btn-xs"
+                data-dismiss="modal"
+              >
+                close
               </button>
             </div>
           </div>

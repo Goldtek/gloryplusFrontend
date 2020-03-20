@@ -100,7 +100,7 @@ class EventTimer extends Component {
                       }
                     />
 
-                    <Modal />
+                    <Modal quote={bibleQuote.data} />
                   </section>
                 )}
               </div>

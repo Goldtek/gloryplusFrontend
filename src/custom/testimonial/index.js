@@ -8,12 +8,11 @@ class Testimonial extends Component {
   };
 
   onOpenModal = testimony => {
-    this.setState = { activeItem: testimony };
+    this.setState({ activeItem: testimony });
   };
 
   render() {
     const { tesmonies: testimony } = this.props;
-
     return (
       <section className="testimonials">
         <div className="container">
