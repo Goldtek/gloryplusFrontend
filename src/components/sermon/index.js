@@ -7,13 +7,10 @@ import { Helmet } from "react-helmet";
 import {
   Header,
   TopNav,
-  // BottomNav,
   NewsLetter,
   Footer,
-  // Sermon,
   PageInfo,
-  SermonList,
-  Modal
+  SermonList
 } from "../../custom";
 const override = css`
   display: block;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Modal({ quote }) {
+const Modal = ({ quote }) => {
   return (
     <div className="container demo">
       <div
@@ -12,11 +12,7 @@ function Modal({ quote }) {
       >
         <div className="modal-dialog" role="document">
           <div className="modal-content">
-            <div className="modal-header">
-              {/* <h4 className="modal-title" id="myModalLabel-2">
-                QUOTE OF THE DAY
-              </h4> */}
-            </div>
+            <div className="modal-header"></div>
 
             <div className="modal-body">
               <blockquote>
@@ -25,20 +21,8 @@ function Modal({ quote }) {
             </div>
 
             <div className="modal-footer">
-              {/* <button
-                type="button"
-                className="btn btn-dialog btn-xs"
-                data-dismiss="modal"
-              >
-                Close
-              </button> */}
-              <button
-                type="button"
-                type="button"
-                className="btn btn-dialog btn-xs"
-                data-dismiss="modal"
-              >
-                close
+              <button type="button" className="btn btn-dialog">
+                Ok
               </button>
             </div>
           </div>
@@ -46,6 +30,6 @@ function Modal({ quote }) {
       </div>
     </div>
   );
-}
+};
 
 export default Modal;

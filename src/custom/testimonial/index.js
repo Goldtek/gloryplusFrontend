@@ -1,30 +1,19 @@
 import React, { Component, Fragment } from "react";
-import $ from "jquery";
 import Modal from "./modal";
 import "./testimonial.css";
-const styles = {
-  fontFamily: "sans-serif",
-  textAlign: "center"
-};
 
 class Testimonial extends Component {
   state = {
-    open: false,
     activeItem: []
   };
 
   onOpenModal = testimony => {
-    this.setState({ activeItem: testimony }, () =>
-      this.setState({ open: true })
-    );
+    this.setState = { activeItem: testimony };
   };
 
-  onCloseModal = () => {
-    this.setState({ open: false });
-  };
   render() {
     const { tesmonies: testimony } = this.props;
-    const { open } = this.state;
+
     return (
       <section className="testimonials">
         <div className="container">

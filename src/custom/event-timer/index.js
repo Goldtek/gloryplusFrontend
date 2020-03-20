@@ -100,7 +100,7 @@ class EventTimer extends Component {
                       }
                     />
 
-                    <Modal quote={bibleQuote.data} />
+                    <Modal />
                   </section>
                 )}
               </div>
@@ -111,9 +111,6 @@ class EventTimer extends Component {
                 timeTillDate={countDown}
                 timeFormat="MM DD YYYY, h:mm a"
               />
-              {/* <Link href="" className="site-btn sb-light-line">
-Read more
-</Link> */}
             </div>
           </div>
         </div>

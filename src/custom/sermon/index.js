@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import sortBy from "sort-by";
 const Sermon = ({ popular }) => (
   <section className="sermon-section spad">
     <div className="section-title">
