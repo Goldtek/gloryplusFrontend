@@ -12,7 +12,8 @@ import {
   Footer,
   // Sermon,
   PageInfo,
-  SermonList
+  SermonList,
+  Modal
 } from "../../custom";
 const override = css`
   display: block;
@@ -48,7 +49,7 @@ class SermonComponent extends Component {
         <TopNav />
         <Header />
         <PageInfo title="Sermon" bgPicture="url(img/bg-info/bible-phone.png)" />
-
+      <Modal/>
         <hr />
         {loading ? (
           <div style={{ minHeight: "25vh" }}>

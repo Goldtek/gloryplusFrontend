@@ -1,10 +1,14 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import * as $ from "jquery";
 
 import "./audioplayer.css";
 
 class  SectionCard extends React.Component {
   download = () => {
-    alert();
+   const user = window.sessionStorage.getItem('user');
+   console.log('user',  user);
+    
   }
   render() {
     const { artist, sermonImg, title, src } = this.props;
@@ -41,13 +45,10 @@ class  SectionCard extends React.Component {
               </li>
             </ul>
             <div className="icon-links">
-              <a
-                data-tooltip="Download Audio Message"
-                data-tooltip-location="top"
-              >
+              <a data-tooltip="Download Audio Message" data-tooltip-location="top" data-toggle="modal" data-target="#modalBox">
                 <i className="fas fa-file-audio fa-md d-inline-block"></i>
               </a>
-      
+
               <a onClick={this.download} data-tooltip="Download Video Message" data-tooltip-location="top">
                 <i className="fas fa-video fa-md"></i>
               </a>

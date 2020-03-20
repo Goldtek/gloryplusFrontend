@@ -69,3 +69,10 @@ export const calculateStateFromProps = ({ dateTo, numberOfFigures = 0, mostSigni
         sec: sec
     };
 }
+
+
+export const storeTrackInfo =  (user) => {
+    const ws = window.sessionStorage;
+    console.log('user', user);
+    ws.setItem('user',user);
+}
