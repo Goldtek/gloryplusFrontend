@@ -76,14 +76,15 @@ export const storeTrackInfo =  (user) => {
     ws.setItem('user', strUser);
 }
 
-export const download = (amt) => {
+export const download = async (amt) => {
     const user = ws.getItem('user');
     const extUser = JSON.parse(user);
-    const { name, email, phone } = extUser;
     if(user === undefined || user === null) {
-      window.$('#modalBox').modal('show');
-      return window.payWithRave(phone, amt, email, RAVE_PUBLIC_KEY);
+     return window.$('#modalBox').modal('show');
+    //   const { name, email, phone } = extUser;
+    //   return window.payWithRave(phone, amt, email, RAVE_PUBLIC_KEY);
     } 
+    const { name, email, phone } = extUser;
     window.payWithRave(phone, amt, email, RAVE_PUBLIC_KEY);
     
   };
