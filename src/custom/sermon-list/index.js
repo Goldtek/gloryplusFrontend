@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SectionCard from "../sermon-card";
 import Pagination from "../pagination";
+
 // import UpcomingEvent from "../up-coming-events";
 // import InfiniteScroll from "react-infinite-scroll-component";
 const SermonList = ({ sermons }) => {

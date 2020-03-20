@@ -26,7 +26,7 @@ handleSubmit = () => {
   render(){
     return (
       <div id="modalBox" className="modal fade" role="dialog">
-    <div className="modal-dialog modal-md">
+       <div className="modal-dialog modal-md modal-primary modal-top-left modal notify">
   
       {/* <!-- Modal content--> */}
       <div className="modal-content">

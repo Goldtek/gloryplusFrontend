@@ -1,12 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import * as $ from "jquery";
+// import * as $ from "jquery";
 
 import "./audioplayer.css";
 
 class SectionCard extends React.Component {
   download = () => {
-    alert();
+    const { user } = window.sessionStorage.getItem('user');
+    if(user === undefined) {
+      console.log('user is', user);
+    //  return window.$('#modalBox').modal('show');
+    } 
+  //  console.log('user object', user);
   };
   render() {
     const { artist, sermonImg, title, src } = this.props;
@@ -38,8 +43,10 @@ class SectionCard extends React.Component {
                 <a
                   data-tooltip="Download Audio Message"
                   data-tooltip-location="top"
+                  data-toggle="modal" 
+                  data-target="#modalBox"
                 >
-                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  <i className="fa fa-headphones" aria-hidden="true" ></i>
                 </a>
 
                 <a
@@ -47,7 +54,7 @@ class SectionCard extends React.Component {
                   data-tooltip="Download Video Message"
                   data-tooltip-location="top"
                 >
-                  <i class="fa fa-video" aria-hidden="true"></i>
+                  <i className="fa fa-video" aria-hidden="true"></i>
                 </a>
 
                 <a
@@ -55,7 +62,7 @@ class SectionCard extends React.Component {
                   data-tooltip="share link"
                   data-tooltip-location="top"
                 >
-                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                  <i className="fa fa-share-alt" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
