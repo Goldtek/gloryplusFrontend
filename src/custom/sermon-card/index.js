@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-
-import { ws , RAVE_PUBLIC_KEY } from '../../lib/constant';
 import { download } from '../../lib/util';
 
 import "./audioplayer.css";
