@@ -48,9 +48,9 @@ class SectionCard extends React.Component {
                   <i className="fa fa-video" aria-hidden="true"></i>
                 </a>
 
-                <a data-tooltip="share link" data-tooltip-location="top">
+                {/* <a data-tooltip="share link" data-tooltip-location="top">
                   <i className="fa fa-share-alt" aria-hidden="true"></i>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
