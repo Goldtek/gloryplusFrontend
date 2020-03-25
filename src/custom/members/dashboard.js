@@ -5,7 +5,6 @@ import "./style.css";
 import Form from "./form";
 import Modal from "./modal";
 import ImageInput from "./ImageInput";
-import Sample from "./sample";
 import "./card.css";
 class Dashboard extends React.Component {
   state = {
@@ -174,8 +173,6 @@ class Dashboard extends React.Component {
             {/* MODALS */}
           </div>
         </div>
-
-        <Sample />
       </section>
     );
   }
