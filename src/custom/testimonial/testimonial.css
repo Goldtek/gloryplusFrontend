@@ -39,10 +39,9 @@
 }
 .carousel .item {
   color: #999;
-  font-size: 14px;
+  font-size: 1vw;
   text-align: center;
   overflow: hidden;
-  min-height: 290px;
 }
 .carousel .item .img-box {
   width: 135px;

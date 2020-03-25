@@ -4,12 +4,11 @@
   width: 100%;
   height: 100%;
 
-  padding: 0 !important
+  padding: 0 !important;
 }
 
 video {
   /* border: 2px solid teal !important; */
-   object-fit: fill; /*to add black content at top and bottom*/
-   /* object-position: 0 -5px; to center our image */
- 
+  object-fit: fill; /*to add black content at top and bottom*/
+  /* object-position: 0 -5px; to center our image */
 }

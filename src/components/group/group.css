@@ -75,17 +75,17 @@
   cursor: pointer;
 }
 
-input:checked+.tab-label {
+input:checked + .tab-label {
   background: #b42b2b;
   color: #fff;
 }
 
-input:checked+.tab-label::after {
+input:checked + .tab-label::after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-input:checked~.tab-content {
+input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }

@@ -13,6 +13,7 @@ class Testimonial extends Component {
 
   render() {
     const { tesmonies: testimony } = this.props;
+
     return (
       <section className="testimonials">
         <div className="container">

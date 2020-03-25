@@ -55,8 +55,8 @@
 .slide.animateIn.next section * {
   -webkit-transform: translateX(0);
   transform: translateX(0);
-  -webkit-transition-delay: .9s;
-  transition-delay: .9s;
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
   opacity: 1;
 }
 
@@ -91,18 +91,18 @@
 }
 
 .slide.animateOut h1 {
-  -webkit-transition-delay: .3s;
-  transition-delay: .3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .slide.animateOut p {
-  -webkit-transition-delay: .2s;
-  transition-delay: .2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .slide.animateOut section span {
-  -webkit-transition-delay: .1s;
-  transition-delay: .1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .slide.animateOut section span strong {
