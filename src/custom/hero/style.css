@@ -244,6 +244,12 @@
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+.btn-give{
+  background: #dd3e3e;
+  /* background-color: #dd3e3e; */
+  background-image: linear-gradient(147deg, #853405 0%, #fd3838 74%);
+  border: none;
+}
 .slide-text > a.btn-primary {
   background: #dd3e3e;
   /* background-color: #dd3e3e; */

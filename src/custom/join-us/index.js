@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 // import { Player } from "video-react";
 // import { Player } from "video-react";
-import "./player.css";
+// import "./player.css";
 
 class JoinUs extends Component {
   render() {
@@ -41,8 +41,8 @@ class JoinUs extends Component {
               <div className="embed-responsive embed-responsive-16by9 card">
                 <video
                   controls
-                  poster="img/pastors/rev-dubus1.jpeg"
-                  className="embed-responsive-item "
+                  poster="img/pastors/rev-dubus.jpeg"
+                  className="embed-responsive-item vid-img"
                 >
                   <source
                     // src="video/home.mp4"

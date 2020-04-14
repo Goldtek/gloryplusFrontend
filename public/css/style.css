@@ -1,13 +1,15 @@
 /* =================================
 ------------------------------------
-LibChurch - Event Template
-Version: 1.0
+Glory Plus International 
+
 ------------------------------------ 
 ====================================*/
 
 /*----------------------------------------*/
-/* Template default CSS
+/* Glory Plus international  CSS
 /*----------------------------------------*/
+
+
 html,
 body {
   height: 100%;
@@ -2427,3 +2429,7 @@ margin-right: 60px;
   font-size: 1.3vw !important;
 }
 /* CUSTOM STYLES */
+
+.vid-img {
+  object-fit: cover !important;
+}

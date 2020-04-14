@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import serializeForm from "form-serialize";
 
+
 class MembeRegister extends React.Component {
   handleRegister = e => {
     e.preventDefault();

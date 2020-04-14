@@ -15,6 +15,8 @@ import LiveStreaming from "../livestream";
 import Event_Details from "../event-detail";
 import Galleries from "../galleries/index";
 import Gallery from "../gallery";
+import FirstTimers from "../first-timers";
+import TestifyComponent from "../testify"
 
 // import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -38,7 +40,7 @@ import Member from "../member";
 // declare constant for event api
 const eventAPI = "./utils/eventData.json";
 const TestimonialAPI = "./utils/testimonyData.json";
-
+const HomeChurchAPI = "./utils/groupData.json";
 /*----------------
 MEMBERS IMPORT
 ----------------- */
@@ -49,7 +51,9 @@ class Home extends Component {
     testimonyItem: [],
     loading: false,
     bibleVerse: [],
-    error: null
+    error: null,
+    groupInfo: [], // will hold the results from our ajax call
+
   };
   //EVENT NEWS SLIDER
   componentDidMount() {
@@ -71,11 +75,22 @@ class Home extends Component {
         })
       );
     });
+
+
+    //home church
+    this.setState({ loading: true }, () => {
+      axios.get(HomeChurchAPI).then(result =>
+        this.setState({
+          loading: false,
+          groupInfo: [...result.data]
+        })
+      );
+    });
   }
 
   //EVENT NEWS SLIDER
   render() {
-    const { eventItemSlide, loading, testimonyItem } = this.state;
+    const { eventItemSlide, loading, testimonyItem, groupInfo } = this.state;
     return (
       <Fragment>
         <Router>
@@ -107,7 +122,8 @@ class Home extends Component {
             <Route path="/about" component={About} />
             <Route path="/sermon" component={SermonComponent} />
             <Route path="/contact" component={ContactUs} />
-            <Route path="/group" component={Group} />
+            {/* <Route path="/group" component={Group} homechurchInfo={groupInfo} loading={loading} /> */}
+            <Route path="/group" render={() => (<Group homeCellLocation={groupInfo} loading={loading} />)} />
             <Route path="/events" component={Events} />
             <Route path="/donate" component={DonateComponent} />
             <Route path="/donation" component={DonationComponent} />
@@ -123,9 +139,12 @@ class Home extends Component {
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/partner" component={Member} />
+            <Route path="/testify" component={TestifyComponent}/>
+            <Route path="/welcome" render={() => (<FirstTimers homechurchInfo={groupInfo} />)} />
             <Route path="*" component={ErrorPage} />
           </Switch>
         </Router>
+        {/* {console.log(homeCellLocation)} */}
       </Fragment>
     );
   }
