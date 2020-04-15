@@ -1,18 +1,8 @@
 import React, { Component } from "react";
-import $ from "jquery";
-import { a } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 // import TextTruncate from "react-text-truncate";
 import "./nav.css";
 class Header extends Component {
-componentDidMount() {
-$(".nav-switch").on("click", function (event) {
-console.log("toggle");
-$(".main-menu").slideToggle(400);
-event.preventDefault();
-});
-
-}
 state = {
 loggedIn: false,
 liveStream: false
@@ -32,57 +22,57 @@ return (
 </div> 
 <div className="getfundnav">
 <ul>
-<li onClick={() => window.location.reload(true)}>
-<a href="/" exact={true} className="sf-with-ul">
+    
+<li>
+<NavLink to="/" exact={true}  className="sf-with-ul">
 Home
-</a>
+</NavLink>
 </li>
 <li>
-
-<a href="/group" exact={true} className="sf-with-ul">
+<NavLink to="/group" exact={true} className="sf-with-ul">
 Cell Location
-</a>
+</NavLink>
 </li>
-
-
 <li> <a className="sf-with-ul" href="#">What We Do</a>
 <ul className="dropdown">
-<li><a href="/galleries" exact={true}>
+<li><a href="/galleries">
 Gallery
 </a></li>
-<li><a href="/events" exact={true}>
+<li><a href="/events">
 Event
 </a></li>
-<li><a href="/sermon" exact={true}>
+<li><a href="/sermon">
 Sermon
 </a></li>
 </ul>
 </li>
-<li><a href="/testify" exact={true}>
+<li><NavLink to="/testify" exact={true}>
 Testify
-</a></li>
+</NavLink></li>
 
 <li> <a className="sf-with-ul" href="#">Who We Are</a>
 <ul className="dropdown">
-<li><a href="/about" exact={true}>
+<li><a href="/about" >
 About us
 </a></li>
-<li><a href="/contact" exact={true}>
+<li><a href="/contact" >
 Contact Us
 </a></li>
 </ul>
 </li>
-<li><a href="/live" exact={true}>
+<li><NavLink to="/live" exact={true}>
 Live Stream
-</a></li>
-<li><a href="#" exact={true}>
+</NavLink></li>
+<li><NavLink to="/request" exact={true}>
 Prayer Request
-</a></li>
+</NavLink></li>
 
-
+<li><NavLink to="/give" exact={true} className="give-nav">
+Give <i className="fas fa-hand-holding-heart"></i>
+</NavLink></li>
 <li className="right-side">
 <ul>
-<li><a class="btn btn-primary btn-give" data-animation="animated fadeInRight" href="/donate">Give <i className="fas fa-hand-holding-heart"></i></a></li>
+<li><a className="btn-give"  href="/give">Give <i className="fas fa-hand-holding-heart"></i></a></li>
 </ul>
 </li>
 </ul>

@@ -130,24 +130,7 @@ img {
 .getfundnav ul .megamenu-item a {
     padding-right: 0;
 }
-@font-face {
-	font-family: icomoon;
-	src: url(https://envytheme.com/?fftrrv);
-	src: url(https://envytheme.com/?fftrrv#iefix) format("embedded-opentype"), url(https://envytheme.com/?fftrrv) format("truetype"), url(https://envytheme.com/?fftrrv) format("woff"), url(../fonts/getfundcb9b.html?fftrrv#icomoon) format("svg");
-	font-weight: 400;
-	font-style: normal
-}
-[class*=" icon-"], [class^=icon-] {
-	font-family: icomoon !important;
-	speak: none;
-	font-style: normal;
-	font-weight: 400;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale
-}
+
 .getfundnav ul li.megamenu-item > a:after {
 	font-family: icomoon !important;
 	font-size: 11px;

@@ -23,7 +23,7 @@ return (
 title="Welcome To Glory Plus International"
 bgPicture="url(img/bg-info/red-contact.png)"
 />
-<div style={{ minHeight: "95vh" }} className="welcomediv">
+<div style={{ minHeight: "80vh" }} className="welcomediv">
 <TestifyForm />
 </div>
 <NewsLetter />

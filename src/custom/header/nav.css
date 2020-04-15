@@ -1,4 +1,16 @@
-
+.btn-give{
+	color: #fff !important;
+	border-radius: 2px 2px 2px 2px !important;
+	-moz-border-radius: 2px 2px 2px 2px !important;
+	-webkit-border-radius: 2px 2px 2px 2px !important;
+	/* height: 46px; */
+	/* line-height: 46px; */
+	border: none !important;
+	/* display: inline-block; */
+}
+.give-nav{
+	display: none !important;
+}
 .topbar {
 	background-color: #F26522;
 }
@@ -206,10 +218,15 @@ Main Banner Area CSS
 
 @media only screen and (max-width: 991px) {
   .main-header-area .nav-brand {
- 
     max-width: 45%;
     padding: 5px;
   }
+.btn-give{
+	display: none !important;
+}.give-nav{
+	display: block !important;
+}
+
 }
 
 
@@ -482,3 +499,4 @@ Main Banner Area CSS
 .p-t-136 {
 	margin: 18px 0 0 0;
 }
+

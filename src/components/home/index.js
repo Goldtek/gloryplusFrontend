@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import axios from "axios";
 import { Helmet } from "react-helmet";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter,Route, Switch } from "react-router-dom";
 import About from "../about";
 import SermonComponent from "../sermon";
 import ContactUs from "../contact";
@@ -93,7 +93,7 @@ class Home extends Component {
     const { eventItemSlide, loading, testimonyItem, groupInfo } = this.state;
     return (
       <Fragment>
-        <Router>
+        <BrowserRouter forceRefresh={true}>
           <Switch>
             <Route
               exact
@@ -125,7 +125,7 @@ class Home extends Component {
             {/* <Route path="/group" component={Group} homechurchInfo={groupInfo} loading={loading} /> */}
             <Route path="/group" render={() => (<Group homeCellLocation={groupInfo} loading={loading} />)} />
             <Route path="/events" component={Events} />
-            <Route path="/donate" component={DonateComponent} />
+            <Route path="/give" component={DonateComponent} />
             <Route path="/donation" component={DonationComponent} />
             <Route
               exact
@@ -143,7 +143,7 @@ class Home extends Component {
             <Route path="/welcome" render={() => (<FirstTimers homechurchInfo={groupInfo} />)} />
             <Route path="*" component={ErrorPage} />
           </Switch>
-        </Router>
+        </BrowserRouter>
         {/* {console.log(homeCellLocation)} */}
       </Fragment>
     );
