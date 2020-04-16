@@ -70,6 +70,7 @@ class ImageInput extends React.Component {
   fileOpen = e => {
     this.fileInput.click();
   };
+
   handleFormReset = () => {
     this.setState({ value: "" });
   };

@@ -31,7 +31,8 @@ import Testimonial from "./testimonial";
 import EventSlider from "./event-slider/index";
 import GifComponent from "./gifcomponent/index";
 import Modal from './modal';
-
+import WelcomeForm from "./welcomeform";
+import TestifyForm from "./testify"
 export {
   Header,
   TopNav,
@@ -65,5 +66,7 @@ export {
   Testimonial,
   EventSlider,
   GifComponent,
-  Modal
+  Modal,
+  WelcomeForm,
+  TestifyForm
 };

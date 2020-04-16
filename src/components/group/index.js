@@ -13,47 +13,15 @@ import {
 } from "../../custom";
 import "./group.css";
 const override = css`
-  display: block;
-  margin: 0 auto;
-  border-color: red;
+display: block;
+margin: 0 auto;
+border-color: red;
 `;
 
 class HomeChurch extends Component {
-  state = {
-    groupInfo: [], // will hold the results from our ajax call
-    loading: false // will be true when ajax request is running
-  };
 
-  componentDidMount() {
-    // axios
-    //   .get("./db/groupData.json")
-    //   .then(({ data: groupInfo }) => {
-    //     this.setState({ groupInfo, loading: true });
-    //   })
-    //   .catch(err => {
-    //     console.log(err);
-    //   });
-
-    // this.setState({ loading: true }, () => {
-    //   axios.get("./db/groupData.json").then(result =>
-    //     this.setState({
-    //       loading: false,
-    //       groupInfo: [...result]
-    //     })
-    //   );
-    // });
-
-    this.setState({ loading: true }, () => {
-      axios.get("./utils/groupData.json").then(result =>
-        this.setState({
-          loading: false,
-          groupInfo: [...result.data]
-        })
-      );
-    });
-  }
   render() {
-    const { groupInfo, loading } = this.state;
+    const { homeCellLocation, loading } = this.props;
     return (
       <Fragment>
         <Helmet>
@@ -87,8 +55,9 @@ class HomeChurch extends Component {
             <div className="col-md-4"></div>
           </div>
         ) : (
-          <GroupList homechurchInfo={groupInfo} />
-        )}
+            <GroupList homechurchInfo={homeCellLocation} />
+            // console.log(homeChurchRouterProps)
+          )}
 
         <NewsLetter />
         <Footer />

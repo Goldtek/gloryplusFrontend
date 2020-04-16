@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { css } from "@emotion/core";
 import { FadeLoader } from "react-spinners";
-import TextTruncate from "react-text-truncate";
 const override = css`
   display: block;
   margin: 0 auto;

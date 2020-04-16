@@ -8,12 +8,9 @@
     "form-serialize": "^0.7.2",
     "jquery": "^3.2.1",
     "moment": "^2.24.0",
-    "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
-    "react-animated-slider": "^2.0.0",
     "react-dom": "^16.11.0",
-    "react-form-input-validation": "^2.0.2",
     "react-helmet": "^5.2.1",
     "react-infinite-scroll-component": "^5.0.4",
     "react-items-carousel": "^2.8.0",
@@ -23,7 +20,6 @@
     "react-scripts": "3.2.0",
     "react-spinners": "^0.6.1",
     "react-text-truncate": "^0.16.0",
-    "sort-by": "^1.2.0",
     "video-react": "^0.14.1"
   },
   "scripts": {
