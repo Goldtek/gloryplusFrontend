@@ -14,13 +14,13 @@ render() {
 return (
 <Fragment>
 <Helmet>
-<title>Welcome to GPI</title>
-<meta name="welcome page" content="Welcome to GPI" />
+<title>Share your testimony</title>
+<meta name="testimony" content="Share your testimony" />
 </Helmet>
 <TopNav />
 <Header />
 <PageInfo
-title="Welcome To Glory Plus International"
+title="Share Your Testimony With Us"
 bgPicture="url(img/bg-info/red-contact.png)"
 />
 <div style={{ minHeight: "80vh" }} className="welcomediv">
