@@ -1,36 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Card from "./card"
 const DonateItem = () => {
-  return (
-    <section className="about-section spad">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6 about-content">
-            <h2>
-              <strong>Partner With Us</strong>
-            </h2>
-            <p>
-              The scriptures say we are in the last days. God expects us to walk
-              in his glory, now more than ever before. <br />
-              When we talk about the glory of God, we are talking about His
-              character; the substance that makes God who He is, His manifest
-              presence, His power and His reputation.
-              <br />
-              In GloryPlus International, we teach you to walk in the glory of
-              God, to enable you live the life that you were designed to live.
-            </p>
-            <Link to="/login" className="site-btn sb-wide">
-              Donate Now
-            </Link>
-          </div>
-          <div className="col-md-6 about-img col-sm-12 join-img">
-            <img src="img/partner-with-us.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+return (
+<section className="about-section spad">
+<div className="container-fluid cards-row give">
+<div className="container">
+<div className="ronw">
+<Card
+
+desc={`Your generosity enables Rev. Dubus Achufusi to  effectively minister the gospel to every nation through every available voice. 
+Giving to GPI supports prayer ministry, outreach  and evangelical programs around the globe`}
+title="Offering"
+btnText={`GIVE YOUR OFFERING`}
+/>
+<Card title="Tithe" desc="God remains faithful to His word, creating opportunities for us to set our faith to work. We are interested in maintaining the principle of returning to God the tenth of your income. This way, we keep God’s storehouse filled and our own lives preserved from loss."
+btnText={`GIVE YOUR TITHE`}
+/>
+<Card title="First Fruit" desc="Give your First Fruit and connect with the Blessing of Increase today. Take hold of God’s Word as you sow and believe for a great harvest."
+btnText={`GIVE YOUR FIRST FRUIT`}
+/>
+
+<Card title="Partnership" desc="Your partnership with GloryPlus International, is your bridge to connecting with the work of God to enable you experience divine acceleration - Rev Dubus Achufusi."
+btnText={`GIVE YOUR PARTNERSHIP`}
+/>
+</div>
+</div>
+</div>
+</section>
+);
 };
 
 export default DonateItem;
