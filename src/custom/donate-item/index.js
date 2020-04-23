@@ -21,7 +21,7 @@ btnText={`GIVE YOUR TITHE`}
 btnText={`GIVE YOUR FIRST FRUIT`}
 />
 
-<Card title="Partnership" desc="Your partnership with GloryPlus International, is your bridgeto cnnecting with the work of GOd to enable you experience divine acceleration - Rev Dubus Achufusi."
+<Card title="Partnership" desc="Your partnership with GloryPlus International, is your bridge to connecting with the work of God to enable you experience divine acceleration - Rev Dubus Achufusi."
 btnText={`GIVE YOUR PARTNERSHIP`}
 />
 </div>
