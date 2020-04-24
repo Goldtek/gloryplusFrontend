@@ -63,7 +63,7 @@ Contact Us
 <li><NavLink to="/live" exact={true}>
 Live Stream
 </NavLink></li>
-<li><NavLink to="/request" exact={true}>
+<li><NavLink to="/prayer-request" exact={true}>
 Prayer Request
 </NavLink></li>
 

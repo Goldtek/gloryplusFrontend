@@ -10,6 +10,7 @@
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
+    "react-bootstrap-sweetalert": "^5.1.9",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
     "react-infinite-scroll-component": "^5.0.4",
@@ -20,6 +21,7 @@
     "react-scripts": "3.2.0",
     "react-spinners": "^0.6.1",
     "react-text-truncate": "^0.16.0",
+    "sweetalert": "^2.1.2",
     "video-react": "^0.14.1"
   },
   "scripts": {

@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import serializeForm from "form-serialize";
 import swal from 'sweetalert';
 import "../welcomeform/form.css";
-class TestifyForm extends React.Component {
+
+
+
+class PrayerRequest extends React.Component {
 handleWelcomeForm = e => {
 e.preventDefault();
 const regValues = serializeForm(e.target, { hash: true });
@@ -126,7 +129,7 @@ id="address"
 name="address" required></textarea>
 
 <label className="form__label" htmlFor="first name">
-<span className="form__label-content">Write Your Testimony Here ...</span>
+<span className="form__label-content">Write Your Prayer Request Here ...</span>
 </label>
 </div>
 </div>
@@ -187,4 +190,4 @@ Clear
 }
 }
 
-export default TestifyForm;
+export default PrayerRequest;

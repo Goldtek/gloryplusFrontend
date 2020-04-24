@@ -17,7 +17,7 @@ import Galleries from "../galleries/index";
 import Gallery from "../gallery";
 import FirstTimers from "../first-timers";
 import TestifyComponent from "../testify"
-
+import PrayerRequestComponent from "../prayer-request"
 // import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Hero,
@@ -31,7 +31,8 @@ import {
   Footer,
   ErrorPage,
   Testimonial,
-  EventSlider
+  EventSlider,
+  
 } from "../../custom";
 /*----------------
 MEMBERS IMPORT
@@ -140,6 +141,7 @@ class Home extends Component {
             <Route path="/register" component={Register} />
             <Route path="/partner" component={Member} />
             <Route path="/testify" component={TestifyComponent}/>
+            <Route path="/prayer-request" component={PrayerRequestComponent}/>
             <Route path="/welcome" render={() => (<FirstTimers homechurchInfo={groupInfo} />)} />
             <Route path="*" component={ErrorPage} />
           </Switch>

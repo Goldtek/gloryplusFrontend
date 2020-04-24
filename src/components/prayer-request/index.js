@@ -6,25 +6,25 @@ TopNav,
 Footer,
 NewsLetter,
 PageInfo,
-TestifyForm
+PrayerRequest
 } from "../../custom";
 
-class TestifyComponent extends Component {
+class PrayerRequestComponent extends Component {
 render() {
 return (
 <Fragment>
 <Helmet>
-<title>Share your testimony</title>
-<meta name="testimony" content="Share your testimony" />
+<title>Send us your prayer request-GPI</title>
+<meta name="prayer request" content="we want to pray with you" />
 </Helmet>
 <TopNav />
 <Header />
 <PageInfo
-title="Share Your Testimony With Us"
-bgPicture="url(img/bg-info/testify-edit.png)"
+title="We want to pray with you"
+bgPicture="url(img/bg-info/pray.jpg)"
 />
 <div style={{ minHeight: "80vh" }} className="welcomediv">
-<TestifyForm />
+<PrayerRequest />
 </div>
 <NewsLetter />
 <Footer />
@@ -33,4 +33,4 @@ bgPicture="url(img/bg-info/testify-edit.png)"
 }
 }
 
-export default TestifyComponent;
+export default PrayerRequestComponent;
