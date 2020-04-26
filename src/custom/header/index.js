@@ -23,17 +23,18 @@ return (
 <div className="getfundnav">
 <ul>
     
-<li>
+<li className="space">
 <NavLink to="/" exact={true}  className="sf-with-ul">
 Home
 </NavLink>
 </li>
-<li>
+<li className="space">
 <NavLink to="/group" exact={true} className="sf-with-ul">
-Cell Location
+Cell
 </NavLink>
 </li>
-<li> <a className="sf-with-ul" href="#">What We Do</a>
+<li className="space"> 
+<a className="sf-with-ul" href="#">What We Do</a>
 <ul className="dropdown">
 <li><a href="/galleries">
 Gallery
@@ -46,8 +47,8 @@ Sermon
 </a></li>
 </ul>
 </li>
-<li><NavLink to="/testify" exact={true}>
-Testify
+<li className="space"><NavLink to="/live" exact={true}>
+liveStream
 </NavLink></li>
 
 <li> <a className="sf-with-ul" href="#">Who We Are</a>
@@ -60,8 +61,8 @@ Contact Us
 </a></li>
 </ul>
 </li>
-<li><NavLink to="/live" exact={true}>
-Live Stream
+<li className="space"><NavLink to="/live" className="sf-with-ul" exact={true}>
+Testify
 </NavLink></li>
 <li><NavLink to="/prayer-request" exact={true}>
 Prayer Request

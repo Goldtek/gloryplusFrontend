@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from "react";
+// const BrowserHistory = require('react-router/lib/BrowserHistory').default;
 import axios from "axios";
 import { Helmet } from "react-helmet";
-import { BrowserRouter,Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import About from "../about";
 import SermonComponent from "../sermon";
 import ContactUs from "../contact";
@@ -16,8 +17,8 @@ import Event_Details from "../event-detail";
 import Galleries from "../galleries/index";
 import Gallery from "../gallery";
 import FirstTimers from "../first-timers";
-import TestifyComponent from "../testify"
-import PrayerRequestComponent from "../prayer-request"
+import TestifyComponent from "../testify";
+import PrayerRequestComponent from "../prayer-request";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Hero,
@@ -32,7 +33,6 @@ import {
   ErrorPage,
   Testimonial,
   EventSlider,
-  
 } from "../../custom";
 /*----------------
 MEMBERS IMPORT
@@ -54,36 +54,34 @@ class Home extends Component {
     bibleVerse: [],
     error: null,
     groupInfo: [], // will hold the results from our ajax call
-
   };
   //EVENT NEWS SLIDER
   componentDidMount() {
     //fetch event item and store it in the state
     this.setState({ loading: true }, () => {
-      axios.get(eventAPI).then(result =>
+      axios.get(eventAPI).then((result) =>
         this.setState({
           loading: false,
-          eventItemSlide: [...result.data]
+          eventItemSlide: [...result.data],
         })
       );
     });
 
     this.setState({ loading: true }, () => {
-      axios.get(TestimonialAPI).then(testimony =>
+      axios.get(TestimonialAPI).then((testimony) =>
         this.setState({
           loading: false,
-          testimonyItem: [...testimony.data]
+          testimonyItem: [...testimony.data],
         })
       );
     });
-
 
     //home church
     this.setState({ loading: true }, () => {
-      axios.get(HomeChurchAPI).then(result =>
+      axios.get(HomeChurchAPI).then((result) =>
         this.setState({
           loading: false,
-          groupInfo: [...result.data]
+          groupInfo: [...result.data],
         })
       );
     });
@@ -94,7 +92,7 @@ class Home extends Component {
     const { eventItemSlide, loading, testimonyItem, groupInfo } = this.state;
     return (
       <Fragment>
-        <BrowserRouter forceRefresh={true}>
+        <BrowserRouter forceRefresh={true} >
           <Switch>
             <Route
               exact
@@ -124,7 +122,12 @@ class Home extends Component {
             <Route path="/sermon" component={SermonComponent} />
             <Route path="/contact" component={ContactUs} />
             {/* <Route path="/group" component={Group} homechurchInfo={groupInfo} loading={loading} /> */}
-            <Route path="/group" render={() => (<Group homeCellLocation={groupInfo} loading={loading} />)} />
+            <Route
+              path="/group"
+              render={() => (
+                <Group homeCellLocation={groupInfo} loading={loading} />
+              )}
+            />
             <Route path="/events" component={Events} />
             <Route path="/give" component={DonateComponent} />
             <Route path="/donation" component={DonationComponent} />
@@ -140,9 +143,12 @@ class Home extends Component {
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/partner" component={Member} />
-            <Route path="/testify" component={TestifyComponent}/>
-            <Route path="/prayer-request" component={PrayerRequestComponent}/>
-            <Route path="/welcome" render={() => (<FirstTimers homechurchInfo={groupInfo} />)} />
+            <Route path="/testify" component={TestifyComponent} />
+            <Route path="/prayer-request" component={PrayerRequestComponent} />
+            <Route
+              path="/welcome"
+              render={() => <FirstTimers homechurchInfo={groupInfo} />}
+            />
             <Route path="*" component={ErrorPage} />
           </Switch>
         </BrowserRouter>

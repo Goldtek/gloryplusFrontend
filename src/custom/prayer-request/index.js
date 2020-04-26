@@ -11,7 +11,7 @@ handleWelcomeForm = e => {
 e.preventDefault();
 const regValues = serializeForm(e.target, { hash: true });
 // console.log(regValues);
-swal("Good job!", "Your testimony is received", "success");
+swal("Good job!", "Your Prayer is received", "success");
 };
 render() {
 
@@ -72,14 +72,14 @@ className="form__wrapper wow fadeInDown"
 data-wow-delay="0.5s"
 >
 <input
-type="email"
+type="text"
 className="form__input"
-id="email"
-name="email"
+id="contact"
+name="contact"
 required
 />
-<label className="form__label" htmlFor="first name">
-<span className="form__label-content">Email</span>
+<label className="form__label" htmlFor="Contact Number">
+<span className="form__label-content">Contact Number</span>
 </label>
 </div>
 </div>
@@ -103,22 +103,8 @@ id="gender" name="gender" required>
 </div>
 </div>
 
-{/* MESSAGE */}
-<div className="col-xs-12">
-<div className="form-group">
-<div className="input-group input-file" name="Fichier1">
-<span className="input-group-btn">
-<button className="btn btn-primary btn-choose btn-sm" type="button">Choose</button>
-</span>
-<input type="text" className="form-control input-lg" placeholder="Uplaod a video or doctor's report..."  required/>
-
-</div>
-</div>
-</div>
 
 <div className="col-xs-12">
-
-
 <div className="col-xs-12">
 <div
 className="form__wrapper wow fadeInDown"

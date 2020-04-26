@@ -12,6 +12,7 @@
     "react": "^16.13.0",
     "react-bootstrap-sweetalert": "^5.1.9",
     "react-dom": "^16.11.0",
+    "react-google-invisible-recaptcha": "^0.2.11",
     "react-helmet": "^5.2.1",
     "react-infinite-scroll-component": "^5.0.4",
     "react-items-carousel": "^2.8.0",
