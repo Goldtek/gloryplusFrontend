@@ -99,8 +99,6 @@
   z-index: 99999;
 }
 
-
-
 /* ----- DIALOG/MODAL ----- */
 /* FADE/SCALE EFFECT */
 .modal.fade .modal-dialog {
@@ -138,22 +136,6 @@
   box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22), 0 27px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* DIALOG HEADER */
-.modal-header {
-  min-height: 16px;
-  padding: 10px;
-  border-bottom: none;
-}
-
-.modal-header h4 {
-  text-align: center;
-}
-
-.modal-title {
-  font-weight: 500;
-  font-size: 2vw;
-}
-
 /* DIALOG BODY */
 .modal-body {
   padding: 0 24px;
@@ -180,7 +162,7 @@
 .modal-footer {
   margin-top: 24px;
   padding: 8px 0;
-  border-top: none;
+  /* border-top: none; */
 }
 
 .modal-footer .btn {
@@ -191,7 +173,7 @@
   border-radius: 0;
   text-transform: uppercase;
   font-weight: 500;
-  color: #009688;
+  color: #212121;
   background-color: #fff;
 }
 
@@ -205,18 +187,10 @@
   color: #00796b;
 }
 
-.modal-footer .btn+.btn {
+.modal-footer .btn + .btn {
   margin-left: 0;
 }
 
-.modal-footer .btn+.btn:last-child {
+.modal-footer .btn + .btn:last-child {
   margin-left: -4px;
 }
-
-/* ----- v CAN BE DELETED v ----- */
-/* body {
-	font-family: 'Roboto', sans-serif;
-	background-color: #EF5350;
-} */
-
-/* MODAL CSS */

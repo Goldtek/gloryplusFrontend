@@ -82,7 +82,7 @@
 }
 
 .content:hover .content-overlay {
-  opacity: .5 !important;
+  opacity: 0.5 !important;
 }
 
 .content-image {

@@ -1,66 +1,69 @@
 [
+  {
+    "id": 1,
+    "title": "Holy Ghost Morning",
+    "pathName": "holyghost-morning",
+    "imagePath": "img/event/hgm3.jpg",
+    "description": "Join us again on the 26th of March for yet another power filled session for the first Holy Ghost morning of the year 2020. This  year is your your of uncommon manifestation through the Holy Ghost,Our Glorious God will be releasing His Glorious Power in a Glorious atmosphere for Glorious Experiences. Don't miss this program for anything. Come expectant and Jesus will surely meet you at the very point of your need.",
+    "location": "Hillcrest Events Center Ago Palace Way,Lagos.",
+    "time": "8:00am",
+    "day": "26",
+    "month": "March",
+    "year": "2020",
+    "status": "active"
+  },
 
-{
-  "id": 1,
-  "title": "Holy Ghost Morning",
-  "pathName": "holyghost-morning",
-  "imagePath": "img/event/hgm3.jpg",
-  "description": "Join us again on the 26th of March for yet another power filled session for the first Holy Ghost morning of the year 2020. This  year is your your of uncommon manifestation through the Holy Ghost,Our Glorious God will be releasing His Glorious Power in a Glorious atmosphere for Glorious Experiences. Don't miss this program for anything. Come expectant and Jesus will surely meet you at the very point of your need.",
-  "location": "Hillcrest Events Center Ago Palace Way,Lagos.",
-  "time": "8:00am",
-  "day": "26",
-  "month": "March",
-  "year": "2020"
-},
+  {
+    "id": 2,
+    "title": "Inauguration And Church Leadership ",
+    "pathName": "inauguration",
+    "imagePath": "img/event/inagauration.jpg",
+    "description": "The leadership summit is a time designed to equip every leader in Gloryplus with the right tools; focusing on discipleship. Workers will be trained, appointed and annointed for service. Leaders of other ministries/churches will equally be equipped and annointed for effectiveness in training. Rev. Dubus will spend sometime with those that seek his mentorship in ministry. Its going to be four days of unusual impact that will shift the spiritual climate of the city of Aba.  ",
+    "location": "ora-ifite town hall, 54 azikiwe road, Aba, abia state",
+    "time": "8:00am",
+    "day": "11",
+    "month": "March",
+    "year": "2020",
+    "status": "not"
+  },
 
-{
-  "id": 2,
-  "title": "Inauguration And Church Leadership ",
-  "pathName": "inauguration",
-  "imagePath": "img/event/inagauration.jpg",
-  "description": "The leadership summit is a time designed to equip every leader in Gloryplus with the right tools; focusing on discipleship. Workers will be trained, appointed and annointed for service. Leaders of other ministries/churches will equally be equipped and annointed for effectiveness in training. Rev. Dubus will spend sometime with those that seek his mentorship in ministry. Its going to be four days of unusual impact that will shift the spiritual climate of the city of Aba.  ",
-  "location": "ora-ifite town hall, 54 azikiwe road, Aba, abia state",
-  "time": "8:00am",
-  "day": "11",
-  "month": "March",
-  "year": "2020"
-
-},
-
-{
-  "id": 3,
-  "title": "40 days prayer and fasting(The Revelation of Jesus)",
-  "pathName": "40-days-fasting",
-  "imagePath": "img/event/rev.jpg",
-  "description": "Understanding the mysteries of the crucifixtion and resurrection of our Lord Jesus Christ (from the cross to the throne). Its going to be 40 nights of prayers, teachings and impartations. The people will leave the meetings with a fresh revelation of Jesus Christ, what He did for us on the cross and His present day ministry for the saints on the throne. These revelations are the secrets for living a victorious christian life as beliver",
-  "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
-  "time": "6:00pm",
-  "day": "26",
-  "month": "March",
-  "year": "2020"
-}, 
-{
-  "id": 4,
-  "title": "Holy Ghost Invasion (Fruit Of Christ Church)-Owerri",
-  "pathName": "holygost",
-  "imagePath": "img/event/hgm.jpg",
-  "description": "It will be a time for supernatural encounters. Holy Ghost Morning is a healing, deliverance, breakthrough and miracle service. In such services the people experience the Glory of God and the word of God is preached with power. It's usually an amazing moment as people witness the power of God healing people miraculously. The program is saturated with an atmosphere of worship and Glory. Worshippers cry out their hearts in worship to the risen Lord and soon coming King, Jesus Christ. Testimonies of saved and changed Lives are prevalent in such servies.",
-  "location": "Riverside bustop Nekede, Owerri, Imo State",
-  "time": "8:00am",
-  "day": "10-11",
-  "month": "March",
-  "year": "2020"
-}, 
-{
-  "id": 5,
-  "title": "Camp Meeting",
-  "pathName": "camp",
-  "imagePath": "img/event/mainChurch.jpg",
-  "description": "This is one of the most powerful retreats of the year, where families leave their homes and travel to a retreat center to seek the face of the lord and experience his glory. The first camp meeting in the bible took place in the wilderness, after the people of israel had left egypt their place of captivity, they had their first camp meeting in the wilderness of Sinai , where the beheld the glory of their God. Note, God commanded for this meeting, when he told moses in exodus 3 vs 12b, When though has brought forth the people out of egypt, ye shall serve God upon thi mountain. Camp meeting is  a time of beholding the tangible and awesome glory of God.",
-  "location": "loading.... stay tuned for update on this",
-  "time": "6:00pm",
-  "day": "30-03",
-  "month": "April-May",
-  "year": "2020"
-}
+  {
+    "id": 3,
+    "title": "40 days prayer and fasting(The Revelation of Jesus)",
+    "pathName": "40-days-fasting",
+    "imagePath": "img/event/rev.jpg",
+    "description": "Understanding the mysteries of the crucifixtion and resurrection of our Lord Jesus Christ (from the cross to the throne). Its going to be 40 nights of prayers, teachings and impartations. The people will leave the meetings with a fresh revelation of Jesus Christ, what He did for us on the cross and His present day ministry for the saints on the throne. These revelations are the secrets for living a victorious christian life as beliver",
+    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
+    "time": "6:00pm",
+    "day": "26",
+    "month": "March",
+    "year": "2020",
+    "status": "not"
+  },
+  {
+    "id": 4,
+    "title": "Holy Ghost Invasion (Fruit Of Christ Church)-Owerri",
+    "pathName": "holygost",
+    "imagePath": "img/event/hgm.jpg",
+    "description": "It will be a time for supernatural encounters. Holy Ghost Morning is a healing, deliverance, breakthrough and miracle service. In such services the people experience the Glory of God and the word of God is preached with power. It's usually an amazing moment as people witness the power of God healing people miraculously. The program is saturated with an atmosphere of worship and Glory. Worshippers cry out their hearts in worship to the risen Lord and soon coming King, Jesus Christ. Testimonies of saved and changed Lives are prevalent in such servies.",
+    "location": "Riverside bustop Nekede, Owerri, Imo State",
+    "time": "8:00am",
+    "day": "10-11",
+    "month": "March",
+    "year": "2020",
+    "status": "not"
+  },
+  {
+    "id": 5,
+    "title": "Camp Meeting",
+    "pathName": "camp",
+    "imagePath": "img/event/mainChurch.jpg",
+    "description": "This is one of the most powerful retreats of the year, where families leave their homes and travel to a retreat center to seek the face of the lord and experience his glory. The first camp meeting in the bible took place in the wilderness, after the people of israel had left egypt their place of captivity, they had their first camp meeting in the wilderness of Sinai , where the beheld the glory of their God. Note, God commanded for this meeting, when he told moses in exodus 3 vs 12b, When though has brought forth the people out of egypt, ye shall serve God upon thi mountain. Camp meeting is  a time of beholding the tangible and awesome glory of God.",
+    "location": "loading.... stay tuned for update on this",
+    "time": "6:00pm",
+    "day": "30-03",
+    "month": "April-May",
+    "year": "2020",
+    "status": "not"
+  }
 ]
