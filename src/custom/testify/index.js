@@ -302,7 +302,7 @@ className={
 rows="5"
 ></textarea>
 <label className="form__label" htmlFor="testimony">
-<span className="form__label-content">Write Your Testimony Here ...</span>
+<span className="form__label-content">Write Your Testimony Here</span>
 </label>
 <Error
 touched={touched.testimony}
