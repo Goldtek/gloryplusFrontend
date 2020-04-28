@@ -16,7 +16,6 @@ import LiveStreaming from "../livestream";
 import Event_Details from "../event-detail";
 import Galleries from "../galleries/index";
 import Gallery from "../gallery";
-import FirstTimers from "../first-timers";
 import TestifyComponent from "../testify";
 import PrayerRequestComponent from "../prayer-request";
 // import "bootstrap/dist/css/bootstrap.min.css";
@@ -92,7 +91,7 @@ class Home extends Component {
     const { eventItemSlide, loading, testimonyItem, groupInfo } = this.state;
     return (
       <Fragment>
-        <BrowserRouter forceRefresh={true} >
+        <BrowserRouter forceRefresh={true}>
           <Switch>
             <Route
               exact
@@ -145,10 +144,6 @@ class Home extends Component {
             <Route path="/partner" component={Member} />
             <Route path="/testify" component={TestifyComponent} />
             <Route path="/prayer-request" component={PrayerRequestComponent} />
-            <Route
-              path="/welcome"
-              render={() => <FirstTimers homechurchInfo={groupInfo} />}
-            />
             <Route path="*" component={ErrorPage} />
           </Switch>
         </BrowserRouter>
