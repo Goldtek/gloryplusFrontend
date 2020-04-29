@@ -30,9 +30,9 @@ import SectionCard from "./sermon-card";
 import Testimonial from "./testimonial";
 import EventSlider from "./event-slider/index";
 import GifComponent from "./gifcomponent/index";
-import Modal from './modal';
-import WelcomeForm from "./welcomeform";
-import TestifyForm from "./testify"
+import Modal from "./modal";
+import TestifyForm from "./testify";
+import PrayerRequest from "./prayer-request";
 export {
   Header,
   TopNav,
@@ -67,6 +67,6 @@ export {
   EventSlider,
   GifComponent,
   Modal,
-  WelcomeForm,
-  TestifyForm
+  TestifyForm,
+  PrayerRequest,
 };
