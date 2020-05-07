@@ -42,10 +42,20 @@ class Header extends Component {
                         Home
                       </NavLink>
                     </li>
-                    <li className="space">
-                      <NavLink to="/group" exact={true} className="sf-with-ul">
-                        Fellowship Centers
-                      </NavLink>
+                    <li>
+                      {" "}
+                      <a className="sf-with-ul" href="#">
+                        Who We Are
+                      </a>
+                      <ul className="dropdown">
+                        <li>
+                          <a href="/about">About us</a>
+                        </li>
+                        <li>
+                          <a href="/contact">Contact Us</a>
+                        </li>
+                      </ul>
+                      {" "}
                     </li>
                     <li className="space">
                       <a className="sf-with-ul" href="#">
@@ -61,28 +71,24 @@ class Header extends Component {
                         <li>
                           <a href="/sermon">Sermon</a>
                         </li>
+                        <li>
+                          <a href="/login">School</a>
+                        </li>
                       </ul>
                     </li>
+                    <li className="space">
+                      <NavLink to="/group" exact={true} className="sf-with-ul">
+                        Fellowship Centers
+                      </NavLink>
+                    </li>
+                  
                     <li className="space">
                       <NavLink to="/live" exact={true}>
                         liveStream
                       </NavLink>
                     </li>
 
-                    <li>
-                      {" "}
-                      <a className="sf-with-ul" href="#">
-                        Who We Are
-                      </a>
-                      <ul className="dropdown">
-                        <li>
-                          <a href="/about">About us</a>
-                        </li>
-                        <li>
-                          <a href="/contact">Contact Us</a>
-                        </li>
-                      </ul>
-                    </li>
+                 
                     <li className="space">
                       <NavLink
                         to="/testify"
