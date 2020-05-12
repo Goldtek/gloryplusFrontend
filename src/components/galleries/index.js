@@ -3,7 +3,8 @@ import axios from "axios";
 import { Helmet } from "react-helmet";
 import "./gallery.css";
 import { css } from "@emotion/core";
-import { FadeLoader } from "react-spinners";
+import { DotLoader,ScaleLoader
+} from "react-spinners";
 import {
   Header,
   TopNav,
@@ -17,6 +18,7 @@ const override = css`
   display: block;
   margin: 0 auto;
   border-color: red;
+  text-align:center;
 `;
 class Gallery extends Component {
   state = {
@@ -59,21 +61,22 @@ class Gallery extends Component {
           <Galleries galleries={galleryData} />
         </div> */}
 
-        <section className="spad-gallery" style={{ minHeight: "24vh" }}>
+        <section className="spad-gallery" style={{ minHeight: "35vh" }}>
           {loading ? (
-            <div style={{ minHeight: "25vh" }}>
-              <div className="col-md-4"></div>
-              <div className="col-md-4">
+            <div style={{ minHeight: "22vh" }}>
+             
+              <div className="loadcontent">
                 {" "}
-                <FadeLoader
+                <ScaleLoader
                   css={override}
                   sizeUnit={"px"}
-                  size={50}
+                 
                   color={"#b42b2b"}
-                  height={25}
+                  height={50}
+                  width={5}
                 />
               </div>
-              <div className="col-md-4"></div>
+              
             </div>
           ) : (
             // <GroupList homechurchInfo={groupInfo} />

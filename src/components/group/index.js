@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
-// import axios from "axios";
+import axios from "axios";
 import { css } from "@emotion/core";
 import { DotLoader } from "react-spinners";
 import {

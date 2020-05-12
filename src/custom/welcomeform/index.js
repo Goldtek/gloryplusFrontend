@@ -285,6 +285,7 @@ class WelcomeForm extends React.Component {
                 </div>
 
                 <div className="col-md-2"></div>
+                {/* {console.log(homechurches)} */}
             </Fragment>
 
         );

@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 // import TextTruncate from "react-text-truncate";
 import "./nav.css";
 class Header extends Component {
-  state = {
-    loggedIn: false,
-    liveStream: false,
-  };
+state = {
+loggedIn: false,
+liveStream: false
+};
 
   render() {
     return (
@@ -104,29 +104,25 @@ class Header extends Component {
                       </NavLink>
                     </li>
 
-                    <li>
-                      <NavLink to="/give" exact={true} className="give-nav">
-                        Give <i className="fas fa-hand-holding-heart"></i>
-                      </NavLink>
-                    </li>
-                    <li className="right-side">
-                      <ul>
-                        <li>
-                          <a className="btn-give" href="/give">
-                            Give <i className="fas fa-hand-holding-heart"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    );
-  }
+<li><NavLink to="/give" exact={true} className="give-nav">
+Give <i className="fas fa-hand-holding-heart"></i>
+</NavLink></li>
+<li className="right-side">
+<ul>
+<li><a className="btn-give"  href="/give">Give <i className="fas fa-hand-holding-heart"></i></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+</nav>
+</div>
+</div>
+</div>
+
+);
+}
 }
 
 export default Header;
