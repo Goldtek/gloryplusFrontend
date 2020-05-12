@@ -27,14 +27,14 @@ class MemberLogin extends React.Component {
                   <div className="form-group"></div>
                   <div className="form-group">
                     <Link to="/register" className="ForgetPwd">
-                      Not yet a partner ? <u>click here to join</u>
+                      Not yet a member ? <u>click here to join</u>
                     </Link>
                   </div>
                 </form>
               </div>
 
               <div className="col-md-6 login-form-2">
-                <h3>Partner Login</h3>
+                <h3> Login</h3>
                 <form onSubmit={this.handleLogin}>
                   <div className="form-group">
                     <input

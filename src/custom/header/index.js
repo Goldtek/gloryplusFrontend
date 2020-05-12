@@ -8,64 +8,101 @@ loggedIn: false,
 liveStream: false
 };
 
-render() {
-return (
-<div className="main-header-area">
-<div className="container">
-<div className="getfund-nav-container breakpoint-off"> 
-<nav className="getfund-navbar justify-content-between" id="listingNav"> 
-<a className="nav-brand" href="/"><img src="img/logo/logo-full.png" alt="logo"/></a> 
-<div className="getfund-navbar-toggler"> <span className="navbarToggler"><span></span><span></span><span></span></span> </div>
-<div className="getfund-menu"> 
-<div className="getfundcloseIcon">
-<div className="cross-wrap"><span className="top"></span><span className="bottom"></span></div>
-</div> 
-<div className="getfundnav">
-<ul>
-    
-<li>
-<NavLink to="/" exact={true}  className="sf-with-ul">
-Home
-</NavLink>
-</li>
-<li>
-<NavLink to="/group" exact={true} className="sf-with-ul">
-Cell Location
-</NavLink>
-</li>
-<li> <a className="sf-with-ul" href="#">What We Do</a>
-<ul className="dropdown">
-<li><a href="/galleries">
-Gallery
-</a></li>
-<li><a href="/events">
-Event
-</a></li>
-<li><a href="/sermon">
-Sermon
-</a></li>
-</ul>
-</li>
-<li><NavLink to="/testify" exact={true}>
-Testify
-</NavLink></li>
+  render() {
+    return (
+      <div className="main-header-area">
+        <div className="container">
+          <div className="getfund-nav-container breakpoint-off">
+            <nav
+              className="getfund-navbar justify-content-between"
+              id="listingNav"
+            >
+              <a className="nav-brand" href="/">
+                <img src="img/logo/logo-full.png" alt="logo" />
+              </a>
+              <div className="getfund-navbar-toggler">
+                {" "}
+                <span className="navbarToggler">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>{" "}
+              </div>
+              <div className="getfund-menu">
+                <div className="getfundcloseIcon">
+                  <div className="cross-wrap">
+                    <span className="top"></span>
+                    <span className="bottom"></span>
+                  </div>
+                </div>
+                <div className="getfundnav">
+                  <ul>
+                    <li className="space">
+                      <NavLink to="/" exact={true} className="sf-with-ul">
+                        Home
+                      </NavLink>
+                    </li>
+                    <li>
+                      {" "}
+                      <a className="sf-with-ul" href="#">
+                        Who We Are
+                      </a>
+                      <ul className="dropdown">
+                        <li>
+                          <a href="/about">About us</a>
+                        </li>
+                        <li>
+                          <a href="/contact">Contact Us</a>
+                        </li>
+                      </ul>
+                      {" "}
+                    </li>
+                    <li className="space">
+                      <a className="sf-with-ul" href="#">
+                        What We Do
+                      </a>
+                      <ul className="dropdown">
+                        <li>
+                          <a href="/galleries">Gallery</a>
+                        </li>
+                        <li>
+                          <a href="/events">Event</a>
+                        </li>
+                        <li>
+                          <a href="/sermon">Sermon</a>
+                        </li>
+                        <li>
+                          <a href="/login">School</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="space">
+                      <NavLink to="/group" exact={true} className="sf-with-ul">
+                        Fellowship Centers
+                      </NavLink>
+                    </li>
+                  
+                    <li className="space">
+                      <NavLink to="/live" exact={true}>
+                        liveStream
+                      </NavLink>
+                    </li>
 
-<li> <a className="sf-with-ul" href="#">Who We Are</a>
-<ul className="dropdown">
-<li><a href="/about" >
-About us
-</a></li>
-<li><a href="/contact" >
-Contact Us
-</a></li>
-</ul>
-</li>
-<li><NavLink to="/live" exact={true}>
-Live Stream
-</NavLink></li>
-<li><NavLink to="/request" exact={true}>
-Prayer Request
-</NavLink></li>
+                 
+                    <li className="space">
+                      <NavLink
+                        to="/testify"
+                        className="sf-with-ul"
+                        exact={true}
+                      >
+                        Testify
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/prayer-request" exact={true}>
+                        Prayer Request
+                      </NavLink>
+                    </li>
 
 <li><NavLink to="/give" exact={true} className="give-nav">
 Give <i className="fas fa-hand-holding-heart"></i>
