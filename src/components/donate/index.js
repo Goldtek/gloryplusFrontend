@@ -13,14 +13,14 @@ class DonateComponent extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>Give - Glory Plus International</title>
-          <meta name="description" content="give" />
+          <title>Donate</title>
+          <meta name="description" content="donate" />
         </Helmet>
         <TopNav />
         <Header />
         <PageInfo
-          title="Give to the gospel"
-          bgPicture="url(img/bg-info/give.png)"
+          title="Donate"
+          bgPicture="url(img/bg-info/harvest-time.jpg)"
         />
         <DonateItem />
         <NewsLetter />
