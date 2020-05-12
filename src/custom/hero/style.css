@@ -224,7 +224,7 @@
 }
 
 .slide-text > a.btn-default {
-  background: #fff;
+  background: #fff !important;
 
   color: #000;
   font-weight: 400;

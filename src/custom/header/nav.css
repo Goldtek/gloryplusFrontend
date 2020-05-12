@@ -52,6 +52,12 @@ li .active{
 .topbar ul.socials-top li a:hover {
 	background: #a7400e;
 }
+
+.main-header-area .getfundnav .space{
+	/* border:2px solid red; */
+	padding: 6px;
+	
+}
 /*
 ======================================
 Main Menu Area CSS
