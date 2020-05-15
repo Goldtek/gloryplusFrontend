@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
+import StarRatingComponent from 'react-star-rating-component-unsafe';
 import {
   Header,
   TopNav,
@@ -8,12 +9,16 @@ import {
 
 } from '../../custom';
 
+import './styles.css';
+
 // eslint-disable-next-line react/prefer-stateless-function
 class Video extends Component {
   state = {
     duration: 0,
-    minSeconds: 12, // 120
-    maxSeconds: 72, // 720
+    minSeconds: 120, // 2 minutes
+    maxSeconds: 720, // 12 minutes 
+    rating: 0,
+    isRating: false,
   };
 
   randomNumber = (min, max) => {  
@@ -32,14 +37,23 @@ class Video extends Component {
     const max = duration - minSeconds;
     const popupTime = this.randomNumber(min,max);
     const cTime = Math.ceil(currentTime);
+    const popOff = 60;
   
-  
-    if (cTime === popupTime){
-      alert(cTime);
-      // const popOff = cTime + 60;
+    if (cTime === popupTime) {
+      this.setState({ popOff: cTime + popOff, isRating: true })
     }
+    if(this.state.popOff !== undefined && cTime === this.state.popOff) {
+        this.setState({ isRating: false });
+    }
+  }
 
-   // after pop off
+  loadAssigment = () => {
+
+  }
+
+  onStarClick = (nextValue, prevValue, name) => {
+    this.setState({rating: nextValue, isRating: false});
+    // send response to api
   }
 
   render() {
@@ -56,7 +70,9 @@ class Video extends Component {
             className="embed-responsive-item"
             controls
             controlsList="nodownload"
+            onPlay={(e) => e.currentTarget.webkitDisplayingFullscreen}
             onTimeUpdate={(e) => this.setCurrentTime(e.target.currentTime)}
+            onEnded={()=> this.loadAssigment()}
             onLoadedMetadata={(e) => {
                  this.setDuration(e.target.duration)
             }}
@@ -64,7 +80,19 @@ class Video extends Component {
             <source src="https://res.cloudinary.com/dvxptc5uy/video/upload/v1584526743/sermons/selfdenial_kz5cu7.mp4" type="video/mp4" />
           </video>
         </div>
-        <div style={{position: 'absolute', bottom: '4%', right: '10%', zIndex: 2, color: 'black' }}> Rating </div>
+        {(this.state.isRating) && (
+        <div className="rating">
+          Please Rate this Class
+         <StarRatingComponent 
+          name="rate1" 
+          starCount={5}
+          value={this.state.rating}
+          onStarClick={() => this.onStarClick()}
+          starColor={"gold"}
+          emptyStarColor={"white"} 
+        />
+         </div>
+        )}
       </>
     );
   }
