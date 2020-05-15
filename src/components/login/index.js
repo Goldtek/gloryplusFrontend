@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import { Helmet } from "react-helmet";
+import React, { Component, Fragment } from 'react';
+import { Helmet } from 'react-helmet';
 import {
   Header,
   TopNav,
@@ -7,7 +7,8 @@ import {
   PageInfo,
   NewsLetter,
   MemberLogin
-} from "../../custom";
+} from '../../custom';
+// eslint-disable-next-line react/prefer-stateless-function
 class Login extends Component {
   render() {
     return (

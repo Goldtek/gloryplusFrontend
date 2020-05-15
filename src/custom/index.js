@@ -33,6 +33,8 @@ import GifComponent from "./gifcomponent/index";
 import Modal from "./modal";
 import TestifyForm from "./testify";
 import PrayerRequest from "./prayer-request";
+import CourseItem from './course-item';
+
 export {
   Header,
   TopNav,
@@ -69,4 +71,5 @@ export {
   Modal,
   TestifyForm,
   PrayerRequest,
+  CourseItem,
 };

@@ -18,6 +18,10 @@ import Galleries from "../galleries/index";
 import Gallery from "../gallery";
 import TestifyComponent from "../testify";
 import PrayerRequestComponent from "../prayer-request";
+import Courses from '../courses';
+import Schedule from '../schedule';
+import Lessons from '../list-courses';
+import Video from '../class_video';
 // import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Hero,
@@ -144,6 +148,10 @@ class Home extends Component {
             <Route path="/partner" component={Member} />
             <Route path="/testify" component={TestifyComponent} />
             <Route path="/prayer-request" component={PrayerRequestComponent} />
+            <Route path="/courses" component={Courses} />
+            <Route path="/schedule" component={Schedule} />
+            <Route path="/dashboard" component={Lessons} />
+            <Route path="/class" component={Video} />
             <Route path="*" component={ErrorPage} />
           </Switch>
         </BrowserRouter>
