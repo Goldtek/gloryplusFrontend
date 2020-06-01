@@ -149,9 +149,10 @@ class Home extends Component {
             <Route path="/testify" component={TestifyComponent} />
             <Route path="/prayer-request" component={PrayerRequestComponent} />
             <Route path="/courses" component={Courses} />
-            <Route path="/schedule" component={Schedule} />
-            <Route path="/dashboard" component={Lessons} />
-            <Route path="/class" component={Video} />
+            <Route path="/schedule/:id" component={Schedule} />
+            <Route path="/reschedule/:id" component={Schedule} /> 
+            <Route path="/dashboard/:userid" component={Lessons} />
+            <Route path="/class/:id" component={Video} />
             <Route path="*" component={ErrorPage} />
           </Switch>
         </BrowserRouter>

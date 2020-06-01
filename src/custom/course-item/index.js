@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 import { cardBody } from './styles';
 
-const CourseItem = ({ imagePath, title }) => (
+const CourseItem = ({ imagePath, title, id }) => (
   // eslint-disable-next-line react/jsx-filename-extension
-  <Link to="/">
+  <Link to={`/schedule/${id}`}>
     <div className="col-md-4">
       <div className="card mb-4">
         <div className="view overlay">

@@ -6,8 +6,9 @@ export default class PastorSection extends Component {
       <section className="pastors-section spad">
         <div className="container">
           <div className="section-title">
-            <span>Experience God's Glory</span>
-            <h2>Meet Our Pastors</h2>
+          <span>Experience God's Glory</span>
+            <h3>Meet Our Pastors</h3>
+            <br/>
           </div>
           <div className="row">
             <div className="col-md-4 col-sm-6 col-lg-offset-2 pst-div">
@@ -24,7 +25,7 @@ export default class PastorSection extends Component {
               </div>
             </div>
 
-            <div className="col-md-4 col-sm-6 pst-div">
+            <div className="col-md-4 col-md-offset-1 col-sm-offset-1 col-sm-6 pst-div">
               <div className="our-team">
                 <img
                   src="img/pastors/pst-roseline.jpeg"

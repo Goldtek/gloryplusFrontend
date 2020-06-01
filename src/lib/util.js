@@ -84,8 +84,6 @@ export const download = async amt => {
   const extUser = JSON.parse(user);
   if (user === undefined || user === null) {
     return window.$("#modalBox").modal("show");
-    //   const { name, email, phone } = extUser;
-    //   return window.payWithRave(phone, amt, email, RAVE_PUBLIC_KEY);
   }
   const { email, phone } = extUser;
   window.payWithRave(phone, amt, email, RAVE_PUBLIC_KEY);

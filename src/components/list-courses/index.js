@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
+import moment from 'moment';
+import { Link } from 'react-router-dom';
+
 import {
   Header,
   TopNav,
@@ -11,7 +14,15 @@ import {
 } from './style';
 // eslint-disable-next-line react/prefer-stateless-function
 class Lessons extends Component {
+  // this dashboard
+  state = {
+    disabled: moment().year(2020).month(4).date(26).hour(0).isSame(moment().get()),
+    previous: [],
+  };
+
   render() {
+    const { disabled, previous } = this.state;
+    
     return (
       // eslint-disable-next-line react/jsx-filename-extension
       <>
@@ -29,48 +40,53 @@ class Lessons extends Component {
             </div>
             <div className="col-md-4">
               <hr className="hidden-md hidden-lg" />
-              <h3 className="text-primary" style={widget}>  Foundation class title</h3>
+              <h3 className="text-primary" style={widget}>  Assurance Of Salvation </h3>
               <h6 className="text-danger"> may 6, 2020 @ 7am </h6>
               <hr />
-              <button className="btn btn-default" disabled> Join class</button>
+              <button className="btn btn-default" disabled={!disabled}> Join Class</button>
             </div>
             <div className="col-md-4 align-center">
               <hr />
               <hr className="hidden-xs hidden-sm" />
               <hr className="hidden-xs hidden-sm" />
-              <button className="btn btn-primary">
+              <Link to="/reschedule/59696970" className="btn btn-primary">
                 {' '}
                 <span className="glyphicon glyphicon-time" />
                 {' '}
-Reshedule Class
-              </button>
+                Reshedule Class
+              </Link>
             </div>
           </div>
+          
           <div className="row" style={marginTop}>
             <div className="panel-group">
               <div className="panel panel-default">
                 <div className="panel-heading">
                   <h4 className="panel-title">
-                    <a data-toggle="collapse" href="#collapse1">Next on List <span class="glyphicon glyphicon-chevron-down"></span> </a>   
+                    <a data-toggle="collapse" href="#collapse1">
+                    <label className="tab-label" htmlFor="next">
+                      Next on List 
+                      </label>
+                      </a>   
                   </h4>
                 </div>
                 <div id="collapse1" className="panel-collapse collapse">
-                <table class="table table-responsive">
+                <table className="table table-responsive">
                     <tbody>
                     <tr>
                         <td>The new birth.</td>
                         <td>May 5, 2020 @ 7am</td>
-                        <td> <button className="btn btn-default"> <span class="glyphicon glyphicon-time"></span>  Reschedule</button></td>
+                        <td> <Link to="/reschedule/59696970" className="btn btn-default"> <span className="glyphicon glyphicon-time"></span>  Reschedule</Link></td>
                     </tr>
                     <tr>
                         <td>Assurance of salvation</td>
                         <td>May 5, 2020 @ 7am</td>
-                        <td> <button className="btn btn-default"> <span class="glyphicon glyphicon-time"></span>  Reschedule</button></td>
+                        <td> <Link to="/reschedule/59696970" className="btn btn-default"> <span className="glyphicon glyphicon-time"></span>  Reschedule</Link></td>
                     </tr>
                     <tr>
                         <td>Christain Devotion</td>
                         <td>May 5, 2020 @ 7am</td>
-                        <td> <button className="btn btn-default"> <span class="glyphicon glyphicon-time"></span>  Reschedule</button></td>
+                        <td> <Link to="/reschedule/59696970" className="btn btn-default"> <span className="glyphicon glyphicon-time"></span>  Reschedule</Link></td>
                     </tr>
                     </tbody>
                 </table>
@@ -79,6 +95,46 @@ Reshedule Class
               </div>
             </div>
           </div>
+
+        {previous.length>0 && (
+          <div className="row" style={marginTop}>
+            <div className="panel-group">
+              <div className="panel panel-default">
+                <div className="panel-heading">
+                  <h4 className="panel-title">
+                    <a data-toggle="collapse" href="#previous">
+                    <label className="tab-label" htmlFor="next">
+                      Previous classes
+                      </label>
+                      </a>   
+                  </h4>
+                </div>
+                <div id="previous" className="panel-collapse collapse">
+                <table className="table table-responsive">
+                    <tbody>
+                    <tr>
+                        <td>  Lesson 1</td>
+                        <td>The new birth.</td>
+                        <td>  Watch </td>
+                    </tr>
+                    <tr>
+                        <td>  Lesson 2</td>
+                        <td>Assurance of salvation</td>
+                        <td>  Watch </td>
+                    </tr>
+                    <tr>
+                    <td>  Lesson 3</td>
+                        <td>Christain Devotion</td>
+                        <td>  Watch </td>
+                    </tr>
+                    </tbody>
+                </table>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+       )}
         </div>
         <Footer />
       </>

@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import Alert from 'react-bootstrap/Alert';
-import Spinner from 'react-bootstrap/Spinner';
+import DatePicker from 'react-datepicker';
+import moment from 'moment';
+import Select from 'react-select';
+import axios from 'axios';
+import swal from 'sweetalert';
+
+import "react-datepicker/dist/react-datepicker.css";
+
+
 
 import {
   Header,
@@ -14,7 +22,55 @@ import {
 import './styles.css';
 // eslint-disable-next-line react/prefer-stateless-function
 class Schedule extends Component {
+  state = {
+    day1Time: '',
+    date1: '',
+    day2Time: '',
+    date2: '',
+    startDate: new Date(),
+    daysOFWeek: [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    options:  [
+                  { value : "", label : 'Select Time' },
+                  { value : "0", label : '12am' },{ value : "1", label : '1am' },{ value : "2", label : '2am' },
+                  { value : "3", label : '3am' },{ value : "4", label : '4am' },{ value : "5", label : '5am' },
+                  { value : "6", label : '6am' },{ value : "7", label : '7am' },{ value : "8", label : '8am' },
+                  { value : "9", label : '9am' },{ value : "10", label : '10am' },{ value : "11", label : '11am' },
+                  { value : "12", label : '1pm' },{ value : "13", label : '2pm' },{ value : "14", label : '3pm' },
+                  { value : "15", label : '4pm' },{ value : "16", label : '5pm' },{ value : "17", label : '6pm' },
+                  { value : "18", label : '7pm' },{ value : "19", label : '8pm' },{ value : "20", label : '9pm' },
+                  { value : "21", label: '10pm '}, { value : "22", label: '11pm' },{ value : "23", label: '12pm' }
+    ],
+    disabled: false,
+  };
+
+  handleDayOneDate = (date) => {
+    this.setState({ date1: date });
+  }
+
+
+  handleDayTwoDate = (date) => {
+    this.setState({ date2: date });
+  }
+
+  handleDay1Time = (selectedTime) => {
+    this.setState({ day1Time: selectedTime.value });
+  }
+
+  handleDay2Time = (selectedTime) => {
+    this.setState({ day2Time: selectedTime.value });
+  }
+
+  scheduleClass = () => {
+    const { day1Time, day2Time, date1, date2 } = this.state;
+    const { id } = this.props.match.params;
+    this.setState({ loading: true , disabled: true});
+    //swal("INFO!", "Your Class is been scheduled", "success");
+    // perform axios call here
+    // on return go to dashboard
+  }
+
   render() {
+    const { day1Time, day2Time, date1, date2, daysOFWeek, options } = this.state;
     return (
       // eslint-disable-next-line react/jsx-filename-extension
       <>
@@ -33,105 +89,75 @@ class Schedule extends Component {
             </Alert>
           </div>
           <div className="row">
-            <div className="col-md-3 form-group">
-              <div className="form-input">
-                <label>Select Date For Day 1</label>
-                <input type="date" name="" className="form-control" placeholder="Day 1" />
-              </div>
+            <div className="col-md-3">
+              <DatePicker
+               selected={date1}
+                minDate={new Date()}
+                onChange={this.handleDayOneDate}
+                placeholderText="Select date for first day "
+              />
             </div>
             <div className="col-md-6" />
             <div className="col-md-3">
               <div className="form-group">
-                <label>Time For Day 1</label>
-                <select className="form-control">
-                  <option value="">Select Time</option>
-                  <option value="1am">1am</option>
-                  <option value="2am">2am</option>
-                  <option value="3am">3am</option>
-                  <option value="4am">4am</option>
-                  <option value="5am">5am</option>
-                  <option value="6am">6am</option>
-                  <option value="7am">7am</option>
-                  <option value="8am">8am</option>
-                  <option value="9am">9am</option>
-                  <option value="10am">10am</option>
-                  <option value="11am">11am</option>
-                  <option value="12am">12am</option>
-                  <option value="1pm">1pm</option>
-                  <option value="2pm">2pm</option>
-                  <option value="3pm">3pm</option>
-                  <option value="4pm">4pm</option>
-                  <option value="5pm">5pm</option>
-                  <option value="6pm">6pm</option>
-                  <option value="7pm">7pm</option>
-                  <option value="8pm">8pm</option>
-                  <option value="9pm">9pm</option>
-                  <option value="10pm">10pm</option>
-                  <option value="11pm">11pm</option>
-                  <option value="12pm">12pm</option>
-                </select>
-              </div>
+                  <label>Time for Day 1</label>
+                  <Select isSearchable options={options} onChange={this.handleDay1Time} />
+                </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-md-3 form-group">
-              <div className="form-input">
-                <label>Select Date For Day 2</label>
-                <input type="date" name="" className="form-control" placeholder="Day 2" />
-              </div>
+            <div className="col-md-3 ">
+              <DatePicker
+                onChange={this.handleDayTwoDate}
+                selected={date2}
+                minDate={new Date()}
+                placeholderText="Select date for second day "
+              />
             </div>
             <div className="col-md-6" />
             <div className="col-md-3">
               <div className="form-group">
                 <label>Time for Day 2</label>
-                <select className="form-control" id="sel1">
-                  <option value="">Select Time</option>
-                  <option value="1am">1am</option>
-                  <option value="2am">2am</option>
-                  <option value="3am">3am</option>
-                  <option value="4am">4am</option>
-                  <option value="5am">5am</option>
-                  <option value="6am">6am</option>
-                  <option value="7am">7am</option>
-                  <option value="8am">8am</option>
-                  <option value="9am">9am</option>
-                  <option value="10am">10am</option>
-                  <option value="11am">11am</option>
-                  <option value="12am">12am</option>
-                  <option value="1pm">1pm</option>
-                  <option value="2pm">2pm</option>
-                  <option value="3pm">3pm</option>
-                  <option value="4pm">4pm</option>
-                  <option value="5pm">5pm</option>
-                  <option value="6pm">6pm</option>
-                  <option value="7pm">7pm</option>
-                  <option value="8pm">8pm</option>
-                  <option value="9pm">9pm</option>
-                  <option value="10pm">10pm</option>
-                  <option value="11pm">11pm</option>
-                  <option value="12pm">12pm</option>
-                </select>
+                <Select isSearchable options={options} onChange={this.handleDay2Time} />  
               </div>
+              
             </div>
           </div>
-
-          <div className="row" style={{ marginTop: '30px' }}>
-            <Alert show variant="info">
-              <Alert.Heading>Your Foundation class Schedule -- </Alert.Heading>
-              <p>
-                {' '}
-                    Your lessons are on every
-                <span className="green"> Monday by 6am </span>
-                {' '}
-                    and on
-                <span className="green"> Friday by 1pm</span>
-                {' '}
-              </p>
-            </Alert>
-          </div>
+      
+            <div className="row" style={{ marginTop: '30px' }}>
+              <Alert show variant="info">
+                <Alert.Heading>Your Foundation class Schedule -- </Alert.Heading>
+                <p>
+                  {' '}
+                  {(date1 && day1Time) || (date2 && day2Time) ? 'Your lessons are on every' : '' } 
+                      {(date1 && day1Time) && (
+                        <span className="green"> {daysOFWeek[moment(date1).day()-1]} by {moment(day1Time, 'HH').format('hha')} </span>
+                      )}
+                    {(date1 && day1Time) ?  'and on' : '' } 
+                     {(date2 && day2Time) && (
+                        <span className="green"> {daysOFWeek[moment(date2).day()-1]} by {moment(day2Time, 'HH').format('hha')} </span>
+                      )}
+                  {' '}
+                </p>
+              </Alert>
+            </div>
+          
           <div className="row">
             <div className="col-md-4">
-              <button type="button" className="btn btn-success btn-md"> <span class="glyphicon glyphicon-time"></span> Schedule </button>
+              <button type="button" className="btn btn-success btn-md" onClick={this.scheduleClass} disabled={this.state.disabled}>
+                {(!this.state.loading) ? 
+                  <>
+                 <span className="glyphicon glyphicon-time"></span>
+                  <span> {' '} Schedule</span> 
+                  </>
+                  :
+                  <>
+                  <span className="fas fa-spinner fa-pulse"></span>
+                  <span>  {' '} Loading...</span>
+                  </>
+                }
+                  
+              </button>
             </div>
           </div>
 

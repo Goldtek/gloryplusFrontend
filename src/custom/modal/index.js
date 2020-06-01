@@ -1,5 +1,6 @@
 import React from "react";
 import $ from "jquery";
+import swal from 'sweetalert';
 import { storeTrackInfo } from "../../lib/util";
 
 class ModalComponent extends React.Component {
@@ -11,11 +12,13 @@ class ModalComponent extends React.Component {
   handleSubmit = () => {
     const { email, phone, name } = this.state;
     if (email === "" || phone === "" || name === "") {
-      return this.setState({ error: "All fields are required." });
+      swal('Error', "All fields are required !!!", 'error');
+      return;
     }
     const user = { name, email, phone };
     storeTrackInfo(user);
     $("#closeBtn").click();
+    swal("Info", "User registration successful, Now you can download your desired Sermon.", 'success');
   };
 
   handleChange = e => {
@@ -28,7 +31,7 @@ class ModalComponent extends React.Component {
           {/* <!-- Modal content--> */}
           <div className="modal-content">
             <div className="modal-header" style={{ borderBottom: "none" }}>
-              <button type="button" className="close" data-dismiss="modal">
+              <button type="button" className="close" data-dismiss="modal" id="closeBtn">
                 &times;
               </button>
             </div>
