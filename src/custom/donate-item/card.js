@@ -8,7 +8,7 @@ function give() {
 }
 
 function card(props) {
-  const { title, btnText } = props;
+  const { title, btnText, click } = props;
   return (
     // eslint-disable-next-line react/jsx-filename-extension
     <div className="col-sm-6 col-md-6 top-mrgin">
@@ -18,7 +18,7 @@ function card(props) {
           <p className="card-description give-div">
             {props.desc}
           </p>
-          <button className="btn btn-danger btn-block" role="button">{btnText}</button>
+          <button className="btn btn-danger btn-block" role="button" onClick={click}>{btnText}</button>
         </div>
       </div>
     </div>

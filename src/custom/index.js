@@ -35,6 +35,7 @@ import TestifyForm from "./testify";
 import PrayerRequest from "./prayer-request";
 import CourseItem from './course-item';
 import Assignment from './assignment';
+import GiveModal from './giveModal';
 
 export {
   Header,
@@ -74,4 +75,5 @@ export {
   PrayerRequest,
   CourseItem,
   Assignment,
+  GiveModal,
 };

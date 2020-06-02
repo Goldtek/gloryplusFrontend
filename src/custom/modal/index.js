@@ -129,46 +129,7 @@ class ModalComponent extends React.Component {
 
               {/* NEW FORM ENDS ##############################################################3 */}
             </div>
-            {/* 
-                  ####################### OLD FORM   
                      
-                     
-                      <div className="form-group">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Your Name"
-                  required
-                  name="name"
-                  onChange={this.handleChange}
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Your email"
-                  required
-                  name="email"
-                  onChange={this.handleChange}
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Your Phone Number"
-                  required
-                  name="phone"
-                  onChange={this.handleChange}
-                />
-              </div>
-              {this.state.error !== "" && (
-                <label className="label label-danger">{this.state.error}</label>
-              )}
-                     
-                     
-                     */}
           </div>
         </div>
       </div>
