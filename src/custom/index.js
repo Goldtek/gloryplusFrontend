@@ -25,17 +25,18 @@ import LiveStream from "./livestream";
 import Donation from "./donation-item";
 import EventDetail from "./event-detail";
 import Galleries from "./galleries";
-import SingleGallery from "./gallery/index";
+import PictureGallery from "./gallery";
 import SectionCard from "./sermon-card";
 import Testimonial from "./testimonial";
-import EventSlider from "./event-slider/index";
-import GifComponent from "./gifcomponent/index";
+import EventSlider from "./event-slider";
+import GifComponent from "./gifcomponent";
 import Modal from "./modal";
 import TestifyForm from "./testify";
 import PrayerRequest from "./prayer-request";
 import CourseItem from './course-item';
 import Assignment from './assignment';
 import GiveModal from './giveModal';
+import history from './history';
 
 export {
   Header,
@@ -66,7 +67,7 @@ export {
   Donation,
   EventDetail,
   Galleries,
-  SingleGallery,
+  PictureGallery,
   Testimonial,
   EventSlider,
   GifComponent,
@@ -76,4 +77,5 @@ export {
   CourseItem,
   Assignment,
   GiveModal,
+  history,
 };

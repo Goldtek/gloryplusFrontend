@@ -6,13 +6,14 @@ import {
   Footer,
   PageInfo,
   NewsLetter,
-  MemberLogin
+  MemberLogin,
 } from '../../custom';
 // eslint-disable-next-line react/prefer-stateless-function
 class Login extends Component {
   render() {
     return (
-      <Fragment>
+      // eslint-disable-next-line react/jsx-filename-extension
+      <>
         <Helmet>
           <title>Login</title>
           <meta name="description" content="login" />
@@ -23,7 +24,7 @@ class Login extends Component {
         <MemberLogin />
         <NewsLetter />
         <Footer />
-      </Fragment>
+      </>
     );
   }
 }

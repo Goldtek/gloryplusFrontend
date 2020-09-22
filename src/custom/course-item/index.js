@@ -10,10 +10,10 @@ const CourseItem = ({ imagePath, title, id }) => (
       <div className="card mb-4">
         <div className="view overlay">
           <img
-            className="card-img-top"
+            className="card-img-top img-responsive"
             src={imagePath}
             alt="Card image cap"
-            // style={{ height }}
+             style={{ width: '100%', height: 300 }}
           />
           <a>
             <div className="mask rgba-white-slight" />

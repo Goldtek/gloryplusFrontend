@@ -6,10 +6,8 @@ import moment from 'moment';
 import Select from 'react-select';
 import axios from 'axios';
 import swal from 'sweetalert';
-
 import "react-datepicker/dist/react-datepicker.css";
-
-
+import { connect } from "react-redux";
 
 import {
   Header,
@@ -20,6 +18,8 @@ import {
 } from '../../custom';
 
 import './styles.css';
+
+const apiUrl = process.env.REACT_APP_BASE_URL;
 // eslint-disable-next-line react/prefer-stateless-function
 class Schedule extends Component {
   state = {
@@ -27,6 +27,8 @@ class Schedule extends Component {
     date1: '',
     day2Time: '',
     date2: '',
+    startWeek: moment(new Date()).weeks() + 1, // current week + 1;
+    firstDayOfTheWeek: moment().startOf('week').week(moment(new Date()).weeks() + 1).toDate(),
     startDate: new Date(),
     daysOFWeek: [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
     options:  [
@@ -35,16 +37,21 @@ class Schedule extends Component {
                   { value : "3", label : '3am' },{ value : "4", label : '4am' },{ value : "5", label : '5am' },
                   { value : "6", label : '6am' },{ value : "7", label : '7am' },{ value : "8", label : '8am' },
                   { value : "9", label : '9am' },{ value : "10", label : '10am' },{ value : "11", label : '11am' },
-                  { value : "12", label : '1pm' },{ value : "13", label : '2pm' },{ value : "14", label : '3pm' },
-                  { value : "15", label : '4pm' },{ value : "16", label : '5pm' },{ value : "17", label : '6pm' },
-                  { value : "18", label : '7pm' },{ value : "19", label : '8pm' },{ value : "20", label : '9pm' },
-                  { value : "21", label: '10pm '}, { value : "22", label: '11pm' },{ value : "23", label: '12pm' }
+                  { value : "12", label : '12pm' },{ value : "13", label : '1pm' },{ value : "14", label : '2pm' },
+                  { value : "15", label : '3pm' },{ value : "16", label : '4pm' },{ value : "17", label : '5pm' },
+                  { value : "18", label : '6pm' },{ value : "19", label : '7pm' },{ value : "20", label : '8pm' },
+                  { value : "21", label : '9pm' },{ value : "22", label: '10pm '}, { value : "23", label: '11pm' }
     ],
     disabled: false,
+    firstDayOfSelectedWeek: moment().startOf('week').week(moment(new Date()).weeks() + 1).toDate(),
+    lastDayOfSelectedWeek: moment().endOf('week').week(moment(new Date()).weeks() + 1).toDate()
   };
 
   handleDayOneDate = (date) => {
-    this.setState({ date1: date });
+    const selectedWeek = moment(date).weeks();
+  //  const firstDayOfSelectedWeek = moment().startOf('week').week(selectedWeek).toDate();
+    const lastDayOfSelectedWeek = moment().endOf('week').week(selectedWeek).toDate();
+    this.setState({ date1: date, firstDayOfSelectedWeek: date, lastDayOfSelectedWeek, date2: '', day2Time: '' , selectedWeek });
   }
 
 
@@ -60,17 +67,40 @@ class Schedule extends Component {
     this.setState({ day2Time: selectedTime.value });
   }
 
-  scheduleClass = () => {
-    const { day1Time, day2Time, date1, date2 } = this.state;
+  scheduleClass = async () => {
+    const { day1Time, day2Time, date1, date2, selectedWeek } = this.state;
     const { id } = this.props.match.params;
-    this.setState({ loading: true , disabled: true});
-    //swal("INFO!", "Your Class is been scheduled", "success");
-    // perform axios call here
-    // on return go to dashboard
+    if(day1Time !== '' && day2Time !== '' && date1 !== '' && date2 !== '' && selectedWeek !== undefined) {
+      this.setState({ loading: true , disabled: true});
+      // userId
+      const data = { day1Time, day2Time, date1, date2, courseId: id, week: selectedWeek, userId: "5dea2b352dda1d00043e74ec" };
+      let axiosConfig = {
+       headers: {
+        'Content-Type': 'application/json',
+        'x-access-token': ''
+      }
+    };
+      try {
+        const { data: response } = await axios.post(`${apiUrl}/schedule`, data, axiosConfig);
+        if(response.success) {
+          swal("INFO!", response.message, "success");
+           //  go to dashboard
+        } else {
+         swal("INFO!", response.message, "error");
+        }
+        
+      } catch (error) {
+        console.log('error', error)
+        swal("INFO!", error.message, "error");
+      }
+      this.setState({ loading: false , disabled: false});
+    } else {
+      swal("ERROR!", "All fields are required!!!", "error");
+    }
   }
 
   render() {
-    const { day1Time, day2Time, date1, date2, daysOFWeek, options } = this.state;
+    const { day1Time, day2Time, date1, date2, daysOFWeek, options, firstDayOfTheWeek, firstDayOfSelectedWeek, lastDayOfSelectedWeek  } = this.state;
     return (
       // eslint-disable-next-line react/jsx-filename-extension
       <>
@@ -92,7 +122,7 @@ class Schedule extends Component {
             <div className="col-md-3">
               <DatePicker
                selected={date1}
-                minDate={new Date()}
+                minDate={firstDayOfTheWeek}
                 onChange={this.handleDayOneDate}
                 placeholderText="Select date for first day "
               />
@@ -110,7 +140,8 @@ class Schedule extends Component {
               <DatePicker
                 onChange={this.handleDayTwoDate}
                 selected={date2}
-                minDate={new Date()}
+                minDate={firstDayOfSelectedWeek}
+                maxDate={lastDayOfSelectedWeek}
                 placeholderText="Select date for second day "
               />
             </div>
@@ -168,4 +199,10 @@ class Schedule extends Component {
   }
 }
 
-export default Schedule;
+const mapStateToProps = ({ User }) => {
+  return {
+    User,
+  };
+};
+
+export default connect(mapStateToProps)(Schedule);

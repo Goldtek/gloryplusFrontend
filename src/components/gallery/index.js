@@ -11,7 +11,7 @@ import {
   Footer,
   PageInfo,
   NewsLetter,
-  SingleGallery
+  PictureGallery
 } from "../../custom";
 
 const API = "./utils/galleryData.json";
@@ -20,7 +20,7 @@ const override = css`
   margin: 0 auto;
   border-color: red;
 `;
-class Gallery extends Component {
+class SingleGallery extends Component {
   state = { gallery: [] };
 
   componentDidMount() {
@@ -33,7 +33,6 @@ class Gallery extends Component {
       );
     });
   }
-
   render() {
     const pathID = this.props.match.params.id;
     const { gallery, loading } = this.state;
@@ -72,7 +71,7 @@ class Gallery extends Component {
             <div className="col-md-4"></div>
           </div>
         ) : (
-          <div style={{ minHeight: "25vh" }}>
+            <div style={{ minHeight: "25vh" }}>
             {gallery
               .filter(filtGallery =>
                 filtGallery.pathName
@@ -80,13 +79,15 @@ class Gallery extends Component {
                   .includes(pathID.toLowerCase())
               )
               .map(({ galleryId, ...otherfilters }) => (
-                <SingleGallery
+                <PictureGallery
                   key={galleryId}
                   {...otherfilters}
                   name={pathID}
                 />
               ))}
           </div>
+
+          
         )}
 
         <NewsLetter />
@@ -96,4 +97,4 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery;
+export default SingleGallery;

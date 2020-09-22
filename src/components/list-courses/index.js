@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { connect } from 'react-redux';
 
 import {
   Header,
@@ -19,6 +21,21 @@ class Lessons extends Component {
     disabled: moment().year(2020).month(4).date(26).hour(0).isSame(moment().get()),
     previous: [],
   };
+
+  componentDidMount(){
+    this.fetchScheduledCourse();
+  }
+
+  fetchScheduledCourse = async () => {
+    const { userId } = this.props.match.params;
+    console.log('user', this.props.User);
+    const api_url = process.env.REACT_APP_BASE_URL;
+    const { data } = await axios.get(`${api_url}/schedule/userId`);
+    const { schedule } = data;
+    console.log('schedule', schedule);
+    // split get the current lesson, previous and next lessons, seperate and get the course, imagepath
+    this.setState({ schedule });
+  }
 
   render() {
     const { disabled, previous } = this.state;
@@ -142,4 +159,10 @@ class Lessons extends Component {
   }
 }
 
-export default Lessons;
+const mapStateToProps = ({ User }) => {
+  return {
+    User,
+  };
+};
+
+export default connect(mapStateToProps)(Lessons);

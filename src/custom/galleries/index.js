@@ -18,7 +18,7 @@ const Galleries = ({ galleries }) => {
   );
 };
 
-Galleries.propTypes = {
-  galleries: propTypes.any.isRequired
-};
+// Galleries.propTypes = {
+//   galleries: propTypes.object.isRequired
+// };
 export default Galleries;

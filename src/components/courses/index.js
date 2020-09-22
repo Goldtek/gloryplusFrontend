@@ -13,14 +13,29 @@ import {
 import { ContainerSize } from './styles';
 // eslint-disable-next-line react/prefer-stateless-function
 class Courses extends Component {
+  state = {
+    courses: [],
+  };
 
   componentDidMount() {
     this.fetchCourses();
   }
 
   fetchCourses = async () => {
-    const res = await axios.get("./utils/classData.json");
-    this.setState({ courses: res.data });
+    const api_url = process.env.REACT_APP_BASE_URL;
+    const { data } = await axios.get(`${api_url}/courses`);
+    const { courses } = data;
+    this.setState({ courses });
+  }
+
+  renderCourses = () => {
+   const { courses } = this.state;
+   console.log('course', courses);
+    if(courses.length > 0 ){
+    return courses.map((course, index) =>  <CourseItem imagePath={course.imagePath} title={course.title} id={course._id} /> );
+    } else {
+      // return empty component
+    }
   }
 
   render() {
@@ -36,14 +51,7 @@ class Courses extends Component {
         <PageInfo title="Courses" bgPicture="url(img/bg-info/login.png)" />
         <div className="container" style={ContainerSize}>
           <div className="row">
-            <CourseItem imagePath="img/event/workers.jpg" title="Foundation School" id="1" />
-            <CourseItem imagePath="img/event/workers.jpg" title="GloryPlus Leadership Institue" id="2" />
-            <CourseItem imagePath="img/event/workers.jpg" title="GloryPlus Leadership Institue" id="3" />
-          </div>
-          <div className="row">
-            <CourseItem imagePath="img/event/workers.jpg" title="Foundation School" />
-            <CourseItem imagePath="img/event/workers.jpg" title="GloryPlus Leadership Institue" />
-            <CourseItem imagePath="img/event/workers.jpg" title="GloryPlus Leadership Institue" />
+            {this.renderCourses()}
           </div>
         </div>
         <Footer />

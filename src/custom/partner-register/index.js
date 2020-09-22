@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import serializeForm from "form-serialize";
+import { connect } from "react-redux";
+import { register } from "../../actions"
 
 
 class MembeRegister extends React.Component {
   handleRegister = e => {
     e.preventDefault();
     const regValues = serializeForm(e.target, { hash: true });
-    console.log(regValues);
+   this.props.register(regValues);
   };
   render() {
     return (
@@ -69,6 +71,15 @@ class MembeRegister extends React.Component {
                   </div>
                   <div className="form-group">
                     <input
+                      type="input"
+                      className="form-control"
+                      placeholder="Which branch do you belong to?"
+                      required
+                      name="branch"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
                       type="email"
                       className="form-control"
                       placeholder="Your Email *"
@@ -115,4 +126,11 @@ class MembeRegister extends React.Component {
   }
 }
 
-export default MembeRegister;
+const mapDispatchToProps = dispatch => {
+  return {
+    register: (data) => dispatch(register(data)),
+   
+  }
+}
+
+export default connect(null, mapDispatchToProps)(MembeRegister);
