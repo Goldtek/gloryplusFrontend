@@ -39,6 +39,7 @@ const content = [
 class Hero extends Component {
   render() {
     return (
+      <div className="cont">
       <div
         id="bootstrap-touch-slider"
         className="carousel bs-slider slide  control-round indicators-line"
@@ -91,6 +92,7 @@ class Hero extends Component {
           <span className="fa fa-angle-right" aria-hidden="true"></span>
           <span className="sr-only">Next</span>
         </a>
+      </div>
       </div>
     );
   }

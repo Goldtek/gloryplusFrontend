@@ -46,17 +46,17 @@ class TopNav extends Component {
                 className="counter-top"
                 // style={{ border: "2px solid green" }}
               >
-                <h5>Upcoming Event:</h5>
+                {/* <h5>Upcoming Event:</h5>
                 <Countdown
                   timeTillDate="3 26 2020, 8:00 am"
                   timeFormat="MM DD YYYY, h:mm a"
-                />
-                <Link
+                /> */}
+                {/* <Link
                   to="/event/holyghost-morning"
                   className="top-readmore hidden-sm"
                 >
                   readmore
-                </Link>
+                </Link> */}
               </div>
             </div>
             {/* <div className="col-sm-3 col-md-2 col-lg-3 hidden-xs">

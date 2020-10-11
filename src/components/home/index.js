@@ -37,6 +37,8 @@ import {
   Testimonial,
   EventSlider,
 } from "../../custom";
+
+import './style.css';
 /*----------------
 MEMBERS IMPORT
 ----------------- */
@@ -44,6 +46,7 @@ import Member from "../member";
 // declare constant for event api
 const eventAPI = "./utils/eventData.json";
 const TestimonialAPI = "./utils/testimonyData.json";
+
 
 /*----------------
 MEMBERS IMPORT

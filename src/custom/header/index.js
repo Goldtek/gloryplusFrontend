@@ -72,6 +72,9 @@ class Header extends Component {
                           <a href="/sermon">Sermon</a>
                         </li>
                         <li>
+                          <a href="/membership">Membership</a>
+                        </li>
+                        <li>
                           <a href="/login">School</a>
                         </li>
                       </ul>

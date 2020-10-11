@@ -37,6 +37,7 @@ import CourseItem from './course-item';
 import Assignment from './assignment';
 import GiveModal from './giveModal';
 import history from './history';
+import MembershipForm from './membershipForm';
 
 export {
   Header,
@@ -78,4 +79,5 @@ export {
   Assignment,
   GiveModal,
   history,
+  MembershipForm
 };

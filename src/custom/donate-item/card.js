@@ -2,8 +2,8 @@ import React from 'react';
 
 import { ws, RAVE_PUBLIC_KEY } from '../../lib/constant';
 
-function give() {
-
+function give(props) {
+console.log(props)
   //  window.payWithRave(phone, amt, email, RAVE_PUBLIC_KEY);
 }
 
@@ -18,7 +18,7 @@ function card(props) {
           <p className="card-description give-div">
             {props.desc}
           </p>
-          <button className="btn btn-danger btn-block" role="button" onClick={click}>{btnText}</button>
+          <button className="btn btn-danger btn-block" role="button" onClick={()=> give(props)}>{btnText}</button>
         </div>
       </div>
     </div>

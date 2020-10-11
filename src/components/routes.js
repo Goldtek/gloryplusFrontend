@@ -24,6 +24,7 @@ import Schedule from './schedule';
 import Lessons from './list-courses';
 import Video from './class_video';
 import Home from './home';
+import Membership from './membership';
 import {
   ErrorPage, history
 } from '../custom';
@@ -73,6 +74,7 @@ const Routes = () => (
       <Route exact path="/reschedule/:id" component={Schedule} />
       <Route exact path="/dashboard/:userId" component={Lessons} />
       <Route exact path="/class/:id" component={Video} />
+      <Route path='/membership' component={Membership} />
       <Route path="*" component={ErrorPage} />
     </Switch>
   </Router>

@@ -64,20 +64,20 @@ class MembeRegister extends React.Component {
                     <input
                       type="input"
                       className="form-control"
-                      placeholder="Department you belong to *"
-                      required
-                      name="department"
+                      placeholder="WhatsApp  number*"
+                      name="whatsapp"
                     />
                   </div>
                   <div className="form-group">
                     <input
                       type="input"
                       className="form-control"
-                      placeholder="Which branch do you belong to?"
+                      placeholder="Other Number*"
                       required
-                      name="branch"
+                      name="other"
                     />
                   </div>
+                
                   <div className="form-group">
                     <input
                       type="email"
@@ -96,6 +96,25 @@ class MembeRegister extends React.Component {
                       name="password"
                     />
                   </div>
+                 
+                  <div className="form-group">
+                    <input
+                      type="input"
+                      className="form-control"
+                      placeholder="State *"
+                      required
+                      name="state"
+                    />
+                  </div>
+                     <div className="form-group">
+                    <input
+                      type="input"
+                      className="form-control"
+                      placeholder="City *"
+                      required
+                      name="city"
+                    />
+                  </div>
                   <div className="form-group">
                     <textarea
                       className="form-control"
@@ -103,7 +122,7 @@ class MembeRegister extends React.Component {
                       required
                       name="address"
                     ></textarea>
-                  </div>
+                  </div> 
                   <div className="form-group">
                     <input
                       type="submit"
