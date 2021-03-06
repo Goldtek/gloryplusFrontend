@@ -1,0 +1,43 @@
+[
+    {
+      "question": "Please try and spot one of the limitations of ReactJS below.",
+      "optionA": "Because of JSX, code’s readability increases." ,
+      "optionB": "React is just a library, not a full-blown framework." ,
+      "optionC": "It uses server-side rendering." ,
+      "optionD": "It is used for both client-side and server-side rendering." ,
+      "answer": "OptionB" 
+    },
+    {
+        "question": "Can you in your own terms explain by what you understand as JSX which is used in react.",
+        "optionA": "JSX is a shorthand for JavaScript XML. " ,
+        "optionB": "It is used for building blocks of a React application’s UI." ,
+        "optionC": "It ensures that React component must have a render() mandatorily" ,
+        "optionD": "It can be used to embed components into one in the following way:" ,
+        "answer": "optionA" 
+      },
+      {
+        "question": " Why is switch keyword used in React Router v4?",
+        "optionA": "Displays Predictability of outcome." ,
+        "optionB": "Used to show how code should be organized." ,
+        "optionC": "It is used when you want to display only a single route to be rendered amongst the several defined routes." ,
+        "optionD": "A Router is used to define multiple routes and when a user types a specific URL," ,
+        "answer": "optionC" 
+      },
+      {
+        "question": "What were the major problems with MVC framework?",
+        "optionA": "DOM manipulation was very expensive" ,
+        "optionB": "It can be used to save memory" ,
+        "optionC": "Creation of pure component can be tedious." ,
+        "optionD": "Code reuse, logic and bootstrap abstraction" ,
+        "answer": "optionA" 
+      },
+      {
+        "question": "State of the task that  Higher Order Components(HOC) can be used for in Reactjs.",
+        "optionA": "Because of circular dependencies, a complicated model was created around models and view" ,
+        "optionB": "State abstraction and manipulation" ,
+        "optionC": "It is a place to determine how the state will change." ,
+        "optionD": "Simply displays the data provided by the Store." ,
+        "answer": "optionB" 
+      }
+
+]

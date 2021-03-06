@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "30 days prayer and fasting(The Revelation of Jesus)",
+    "pathName": "40-days-fasting",
+    "imagePath": "img/event/worship.jpg",
+    "description": "Join us this 30 days prayering and fasting as we experience the supernatural glory of God. Your life is about to take a major leap.",
+    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
+    "time": "6:00pm",
+    "day": "04",
+    "month": "January",
+    "year": "2021",
+    "status": "not"
+  },
+  {
+    "id": 2,
+    "title": "Holy Ghost Morning",
+    "pathName": "holyghost-morning",
+    "imagePath": "img/event/hgm1.jpg",
+    "description": "Join us again on the 26th of March for yet another power filled session for the first Holy Ghost morning of the year 2020. This  year is your your of uncommon manifestation through the Holy Ghost,Our Glorious God will be releasing His Glorious Power in a Glorious atmosphere for Glorious Experiences. Don't miss this program for anything. Come expectant and Jesus will surely meet you at the very point of your need.",
+    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
+    "time": "8:00am",
+    "day": "7",
+    "month": "Feburary",
+    "year": "2021",
+    "status": "not"
+  },
+
+  {
+    "id": 3,
+    "title": "14 days prayer and fasting(Supernatural Shift)",
+    "pathName": "inauguration",
+    "imagePath": "img/event/inagauration.jpg",
+    "description": "An eye-opening season in the 14 days Prayers and fasting. Yokes are been lifted, Limitations are been rolled away, We are shifting in all areas. Get Instructions that will cause a supernatural shift in alll areas of your life. ",
+    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
+    "time": "8:00am",
+    "day": "1-14",
+    "month": "March",
+    "year": "2021",
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "title": "Holy Ghost Morning  March Edition",
+    "pathName": "holyghost-morning",
+    "imagePath": "img/event/hgm2.jpg",
+    "description": "Join us again on the 26th of March for yet another power filled session for the first Holy Ghost morning of the year 2020. This  year is your your of uncommon manifestation through the Holy Ghost,Our Glorious God will be releasing His Glorious Power in a Glorious atmosphere for Glorious Experiences. Don't miss this program for anything. Come expectant and Jesus will surely meet you at the very point of your need.",
+    "location": "18 kudirat Abiola way, olusosun bustop, Ikeja",
+    "time": "5:00am - 6:00am & 6:00pm - 7:00pm",
+    "day": "7",
+    "month": "March",
+    "year": "2021",
+    "status": "active"
+  }
+
+]

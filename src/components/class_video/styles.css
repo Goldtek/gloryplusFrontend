@@ -1,0 +1,12 @@
+.rating {
+  position: absolute;
+  bottom: 4%;
+  right: 11%;
+  z-index: 2;
+  color: white;
+  width: 250px;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: blue;
+  padding: 10px; 
+}

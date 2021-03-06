@@ -1,0 +1,186 @@
+[{
+    "galleryId": 1,
+    "coverPix": "img/gallery/glorymen/men.png",
+    "coverTitle": "Glory Men",
+    "pathName": "glorymen",
+    "subPhotos": [{
+        "photoId": 1,
+        "photoUrl": "img/gallery/glorymen/01.jpg"
+      },
+      {
+        "photoId": 2,
+        "photoUrl": "img/gallery/glorymen/03.jpg"
+      },
+      {
+        "photoId": 3,
+        "photoUrl": "img/gallery/glorymen/men.png"
+      },
+      {
+        "photoId": 4,
+        "photoUrl": "img/gallery/glorymen/men2.jpg"
+      }
+    ]
+  },
+  {
+    "galleryId": 2,
+    "coverPix": "img/gallery/pacesetter/2.jpeg",
+    "coverTitle": "Pacessetters",
+    "pathName": "pacesetters",
+    "subPhotos": [{
+        "photoId": 1,
+        "photoUrl": "img/gallery/pacesetter/02.jpg"
+      },
+      {
+        "photoId": 2,
+        "photoUrl": "img/gallery/pacesetter/2.jpeg"
+      },
+      {
+        "photoId": 3,
+        "photoUrl": "img/gallery/pacesetter/sermon.jpeg"
+      }
+    ]
+  },
+  {
+    "galleryId": 3,
+    "coverPix": "img/gallery/2020-1-27/2020-01-27-pst-roseline.jpeg",
+    "coverTitle": "Sunday Service January 27th 2020",
+    "pathName": "sunday-service-jan-27",
+    "subPhotos": [{
+        "photoId": 1,
+        "photoUrl": "img/gallery/2020-1-27/2020-01-27(1).jpeg"
+      },
+      {
+        "photoId": 2,
+        "photoUrl": "img/gallery/2020-1-27/2020-01-27(2).jpeg"
+      },
+      {
+        "photoId": 3,
+        "photoUrl": "img/gallery/2020-1-27/2020-01-27(3).jpeg"
+      },
+      {
+        "photoId": 4,
+        "photoUrl": "img/gallery/2020-1-27/2020-01-27(4).jpeg"
+      },
+      {
+        "photoId": 5,
+        "photoUrl": "img/gallery/2020-1-27/2020-01-27(5).jpeg"
+      },
+      {
+        "photoId": 6,
+        "photoUrl": "img/gallery/2020-1-27/2020-01-27(6).jpeg"
+      },
+      {
+        "photoId": 7,
+        "photoUrl": "img/gallery/2020-1-27/2020-01-27(7).jpeg"
+      },
+      {
+        "photoId": 8,
+        "photoUrl": "img/gallery/2020-1-27/2020-01-27(8).jpeg"
+      },
+      {
+        "photoId": 9,
+        "photoUrl": "img/gallery/2020-1-27/2020-01-27(9).jpeg"
+      },
+      {
+        "photoId": 10,
+        "photoUrl": "img/gallery/2020-1-27/2020-01-27(10).jpeg"
+      }
+    ]
+  },
+  {
+    "galleryId": 4,
+    "coverPix": "img/gallery/feb-comunion/IMG-20200204-WA0057.jpg",
+    "coverTitle": "February Communion Service",
+    "pathName": "communion-service",
+    "subPhotos": [{
+        "photoId": 1,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0043.jpg"
+      },
+      {
+        "photoId": 2,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0045.jpg"
+      },
+      {
+        "photoId": 3,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0046.jpg"
+      },
+      {
+        "photoId": 4,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0047.jpg"
+      },
+      {
+        "photoId": 5,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0048.jpg"
+      },
+      {
+        "photoId": 6,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0049.jpg"
+      },
+      {
+        "photoId": 7,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0050.jpg"
+      },
+      {
+        "photoId": 8,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0051.jpg"
+      },
+      {
+        "photoId": 9,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0052.jpg"
+      },
+      {
+        "photoId": 10,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0053.jpg"
+      },
+      {
+        "photoId": 11,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0054.jpg"
+      },
+      {
+        "photoId": 12,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0055.jpg"
+      },
+      {
+        "photoId": 13,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0056.jpg"
+      },
+      {
+        "photoId": 14,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0057.jpg"
+      },
+      {
+        "photoId": 15,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0058.jpg"
+      },
+
+      {
+        "photoId": 16,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0060.jpg"
+      },
+      {
+        "photoId": 17,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0061.jpg"
+      },
+      {
+        "photoId": 18,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0062.jpg"
+      },
+      {
+        "photoId": 19,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0063.jpg"
+      },
+      {
+        "photoId": 20,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0064.jpg"
+      },
+      {
+        "photoId": 21,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0065.jpg"
+      },
+      {
+        "photoId": 22,
+        "photoUrl": "img/gallery/feb-comunion/IMG-20200204-WA0066.jpg"
+      }
+    ]
+  }
+]
