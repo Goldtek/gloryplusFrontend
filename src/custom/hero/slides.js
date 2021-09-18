@@ -21,7 +21,7 @@ function SlideImg({
             <h1 data-animation="animated zoomInRight">{title}</h1>
             <p data-animation="animated fadeInLeft">{des}</p>
             <Link
-              to="/login"
+              to="/register"
               //   target="_blank"
               className="btn btn-default"
               data-animation="animated fadeInLeft"
@@ -29,7 +29,7 @@ function SlideImg({
               {btn1}
             </Link>
             <Link
-              to="/live"
+              to="/login"
               className="btn btn-primary"
               data-animation="animated fadeInRight"
             >

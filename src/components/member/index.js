@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import { Helmet } from "react-helmet";
 import {
   Header,
   TopNav,
@@ -25,10 +24,6 @@ class Member extends Component {
   render() {
     return (
       <Fragment>
-        <Helmet>
-          <title>Partner</title>
-          <meta name="description" content="Partner " />
-        </Helmet>
         <TopNav />
         <Header />
         <PageInfo title="Partner" bgPicture="url(img/partner/ourpartner.png)" />

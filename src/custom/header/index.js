@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 // import TextTruncate from "react-text-truncate";
 import "./nav.css";
 class Header extends Component {
@@ -69,16 +69,16 @@ class Header extends Component {
                           <a href="/events">Event</a>
                         </li>
                         <li>
-                          <a href="/sermon">Sermon</a>
+                          <a href="/sermon">Sermons</a>
                         </li>
-                        <li>
+                        {/* <li>
                           <a href="/membership">Membership</a>
                         </li>
                         <li>
                           <a href="/basic">Basic Academy</a>
-                        </li>
+                        </li> */}
                         <li>
-                          <a href="/login">School</a>
+                          <Link to={{ pathname: '/login', state: { from: 'dashboard' } }}>GloryPlus Academy</Link>
                         </li>
                       </ul>
                     </li>

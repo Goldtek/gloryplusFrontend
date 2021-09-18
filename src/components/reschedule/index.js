@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Helmet } from 'react-helmet';
 import Alert from 'react-bootstrap/Alert';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
@@ -74,10 +73,6 @@ class Reschedule extends Component {
     return (
       // eslint-disable-next-line react/jsx-filename-extension
       <>
-        <Helmet>
-          <title>Schedule</title>
-          <meta name="description" content="Schedule" />
-        </Helmet>
         <TopNav />
         <Header />
         <PageInfo title="Reschedule Class" bgPicture="url(img/bg-info/login.png)" />

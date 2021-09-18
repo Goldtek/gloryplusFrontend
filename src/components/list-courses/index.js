@@ -44,7 +44,7 @@ class Lessons extends Component {
       // eslint-disable-next-line react/jsx-filename-extension
       <>
         <Helmet>
-          <title>Foundation Class</title>
+          <title>Gloryplus International Foundation Class</title>
           <meta name="description" content="Foundation Class" />
         </Helmet>
         <TopNav />

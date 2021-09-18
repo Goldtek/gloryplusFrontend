@@ -13,10 +13,6 @@ class Basic extends Component {
   render() {
     return (
       <Fragment>
-        <Helmet>
-          <title>Join Our Basic Academy</title>
-          <meta name="testimony" content="Share your testimony" />
-        </Helmet>
         <TopNav />
         <Header />
         <PageInfo

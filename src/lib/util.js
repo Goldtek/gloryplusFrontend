@@ -1,8 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
-import { auth, firestore } from '../custom';
 import _ from 'lodash';
-
+import { FlutterWaveButton, closePaymentModal } from 'flutterwave-react-v3';
+import { auth, firestore } from '../custom';
 import { ws, RAVE_PUBLIC_KEY } from './constant';
+
+// const flw = new Flutterwave(process.env.REACT_APP_PUBLIC_KEY, process.env.REACT_APP_SECRET_KEY);
+
 
 export const calculateStateFromProps = ({
   dateTo,
@@ -83,25 +86,11 @@ export const storeTrackInfo = (user) => {
   ws.setItem('user', strUser);
 };
 
-export const download = async (amt, title) => {
+export const download = () => {
   const user = ws.getItem('user');
-  const extUser = JSON.parse(user);
   if (user === undefined || user === null) {
     return window.$('#modalBox').modal('show');
   }
-  const { email, phone, name } = extUser;
-  const url = 'http://wwww.gloryplusinternational.org/sermon';
-  const metaData = {
-    metaname: title, 
-    metavalue: uuidv4(),
-  };
-
-  const customer = {
-    email,
-    name,
-    phone_number: phone,
-  };
-  window.payWithRave(phone, amt, email, metaData, url, customer, RAVE_PUBLIC_KEY);
 };
 
 export const Give = (seedDetails) => {
@@ -122,56 +111,75 @@ export const Give = (seedDetails) => {
 };
 
 export const handleError = (error) => {
-    console.log('Error Subscribing: ', error);
-  };
+  console.log('Error Subscribing: ', error);
+};
 
 export const fetchCells = async (dispatch) => {
-    await firestore.collection('cells')
-        .onSnapshot((querySnapshot) => {
-        let cells = [];
-        querySnapshot.forEach((doc) => {
-            cells.push(doc.data());
-        });
-        cells = _.orderBy(cells, ['name'],['asc'])
-        dispatch({ type: 'SET_CELLS', cells });
+  await firestore.collection('cells')
+    .onSnapshot((querySnapshot) => {
+      let cells = [];
+      querySnapshot.forEach((doc) => {
+        cells.push(doc.data());
+      });
+      cells = _.orderBy(cells, ['name'], ['asc']);
+      dispatch({ type: 'SET_CELLS', cells });
     }, handleError);
-}
+};
 
 export const fetchCountry = async (dispatch) => {
-    await firestore.collection('countries')
-        .onSnapshot((querySnapshot) => {
-        let countries = [];
-        querySnapshot.forEach((doc) => {
-            countries.push(doc.data());
-        });
-        countries = _.orderBy(countries, ['name'],['asc']);
-        let mapped_countries = _.keyBy(countries, 'id'); 
-        dispatch({ type: 'FETCH_COUNTRIES', countries, mapped_countries });
+  await firestore.collection('countries')
+    .onSnapshot((querySnapshot) => {
+      let countries = [];
+      querySnapshot.forEach((doc) => {
+        countries.push(doc.data());
+      });
+      countries = _.orderBy(countries, ['name'], ['asc']);
+      const mapped_countries = _.keyBy(countries, 'id');
+      dispatch({ type: 'FETCH_COUNTRIES', countries, mapped_countries });
     }, handleError);
-}
+};
 
-export const fetchStates = async (dispatch,id) => {
-    const query = await firestore.collection('states').where('country_id','==', id).get();
-    let states = [];
-    if(!query.empty){
-        query.docs.map((snapshot)=> states.push(snapshot.data()));
-        states = _.orderBy(states, ['name'],['asc']);
-        let mapped_states = _.keyBy(states, 'country_id'); 
-        dispatch({ type: 'FETCH_STATES',  states, mapped_states });  
-    }
-}
+export const fetchStates = async (dispatch, id) => {
+  const query = await firestore.collection('states').where('country_id', '==', id).get();
+  let states = [];
+  if (!query.empty) {
+    query.docs.map((snapshot) => states.push(snapshot.data()));
+    states = _.orderBy(states, ['name'], ['asc']);
+    const mapped_states = _.keyBy(states, 'country_id');
+    dispatch({ type: 'FETCH_STATES', states, mapped_states });
+  }
+};
 
 
 export const fetchCities = async (dispatch, id) => {
-    const query = await firestore.collection('cities').where('state_id','==', id).get();
-    let cities = [];
-    if(!query.empty){
-      query.docs.map((snapshot)=> cities.push(snapshot.data()));
-      cities = _.orderBy(cities, ['name'],['asc']);
-      let mapped_cities = _.keyBy(cities, 'state_id'); 
-      dispatch({ type: 'FETCH_CITIES', cities, mapped_cities });  
-     }
+  const query = await firestore.collection('cities').where('state_id', '==', id).get();
+  let cities = [];
+  if (!query.empty) {
+    query.docs.map((snapshot) => cities.push(snapshot.data()));
+    cities = _.orderBy(cities, ['name'], ['asc']);
+    const mapped_cities = _.keyBy(cities, 'state_id');
+    dispatch({ type: 'FETCH_CITIES', cities, mapped_cities });
   }
+};
 
 
+export const generateUID = () => uuidv4();
 
+
+export const config = (user, amount, title) => ({
+  public_key: 'FLWPUBK_TEST-d4b41ed6db2e7497259993577dc1101f-X',
+  tx_ref: generateUID(),
+  amount,
+  currency: 'NGN',
+  payment_options: 'card',
+  customer: {
+    email: user.email,
+    phone_number: user.phone,
+    name: user.name,
+  },
+  customizations: {
+    title,
+    description: `Payment for  ${title}`,
+    logo: 'https://res.cloudinary.com/dvxptc5uy/image/upload/v1615927027/images/admin-login_tgjzep.jpg',
+  },
+});

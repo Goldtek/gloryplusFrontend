@@ -1,14 +1,15 @@
-import React, { useState } from "react";
-import SectionCard from "../sermon-card";
-import Pagination from "../pagination";
-import Modal from "../modal";
+/* eslint-disable react/jsx-filename-extension */
+import React, { useState } from 'react';
+import SermonCard from '../sermon-card';
+import Pagination from '../pagination';
+import Modal from '../modal';
 
 // import UpcomingEvent from "../up-coming-events";
 // import InfiniteScroll from "react-infinite-scroll-component";
 const SermonList = ({ sermons }) => {
   const [currPage, setCurrPage] = useState(1);
   const [sermonPerPage] = useState(6);
-  const paginate = pageNumber => setCurrPage(pageNumber);
+  const paginate = (pageNumber) => setCurrPage(pageNumber);
 
   // get current paginated content for that page
   const indexOfLastEvent = currPage * sermonPerPage;
@@ -24,8 +25,8 @@ const SermonList = ({ sermons }) => {
         </div>
         <div className="row">
           <Modal />
-          {currSermons.map(({ Id, ...sermonProps }) => (
-            <SectionCard key={Id} {...sermonProps} />
+          {currSermons.map((sermon) => (
+            <SermonCard key={sermon.id} sermon={sermon} />
           ))}
         </div>
 

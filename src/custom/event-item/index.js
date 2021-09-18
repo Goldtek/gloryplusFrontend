@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { css } from "@emotion/core";
 import { FadeLoader } from "react-spinners";
+import moment from 'moment';
 const override = css`
   display: block;
   margin: 0 auto;
@@ -35,7 +36,14 @@ const EventItem = ({ events, loading }) => {
 
   return (
     <div>
-      {events.map(({ id, ...eventData }) => (
+      {events.map(({ id, ...eventData }) => {
+         const check = moment(eventData.date.seconds * 1000);
+         const month = check.locale("en").format('MMM');
+         const day = check.format('D');
+         const year  = check.format('YYYY');
+        const time =  check.locale("en").format('LTa');
+      
+        return (
         <div
           className="el-item event-div"
           key={id}
@@ -44,19 +52,14 @@ const EventItem = ({ events, loading }) => {
         >
           <div className="row">
             <div className="col-md-4 ">
-              <div
-                className="el-thubm set-bg-event"
-                style={{
-                  backgroundImage: `url(${eventData.imagePath})`
-                }}
-              ></div>
+              <div className="el-thubm set-bg-event" style={{backgroundImage: `url(${eventData.img})`}}></div>
             </div>
-            <div className="col-md-8 ">
+            <div className="col-md-8">
               <div className="el-content txt-pad" style={{ padding: "5px" }}>
                 <div className="el-header">
                   <div className="el-date">
-                    <h2>{eventData.day}</h2>
-                    {eventData.month}
+                    <h2>{day}</h2>
+                    {month}
                   </div>
                   <h3>{eventData.title}</h3>
                   <div className="el-metas">
@@ -64,16 +67,16 @@ const EventItem = ({ events, loading }) => {
                       <i className="fa fa-calendar"></i> {eventData.time}
                     </div>
                     <div className="el-meta">
-                      <i className="fa fa-map-marker"></i> {eventData.location}
+                      <i className="fa fa-map-marker"></i> {eventData.address}
                     </div>
                   </div>
                 </div>
 
                 <p className="event-details">
-                  {eventData.description.slice(0, 200) + `...`}
+                  {eventData.details.slice(0, 200) + `...`}
                 </p>
                 <Link
-                  to={`/event/${eventData.pathName}`}
+                  to={`/event/${eventData.uid}`}
                   className="btn btn-danger btn-md"
                 >
                   Read more
@@ -82,7 +85,8 @@ const EventItem = ({ events, loading }) => {
             </div>
           </div>
         </div>
-      ))}
+      )}
+      )}
     </div>
   );
 };

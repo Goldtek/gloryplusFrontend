@@ -7,7 +7,6 @@ class MemberLogin extends React.Component {
   handleLogin = e => {
     e.preventDefault();
     const loginValues = serializeForm(e.target, { hash: true });
-    console.log(loginValues);
   };
   render() {
     return (

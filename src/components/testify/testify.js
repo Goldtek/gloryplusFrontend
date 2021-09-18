@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import { Helmet } from "react-helmet";
 import {
   Header,
   TopNav,
@@ -13,10 +12,6 @@ class TestifyComponent extends Component {
   render() {
     return (
       <Fragment>
-        <Helmet>
-          <title>Share your testimony</title>
-          <meta name="testimony" content="Share your testimony" />
-        </Helmet>
         <TopNav />
         <Header />
         <PageInfo

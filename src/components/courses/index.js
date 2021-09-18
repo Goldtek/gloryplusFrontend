@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { firestore } from '../../custom/firebase';
@@ -56,10 +55,7 @@ const Courses = () => {
     return (
       // eslint-disable-next-line react/jsx-filename-extension
       <>
-        <Helmet>
-          <title>Courses</title>
-          <meta name="description" content="Courses" />
-        </Helmet>
+
         <TopNav />
         <Header />
         <PageInfo title="Courses" bgPicture="url(img/bg-info/login.png)" />

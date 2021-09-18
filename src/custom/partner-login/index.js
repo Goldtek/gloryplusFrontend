@@ -1,39 +1,73 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import serializeForm from 'form-serialize';
 import { useDispatch } from 'react-redux';
-
+import moment from 'moment';
+import { ToastContainer, toast } from 'react-toastify';
+import _ from 'lodash';
 import './login.css';
 import { auth, firestore } from '../firebase';
-import { errorMessage, login } from '../../actions';
+import { errorMessage } from '../../actions';
 
-const apiUrl = process.env.REACT_APP_BASE_URL;
 
 const MemberLogin = (props) => {
   const history = useHistory();
   const dispatch = useDispatch();
-
+  const [loading, setLoading] = useState(false);
+  const previous = history.location.state !== undefined ? history.location.state.from : '';
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
+      setLoading(true);
       const loginValues = serializeForm(e.target, { hash: true });
       const { email, password } = loginValues;
-
       const res = await auth.signInWithEmailAndPassword(email, password);
       const { user: { uid } } = res;
       const doc = await firestore.collection('users').doc(uid).get();
       const user = doc.data();
-      // dispatch to the redux and rewrite routing
+
+      const startDate = moment().valueOf();
       if (user) {
-        // await auth.currentUser.getIdToken();
-        if (user.inSchool) {
-          return history.push(`/dashboard/${user.id}`, true);
+        const subscription = _.get(user, 'subscription', '');
+        const isSubscribed = _.get(user, 'isSubscribed', false);
+        const endDate = _.get(subscription, 'endDate', '');
+
+        if (isSubscribed) {
+          if (moment(endDate).isAfter(startDate) === false) {
+            delete user.subscription;
+            user.isSubscribed = false;
+            firestore.collection('users').doc(`${uid}`).set(user, { merge: true });
+          }
         }
-        return history.push('/courses', true);
+        setTimeout(
+          () => {
+            dispatch({ type: 'LOGIN_SUCCESS', user });
+            setLoading(false);
+            if (previous !== undefined || previous !== '') {
+              return history.push(`/${previous}`);
+            } if (user.inSchool) {
+              return history.push(`/dashboard/${user.id}`, true);
+
+              // goto courses after decision is made
+            }
+            return history.push('/dashboard', true);
+          },
+          5000,
+        );
       }
     } catch (error) {
-      console.log('error logging in', error);
+      toast.error(`${error.message}`, {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      setLoading(false);
+      console.log('error logging in', error.message);
       errorMessage(error);
     }
   };
@@ -96,7 +130,13 @@ const MemberLogin = (props) => {
                   </div>
                 </div>
                 <div className="form-group">
-                  <input type="submit" className="btnSubmit" value="Login" />
+                  {loading && (
+                  <i
+                    className="fa fa-refresh fa-spin"
+                    style={{ marginLeft: '75px', alignSelf: 'center', color: 'white' }}
+                  />
+                  )}
+                  {!loading && (<input type="submit" className="btnSubmit" value="Login" />)}
                 </div>
                 <div className="form-group">
                   <Link to="#" className="ForgetPwd" value="Login">
@@ -108,6 +148,7 @@ const MemberLogin = (props) => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

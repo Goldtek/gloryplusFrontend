@@ -1,16 +1,16 @@
-import React, { Fragment, useState, useEffect } from "react";
-import Helmet from "react-helmet";
-// import { Link } from "react-router-dom";
-import Pagination from "../../custom/pagination";
-import axios from "axios";
+import React, { Fragment, useState, useEffect } from 'react';
+
+import { handleError } from '../../lib/util';
+import Pagination from '../../custom/pagination';
 import {
   TopNav,
   Header,
   PageInfo,
   Footer,
   NewsLetter,
-  EventItem
-} from "../../custom";
+  EventItem,
+  firestore,
+} from '../../custom';
 
 const Events = () => {
   // state = {
@@ -22,32 +22,35 @@ const Events = () => {
   const [eventPerPage] = useState(4);
 
   useEffect(() => {
-    const fetchItems = async () => {
-      setLoading(true);
-      const res = await axios.get("./utils/eventData.json");
-      setEvents(res.data);
-      setLoading(false);
-    };
-
     fetchItems();
   }, []);
 
-  //GET CURRENT POST
+  const fetchItems = async () => {
+    setLoading(true);
+    await firestore.collection('events')
+      .onSnapshot((querySnapshot) => {
+        const results = [];
+        querySnapshot.forEach((doc) => {
+          results.push({ uid: doc.id, ...doc.data() });
+        });
+        setEvents(results);
+        setLoading(false);
+      }, handleError);
+  };
+
+  // GET CURRENT POST
   const indexOfLastEvent = currPage * eventPerPage;
   const indexOfFirstEvent = indexOfLastEvent - eventPerPage;
   const currEvents = eventItems.slice(indexOfFirstEvent, indexOfLastEvent);
-  //GET CURRENT POST
+  // GET CURRENT POST
 
-  //CHANGE PAGE
-  const paginate = pageNumber => setCurrPage(pageNumber);
-  //CHANGE PAGE
+  // CHANGE PAGE
+  const paginate = (pageNumber) => setCurrPage(pageNumber);
+  // CHANGE PAGE
 
   return (
-    <Fragment>
-      <Helmet>
-        <title>Events</title>
-        <meta name="description" content="Home " />
-      </Helmet>
+    // eslint-disable-next-line react/jsx-filename-extension
+    <>
       <TopNav />
       <Header />
       <PageInfo title="Events" bgPicture="url(img/bg-info/church-events.png)" />
@@ -72,7 +75,7 @@ const Events = () => {
 
       <NewsLetter />
       <Footer />
-    </Fragment>
+    </>
   );
 };
 export default Events;

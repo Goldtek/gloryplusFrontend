@@ -1,30 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import $ from "jquery";
 import swal from 'sweetalert';
-import { storeTrackInfo } from "../../lib/util";
+import { useDispatch } from 'react-redux';
+import { ToastContainer, toast } from "react-toastify";
 
-class ModalComponent extends React.Component {
-  state = {
-    email: "",
-    phone: "",
-    name: ""
-  };
-  handleSubmit = () => {
-    const { email, phone, name } = this.state;
+const ModalComponent = () => {
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [name, setName] = useState("");
+  const [error, setError] = useState("");
+  const dispatch = useDispatch();
+
+  const handleSubmit = () => {
     if (email === "" || phone === "" || name === "") {
-      swal('Error', "All fields are required !!!", 'error');
+      toast.error("All fields are required !!!", {
+        position: "top-right",
+        autoClose: 7000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+  
       return;
     }
     const user = { name, email, phone };
-    storeTrackInfo(user);
+    dispatch({type: "UNREGISTERED_USER", user});
     $("#closeBtn").click();
-    swal("Info", "User registration successful, Now you can download your desired Sermon.", 'success');
+    toast.success("Your details have been saved, Now you can download your desired Sermons or sow your seed.", {
+      position: "top-right",
+      autoClose: 10000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
   };
 
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value, error: "" });
-  };
-  render() {
+ 
+
     return (
       <div id="modalBox" className="modal fade" role="dialog">
         <div className="modal-dialog modal-md modal-danger  modal-notify">
@@ -47,7 +64,7 @@ class ModalComponent extends React.Component {
                       name="name"
                       className="form__input"
                       id="name"
-                      onChange={this.handleChange}
+                      onChange={(e) => setName(e.target.value)}
                     />
                     <label className="form__label" htmlFor="email">
                       <span className="form__label-content">YOUR NAME</span>
@@ -61,7 +78,7 @@ class ModalComponent extends React.Component {
                       id="email"
                       name="email"
                       required
-                      onChange={this.handleChange}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                     <label className="form__label" htmlFor="email">
                       <span className="form__label-content">YOUR EMAIL</span>
@@ -74,7 +91,7 @@ class ModalComponent extends React.Component {
                       className="form__input"
                       id="phone"
                       name="phone"
-                      onChange={this.handleChange}
+                      onChange={(e) => setPhone(e.target.value)}
                     />
                     <label className="form__label" htmlFor="email">
                       <span className="form__label-content">
@@ -82,9 +99,9 @@ class ModalComponent extends React.Component {
                       </span>
                     </label>
                   </div>
-                  {this.state.error !== "" && (
+                  {error !== "" && (
                     <label className="label label-danger">
-                      {this.state.error}
+                      {error}
                     </label>
                   )}
                 </div>
@@ -99,7 +116,7 @@ class ModalComponent extends React.Component {
                       <button
                         type="submit"
                         className="btn btn-block btn-primary"
-                        onClick={this.handleSubmit}
+                        onClick={handleSubmit}
                       >
                         Submit{" "}
                         <i className="fa fa-paper-plane" aria-hidden="true"></i>
@@ -126,15 +143,14 @@ class ModalComponent extends React.Component {
                   </div>
                 </div>
               </div>
-
-              {/* NEW FORM ENDS ##############################################################3 */}
+              <ToastContainer />
             </div>
                      
           </div>
         </div>
       </div>
     );
-  }
+  
 }
 
 export default ModalComponent;

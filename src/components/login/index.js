@@ -14,10 +14,6 @@ class Login extends Component {
     return (
       // eslint-disable-next-line react/jsx-filename-extension
       <>
-        <Helmet>
-          <title>Login</title>
-          <meta name="description" content="login" />
-        </Helmet>
         <TopNav />
         <Header />
         <PageInfo title="Login" bgPicture="url(img/bg-info/login.png)" />

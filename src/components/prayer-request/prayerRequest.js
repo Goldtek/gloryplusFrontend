@@ -14,8 +14,7 @@ class PrayerRequestComponent extends Component {
     return (
       <>
         <Helmet>
-          <title>Send us your prayer request-GPI</title>
-          <meta name="prayer request" content="we want to pray with you" />
+          <title> GloryPlus International - Send us your prayer request-GPI</title>
         </Helmet>
         <TopNav />
         <Header />

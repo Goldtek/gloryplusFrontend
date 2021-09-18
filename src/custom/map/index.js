@@ -73,7 +73,7 @@ const getMapBounds = (map, maps, places) => {
     const Map = ({ locations, zoomLevel, currentLocation, setHomeCell }) => {
     return (
       <div className="map" style={{marginBottom: '20px' }}>
-          <h2 className="map-h2"> GloryPlus Home cell Locations </h2>
+          <h2 className="map-h2"> <b> GloryPlus Home cell Locations  </b></h2>
 
           <div className="google-map">
           {!lodash.isEmpty(locations) && (
@@ -92,15 +92,14 @@ const getMapBounds = (map, maps, places) => {
              
               {locations.map((location, index) => (
            
-                  <HomeCellPin
-                  key={index}
-                  lat={location.lat}
-                  lng={location.lng}
-                  setHomeCell={setHomeCell}
-                  place={location}
-                  show={false}
-                  cell_id={location.id}
-                  />
+              <HomeCellPin
+                key={index}
+                lat={location.lat}
+                lng={location.lng}
+                place={location}
+                show={false}
+                cell_id={location.id}
+              />
                  
               ))}
               

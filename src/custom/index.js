@@ -1,38 +1,38 @@
-import Header from "./header";
-import TopNav from "./top-nav";
-import Hero from "./hero";
-import EventTimer from "./event-timer";
-import JoinUs from "./join-us";
-import ServiceSection from "./service-section";
-import Sermon from "./sermon";
-import BibleQuote from "./bible-quote";
-import Donate from "./donate";
-import NewsLetter from "./news-letter";
-import PopularSermon from "./popular-sermon";
-import Footer from "./footer";
-import PastorSection from "./pastor-section";
-import PageInfo from "./page-info";
-import SermonList from "./sermon-list";
-import Contactus from "./contact";
-import EventItem from "./event-item";
-import ErrorPage from "./errorpage";
-import GroupList from "./group";
-import GroupItem from "./group-item";
-import DonateItem from "./donate-item";
-import MemberLogin from "./partner-login";
-import MembeRegister from "./partner-register";
-import LiveStream from "./livestream";
-import Donation from "./donation-item";
-import EventDetail from "./event-detail";
-import Galleries from "./galleries";
-import PictureGallery from "./gallery";
-import SectionCard from "./sermon-card";
-import Testimonial from "./testimonial";
-import EventSlider from "./event-slider";
-import GifComponent from "./gifcomponent";
-import Modal from "./modal";
-import TestifyForm from "./testify";
-import PrayerRequest from "./prayer-request";
+import Header from './header';
+import TopNav from './top-nav';
+import Hero from './hero';
+import EventTimer from './event-timer';
+import JoinUs from './join-us';
+import ServiceSection from './service-section';
+import Sermon from './sermon';
+import BibleQuote from './bible-quote';
+import Donate from './donate';
+import NewsLetter from './news-letter';
+import PopularSermon from './popular-sermon';
+import Footer from './footer';
+import PastorSection from './pastor-section';
+import PageInfo from './page-info';
+import SermonList from './sermon-list';
+import Contactus from './contact';
+import EventItem from './event-item';
+import ErrorPage from './errorpage';
+import GroupList from './group';
+import GroupItem from './group-item';
+import DonateItem from './donate-item';
+import MemberLogin from './partner-login';
+import MembeRegister from './partner-register';
+import LiveStream from './livestream';
+import Donation from './donation-item';
+import EventDetail from './event-detail';
+import Galleries from './galleries';
+import PictureGallery from './gallery';
+import SectionCard from './sermon-card';
+import Testimonial from './testimonial';
+import EventSlider from './event-slider';
+import GifComponent from './gifcomponent';
+import Modal from './modal';
+import TestifyForm from './testify';
+import PrayerRequest from './prayer-request';
 import CourseItem from './course-item';
 import Assignment from './assignment';
 import GiveModal from './giveModal';
@@ -40,8 +40,12 @@ import history from './history';
 import MembershipForm from './membershipForm';
 import BasicForm from './basicForm';
 import GiveItem from './giveItem';
-import { auth, firestore } from "./firebase";
-
+import { auth, firestore } from './firebase';
+import Map from './map';
+import VideoCard from './video-card';
+import UnleashRegister from './unleash-register';
+import UnleashLogin from './unleash-login';
+import UnleashStream from './Unleashstream';
 
 export {
   Header,
@@ -88,4 +92,9 @@ export {
   BasicForm,
   auth,
   firestore,
+  Map,
+  VideoCard,
+  UnleashRegister,
+  UnleashLogin,
+  UnleashStream,
 };

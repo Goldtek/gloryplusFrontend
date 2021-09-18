@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
-import axios from "axios";
 import { css } from "@emotion/core";
 import { FadeLoader } from "react-spinners";
 import {
@@ -9,9 +8,12 @@ import {
   Footer,
   PageInfo,
   NewsLetter,
-  EventDetail
+  EventDetail,
+  firestore,
 } from "../../custom";
-const API = "./utils/eventData.json";
+
+import { handleError } from '../../lib/util';
+
 const override = css`
   display: block;
   margin: 0 auto;
@@ -24,15 +26,24 @@ class Event_Details extends Component {
   };
 
   componentDidMount() {
-    this.setState({ loading: true }, () => {
-      axios.get(API).then(result =>
-        this.setState({
-          loading: false,
-          eventDetails: [...result.data]
-        })
-      );
-    });
+    this.fetchItems();
   }
+
+  fetchItems = async () => {
+    this.setState({ loading: true });
+    await firestore.collection('events')
+    .onSnapshot((querySnapshot) => {
+      const results = [];
+      querySnapshot.forEach((doc) => {
+        results.push({id: doc.id, ...doc.data()});
+      });
+      console.log('event-details'. results);
+      this.setState({
+        loading: false,
+        eventDetails: results
+      });
+    }, handleError);
+  };
   render() {
     const pathID = this.props.match.params.eventID;
     const { eventDetails, loading } = this.state;

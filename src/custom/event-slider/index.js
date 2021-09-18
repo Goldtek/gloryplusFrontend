@@ -38,11 +38,11 @@ class EventSlider extends Component {
   render() {
     const { newslides, loading } = this.props;
     return (
-      <section className="about-section">
+      <section className="about-section bg">
         <div className="container">
           <div className="row">
-            <div className="about-content">
-              <h2>Latest Events</h2>
+            <div className="about-content push-down">
+              <center style={{marginBottom: "35px"}}> <h3>Latest Events</h3> </center>
 
               {loading ? (
                 <div>
@@ -87,15 +87,26 @@ class EventSlider extends Component {
                   outsideChevron={false}
                 >
                   {newslides.map(({ id, ...newslidesdata }) => (
-                    <ImgDiv
-                      key={id}
-                      img={newslidesdata.imagePath}
-                      caption={newslidesdata.title}
-                      url={`/event/${newslidesdata.pathName}`}
-                      yr={newslidesdata.year}
-                      mnth={newslidesdata.month}
-                      time={newslidesdata.time}
-                    />
+                    // <ImgDiv
+                    //   key={id}
+                    //   img={newslidesdata.imagePath}
+                    //   caption={newslidesdata.title}
+                    //   url={`/event/${newslidesdata.pathName}`}
+                    //   yr={newslidesdata.year}
+                    //   mnth={newslidesdata.month}
+                    //   time={newslidesdata.time}
+                    // />
+                    <div className="row">
+                    <div className="container">
+                      <div className="col-sm-12 ">
+                        <h4> {newslidesdata.month} {newslidesdata.day} </h4>
+                        <p className="el-head">{newslidesdata.title}</p>
+                        <span>Time: {newslidesdata.time}</span>
+                        <p className="el-cta"><a class="btn btn-prm btn-primary" href="event-single.html" role="button">Details →</a></p>
+                      </div>
+                    </div>
+                    </div>
+                    
                   ))}
                 </ItemsCarousel>
               )}

@@ -74,8 +74,7 @@ class Video extends Component {
       // eslint-disable-next-line react/jsx-filename-extension
       <>
         <Helmet>
-          <title>Courses</title>
-          <meta name="description" content="Class" />
+          <title>GloryPlus International academy - Courses</title>
         </Helmet>
         <Header /> 
         {(!this.state.showAssignemnt) ? ( 

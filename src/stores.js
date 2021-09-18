@@ -8,7 +8,7 @@ import rootReducer from './reducers';
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['User'],
+  whitelist: ['User', 'Cart'],
 };
 const middlewares = [thunk];
 const enhancers = applyMiddleware(...middlewares);

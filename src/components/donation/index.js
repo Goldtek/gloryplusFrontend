@@ -13,7 +13,7 @@ class DonationComponent extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>Donate</title>
+          <title>GloryPlus Partnership - Donate</title>
           <meta name="description" content="donate" />
         </Helmet>
         <TopNav />

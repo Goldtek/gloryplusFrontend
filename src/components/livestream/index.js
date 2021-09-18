@@ -50,7 +50,7 @@ class LiveStreaming extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>LiveStream</title>
+          <title>GloryPlus International - LiveStream - watch our services live</title>
           <meta name="description" content="Live Stream" />
         </Helmet>
         <TopNav />

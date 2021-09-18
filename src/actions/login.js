@@ -20,3 +20,4 @@ export const register = (data) => async (dispatch) => {
     dispatch(errorMessage(error.message));
   }
 };
+

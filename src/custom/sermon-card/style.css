@@ -1,0 +1,14 @@
+.btn-color {
+  background-image: linear-gradient(
+    147deg
+    , #F57602 0%, #fd3838 74%) !important;
+    border-color: #F57602 !important;
+  }
+
+  .btn-color-unleash {
+    background-image: linear-gradient(
+      147deg
+      , #F57602 0%, #fd3838 74%) !important;
+      border-color: #ffffff !important;
+    }
+  

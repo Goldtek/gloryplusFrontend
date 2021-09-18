@@ -1,3 +1,5 @@
+
+import _ from 'lodash';
 import {
      LOG_OUT, LOGIN_SUCCESS, 
      STORE_USER_ERROR_MSG, 
@@ -5,19 +7,25 @@ import {
      FETCH_CITIES, 
      FETCH_STATES, 
      FETCH_MAPPED_STATES, 
-     FETCH_MAPPED_CITIES
+     UNREGISTERED_USER,
+     UPDATE_SUBSCRIPTION,
+     UPDATE_COUNT
   } from '../actions/action-type';
   
   const initialState = {
+    unregistered_user: {
+      name: "",
+      email: "",
+      phone: ""
+    },
+    isset: false,
     user: {},
     errorMessage: '',
     isAuthenticated: false,
     states: [],
     cities: [],
     countries: [],
-    mapped_states: [],
-    mapped_cities: [],
-    mapped_countries: [],
+    count: 0
   };
   
   const UserReducer = (state = initialState, action) => {
@@ -28,8 +36,7 @@ import {
           ...state,
           loading: false,
           isAuthenticated: true,
-          user: action.response.user,
-          token: action.response.token,
+          user: action.user,
         };
 
       case STORE_USER_ERROR_MSG:
@@ -57,17 +64,33 @@ import {
           mapped_states: action.mapped_states,
         };
 
-        case FETCH_MAPPED_CITIES:
+        case FETCH_CITIES:
           return {
             ...state,
-            mapped_cities: action.mapped_cities,
+            cities: action.cities,
           };
 
-      case FETCH_CITIES:
+      case UNREGISTERED_USER:
         return {
           ...state,
-          cities: action.cities,
+          unregistered_user: action.user,
+          isset: true
         };
+
+      case UPDATE_COUNT:
+        console.log('count', state.count)
+      return {
+        ...state,
+        count: 1,
+      };
+
+
+      case UPDATE_SUBSCRIPTION:
+
+        return {
+          ...state,
+          user: action.user
+        }
         
       case LOG_OUT:
         return {

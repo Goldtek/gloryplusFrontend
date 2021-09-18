@@ -5,10 +5,18 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta name="keywords" content="Glorplus International, church, glory, power, holy spirit, holy, supernatural,  knowledge, understanding, word of god, grace, victory, victorious, revelation, prophetic services">
     <meta
       name="description"
-      content="Glorplus International assembly, spreading the knowledge of Gods' Glory"
+      content="Glorplus International assembly, This is a non-denominational church that spreads the knowledge of Gods' Glory to the nations. Hwere we experience the Presence of God in every single service as our services are prophetic. "
     />
+    <meta property="og:url" content="https://www.gloryplusinternationaal.org/" />
+    <meta property="og:site_name" content="GloryPlus International Assembly" />
+    <meta property="og:image" content="" /> <!----part to church image-->
+    <meta property="og:image:width" content="1800" />
+    <meta property="og:image:height" content="1260" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
     <base href="/" />
     <link rel="apple-touch-icon" href="img/gloryplus.png" />
     <link rel="image/png" href="%PUBLIC_URL%/gloryplus.png" />
@@ -111,10 +119,18 @@
     <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-analytics.js"></script>
 
-    <title></title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title> Gloryplus International Assembly - spreading the knowledge of the Glory of God</title>
     <a href="javascript:" id="return-to-top"
       ><i class="fa fa-chevron-up"></i
     ></a>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=%REACT_APP_MAPKEY%&callback=initMap"
+    type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=%REACT_APP_MAPKEY%&libraries=places"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=%REACT_APP_MAPKEY%&libraries=places"></script>
+   
   </head>
 
   <body>
@@ -162,41 +178,37 @@
     <!-- DATE PICKER JS PLUGIN CDN -->
 
     <script>
-      function payWithRave(phone, amount, email, url, metaData, customer, RAVE_PUBLIC_KEY) {
-        var x = getpaidSetup({
-          PBFPubKey: RAVE_PUBLIC_KEY,
-          customer_email: email,
-          customer_name: customer.name,
-          amount,
-          customer_phone: phone,
-          currency: "NGN",
-          txref: "rave-123456", //unique transaction reference
-          redirect_url: url,
-          meta: [
-            {...metaData},
-          ],
-          onclose: function () {},
-          callback: function (response) {
-            var txref = response.tx.txRef; // collect txRef returned and pass to a 					server page to complete status check.
-            console.log(
-              "This is the response returned after a charge",
-              response
-            );
-            if (
-              response.tx.chargeResponseCode == "00" ||
-              response.tx.chargeResponseCode == "0"
-            ) {
-              // redirect to a success page
-              // create success page
-            } else {
-              // redirect to a failure page.
-              //create a failure page
-            }
+      // function payWithRave(phone, amount, email, url, metaData, customer, RAVE_PUBLIC_KEY) {
+      //   var x = getpaidSetup({
+      //     PBFPubKey: 'FLWPUBK_TEST-d4b41ed6db2e7497259993577dc1101f-X',
+      //     customer_email: email,
+      //     amount,
+      //     customer_phone: phone,
+      //     currency: "NGN", 
+      //     txref: "rave-123456", //unique transaction reference uuid
+      //    // redirect_url: url,
+      //     onclose: function () {},
+      //     callback: function (response) {
+      //       var txref = response.tx.txRef; // collect txRef returned and pass to a 					server page to complete status check.
+      //       console.log(
+      //         "This is the response returned after a charge",
+      //         response
+      //       );
+      //       if (
+      //         response.tx.chargeResponseCode == "00" ||
+      //         response.tx.chargeResponseCode == "0"
+      //       ) {
+      //         // redirect to a success page
+      //         // create success page
+      //       } else {
+      //         // redirect to a failure page.
+      //         //create a failure page
+      //       }
 
-            x.close(); // use this to close the modal immediately after payment.
-          },
-        });
-      }
+      //       x.close(); // use this to close the modal immediately after payment.
+      //     },
+      //   });
+      // }
     </script>
 
 
