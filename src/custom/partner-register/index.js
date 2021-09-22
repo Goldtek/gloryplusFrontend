@@ -19,6 +19,15 @@ const MembeRegister = () => {
       auth.createUserWithEmailAndPassword(email, password);
       delete regValues.password;
       firestore.collection('users').add(regValues);
+      toast.success('Registration Successful', {
+        position: 'top-right',
+        autoClose: 6000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
      history.push('/login');
     } catch (error) {
       toast.error(`${error.message}`, {
