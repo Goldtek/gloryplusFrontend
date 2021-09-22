@@ -3,6 +3,7 @@ import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import serializeForm from 'form-serialize';
 import { connect } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
 import { register } from '../../actions';
 import { auth, firestore } from '../firebase';
 
@@ -11,13 +12,26 @@ const MembeRegister = () => {
   const history = useHistory();
 
   const handleRegister = (e) => {
-    e.preventDefault();
-    const regValues = serializeForm(e.target, { hash: true });
-    const { email, password } = regValues;
-    auth.createUserWithEmailAndPassword(email, password);
-    delete regValues.password;
-    firestore.collection('users').add(regValues);
-    history.push('/login');
+    try{ 
+      e.preventDefault();
+      const regValues = serializeForm(e.target, { hash: true });
+      const { email, password } = regValues;
+      auth.createUserWithEmailAndPassword(email, password);
+      delete regValues.password;
+      firestore.collection('users').add(regValues);
+     history.push('/login');
+    } catch (error) {
+      toast.error(`${error.message}`, {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+   
   };
 
   return (
@@ -28,7 +42,7 @@ const MembeRegister = () => {
             <div className="col-md-6 login-form-1 reg">
               <h3>
                 <div className="img-logo">
-                  <img src="/img/reg.jpg" alt="unleash-logo" />
+                  <img src="/img/logo/round-logo.png" alt="gloryplus-logo" />
                 </div>
               </h3>
               <form>
